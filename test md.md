@@ -1,7 +1,7 @@
 ﻿**LAPORAN PRAKTIKUM
 SISTEM OPERASI**
 
-![IMG_256](Aspose.Words.f1574c81-ef0d-43be-9817-a24c5d7284cc.001.png)
+![screenshot](1.png)
 
 
 
