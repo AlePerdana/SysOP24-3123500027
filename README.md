@@ -55,18 +55,18 @@ Kemudian, sistem operasi akan mengambil alih kendali dan mulai menjalankan progr
 ![Screenshot](screenshot/2.png)
 
 3. Buka setup Oracle dan pilih Next.
-![Screenshot](screenshot/.png)
+![Screenshot](screenshot/3.png)
 
 4. Dalam menu tidak ada yang perlu diubah, pilih Next.
-![Screenshot](screenshot/.png)
+![Screenshot](screenshot/4.png)
 
 5. Pilih Yes.
-![Screenshot](screenshot/.png)
+![Screenshot](screenshot/5.png)
 
 6. Pilih Install.
 ![Screenshot](screenshot/6.png)
 
 7. Oracle Virtual Box telah di install, pilih finish.
-![Screenshot](screenshot/.png)
+![Screenshot](screenshot/7.png)
 
 ## Instalasi Debian dalam Oracle Virtual Box
