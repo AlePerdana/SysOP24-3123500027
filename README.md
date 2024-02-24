@@ -16,10 +16,11 @@
 </div>
 
 ## Daftar Isi
-1. [Pendahuluan](#apa-itu-sistem-operasi)
+1. [Dasar Teori](#apa-itu-sistem-operasi)
 2. [Soal](#soal)
 
-## apa itu Sistem Operasi?
+## Dasar teori
+Pengertian Sistem Operasi:
 <strong>Sistem Operasi</strong> adalah perangkat lunak pada lapisan pertama yang ditempatkan pada memori komputer pada saat komputer dinyalakan booting. Sedangkan software-software lainnya dijalankan setelah sistem operasi berjalan, dan sistem operasi akan melakukan layanan inti untuk software-software itu.
 
 ## Soal
@@ -46,6 +47,6 @@ Kemudian, sistem operasi akan mengambil alih kendali dan mulai menjalankan progr
 
 #### Bagaimana cara install Linux Debian di Virtual box ?
 
-## Installation
+## Instalasi
 1. Masuk ke link downloaad virtualbox, pilih sesuai sistem operasi masing-masing dan download akan dimulai
 ![Screenshot](screenshot/1.png)
