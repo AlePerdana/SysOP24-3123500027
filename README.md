@@ -20,7 +20,7 @@
 2. [Soal](#soal)
 
 ## Dasar teori
-Pengertian Sistem Operasi:
+Pengertian Sistem Operasi:</br>
 <strong>Sistem Operasi</strong> adalah perangkat lunak pada lapisan pertama yang ditempatkan pada memori komputer pada saat komputer dinyalakan booting. Sedangkan software-software lainnya dijalankan setelah sistem operasi berjalan, dan sistem operasi akan melakukan layanan inti untuk software-software itu.
 
 ## Soal
