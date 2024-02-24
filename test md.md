@@ -1,7 +1,7 @@
 ﻿**LAPORAN PRAKTIKUM
 SISTEM OPERASI**
 
-![screenshot](1.png)
+![screenshot](screenshot/1.png)
 
 
 
