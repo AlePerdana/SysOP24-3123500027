@@ -69,4 +69,25 @@ Kemudian, sistem operasi akan mengambil alih kendali dan mulai menjalankan progr
 7. Oracle Virtual Box telah di install, pilih finish.
 ![Screenshot](screenshot/7.png)
 
-## Instalasi Debian dalam Oracle Virtual Box
+## Instalasi Linux Debian dalam Oracle Virtual Box
+1. Buka Oracle Virtual Box, lalu tekan opsi "New".
+![Screenshot](screenshot/8.png)
+
+2. Isi nama, pilih letak penyimpanan Virtual Box, masukkan file ISO debian yang telah diunduh, klik "Skip unattended Installation, dan pilih Next.
+![Screenshot](screenshot/9.png)
+
+3. Isi Username dan hostname dan ubah password, untuk domain name tidak perlu diganti, lalu pilih Next. 
+![Screenshot](screenshot/10.png)
+
+4. Tentukan RAM dan jumlah CPU yang diinginkan, lalu pilih Next.
+![Screenshot](screenshot/11.png)
+
+5. Tentukan ukuran storage didalam Virtual Machine, lalu pilih Next.
+![Screenshot](screenshot/12.png)
+
+6. Dalam tampilan ini, anda dapat melihat ulang pilihan yang anda telah pilih sebelumnya, jika sudah sesuai keinginan, pilih Finish.
+![Screenshot](screenshot/13.png)
+
+## Mengkonfigurasi Debian dalam Oracle Virtual Box
+1. 
+![Screenshot](screenshot/14a.png)
