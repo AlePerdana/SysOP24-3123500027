@@ -45,9 +45,28 @@ Sektor boot adalah area khusus yang berisi instruksi awal untuk memuat sistem op
 Setelah sektor boot ditemukan, komputer akan memuat sistem operasi ke dalam memori utama (RAM). 
 Kemudian, sistem operasi akan mengambil alih kendali dan mulai menjalankan program-program yang diperlukan untuk mengoperasikan komputer.
 
-#### Bagaimana cara install Linux Debian di Virtual box ?
+#### Bagaimana cara install Oracle Virtual Box dan Debian dalam Virtual Box ?
 
-## Instalasi
-1. Masuk ke [laman download Virtual box](https://www.virtualbox.org/wiki/Downloads) 
+## Instalasi Oracle Virtual Box
+1. Masuk ke laman download [Oracle Virtual box](https://www.virtualbox.org/wiki/Downloads), lalu download sesuai sistem operasi yang anda gunakan.
 ![Screenshot](screenshot/1.png)
 
+2. Masuk ke laman Download sistem operasi [Debian](https://www.debian.org/download) untuk download sistem operasi Linux Debian.
+![Screenshot](screenshot/2.png)
+
+3. Buka setup Oracle dan pilih Next.
+![Screenshot](screenshot/3.png)
+
+4. Dalam menu tidak ada yang perlu diubah, pilih Next.
+![Screenshot](screenshot/4.png)
+
+5. Pilih Yes.
+![Screenshot](screenshot/5.png)
+
+6. Pilih Install.
+![Screenshot](screenshot/6.png)
+
+7. Oracle Virtual Box telah di install, pilih finish.
+![Screenshot](screenshot/7.png)
+
+## Instalasi Debian dalam Oracle Virtual Box
