@@ -48,5 +48,6 @@ Kemudian, sistem operasi akan mengambil alih kendali dan mulai menjalankan progr
 #### Bagaimana cara install Linux Debian di Virtual box ?
 
 ## Instalasi
-1. Masuk ke link downloaad virtualbox, pilih sesuai sistem operasi masing-masing dan download akan dimulai
+1. Masuk ke [laman download Virtual box](https://www.virtualbox.org/wiki/Downloads) 
 ![Screenshot](screenshot/1.png)
+
