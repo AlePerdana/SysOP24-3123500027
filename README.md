@@ -16,7 +16,7 @@
 </div>
 
 ## Daftar Isi
-1. [Dasar Teori](#apa-itu-sistem-operasi)
+1. [Dasar Teori](#Dasar-teori)
 2. [Soal](#soal)
 
 ## Dasar teori
