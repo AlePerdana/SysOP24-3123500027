@@ -27,7 +27,7 @@ Pengertian Sistem Operasi:</br>
 <strong>Sistem Operasi</strong> adalah perangkat lunak pada lapisan pertama yang ditempatkan pada memori komputer pada saat komputer dinyalakan booting. Sedangkan software-software lainnya dijalankan setelah sistem operasi berjalan, dan sistem operasi akan melakukan layanan inti untuk software-software itu.
 
 ## Soal
-#### Sebutkan dan jelaskan proses booting !
+#### > Sebutkan dan jelaskan proses booting !
 1 . <strong>Power ON</strong>
 Saat tombol power atau tombol reset dihidupkan, sumber daya listrik akan mengalir ke komputer.
 Kemudian, perangkat keras akan menerima daya untuk dinyalakan.
@@ -48,7 +48,7 @@ Sektor boot adalah area khusus yang berisi instruksi awal untuk memuat sistem op
 Setelah sektor boot ditemukan, komputer akan memuat sistem operasi ke dalam memori utama (RAM). 
 Kemudian, sistem operasi akan mengambil alih kendali dan mulai menjalankan program-program yang diperlukan untuk mengoperasikan komputer.
 
-#### Bagaimana cara install Oracle Virtual Box dan Debian dalam Virtual Box ?
+#### > Bagaimana cara install Oracle Virtual Box dan Debian dalam Virtual Box ?
 
 ## Instalasi Oracle Virtual Box
 1. Masuk ke laman [Oracle Virtual box](https://www.virtualbox.org/wiki/Downloads), lalu unduh sesuai sistem operasi yang anda gunakan.
