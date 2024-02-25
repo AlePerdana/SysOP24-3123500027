@@ -19,8 +19,8 @@
 1. [Dasar Teori](#Dasar-teori)
 2. [Soal](#soal)
 3. [Instalasi Oracle Virtual Box](#Instalasi-Oracle-Virtual-Box)
-4. [Instalasi Linux Debian dalam Oracle Virtual Box](#Instalasi-Linux-Debian-dalam-Oracle-Virtual-Box)
-5. [Mengkonfigurasi Debian dalam Oracle Virtual Box](#Mengkonfigurasi-Debian-dalam-Oracle-Virtual-Box)
+4. [Mengkonfigurasi Debian dalam Oracle Virtual Box](#Mengkonfigurasi-Debian-dalam-Oracle-Virtual-Box)
+5. [Instalasi Linux Debian dalam Oracle Virtual Box](#Instalasi-Linux-Debian-dalam-Oracle-Virtual-Box)
 
 ## Dasar teori
 Pengertian Sistem Operasi:</br>
@@ -72,7 +72,7 @@ Kemudian, sistem operasi akan mengambil alih kendali dan mulai menjalankan progr
 7. Oracle Virtual Box telah di install, klik finish.
 ![Screenshot](screenshot/7.png)
 
-## Instalasi Linux Debian dalam Oracle Virtual Box
+## Mengkonfigurasi Debian dalam Oracle Virtual Box
 1. Buka Oracle Virtual Box, lalu klik opsi "New".
 ![Screenshot](screenshot/8.png)
 
@@ -91,7 +91,7 @@ Kemudian, sistem operasi akan mengambil alih kendali dan mulai menjalankan progr
 6. Dalam tampilan ini, anda dapat melihat ulang pilihan yang anda telah pilih sebelumnya, jika sudah sesuai keinginan, pilih Finish.
 ![Screenshot](screenshot/13.png)
 
-## Mengkonfigurasi Debian dalam Oracle Virtual Box
+## Instalasi Linux Debian dalam Oracle Virtual Box
 1. Klik "Start" untuk membuka Virtual Machine.
 ![Screenshot](screenshot/14a.png)
 
