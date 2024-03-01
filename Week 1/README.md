@@ -52,10 +52,10 @@ Kemudian, sistem operasi akan mengambil alih kendali dan mulai menjalankan progr
 
 ## Instalasi Oracle Virtual Box
 1. Masuk ke laman [Oracle Virtual box](https://www.virtualbox.org/wiki/Downloads), lalu unduh sesuai sistem operasi yang anda gunakan.
-![Screenshot](screenshot/1.png)
+![Screenshot](Assets/1.png)
 
 2. Masuk ke laman Download sistem operasi [Debian](https://www.debian.org/download) untuk mengunduh sistem operasi Linux Debian.
-![Screenshot](screenshot/2.png)
+![Screenshot](Assets//2.png)
 
 3. Buka setup Oracle dan klik Next.</br>
 ![Screenshot](screenshot/3.png)
