@@ -28,25 +28,15 @@ Pengertian Sistem Operasi:</br>
 
 ## Soal
 #### <h3> > Sebutkan dan jelaskan proses booting !</h3>
-1 . <strong>Power ON</strong>
-Saat tombol power atau tombol reset dihidupkan, sumber daya listrik akan mengalir ke komputer.
-Kemudian, perangkat keras akan menerima daya untuk dinyalakan.
+1. Pertama, kita menekan tombol Power komputer. Setelah komputer dihidupkan, keadaan memori masih kosong. Pada saat ini masih belum ada instruksi yang bisa dieksekusi oleh prosesor. Namun pengguna tidak perlu ikut memberi intruksi karena prosesor telah dirancang untuk mencari alamat tertentu di BIOS. Saat inilah prosesor menjalankan BIOS.
 
-2 . <strong>POST (Power On Selft Test)</strong>
-Setelah dinyalakan, komputer akan melakukan Power-On Self-Test atau POST, yang merupakan serangkaian tes perangkat keras untuk memastikan bahwa semuanya berfungsi dengan baik. 
-POST akan memeriksa RAM, prosesor, kartu grafis, dan perangkat keras lainnya. 
+2. Kedua, BIOS mulai mengambil alih sebagai sistem operasi sementara komputer, lalu proses akan berlanjut dengan melakukan inspeksi terhadap semua kesalahan (penyebab variasi data) dalam memori, maupun Device-Device yang memang terhubung kepada komputer. Proses inilah yang sering dikenal dengan POST atau Power-On Self Test. Jika terdapat device yang bermasalah, proses tidak akan berlanjut. Tetapi memberi peringatan tentang masalah device tersebut.
 
-3 . <strong>Inisialisasi perangkat keras</strong>
-Setelah POST selesai, komputer akan menginisialisasi perangkat keras seperti hard drive, keyboard, mouse, dan perangkat lainnya. 
-Proses ini melibatkan tahap mengenali perangkat keras, memuat driver yang diperlukan, dan menyiapkan perangkat untuk digunakan.
+3. ketiga, Proses dilanjutkan dengan BIOS mencari kartu grafis yang tertanam pada komputer dan berikutnya sistem BIOS menjalankan kartu grafis BIOS, serta pengecekan BIOS terhadap ROM.
 
-4 . <strong>Membaca sektor boot</strong>
-Selanjutnya, komputer akan mencari sektor boot di hard drive atau perangkat penyimpanan lainnya. 
-Sektor boot adalah area khusus yang berisi instruksi awal untuk memuat sistem operasi.
+4. Keempat, Setelah BIOS selesai melakukan pengecekan awal, BIOS akan mencari sistem operasi yang sudah diinstall lalu memuatnya pada memori serta segera menjalankannya. Kemudian, BIOS akan menjalankan sistem operasi tersebut. Jika sistem operasi mengalami error atau tidak ditemukan, BIOS akan menampilkan pesan kesalahan atau menu pilihan untuk masuk ke dalam visual BIOS.
 
-5 . <strong>Memuat Sistem Operasi</strong>
-Setelah sektor boot ditemukan, komputer akan memuat sistem operasi ke dalam memori utama (RAM). 
-Kemudian, sistem operasi akan mengambil alih kendali dan mulai menjalankan program-program yang diperlukan untuk mengoperasikan komputer.
+5. Saat komputer telah diambil alih oleh sistem operasi, pengguna dapat mulai menjalankan berbagai program-program yang diinginkan.
 
 #### <h3> > Bagaimana cara install Oracle Virtual Box dan Debian dalam Virtual Box ?</h3>
 
