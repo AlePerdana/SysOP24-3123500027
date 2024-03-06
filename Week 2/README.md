@@ -92,7 +92,7 @@ kipas pendingin berfungsi untuk menjaga suhu di dalam komputer. Ini merupakan sa
 ![heatsink](https://th.bing.com/th/id/R.5ae87f33bbedc233b702df0e9f43954d?rik=Q52gbuC67IhCNA&riu=http%3a%2f%2fimg.hexus.net%2fv2%2fmotherboards%2fintel%2fintel%2fDX48BT2%2fDSCF6350-copy-big.jpg&ehk=Bxycs0mTjT%2b%2f2T9ASblIYlQhctf8rAO7%2bPRMmd11lbM%3d&risl=&pid=ImgRaw&r=0)</br>
 Fungsi utama heat sink yaitu untuk mengendalikan atau mendinginkan temperatur pada komponen komputer dan laptop yang melakukan aktivitas berat menghasilkan banyak energi panas. Tugas utama digunakannya heatsink ini yaitu untuk menjaga temperatur CPU dan VGA.
 
-##Referensi
+## Referensi
 Sumber 1: https://dianisa.com/perbedaan-legacy-bios-dan-uefi/#Perbedaan_Legacy_BIOS_dan_UEFI
 
 Sumber 2: https://www.pro.co.id/komponen-komponen-motherboard-lengkap-dengan-gambar-dan-penjelasan/
