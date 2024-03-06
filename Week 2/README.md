@@ -18,6 +18,7 @@
 ## Daftar Isi
 1. [Dasar Teori](#Dasar-teori)
 2. [Soal](#soal)
+3. [Referensi](#Referensi)
 
 ## Dasar teori
 Pengertian Legacy BIOS:</br>
@@ -90,3 +91,12 @@ kipas pendingin berfungsi untuk menjaga suhu di dalam komputer. Ini merupakan sa
 - Heat Sink</br>
 ![heatsink](https://th.bing.com/th/id/R.5ae87f33bbedc233b702df0e9f43954d?rik=Q52gbuC67IhCNA&riu=http%3a%2f%2fimg.hexus.net%2fv2%2fmotherboards%2fintel%2fintel%2fDX48BT2%2fDSCF6350-copy-big.jpg&ehk=Bxycs0mTjT%2b%2f2T9ASblIYlQhctf8rAO7%2bPRMmd11lbM%3d&risl=&pid=ImgRaw&r=0)</br>
 Fungsi utama heat sink yaitu untuk mengendalikan atau mendinginkan temperatur pada komponen komputer dan laptop yang melakukan aktivitas berat menghasilkan banyak energi panas. Tugas utama digunakannya heatsink ini yaitu untuk menjaga temperatur CPU dan VGA.
+
+##Referensi
+Sumber 1: https://dianisa.com/perbedaan-legacy-bios-dan-uefi/#Perbedaan_Legacy_BIOS_dan_UEFI
+
+Sumber 2: https://www.pro.co.id/komponen-komponen-motherboard-lengkap-dengan-gambar-dan-penjelasan/
+
+Sumber 3: https://tekno.kompas.com/read/2023/11/13/17150067/komponen-komponen-motherboard-dan-fungsinya-yang-perlu-diketahui?page=all#:~:text=Komponen%20Motherboard%201%201.%20CPU%20CPU%20adalah%20komponen,Ports%20...%208%208.%20CMOS%20...%20More%20items
+
+sumber 4: https://www.pelajaran.co.id/komponen-motherboard-dan-fungsi/
