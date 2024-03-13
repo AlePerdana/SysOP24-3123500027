@@ -31,7 +31,29 @@ FLOPS adalah singkatan dari istilah dalam bahasa Inggris Floating point Operatio
 ## Soal
 1. Jalankan VM Debian anda, lalu lakukan clone https://github.com/ferryastika/flops-iops. Compile dan eksekusi sesuai petunjuk. Sesuiakan jumlah thread dengan jumlah CPU yang ada di VM Debianmu. Catat hasilnya dan jelaskan arti dari hasil ekskusi. Lakukan sebanyak 5 kali. Bandingkan hasilnya anatar temanmu. Buat Plot perbandinnga hasil untuk masing-masing PC di tiap kelompokmu. Analisa hasil percobaan tadi dan beri kesimpulan tentang IOPS dan FLOPS.
 
+Marieta Nona Alfani (312350026)
 
+
+Ale Perdana Putra Darmawan (3123500027)</br>
+Monitor:</br>
+![ss](assets/monitor/1.png)
+
+Hasil IOPS:</br>
+![ss](assets/iops/1ale.png)</br>
+![ss](assets/iops/2ale.png)</br>
+![ss](assets/iops/3ale.png)</br>
+![ss](assets/iops/4ale.png)</br>
+![ss](assets/iops/5ale.png)</br>
+
+Hasil FLOPS:</br>
+![ss](assets/flops/1ale.png)</br>
+![ss](assets/flops/2ale.png)</br>
+![ss](assets/flops/3ale.png)</br>
+![ss](assets/flops/4ale.png)</br>
+![ss](assets/flops/5ale.png)</br>
+
+Kanisius Keru Okok Dinggon(3123500028)</br>
+monitor:</br>
 
 2. Apabila Debian VM mu masih belum terdapat packeage gcc, make dan git, lakukan instalasi dan catat setiap langkahnya!
 
