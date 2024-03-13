@@ -36,7 +36,7 @@ Marieta Nona Alfani (312350026)
 
 Ale Perdana Putra Darmawan (3123500027)</br>
 Monitor:</br>
-![ss](assets/monitor/1.png)
+![ss](assets/monitor/1ale.png)
 
 Hasil IOPS:</br>
 ![ss](assets/iops/1ale.png)</br>
