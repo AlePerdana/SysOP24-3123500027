@@ -118,5 +118,5 @@ Instalasi Make:</br>
 ![ss](assets/make/1.png)</br>
 
 ## Referensi
-sumber 1: https://www.cekssd.com/pengertian-iops/
+sumber 1: https://www.cekssd.com/pengertian-iops/ </br>
 sumber 2: https://id.wikipedia.org/wiki/FLOPS
