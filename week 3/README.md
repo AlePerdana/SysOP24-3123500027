@@ -31,7 +31,9 @@ FLOPS adalah singkatan dari istilah dalam bahasa Inggris Floating point Operatio
 ## Soal
 1. Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program. Jelaskan juga peran dari Bahasa pemrograman dan compiler, begitu juga dengan peran dari Sistem Operaso. 
 
-Link PPT: ![canva] https://www.canva.com/design/DAF_ZnUYX2Q/2mQ1yU_4RRmK0t8iBhpsAQ/view?utm_content=DAF_ZnUYX2Q&utm_campaign=designshare&utm_medium=link&utm_source=editor
+
+Link PPT: https://www.canva.com/design/DAF_ZnUYX2Q/2mQ1yU_4RRmK0t8iBhpsAQ/view?utm_content=DAF_ZnUYX2Q&utm_campaign=designshare&utm_medium=link&utm_source=editor
+
 
 2. Jalankan VM Debian anda, lalu lakukan clone https://github.com/ferryastika/flops-iops. Compile dan eksekusi sesuai petunjuk. Sesuiakan jumlah thread dengan jumlah CPU yang ada di VM Debianmu. Catat hasilnya dan jelaskan arti dari hasil ekskusi. Lakukan sebanyak 5 kali. Bandingkan hasilnya anatar temanmu. Buat Plot perbandinnga hasil untuk masing-masing PC di tiap kelompokmu. Analisa hasil percobaan tadi dan beri kesimpulan tentang IOPS dan FLOPS.
 
@@ -77,16 +79,16 @@ monitor:</br>
 Hasil IOPS:</br>
 ![ss](assets/iops/1kanisius.png)</br>
 ![ss](assets/iops/2kanisius.png)</br>
-![ss](assets/iops/3kanisius.png)</br>
-![ss](assets/iops/4kanisius.png)</br>
-![ss](assets/iops/5kanisius.png)</br>
+![ss](assets/iops/3kanisius.jpg)</br>
+![ss](assets/iops/4kanisius.jpg)</br>
+![ss](assets/iops/5kanisius.jpg)</br>
 
 Hasil FLOPS:</br>
-![ss](assets/flops/1kanisius.png)</br>
-![ss](assets/flops/2kanisius.png)</br>
-![ss](assets/flops/3kanisius.png)</br>
-![ss](assets/flops/4kanisius.png)</br>
-![ss](assets/flops/5kanisius.png)</br>
+![ss](assets/flops/1kanisius.jpg)</br>
+![ss](assets/flops/2kanisius.jpg)</br>
+![ss](assets/flops/3kanisius.jpg)</br>
+![ss](assets/flops/4kanisius.jpg)</br>
+![ss](assets/flops/5kanisius.jpg)</br>
 
 Perbandingan Hasil</br>
 
@@ -94,7 +96,7 @@ Nama | Jumlah CPU Core | Max FLOPS (CPU Throughput) | Max FLOPS (Single Core Thr
 |---|---|---|---|---|---|
 | Marieta Nona Alfani | 4 | 8.428314 Gigaflops | 2.117841 Gigaflops | 8.371755 Gigaiops | 2.113608 Gigaiops |
 | Ale Perdana Putra Darmawan | 2 | 13.081847 Gigaflops | 3.361833 Gigaflops | 10.260783 Gigaiops | 2.583856 Gigaiops |
-| Kanisius Keru Okok Dinggon | 4 | | | 19.939754 Gigaiops | 4.992624 Gigaiops |
+| Kanisius Keru Okok Dinggon | 4 | 13.081847 Gigaflops | 3.361833 Gigaflops | 19.939754 Gigaiops | 4.992624 Gigaiops |
 
 Analisa</br>
 Secara keseluruhan, program benchmark menunjukkan bahwa peringkat FLOPS IOPS CPU meningkat seiring dengan meningkatnya jumlah inti CPU yang digunakan. Hal ini karena program ini mampu mendistribusikan beban kerja ke beberapa inti, sehingga memungkinkannya melakukan lebih banyak operasi secara bersamaan.
