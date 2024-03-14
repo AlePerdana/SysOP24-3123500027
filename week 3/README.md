@@ -74,6 +74,8 @@ Perbandingan Hasil</br>
 
 Nama | Jumlah CPU Core | Max FLOPS (CPU Throughput) | Max FLOPS (Single Core Throughput) | Max IOPS (CPU Throughput) | Max IOPS (Single Core Throughput)
 |---|---|---|---|---|---|
+| Marieta Nona Alfani | 4 | 8.428314 Gigaflops | 2.117841 Gigaflops | 8.371755 Gigaiops | 2.113608 Gigaiops |
+| Ale Perdana Putra Darmawan | 2 | 
 
 Kanisius Keru Okok Dinggon(3123500028)</br>
 monitor:</br>
