@@ -29,7 +29,11 @@ FLOPS:</br>
 FLOPS adalah singkatan dari istilah dalam bahasa Inggris Floating point Operations Per Second yang merujuk pada satuan untuk jumlah perhitungan yang dapat dilakukan oleh sebuah perangkat komputasi (dalam hal ini adalah komputer) terhadap bilangan pecahan (floating point) tiap satu satuan waktu. FLOPS merupakan satuan pengukuran kecepatan kinerja suatu mikroprosesor biasanya dalam suatu aplikasi ilmiah (scientific application), seperti untuk menghitung/mensimulasikan data pergerakan Bumi secara waktu nyata.
 
 ## Soal
-1. Jalankan VM Debian anda, lalu lakukan clone https://github.com/ferryastika/flops-iops. Compile dan eksekusi sesuai petunjuk. Sesuiakan jumlah thread dengan jumlah CPU yang ada di VM Debianmu. Catat hasilnya dan jelaskan arti dari hasil ekskusi. Lakukan sebanyak 5 kali. Bandingkan hasilnya anatar temanmu. Buat Plot perbandinnga hasil untuk masing-masing PC di tiap kelompokmu. Analisa hasil percobaan tadi dan beri kesimpulan tentang IOPS dan FLOPS.
+1. Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program. Jelaskan juga peran dari Bahasa pemrograman dan compiler, begitu juga dengan peran dari Sistem Operaso. 
+
+Link PPT: ![canva](https://www.canva.com/design/DAF_ZnUYX2Q/Hl_8Sp9-WdLcFRPRaFN7zg/edit?utm_content=DAF_ZnUYX2Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+2. Jalankan VM Debian anda, lalu lakukan clone https://github.com/ferryastika/flops-iops. Compile dan eksekusi sesuai petunjuk. Sesuiakan jumlah thread dengan jumlah CPU yang ada di VM Debianmu. Catat hasilnya dan jelaskan arti dari hasil ekskusi. Lakukan sebanyak 5 kali. Bandingkan hasilnya anatar temanmu. Buat Plot perbandinnga hasil untuk masing-masing PC di tiap kelompokmu. Analisa hasil percobaan tadi dan beri kesimpulan tentang IOPS dan FLOPS.
 
 Marieta Nona Alfani (312350026)</br>
 Monitor:</br>
@@ -66,10 +70,15 @@ Hasil FLOPS:</br>
 ![ss](assets/flops/4ale.png)</br>
 ![ss](assets/flops/5ale.png)</br>
 
+Perbandingan Hasil</br>
+
+Nama | Jumlah CPU Core | Max FLOPS (CPU Throughput) | Max FLOPS (Single Core Throughput) | Max IOPS (CPU Throughput) | Max IOPS (Single Core Throughput)
+|---|---|---|---|---|---|
+
 Kanisius Keru Okok Dinggon(3123500028)</br>
 monitor:</br>
 
-2. Apabila Debian VM mu masih belum terdapat packeage gcc, make dan git, lakukan instalasi dan catat setiap langkahnya!
+3. Apabila Debian VM mu masih belum terdapat packeage gcc, make dan git, lakukan instalasi dan catat setiap langkahnya!
 
 ## Referensi
 sumber 1: https://www.cekssd.com/pengertian-iops/
