@@ -31,7 +31,7 @@ FLOPS adalah singkatan dari istilah dalam bahasa Inggris Floating point Operatio
 ## Soal
 1. Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program. Jelaskan juga peran dari Bahasa pemrograman dan compiler, begitu juga dengan peran dari Sistem Operaso. 
 
-Link PPT: ![canva](https://www.canva.com/design/DAF_ZnUYX2Q/2mQ1yU_4RRmK0t8iBhpsAQ/view?utm_content=DAF_ZnUYX2Q&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+Link PPT: ![canva] https://www.canva.com/design/DAF_ZnUYX2Q/Hl_8Sp9-WdLcFRPRaFN7zg/edit?utm_content=DAF_ZnUYX2Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 2. Jalankan VM Debian anda, lalu lakukan clone https://github.com/ferryastika/flops-iops. Compile dan eksekusi sesuai petunjuk. Sesuiakan jumlah thread dengan jumlah CPU yang ada di VM Debianmu. Catat hasilnya dan jelaskan arti dari hasil ekskusi. Lakukan sebanyak 5 kali. Bandingkan hasilnya anatar temanmu. Buat Plot perbandinnga hasil untuk masing-masing PC di tiap kelompokmu. Analisa hasil percobaan tadi dan beri kesimpulan tentang IOPS dan FLOPS.
 
