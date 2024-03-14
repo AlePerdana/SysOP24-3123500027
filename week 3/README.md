@@ -77,16 +77,16 @@ monitor:</br>
 Hasil IOPS:</br>
 ![ss](assets/iops/1kanisius.png)</br>
 ![ss](assets/iops/2kanisius.png)</br>
-![ss](assets/iops/3kanisius.png)</br>
-![ss](assets/iops/4kanisius.png)</br>
-![ss](assets/iops/5kanisius.png)</br>
+![ss](assets/iops/3kanisius.jpg)</br>
+![ss](assets/iops/4kanisius.jpg)</br>
+![ss](assets/iops/5kanisius.jpg)</br>
 
 Hasil FLOPS:</br>
-![ss](assets/flops/1kanisius.png)</br>
-![ss](assets/flops/2kanisius.png)</br>
-![ss](assets/flops/3kanisius.png)</br>
-![ss](assets/flops/4kanisius.png)</br>
-![ss](assets/flops/5kanisius.png)</br>
+![ss](assets/flops/1kanisius.jpg)</br>
+![ss](assets/flops/2kanisius.jpg)</br>
+![ss](assets/flops/3kanisius.jpg)</br>
+![ss](assets/flops/4kanisius.jpg)</br>
+![ss](assets/flops/5kanisius.jpg)</br>
 
 Perbandingan Hasil</br>
 
