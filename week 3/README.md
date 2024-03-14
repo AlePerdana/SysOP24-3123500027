@@ -70,17 +70,52 @@ Hasil FLOPS:</br>
 ![ss](assets/flops/4ale.png)</br>
 ![ss](assets/flops/5ale.png)</br>
 
+Kanisius Keru Okok Dinggon(3123500028)</br>
+monitor:</br>
+![ss](assets/monitor/1kanisius.png)</br>
+
+Hasil IOPS:</br>
+![ss](assets/iops/1kanisius.png)</br>
+![ss](assets/iops/2kanisius.png)</br>
+![ss](assets/iops/3kanisius.png)</br>
+![ss](assets/iops/4kanisius.png)</br>
+![ss](assets/iops/5kanisius.png)</br>
+
+Hasil FLOPS:</br>
+![ss](assets/flops/1kanisius.png)</br>
+![ss](assets/flops/2kanisius.png)</br>
+![ss](assets/flops/3kanisius.png)</br>
+![ss](assets/flops/4kanisius.png)</br>
+![ss](assets/flops/5kanisius.png)</br>
+
 Perbandingan Hasil</br>
 
 Nama | Jumlah CPU Core | Max FLOPS (CPU Throughput) | Max FLOPS (Single Core Throughput) | Max IOPS (CPU Throughput) | Max IOPS (Single Core Throughput)
 |---|---|---|---|---|---|
 | Marieta Nona Alfani | 4 | 8.428314 Gigaflops | 2.117841 Gigaflops | 8.371755 Gigaiops | 2.113608 Gigaiops |
-| Ale Perdana Putra Darmawan | 2 | 
+| Ale Perdana Putra Darmawan | 2 | 13.081847 Gigaflops | 3.361833 Gigaflops | 10.260783 Gigaiops | 2.583856 Gigaiops |
+| Kanisius Keru Okok Dinggon | 4 | | | 19.939754 Gigaiops | 4.992624 Gigaiops |
 
-Kanisius Keru Okok Dinggon(3123500028)</br>
-monitor:</br>
+Analisa</br>
+Secara keseluruhan, program benchmark menunjukkan bahwa peringkat FLOPS IOPS CPU meningkat seiring dengan meningkatnya jumlah inti CPU yang digunakan. Hal ini karena program ini mampu mendistribusikan beban kerja ke beberapa inti, sehingga memungkinkannya melakukan lebih banyak operasi secara bersamaan.
 
-3. Apabila Debian VM mu masih belum terdapat packeage gcc, make dan git, lakukan instalasi dan catat setiap langkahnya!
+Kesimpulan</br>
+Kesimpulannya, FLOPS dan IOPS merupakan metrik penting untuk mengukur kinerja CPU. FLOPS penting untuk tugas-tugas yang melibatkan banyak perhitungan floating-point. IOPS penting untuk tugas-tugas yang melibatkan banyak operasi integer.
+
+3. Apabila Debian VM mu masih belum terdapat packeage gcc, make dan git, lakukan instalasi dan catat setiap langkahnya!</br>
+Instalasi GCC:</br>
+![ss](assets/gcc/1.png)</br>
+![ss](assets/gcc/2.png)</br>
+![ss](assets/gcc/3.png)</br>
+![ss](assets/gcc/4.png)</br>
+![ss](assets/gcc/5.png)</br>
+
+Instalasi Git:</br>
+![ss](assets/git/1.png)</br>
+![ss](assets/git/2.png)</br>
+
+Instalasi Make:</br>
+![ss](assets/make/1.png)</br>
 
 ## Referensi
 sumber 1: https://www.cekssd.com/pengertian-iops/
