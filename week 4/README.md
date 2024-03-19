@@ -105,7 +105,10 @@ Lampung
  $ cat hello.txt | sort | uniq
  $ cat hello.txt | grep “dog” | grep –v “cat”
 ```
+![ss](assets/latihan/soal8/1.png)</br></br>
 
 3. Berikan kesimpulan dari praktikum ini.
 
 ## Referensi
+Sumber 1: https://www.geeksforgeeks.org/introduction-linux-shell-shell-scripting/?ref=shm_
+Sumber 2: https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/
