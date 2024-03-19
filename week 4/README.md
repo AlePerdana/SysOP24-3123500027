@@ -18,8 +18,7 @@
 ## Daftar Isi
 1. [Dasar Teori](#Dasar-teori)
 2. [Soal](#soal)
-   - ![soal 1](#1.-Analisa-hasil-percobaan-1-sampai-dengan-4,-untuk-setiap-perintah-jelaskan-tampilannya.)
-4. [Referensi](#Referensi)
+3. [Referensi](#Referensi)
 
 ## Dasar teori
 #### 1. PROSES I/O:</br>
@@ -53,7 +52,7 @@ Filter adalah utilitas Linux yang dapat memproses standard input (dari keyboard)
 - Perintah ```uniq``` Digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi, biasanya digabungkan dalam pipeline dengan ```sort```.
 
 ## Soal
-## 1. Analisa hasil percobaan 1 sampai dengan 4, untuk setiap perintah jelaskan tampilannya.
+1. Analisa hasil percobaan 1 sampai dengan 4, untuk setiap perintah jelaskan tampilannya.
 
 
 2.  Kerjakan latihan diatas dan analisa hasilnya
