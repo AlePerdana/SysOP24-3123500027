@@ -56,11 +56,19 @@ Filter adalah utilitas Linux yang dapat memproses standard input (dari keyboard)
 
 
 2.  Kerjakan latihan diatas dan analisa hasilnya
-- Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.
+- Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.</br>
+![ss](assets/latihan/soal1/1.png)</br>
+![ss](assets/latihan/soal1/2.png)</br>
 
-- Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya.
+- Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya.</br>
+![ss](assets/latihan/soal2/1.png)</br>
+![ss](assets/latihan/soal2/2.png)</br>
+![ss](assets/latihan/soal2/3.png)</br>
 
 - Urutkan file baru dengan cara membelokkan standard input.
+![ss](assets/latihan/soal3/1.png)</br>
+![ss](assets/latihan/soal3/1.png)</br>
+![ss](assets/latihan/soal3/1.png)</br>
 
 - Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut.
 
