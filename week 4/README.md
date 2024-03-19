@@ -58,21 +58,24 @@ Filter adalah utilitas Linux yang dapat memproses standard input (dari keyboard)
 2.  Kerjakan latihan diatas dan analisa hasilnya
 - Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.</br>
 ![ss](assets/latihan/soal1/1.png)</br>
-![ss](assets/latihan/soal1/2.png)</br>
+![ss](assets/latihan/soal1/2.png)</br></br>
 
 - Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya.</br>
 ![ss](assets/latihan/soal2/1.png)</br>
 ![ss](assets/latihan/soal2/2.png)</br>
-![ss](assets/latihan/soal2/3.png)</br>
+![ss](assets/latihan/soal2/3.png)</br></br>
 
 - Urutkan file baru dengan cara membelokkan standard input.
 ![ss](assets/latihan/soal3/1.png)</br>
 ![ss](assets/latihan/soal3/1.png)</br>
-![ss](assets/latihan/soal3/1.png)</br>
+![ss](assets/latihan/soal3/1.png)</br></br>
 
 - Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut.
+![ss](assets/latihan/soal4/1.png)</br>
+![ss](assets/latihan/soal4/2.png)</br></br>
 
 - Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standard error ke file rmdirerror.txt.
+![ss](assets/latihan/soal5/1.png)</br></br>
 
 - Urutkan kalimat berikut :
 ```
@@ -83,8 +86,11 @@ Padang
 Palembang
 Lampung
 ```
+![ss](assets/latihan/soal6/1.png)</br></br>
 
 - Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
+![ss](assets/latihan/soal7/1.png)</br>
+![ss](assets/latihan/soal7/2.png)</br></br>
 
 - Gunakan perintah di bawah ini dan perhatikan hasilnya.
 ```
