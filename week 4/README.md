@@ -18,13 +18,42 @@
 ## Daftar Isi
 1. [Dasar Teori](#Dasar-teori)
 2. [Soal](#soal)
-3. [Referensi](#Referensi)
+   - ![soal 1](#1.-Analisa-hasil-percobaan-1-sampai-dengan-4,-untuk-setiap-perintah-jelaskan-tampilannya.)
+4. [Referensi](#Referensi)
 
 ## Dasar teori
+#### 1. PROSES I/O:</br>
+Sebuah proses memerlukan Input dan Output. Instruksi (command) yang diberikan pada Linux melalui Shell disebut sebagai eksekusi program yang selanjutnya disebut proses. Setiap kali instruksi diberikan, maka Linux kernel akan menciptakan sebuah proses dengan memberikan nomor PID (Process Identity). Proses dalam Linux selalu membutuhkan Input dan menghasilkan suatu Output.
+Dalam konteks Linux input/output adalah :
+- Keyboard (input)
+- Layar (output)
+- Files
+- Struktur data kernel
+- Peralatan I/O lainnya (misalnya Network)
 
+#### 2. FILE DESCRIPTOR
+Linux berkomunikasi dengan file melalui file descriptor yang direpresentasikan melalui angka yang dimulai dari 0, 1, 2 dan seterusnya. Tiga buah file descriptor standar yang lalu diciptakan oleh proses adalah :
+- 0 = keyboard (standar input)
+- 1 = layar (standar output)
+- 2 = layar (standar error)
+Linux tidak membedakan antara peralatan hardware dan file. Linux memanipulasi peralatan hardware dengan memperlakukannya sama dengan ketika memperlakukan sebuah file.
+
+#### 3.PEMBELOKAN (REDIRECTION)
+Pembelokan dilakukan untuk standard input, output dan error, yaitu untuk mengalihkan file descriptor dari 0, 1 dan 2.
+
+#### 4. PIPA (PIPELINE)
+Mekanisme pipa digunakan sebagai alat komunikasi antar proses.
+
+#### 5. FILTER
+Filter adalah utilitas Linux yang dapat memproses standard input (dari keyboard) dan menampilkan hasilnya pada standard output (layar). Contoh filter adalah cat, sort, grep, pr, head, tail, paste dan lainnya. 
+- Perintah ```grep``` Digunakan untuk menyaring masukannya dan menampilkan baris-baris yang hanya mengandung pola yang ditentukan. Pola ini disebut regular expression.
+- Perintah ```wc``` Digunakan untuk menghitung jumlah baris, kata dan karakter dari baris-baris masukan yang diberikan kepadanya. Untuk mengetahui berapa baris gunakan option –l, untuk mengetahui berapa kata, gunakan option –w dan untuk mengetahui berapa karakter, gunakan option –c. Jika salah satu option tidak digunakan, maka tampilannya adalah jumlah baris, jumlah kata dan jumlah karakter.
+- Perintah ```sort``` Digunakan untuk mengurutkan masukannya berdasarkan urutan nomor ASCII dari karakter.
+- Perintah ```cut``` Digunakan untuk mengambil kolom tertentu dari baris-baris masukannya, yang ditentukan pada option –c.
+- Perintah ```uniq``` Digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi, biasanya digabungkan dalam pipeline dengan ```sort```.
 
 ## Soal
-1. Analisa hasil percobaan 1 sampai dengan 4, untuk setiap perintah jelaskan tampilannya.
+## 1. Analisa hasil percobaan 1 sampai dengan 4, untuk setiap perintah jelaskan tampilannya.
 
 
 2.  Kerjakan latihan diatas dan analisa hasilnya
