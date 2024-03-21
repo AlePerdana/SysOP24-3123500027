@@ -20,6 +20,13 @@
 2. [Soal](#soal)
 3. [Referensi](#Referensi)
 
+## Tugas Pendahuluan:</br>
+1. Apa yang dimaksud redirection?</br>
+  pembelokan sebuah output ke daerah yang dituju</br>
+2. Apa yang dimaksud pipeline?</br>
+   mengambil output sebelumnya untuk dijadikan input untuk proses selanjutnya</br>
+3. Apa yang dimaksud perintah di bawah ini : echo, cat, more, sort, grep, wc, cut, uniq</br>
+   echo menampilkan pesan yang diketik secara langsung, cat menampilkan isi sebuah file, more untuk menampilkan sebuah output tetapi akan dipisah secara per layar, sort untuk mensortir sebuah kalimat/kata mengikuti nomor ascii, grep berfungsi untuk mengambil kata yang telah dideklarasi, wc adalah word count untuk menampilkan jumlah kata, jumlah karakter, dan jumlah baris, Digunakan untuk mengambil kolom tertentu dari baris-baris masukannya, yang ditentukan pada option –c, dan uniq Digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi, biasanya digabungkan dalam pipeline dengan sort.</br>
 ## Dasar teori
 #### 1. PROSES I/O:</br>
 Sebuah proses memerlukan Input dan Output. Instruksi (command) yang diberikan pada Linux melalui Shell disebut sebagai eksekusi program yang selanjutnya disebut proses. Setiap kali instruksi diberikan, maka Linux kernel akan menciptakan sebuah proses dengan memberikan nomor PID (Process Identity). Proses dalam Linux selalu membutuhkan Input dan menghasilkan suatu Output.
