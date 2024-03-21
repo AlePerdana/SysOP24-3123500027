@@ -53,9 +53,23 @@ Filter adalah utilitas Linux yang dapat memproses standard input (dari keyboard)
 
 ## Soal
 1. Analisa hasil percobaan 1 sampai dengan 4, untuk setiap perintah jelaskan tampilannya.
+Percobaan 1 : File descriptor</br>
+![ss](assets/percobaan/p1/1.png)</br>
+![ss](assets/percobaan/p1/2.png)</br></br>
 
+Percobaan 2 : Pembelokan (redirection)</br>
+![ss](assets/percobaan/p2/1.png)</br>
+![ss](assets/percobaan/p2/2.png)</br></br>
 
-2.  Kerjakan latihan diatas dan analisa hasilnya
+Percobaan 3 : Pipa (pipeline)</br>
+![ss](assets/percobaan/p3/1.png)</br>
+![ss](assets/percobaan/p3/2.png)</br></br>
+
+Percobaan 4 : Filter
+![ss](assets/percobaan/p4/1.png)</br>
+![ss](assets/percobaan/p4/2.png)</br></br>
+
+3. Kerjakan latihan diatas dan analisa hasilnya
 - Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.</br>
 ![ss](assets/latihan/soal1/1.png)</br>
 ![ss](assets/latihan/soal1/2.png)</br></br>
@@ -107,7 +121,8 @@ Lampung
 ```
 ![ss](assets/latihan/soal8/1.png)</br></br>
 
-3. Berikan kesimpulan dari praktikum ini.
+3. Berikan kesimpulan dari praktikum ini.</br>
+Latihan-latihan yang telah dilakukan menggambarkan pemahaman yang kuat dalam penggunaan perintah dasar sistem operasi Linux/Unix. Dari penggunaan perintah seperti ls, cat, sort, hingga mkdir dan cd, Kita menunjukkan kemampuan untuk melakukan berbagai tugas seperti melihat daftar direktori, mengedit dan menampilkan isi file, serta mengelola file dan direktori. Penggunaan redirection dengan simbol seperti >, >>, dan 2> juga ditunjukkan dengan baik, memungkinkan Kita untuk mengarahkan output dari satu perintah ke perintah lainnya atau ke dalam file. Selain itu, penggunaan pipeline (|) membantu dalam mengalirkan data antar perintah, memungkinkan eksekusi serangkaian perintah secara berurutan untuk memproses data dengan cara yang lebih kompleks. Pengolahan file dan direktori seperti pembuatan, penyuntingan, dan analisis isi file juga terlihat dalam latihan tersebut, yang menunjukkan kemampuan dalam mengelola data dalam konteks sistem operasi. Penggunaan perintah khusus seperti wc untuk menghitung statistik file dan grep untuk pencarian pola dalam teks menunjukkan pemahaman mendalam tentang alat-alat sistem operasi. Selain itu, pemahaman tentang ASCII dan penggunaan sort untuk pengurutan berdasarkan urutan ASCII, serta uniq untuk menghilangkan duplikasi, menunjukkan keterampilan dalam manipulasi dan analisis data teks.
 
 ## Referensi
 Sumber 1: https://www.geeksforgeeks.org/introduction-linux-shell-shell-scripting/?ref=shm_
