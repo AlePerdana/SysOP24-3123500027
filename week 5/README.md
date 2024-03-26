@@ -48,14 +48,13 @@ Job bekerja pada foreground atau background. Pada foreground hanya diperuntukkan
 Job pada foreground kemungkinan dihentikan sementara (suspend), dengan menekan [Ctrl-Z]. Job yang dihentikan sementara dapat dijalankan kembali pada foreground atau background sesuai keperluan dengan menekan "fg" atau "bg". Sebagai catatan, menghentikan job sementara sangat berbeda dengan melakuakan interrupt job (biasanya menggunakan [Ctrl-C]), dimana job yang diinterrup akan dimatikan secara permanen dan tidak dapat dijalankan lagi.
 
 #### 5. MENGONTROL PROSES LAIN
-Perintah ps dapat digunakan untuk menunjukkan semua proses yang sedang berjalan pada mesin (bukan hanya proses pada shell saat ini) dengan format :
-```ps -fae``` atau ```ps -aux```
-Beberapa versi UNIX mempunyai utilitas sistem yang disebut ```top``` yang menyediakan cara interaktif untuk memonitor aktifitas sistem. Statistik secara detail 
-dengan proses yang berjalan ditampilkan dan secara terus-menerus di-refresh. Proses ditampilkan secara terurut dari utilitas CPU. Kunci yang berguna pada ```top``` adalah
-s - set update frequency
-u – display proses dari satu user
-k - kill proses (dengan PID)
-q- quit
+Perintah ps dapat digunakan untuk menunjukkan semua proses yang sedang berjalan pada mesin (bukan hanya proses pada shell saat ini) dengan format:</br>
+```ps -fae``` atau ```ps -aux```</br>
+Beberapa versi UNIX mempunyai utilitas sistem yang disebut ```top``` yang menyediakan cara interaktif untuk memonitor aktifitas sistem. Statistik secara detail dengan proses yang berjalan ditampilkan dan secara terus-menerus di-refresh. Proses ditampilkan secara terurut dari utilitas CPU. Kunci yang berguna pada ```top``` adalah</br>
+s - set update frequency</br>
+u – display proses dari satu user</br>
+k - kill proses (dengan PID)</br>
+q- quit</br>
 Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX adalah perintah ```killall```. Perintah ini akan menghentikan proses sesuai PID atau job number proses.
 
 ## Tugas Pendahuluan
