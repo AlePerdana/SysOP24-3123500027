@@ -113,7 +113,7 @@ proses milik pemakai, dimana pemakai teresbut melakukan login.</br>
 ```$ ps –au```
 
 6. Logout dan tekan Alt+F7 untuk kembali ke mode grafis.
-</br>Hasil Percobaan:
+</br>Hasil Percobaan:</br>
 Marieta Nona Alfani (312350026)
 
 
@@ -146,7 +146,7 @@ proses parent. Proses child ditandai dengan awalan beberapa spasi.</br>
 
 7. Untuk menampilk an proses dan ancestor yang tercetak tebal gunakan opsi –h.
 ```$ pstree –h```
-</br>Hasil Percobaan:
+</br>Hasil Percobaan:</br>
 Marieta Nona Alfani (312350026)
 
 
@@ -184,7 +184,7 @@ tekan q untuk kembali ke prompt perintah.
 ```$ ps –eo pid,ppid,%mem,cmd | more</br>```</br>
 
 7. Logout dan tekan Alt+F7 untuk kembali ke mode grafis.
-</br>Hasil Percobaan:
+</br>Hasil Percobaan:</br>
 Marieta Nona Alfani (312350026)
 
 
@@ -217,7 +217,7 @@ Angka dalam ”[ ]” merupakan job number diikuti PID.
 
 7. Lihat status job setelah diterminasi</br>
 ```$ jobs```
-</br>Hasil Percobaan:
+</br>Hasil Percobaan:</br>
 Marieta Nona Alfani (312350026)
 
 
