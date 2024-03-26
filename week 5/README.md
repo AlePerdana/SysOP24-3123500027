@@ -87,6 +87,144 @@ Perintah untuk mengirim sinyal:</br>
 - Renice adalah perintah yang dapat mengubah prioritas penjadwalan satu atau lebih proses yang berjalan.
 
 ## Percobaan
+#### Percobaan 1 : Status Proses
+1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 
+dan login ke terminal sebagai user.
+
+2. Instruksi ps (process status) digunakan untuk melihat kondisi proses yang 
+ada. PID adalah Nomor Identitas Proses, TTY adalah nama terminal dimana 
+proses tersebut aktif, STAT berisi S (Sleepin g) dan R (Running), COMMAND 
+merupakan instruksi yang digunakan. </br>
+```$ ps```
+
+3. Untuk melihat faktor/elemen lainnya, gunakan option –u (user). %CPU 
+adalah presentasi CPU time yang digunakan oleh proses tersebut, %MEM 
+adalah presentasi system memori yang digunakan proses, SIZE adalah jumlah 
+memori yang digunakan, RSS (Real System Storage) adalah jumlah memori 
+yang digunakan, START adalah kapan proses tersebut diaktifkan.</br>
+```$ ps -u```
+
+4. Mencari proses yang spesifik pemakai. Proses diatas hanya terbatas pada 
+proses milik pemakai, dimana pemakai teresbut melakukan login.</br>
+```$ ps –u <user>```
+
+5. Mencari proses lainnya gunakan opsi a (all) dan au (all user).</br>
+```$ ps –a```</br>
+```$ ps –au```
+
+6. Logout dan tekan Alt+F7 untuk kembali ke mode grafis.
+</br>Hasil Percobaan:
+Marieta Nona Alfani (312350026)
+
+
+Ale Perdana Putra Darmawan (3123500027)
+
+
+Kanisius Keru Okok Dinggon(3123500028)
+
+
+#### Percobaan 2 : Menampilkan Hubungan Proses Parent dan Child
+1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
+
+2. Ketik ```ps –eH``` dan tekan Enter. Opsi e memilih semua proses dan opsi H 
+menghasilkan tampilan proses secara hierarki. Proses child muncul dibawah 
+proses parent. Proses child ditandai dengan awalan beberapa spasi.</br>
+```$ ps -eH```
+
+3. Ketik ```ps –e f``` dan tekan Enter. Tampilan serupa dengan langkah 2. Opsi 
+–f akan menampilkan status proses dengan karakter grafis (\ dan _)</br>
+```$ ps –e f```
+
+4. Ketik ```pstree``` dan tekan Enter. Akan ditampilkan semua proses pada sistem dalam bentuk hirarki parent/child. Proses parent di sebelah kiri proses child. Sebagai contoh proses init sebagai parent (ancestor) dari semua proses pada sistem. Beberapa child dari init mempunyai child. Proses login mempunyai proses bash sebagai child. Proses bash mempunyai proses child startx. Proses startx mempunyai child xinit dan seterusnya.</br>
+```$ pstree```
+
+5. Ketik ```pstree | grep mingetty``` dan tekan Enter. Akan menampilkan semua proses mingetty yang berjalan pada system yang berupa console virtual. Selain menampikan semua proses, proses dikelompokkan dalam satu baris dengan suatu angka sebagai jumlah proses yang berjalan.</br>
+```$ pstree | grep mingetty```
+
+6. Untuk melihat semua PID untuk proses gunakan opsi –p.</br>
+```$ pstree –p```
+
+7. Untuk menampilk an proses dan ancestor yang tercetak tebal gunakan opsi –h.
+```$ pstree –h```
+</br>Hasil Percobaan:
+Marieta Nona Alfani (312350026)
+
+
+Ale Perdana Putra Darmawan (3123500027)
+
+
+Kanisius Keru Okok Dinggon(3123500028)
+
+
+#### Percobaan 3 : Menampilkan Status Proses dengan Berbagai Format
+1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
+
+2. Ketik ```ps –e | more``` dan tekan Enter. Opsi -e menampilkan semua proses dalam bentuk 4 kolom : PID, TTY, TIME dan CMD.</br>
+```$ ps –e | more```</br>
+Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, 
+tekan q untuk kembali ke prompt perintah.
+
+3. Ketik ```ps ax | more``` dan tekan Enter. Opsi a akan menampilkan semua proses yang dihasilkan terminal (TTY). Opsi x menampilkan semua proses yang tidak dihasilkan terminal. Secara logika opsi ini sama dengan opsi –e. </br>
+Terdapa 5 kolom : PID, TTY, STAT, TIME dan COMMAND.</br>
+```$ ps ax | more```</br>
+Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, 
+tekan q untuk kembali ke prompt perintah.
+
+4. Ketik ```ps –e f | more``` dan tekan Enter. Opsi –e f akan menampilkan semua proses dalam format daftar penuh.</br>
+```$ ps ef | more```</br>
+Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, 
+tekan q untuk kembali ke prompt perintah.
+
+5. Ketik ```ps –eo pid, cmd | more``` dan tekan Enter. Opsi –eo akan menampilkan semua proses dalam format sesuai definisi user yaitu terdiri dari kolom PID dan CMD.</br>
+```$ ps –eo pid,cmd | more```</br>
+Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, 
+tekan q untuk kembali ke prompt perintah.
+
+6. Ketik ```ps –eo pid,ppid,%mem,cmd | more``` dan tekan Enter. Akan menampilkan kolom PID, PPID dan %MEM. PPID adalah proses ID dari proses parent. %MEM menampilkan persentasi memory system yang digunakan proses. Jika proses hanya menggunakan sedikit memory system akan ditampilkan 0.</br>
+```$ ps –eo pid,ppid,%mem,cmd | more</br>```</br>
+
+7. Logout dan tekan Alt+F7 untuk kembali ke mode grafis.
+</br>Hasil Percobaan:
+Marieta Nona Alfani (312350026)
+
+
+Ale Perdana Putra Darmawan (3123500027)
+
+
+Kanisius Keru Okok Dinggon(3123500028)
+
+
+#### Percobaan 4 : Mengontrol proses pada shell
+1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
+
+2. Gunakan perintah ```yes``` yang mengirim output y yang tidak pernah berhenti.</br>
+```$ yes```</br>
+Untuk menghentikannya gunakan Ctrl-C. 
+
+3. Belokkan standart output ke ```/dev/null```</br>
+```$ yes > /dev/null```</br>
+Untuk menghentikannya gunakan Ctrl-C. 
+
+4. Salah satu cara agar perintah yes tetap dijalankan tetapi shell tetap digunakan  untuk hal yang lain dengan meletakkan proses pada background dengan menambahkan karakter & pada akhir perintah.</br>
+```$ yes > /dev/null &```</br>
+Angka dalam ”[ ]” merupakan job number diikuti PID.
+
+5. Untuk melihat status proses gunakan perintah ```jobs```.</br>
+```$ jobs```
+
+6. Untuk menghentikan job, gunakan perintah kill diikuti job number atau PID proses. Untuk identifikasi job number, diikuti prefix dengan karakter ”%”.</br>
+```$ kill %<nomor job>``` contoh : ```kill %1```
+
+7. Lihat status job setelah diterminasi</br>
+```$ jobs```
+</br>Hasil Percobaan:
+Marieta Nona Alfani (312350026)
+
+
+Ale Perdana Putra Darmawan (3123500027)
+
+
+Kanisius Keru Okok Dinggon(3123500028)
 
 
 ## Referensi
