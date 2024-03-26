@@ -58,21 +58,41 @@ q- quit</br>
 Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX adalah perintah ```killall```. Perintah ini akan menghentikan proses sesuai PID atau job number proses.
 
 ## Tugas Pendahuluan
-1. Apa yang dimaksud dengan proses ?
+1. Apa yang dimaksud dengan proses?</br>
+Proses adalah program yang sedang dieksekusi.
 
-2. Apa yang dimaksud perintah untuk menampilkan status proses : ```ps```, ```pstree```.
+2. Apa yang dimaksud perintah untuk menampilkan status proses : ```ps```, ```pstree```.</br>
+- ```ps```: Menampilkan mengenai seleksi dalam proses/program yang aktif.
+- ```pstree```: Menampilkan proses/program yang berjalan dalam bentuk pohon/bercabang.
 
-3. Sebutkan opsi yang dapat diberikan pada perintah ps
+3. Sebutkan opsi yang dapat diberikan pada perintah ps</br>
+- Opsi ```ps -a```: Menampilkan proses dari semua pengguna. Proses yang terkait dengan terminal dan proses grup tidak ditampilkan.
+- Opsi ```ps -u```: Menghasilkan format yang berorientasi pada pengguna dan memberikan informasi terperinci tentang proses yang berjalan.
+- Opsi ```ps -x```: Membuat daftar proses tanpa terminal. Opsi ini menampilkan proses yang berjalan saat boot dan berjalan di latar belakang.
 
 4. Apa yang dimaksud dengan sinyal ? Apa perintah untuk mengirim sinyal ?
+Pengertian sinyal: Sinyal adalah sebuah data atau informasi yang sudah mengalami beberapa proses sedemikian rupa hingga akhirnya menjadi sebuah informasi matang untuk dikirim ke pihak penerima melalui suatu saluran transmisi.</br>
+Perintah untuk mengirim sinyal:</br>
+- ```kill```: Perintah ini digunakan untuk mengirim sinyal ke proses dengan menggunakan nomor sinyal.
+- ```pkill```:  Ini berguna jika kita ingin menghentikan semua proses yang sesuai dengan nama proses yang sedang berjalan, termasuk proses yang dijalankan oleh skrip bash atau shell script.
+- ```killall```: Perintah ini berguna jika kita ingin menghentikan semua proses yang terkait dengan sebuah program secara bersamaan, tanpa harus mengetahui PID masing-masing proses.
 
-5. Apa yang dimaksud dengan proses foreground dan background pada job control ?
+6. Apa yang dimaksud dengan proses foreground dan background pada job control ?
+- Proses Foreground: Proses foreground adalah proses yang berjalan melalui inisiasi dan dapat dikontrol melalui terminal session, contoh proses foreground ini seperti menerima input dari keyboard dan mengirim output ke layar.
+- Proses Background: Proses background adalah proses yang tidak menerima input dari terminal dan biasanya berjalan tanpa memerlukan interaksi langsung dari pengguna.
 
-6. Apa yang dimaksud perintah-perintah penjadwalan prioritas :
-```top```, ```nice```, ```renice```.
+7. Apa yang dimaksud perintah-perintah penjadwalan prioritas : ```top```, ```nice```, ```renice```.
+- top adalah utilitas yang memantau proses yang sedang berjalan di sistem secara real-time serta menampilkan informasi tentang penggunaan CPU, memori, dan prioritas proses.
+- nice adalah perintah yang memungkinkan Anda mengatur nilai nice (prioritas) saat menjalankan suatu program.
+- Renice adalah perintah yang dapat mengubah prioritas penjadwalan satu atau lebih proses yang berjalan.
 
 ## Percobaan
 
 
 ## Referensi
-
+Sumber 1: https://www.linuxid.net/31474/tutorial-penggunaan-perintah-ps-di-linux-terminal/ </br>
+Sumber 2: https://masdzikry.com/pengertian-sinyal/ </br>
+Sumber 3: https://www.linuxsec.org/2016/10/manajemen-proses-di-linux-dengan-ps-kill.html </br>
+Sumber 4: https://blog.unnes.ac.id/eltux/use-bashs-job-control-to-manage-foreground-and-background-processes/ </br>
+Sumber 5: https://id.linux-console.net/?p=10999#gsc.tab=0 </br>
+Sumber 6: https://frameboxxindore.com/id/linux/how-do-i-use-nice-and-renice-command-in-linux.html </br>
