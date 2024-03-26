@@ -18,16 +18,27 @@
 ## Daftar Isi
 1. [Dasar Teori](#Dasar-teori)
 2. [Tugas Pendahuluan](#Tugas-Pendahuluan)
-3. [Soal](#soal)
+3. [Percobaan](#Percobaan)
 4. [Referensi](#Referensi)
 
 ## Dasar teori
 
 
 ## Tugas Pendahuluan
+1. Apa yang dimaksud dengan proses ?
 
+2. Apa yang dimaksud perintah untuk menampilkan status proses : ```ps```, ```pstree```.
 
-## Soal
+3. Sebutkan opsi yang dapat diberikan pada perintah ps
+
+4. Apa yang dimaksud dengan sinyal ? Apa perintah untuk mengirim sinyal ?
+
+5. Apa yang dimaksud dengan proses foreground dan background pada job control ?
+
+6. Apa yang dimaksud perintah-perintah penjadwalan prioritas :
+```top```, ```nice```, ```renice```.
+
+## Percobaan
 
 
 ## Referensi
