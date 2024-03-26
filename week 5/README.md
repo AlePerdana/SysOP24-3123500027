@@ -31,5 +31,4 @@
 
 
 ## Referensi
-Sumber 1: https://www.geeksforgeeks.org/introduction-linux-shell-shell-scripting/?ref=shm_ </br>
-Sumber 2: https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/
+
