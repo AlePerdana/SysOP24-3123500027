@@ -89,7 +89,7 @@ Perintah untuk mengirim sinyal:</br>
 ## Percobaan
 Shortcut:</br>
 [Percobaan 1](#Percobaan-1-:-Status-Proses)</br>
-[Percobaan 2](#Percobaan-2-:-Menampilkan-Hubungan-Proses-Parent-dan-Child)</br>
+[Percobaan 2](#Percobaan-2-Menampilkan-Hubungan-Proses-Parent-dan-Child)</br>
 [Percobaan 3](#Percobaan-3-:-Menampilkan-Status-Proses-dengan-Berbagai-Format)</br>
 [Percobaan 4](#Percobaan-4-:-Mengontrol-proses-pada-shell)</br>
 
@@ -139,7 +139,7 @@ proses milik pemakai, dimana pemakai teresbut melakukan login.</br>
 # Kanisius Keru Okok Dinggon-1</br>
 
 
-#### Percobaan 2 : Menampilkan Hubungan Proses Parent dan Child
+#### Percobaan 2-Menampilkan Hubungan Proses Parent dan Child
 1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
 
 2. Ketik ```ps –eH``` dan tekan Enter. Opsi e memilih semua proses dan opsi H 
