@@ -88,12 +88,12 @@ Perintah untuk mengirim sinyal:</br>
 
 ## Percobaan
 Shortcut:</br>
-[Percobaan 1](#Percobaan-1-:-Status-Proses)</br>
+[Percobaan 1](#Percobaan-1-Status-Proses)</br>
 [Percobaan 2](#Percobaan-2-Menampilkan-Hubungan-Proses-Parent-dan-Child)</br>
-[Percobaan 3](#Percobaan-3-:-Menampilkan-Status-Proses-dengan-Berbagai-Format)</br>
-[Percobaan 4](#Percobaan-4-:-Mengontrol-proses-pada-shell)</br>
+[Percobaan 3](#Percobaan-3-Menampilkan-Status-Proses-dengan-Berbagai-Format)</br>
+[Percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
 
-#### Percobaan 1 : Status Proses
+#### Percobaan 1-Status Proses
 1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 
 dan login ke terminal sebagai user.
 
@@ -138,7 +138,7 @@ proses milik pemakai, dimana pemakai teresbut melakukan login.</br>
 
 # Kanisius Keru Okok Dinggon-1</br>
 
-
+[Kembali ke Percobaan](#Percobaan)</br>
 #### Percobaan 2-Menampilkan Hubungan Proses Parent dan Child
 1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
 
@@ -182,8 +182,8 @@ Ale Perdana Putra Darmawan-2</br>
 
 Kanisius Keru Okok Dinggon-2</br>
 
-
-#### Percobaan 3 : Menampilkan Status Proses dengan Berbagai Format
+[Kembali ke Percobaan](#Percobaan)</br>
+#### Percobaan 3-Menampilkan Status Proses dengan Berbagai Format
 1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
 
 2. Ketik ```ps –e | more``` dan tekan Enter. Opsi -e menampilkan semua proses dalam bentuk 4 kolom : PID, TTY, TIME dan CMD.</br>
@@ -240,8 +240,8 @@ Ale Perdana Putra Darmawan-3</br>
 
 Kanisius Keru Okok Dinggon-3</br>
 
-
-#### Percobaan 4 : Mengontrol proses pada shell
+[Kembali ke Percobaan](#Percobaan)</br>
+#### Percobaan 4-Mengontrol proses pada shell
 1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
 
 2. Gunakan perintah ```yes``` yang mengirim output y yang tidak pernah berhenti.</br>
@@ -285,7 +285,7 @@ Ale Perdana Putra Darmawan-4</br>
 
 Kanisius Keru Okok Dinggon-4</br>
 
-
+[Kembali ke Percobaan](#Percobaan)</br>
 ## Referensi
 Sumber 1: https://www.linuxid.net/31474/tutorial-penggunaan-perintah-ps-di-linux-terminal/ </br>
 Sumber 2: https://masdzikry.com/pengertian-sinyal/ </br>
