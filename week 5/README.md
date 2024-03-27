@@ -132,8 +132,7 @@ menghasilkan tampilan proses secara hierarki. Proses child muncul dibawah
 proses parent. Proses child ditandai dengan awalan beberapa spasi.</br>
 ```$ ps -eH```
 
-3. Ketik ```ps –e f``` dan tekan Enter. Tampilan serupa dengan langkah 2. Opsi 
-–f akan menampilkan status proses dengan karakter grafis (\ dan _)</br>
+3. Ketik ```ps –e f``` dan tekan Enter. Tampilan serupa dengan langkah 2. Opsi –f akan menampilkan status proses dengan karakter grafis (\ dan _)</br>
 ```$ ps –e f```
 
 4. Ketik ```pstree``` dan tekan Enter. Akan ditampilkan semua proses pada sistem dalam bentuk hirarki parent/child. Proses parent di sebelah kiri proses child. Sebagai contoh proses init sebagai parent (ancestor) dari semua proses pada sistem. Beberapa child dari init mempunyai child. Proses login mempunyai proses bash sebagai child. Proses bash mempunyai proses child startx. Proses startx mempunyai child xinit dan seterusnya.</br>
@@ -173,7 +172,7 @@ Jika halaman penuh terlihat prompt --More-- di bagian bawah screen,
 tekan q untuk kembali ke prompt perintah.
 
 4. Ketik ```ps –e f | more``` dan tekan Enter. Opsi –e f akan menampilkan semua proses dalam format daftar penuh.</br>
-```$ ps ef | more```</br>
+```$ ps -e f | more```</br>
 Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, 
 tekan q untuk kembali ke prompt perintah.
 
