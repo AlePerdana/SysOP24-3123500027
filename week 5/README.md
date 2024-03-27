@@ -123,7 +123,8 @@ proses milik pemakai, dimana pemakai teresbut melakukan login.</br>
 </br>Hasil Percobaan:</br>
 [Percobaan Alfani](#Marieta-Nona-Alfani-1)</br>
 [Percobaan Ale](#Ale-Perdana-Putra-Darmawan-1)</br>
-[Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-1)</br></br>
+[Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-1)</br>
+[Kembali ke Percobaan](#Percobaan)</br>
 
 # Marieta Nona Alfani-1</br>
 
@@ -138,7 +139,7 @@ proses milik pemakai, dimana pemakai teresbut melakukan login.</br>
 
 # Kanisius Keru Okok Dinggon-1</br>
 
-[Kembali ke Percobaan](#Percobaan)</br>
+
 #### Percobaan 2-Menampilkan Hubungan Proses Parent dan Child
 1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
 
@@ -165,12 +166,13 @@ proses parent. Proses child ditandai dengan awalan beberapa spasi.</br>
 </br>Hasil Percobaan:</br>
 [Percobaan Alfani](#Marieta-Nona-Alfani-2)</br>
 [Percobaan Ale](#Ale-Perdana-Putra-Darmawan-2)</br>
-[Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-2)</br></br>
+[Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-2)</br>
+[Kembali ke Percobaan](#Percobaan)</br>
 
-Marieta Nona Alfani-2</br>
+# Marieta Nona Alfani-2</br>
 
 
-Ale Perdana Putra Darmawan-2</br>
+# Ale Perdana Putra Darmawan-2</br>
 ![ss](assets/percobaan/ale/p2/1.png)</br>
 ![ss](assets/percobaan/ale/p2/2.png)</br>
 ![ss](assets/percobaan/ale/p2/3.png)</br>
@@ -180,7 +182,7 @@ Ale Perdana Putra Darmawan-2</br>
 ![ss](assets/percobaan/ale/p2/7.png)</br>
 ![ss](assets/percobaan/ale/p2/8.png)</br>
 
-Kanisius Keru Okok Dinggon-2</br>
+# Kanisius Keru Okok Dinggon-2</br>
 
 [Kembali ke Percobaan](#Percobaan)</br>
 #### Percobaan 3-Menampilkan Status Proses dengan Berbagai Format
@@ -215,12 +217,13 @@ tekan q untuk kembali ke prompt perintah.
 </br>Hasil Percobaan:</br>
 [Percobaan Alfani](#Marieta-Nona-Alfani-3)</br>
 [Percobaan Ale](#Ale-Perdana-Putra-Darmawan-3)</br>
-[Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-3)</br></br>
+[Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-3)</br>
+[Kembali ke Percobaan](#Percobaan)</br>
 
-Marieta Nona Alfani-3</br>
+# Marieta Nona Alfani-3</br>
 
 
-Ale Perdana Putra Darmawan-3</br>
+# Ale Perdana Putra Darmawan-3</br>
 ![ss](assets/percobaan/ale/p3/1.png)</br>
 ![ss](assets/percobaan/ale/p3/2.png)</br>
 ![ss](assets/percobaan/ale/p3/3.png)</br>
@@ -238,9 +241,9 @@ Ale Perdana Putra Darmawan-3</br>
 ![ss](assets/percobaan/ale/p3/15.png)</br>
 ![ss](assets/percobaan/ale/p3/16.png)</br>
 
-Kanisius Keru Okok Dinggon-3</br>
+# Kanisius Keru Okok Dinggon-3</br>
 
-[Kembali ke Percobaan](#Percobaan)</br>
+
 #### Percobaan 4-Mengontrol proses pada shell
 1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
 
@@ -268,12 +271,13 @@ Angka dalam ”[ ]” merupakan job number diikuti PID.
 </br>Hasil Percobaan:</br>
 [Percobaan Alfani](#Marieta-Nona-Alfani-4)</br>
 [Percobaan Ale](#Ale-Perdana-Putra-Darmawan-4)</br>
-[Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-4)</br></br>
+[Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-4)</br>
+[Kembali ke Percobaan](#Percobaan)</br>
 
-Marieta Nona Alfani-4</br>
+# Marieta Nona Alfani-4</br>
 
 
-Ale Perdana Putra Darmawan-4</br>
+# Ale Perdana Putra Darmawan-4</br>
 ![ss](assets/percobaan/ale/p3/1.png)</br>
 ![ss](assets/percobaan/ale/p3/2.png)</br>
 ![ss](assets/percobaan/ale/p3/3.png)</br>
@@ -283,9 +287,9 @@ Ale Perdana Putra Darmawan-4</br>
 ![ss](assets/percobaan/ale/p3/7.png)</br>
 ![ss](assets/percobaan/ale/p3/8.png)</br>
 
-Kanisius Keru Okok Dinggon-4</br>
+# Kanisius Keru Okok Dinggon-4</br>
 
-[Kembali ke Percobaan](#Percobaan)</br>
+
 ## Referensi
 Sumber 1: https://www.linuxid.net/31474/tutorial-penggunaan-perintah-ps-di-linux-terminal/ </br>
 Sumber 2: https://masdzikry.com/pengertian-sinyal/ </br>
