@@ -176,7 +176,7 @@ tekan q untuk kembali ke prompt perintah.
 Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, 
 tekan q untuk kembali ke prompt perintah.
 
-5. Ketik ```ps –eo pid, cmd | more``` dan tekan Enter. Opsi –eo akan menampilkan semua proses dalam format sesuai definisi user yaitu terdiri dari kolom PID dan CMD.</br>
+5. Ketik ```ps –eo pid,cmd | more``` dan tekan Enter. Opsi –eo akan menampilkan semua proses dalam format sesuai definisi user yaitu terdiri dari kolom PID dan CMD.</br>
 ```$ ps –eo pid,cmd | more```</br>
 Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, 
 tekan q untuk kembali ke prompt perintah.
