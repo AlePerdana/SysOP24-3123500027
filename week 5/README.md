@@ -115,13 +115,19 @@ proses milik pemakai, dimana pemakai teresbut melakukan login.</br>
 6. Logout dan tekan Alt+F7 untuk kembali ke mode grafis.
 
 </br>Hasil Percobaan:</br>
-Marieta Nona Alfani (312350026)
+[Percobaan Ale](#Ale-Perdana-Putra-Darmawan-1)
+Marieta Nona Alfani (312350026)</br>
 
 
-Ale Perdana Putra Darmawan (3123500027)
+# Ale Perdana Putra Darmawan 1</br>
+![ss](assets/percobaan/ale/p1/1.png)</br>
+![ss](assets/percobaan/ale/p1/2.png)</br>
+![ss](assets/percobaan/ale/p1/3.png)</br>
+![ss](assets/percobaan/ale/p1/4.png)</br>
+![ss](assets/percobaan/ale/p1/5.png)</br>
+![ss](assets/percobaan/ale/p1/6.png)</br>
 
-
-Kanisius Keru Okok Dinggon(3123500028)
+Kanisius Keru Okok Dinggon(3123500028)</br>
 
 
 #### Percobaan 2 : Menampilkan Hubungan Proses Parent dan Child
@@ -148,13 +154,20 @@ proses parent. Proses child ditandai dengan awalan beberapa spasi.</br>
 ```$ pstree –h```
 
 </br>Hasil Percobaan:</br>
-Marieta Nona Alfani (312350026)
+Marieta Nona Alfani (312350026)</br>
 
 
-Ale Perdana Putra Darmawan (3123500027)
+Ale Perdana Putra Darmawan (3123500027)</br>
+![ss](assets/percobaan/ale/p2/1.png)</br>
+![ss](assets/percobaan/ale/p2/2.png)</br>
+![ss](assets/percobaan/ale/p2/3.png)</br>
+![ss](assets/percobaan/ale/p2/4.png)</br>
+![ss](assets/percobaan/ale/p2/5.png)</br>
+![ss](assets/percobaan/ale/p2/6.png)</br>
+![ss](assets/percobaan/ale/p2/7.png)</br>
+![ss](assets/percobaan/ale/p2/8.png)</br>
 
-
-Kanisius Keru Okok Dinggon(3123500028)
+Kanisius Keru Okok Dinggon(3123500028)</br>
 
 
 #### Percobaan 3 : Menampilkan Status Proses dengan Berbagai Format
@@ -187,13 +200,28 @@ tekan q untuk kembali ke prompt perintah.
 7. Logout dan tekan Alt+F7 untuk kembali ke mode grafis.
 
 </br>Hasil Percobaan:</br>
-Marieta Nona Alfani (312350026)
+Marieta Nona Alfani (312350026)</br>
 
 
-Ale Perdana Putra Darmawan (3123500027)
+Ale Perdana Putra Darmawan (3123500027)</br>
+![ss](assets/percobaan/ale/p3/1.png)</br>
+![ss](assets/percobaan/ale/p3/2.png)</br>
+![ss](assets/percobaan/ale/p3/3.png)</br>
+![ss](assets/percobaan/ale/p3/4.png)</br>
+![ss](assets/percobaan/ale/p3/5.png)</br>
+![ss](assets/percobaan/ale/p3/6.png)</br>
+![ss](assets/percobaan/ale/p3/7.png)</br>
+![ss](assets/percobaan/ale/p3/8.png)</br>
+![ss](assets/percobaan/ale/p3/9.png)</br>
+![ss](assets/percobaan/ale/p3/10.png)</br>
+![ss](assets/percobaan/ale/p3/11.png)</br>
+![ss](assets/percobaan/ale/p3/12.png)</br>
+![ss](assets/percobaan/ale/p3/13.png)</br>
+![ss](assets/percobaan/ale/p3/14.png)</br>
+![ss](assets/percobaan/ale/p3/15.png)</br>
+![ss](assets/percobaan/ale/p3/16.png)</br>
 
-
-Kanisius Keru Okok Dinggon(3123500028)
+Kanisius Keru Okok Dinggon(3123500028)</br>
 
 
 #### Percobaan 4 : Mengontrol proses pada shell
@@ -221,13 +249,20 @@ Angka dalam ”[ ]” merupakan job number diikuti PID.
 ```$ jobs```
 
 </br>Hasil Percobaan:</br>
-Marieta Nona Alfani (312350026)
+Marieta Nona Alfani (312350026)</br>
 
 
-Ale Perdana Putra Darmawan (3123500027)
+Ale Perdana Putra Darmawan (3123500027)</br>
+![ss](assets/percobaan/ale/p3/1.png)</br>
+![ss](assets/percobaan/ale/p3/2.png)</br>
+![ss](assets/percobaan/ale/p3/3.png)</br>
+![ss](assets/percobaan/ale/p3/4.png)</br>
+![ss](assets/percobaan/ale/p3/5.png)</br>
+![ss](assets/percobaan/ale/p3/6.png)</br>
+![ss](assets/percobaan/ale/p3/7.png)</br>
+![ss](assets/percobaan/ale/p3/8.png)</br>
 
-
-Kanisius Keru Okok Dinggon(3123500028)
+Kanisius Keru Okok Dinggon(3123500028)</br>
 
 
 ## Referensi
