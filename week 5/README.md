@@ -129,7 +129,10 @@ proses milik pemakai, dimana pemakai teresbut melakukan login.</br>
 
 # Marieta Nona Alfani-1</br>
 [Kembali ke percobaan 1](#Percobaan-1-Status-Proses)</br>
-
+![ss](assets/percobaan/alfani/p1/1.jpg)</br>
+![ss](assets/percobaan/alfani/p1/2.jpg)</br>
+![ss](assets/percobaan/alfani/p1/3.jpg)</br>
+![ss](assets/percobaan/alfani/p1/4.jpg)</br>
 
 # Ale Perdana Putra Darmawan-1</br>
 [Kembali ke percobaan 1](#Percobaan-1-Status-Proses)</br>
@@ -175,7 +178,17 @@ proses parent. Proses child ditandai dengan awalan beberapa spasi.</br>
 
 # Marieta Nona Alfani-2</br>
 [Kembali ke percobaan 2](#Percobaan-2-Menampilkan-Hubungan-Proses-Parent-dan-Child)</br>
-
+![ss](assets/percobaan/alfani/p2/1.jpg)</br>
+![ss](assets/percobaan/alfani/p2/2.jpg)</br>
+![ss](assets/percobaan/alfani/p2/3.jpg)</br>
+![ss](assets/percobaan/alfani/p2/4.jpg)</br>
+![ss](assets/percobaan/alfani/p2/5.jpg)</br>
+![ss](assets/percobaan/alfani/p2/6.jpg)</br>
+![ss](assets/percobaan/alfani/p2/7.jpg)</br>
+![ss](assets/percobaan/alfani/p2/8.jpg)</br>
+![ss](assets/percobaan/alfani/p2/9.jpg)</br>
+![ss](assets/percobaan/alfani/p2/10.jpg)</br>
+![ss](assets/percobaan/alfani/p2/11.jpg)</br>
 
 # Ale Perdana Putra Darmawan-2</br>
 [Kembali ke percobaan 2](#Percobaan-2-Menampilkan-Hubungan-Proses-Parent-dan-Child)</br>
@@ -229,7 +242,11 @@ tekan q untuk kembali ke prompt perintah.
 
 # Marieta Nona Alfani-3</br>
 [Kembali ke percobaan 3](#Percobaan-3-Menampilkan-Status-Proses-dengan-Berbagai-Format)</br>
-
+![ss](assets/percobaan/alfani/p3/1.jpg)</br>
+![ss](assets/percobaan/alfani/p3/2.jpg)</br>
+![ss](assets/percobaan/alfani/p3/3.jpg)</br>
+![ss](assets/percobaan/alfani/p3/4.jpg)</br>
+![ss](assets/percobaan/alfani/p3/5.jpg)</br>
 
 # Ale Perdana Putra Darmawan-3</br>
 [Kembali ke percobaan 3](#Percobaan-3-Menampilkan-Status-Proses-dengan-Berbagai-Format)</br>
@@ -286,7 +303,8 @@ Angka dalam ”[ ]” merupakan job number diikuti PID.
 
 # Marieta Nona Alfani-4</br>
 [Kembali ke percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
-
+![ss](assets/percobaan/alfani/p4/1.jpg)</br>
+![ss](assets/percobaan/alfani/p4/2.jpg)</br>
 
 # Ale Perdana Putra Darmawan-4</br>
 [Kembali ke percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
