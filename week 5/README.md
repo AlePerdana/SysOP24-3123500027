@@ -290,14 +290,14 @@ Angka dalam ”[ ]” merupakan job number diikuti PID.
 
 # Ale Perdana Putra Darmawan-4</br>
 [Kembali ke percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
-![ss](assets/percobaan/ale/p3/1.png)</br>
-![ss](assets/percobaan/ale/p3/2.png)</br>
-![ss](assets/percobaan/ale/p3/3.png)</br>
-![ss](assets/percobaan/ale/p3/4.png)</br>
-![ss](assets/percobaan/ale/p3/5.png)</br>
-![ss](assets/percobaan/ale/p3/6.png)</br>
-![ss](assets/percobaan/ale/p3/7.png)</br>
-![ss](assets/percobaan/ale/p3/8.png)</br>
+![ss](assets/percobaan/ale/p4/1.png)</br>
+![ss](assets/percobaan/ale/p4/2.png)</br>
+![ss](assets/percobaan/ale/p4/3.png)</br>
+![ss](assets/percobaan/ale/p4/4.png)</br>
+![ss](assets/percobaan/ale/p4/5.png)</br>
+![ss](assets/percobaan/ale/p4/6.png)</br>
+![ss](assets/percobaan/ale/p4/7.png)</br>
+![ss](assets/percobaan/ale/p4/8.png)</br>
 
 # Kanisius Keru Okok Dinggon-4</br>
 [Kembali ke percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
