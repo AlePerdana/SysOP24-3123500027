@@ -19,7 +19,8 @@
 1. [Dasar Teori](#Dasar-teori)
 2. [Tugas Pendahuluan](#Tugas-Pendahuluan)
 3. [Percobaan](#Percobaan)
-4. [Referensi](#Referensi)
+4. [Kesimpulan](#Kesimpulan)
+5. [Referensi](#Referensi)
 
 ## Dasar teori
 #### 1. KONSEP PROSES PADA SISTEM OPERASI LINUX
@@ -284,11 +285,11 @@ Angka dalam ”[ ]” merupakan job number diikuti PID.
 [Kembali ke Percobaan](#Percobaan)</br>
 
 # Marieta Nona Alfani-4</br>
-[Percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
+[Kembali ke percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
 
 
 # Ale Perdana Putra Darmawan-4</br>
-[Percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
+[Kembali ke percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
 ![ss](assets/percobaan/ale/p3/1.png)</br>
 ![ss](assets/percobaan/ale/p3/2.png)</br>
 ![ss](assets/percobaan/ale/p3/3.png)</br>
@@ -299,8 +300,10 @@ Angka dalam ”[ ]” merupakan job number diikuti PID.
 ![ss](assets/percobaan/ale/p3/8.png)</br>
 
 # Kanisius Keru Okok Dinggon-4</br>
-[Percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
+[Kembali ke percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
 
+## Kesimpulan
+Keseluruhan, pemahaman tentang konsep proses, pengiriman sinyal, penggunaan perintah untuk mengontrol proses pada shell, serta pemahaman tentang perbedaan antara proses latar depan dan latar belakang adalah kunci dalam manajemen efektif dari eksekusi program dan penggunaan sumber daya sistem pada sistem operasi Linux.
 
 ## Referensi
 Sumber 1: https://www.linuxid.net/31474/tutorial-penggunaan-perintah-ps-di-linux-terminal/ </br>
