@@ -127,9 +127,11 @@ proses milik pemakai, dimana pemakai teresbut melakukan login.</br>
 [Kembali ke Percobaan](#Percobaan)</br>
 
 # Marieta Nona Alfani-1</br>
+[Kembali ke percobaan 1](#Percobaan-1-Status-Proses)</br>
 
 
 # Ale Perdana Putra Darmawan-1</br>
+[Kembali ke percobaan 1](#Percobaan-1-Status-Proses)</br>
 ![ss](assets/percobaan/ale/p1/1.png)</br>
 ![ss](assets/percobaan/ale/p1/2.png)</br>
 ![ss](assets/percobaan/ale/p1/3.png)</br>
@@ -138,6 +140,7 @@ proses milik pemakai, dimana pemakai teresbut melakukan login.</br>
 ![ss](assets/percobaan/ale/p1/6.png)</br>
 
 # Kanisius Keru Okok Dinggon-1</br>
+[Kembali ke percobaan 1](#Percobaan-1-Status-Proses)</br>
 
 
 #### Percobaan 2-Menampilkan Hubungan Proses Parent dan Child
@@ -170,9 +173,11 @@ proses parent. Proses child ditandai dengan awalan beberapa spasi.</br>
 [Kembali ke Percobaan](#Percobaan)</br>
 
 # Marieta Nona Alfani-2</br>
+[Kembali ke percobaan 2](#Percobaan-2-Menampilkan-Hubungan-Proses-Parent-dan-Child)</br>
 
 
 # Ale Perdana Putra Darmawan-2</br>
+[Kembali ke percobaan 2](#Percobaan-2-Menampilkan-Hubungan-Proses-Parent-dan-Child)</br>
 ![ss](assets/percobaan/ale/p2/1.png)</br>
 ![ss](assets/percobaan/ale/p2/2.png)</br>
 ![ss](assets/percobaan/ale/p2/3.png)</br>
@@ -183,8 +188,9 @@ proses parent. Proses child ditandai dengan awalan beberapa spasi.</br>
 ![ss](assets/percobaan/ale/p2/8.png)</br>
 
 # Kanisius Keru Okok Dinggon-2</br>
+[Kembali ke percobaan 2](#Percobaan-2-Menampilkan-Hubungan-Proses-Parent-dan-Child)</br>
 
-[Kembali ke Percobaan](#Percobaan)</br>
+
 #### Percobaan 3-Menampilkan Status Proses dengan Berbagai Format
 1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
 
@@ -221,9 +227,11 @@ tekan q untuk kembali ke prompt perintah.
 [Kembali ke Percobaan](#Percobaan)</br>
 
 # Marieta Nona Alfani-3</br>
+[Kembali ke percobaan 3](#Percobaan-3-Menampilkan-Status-Proses-dengan-Berbagai-Format)</br>
 
 
 # Ale Perdana Putra Darmawan-3</br>
+[Kembali ke percobaan 3](#Percobaan-3-Menampilkan-Status-Proses-dengan-Berbagai-Format)</br>
 ![ss](assets/percobaan/ale/p3/1.png)</br>
 ![ss](assets/percobaan/ale/p3/2.png)</br>
 ![ss](assets/percobaan/ale/p3/3.png)</br>
@@ -242,6 +250,7 @@ tekan q untuk kembali ke prompt perintah.
 ![ss](assets/percobaan/ale/p3/16.png)</br>
 
 # Kanisius Keru Okok Dinggon-3</br>
+[Kembali ke percobaan 3](#Percobaan-3-Menampilkan-Status-Proses-dengan-Berbagai-Format)</br>
 
 
 #### Percobaan 4-Mengontrol proses pada shell
@@ -275,9 +284,11 @@ Angka dalam ”[ ]” merupakan job number diikuti PID.
 [Kembali ke Percobaan](#Percobaan)</br>
 
 # Marieta Nona Alfani-4</br>
+[Percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
 
 
 # Ale Perdana Putra Darmawan-4</br>
+[Percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
 ![ss](assets/percobaan/ale/p3/1.png)</br>
 ![ss](assets/percobaan/ale/p3/2.png)</br>
 ![ss](assets/percobaan/ale/p3/3.png)</br>
@@ -288,6 +299,7 @@ Angka dalam ”[ ]” merupakan job number diikuti PID.
 ![ss](assets/percobaan/ale/p3/8.png)</br>
 
 # Kanisius Keru Okok Dinggon-4</br>
+[Percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
 
 
 ## Referensi
