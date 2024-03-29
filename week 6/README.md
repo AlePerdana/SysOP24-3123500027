@@ -98,11 +98,11 @@ Untuk menghentikannya tidak dapat menggunakan Ctrl-C. Job harus dipindah ke fore
 [Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-5)</br>
 [Kembali ke Percobaan](#Percobaan)</br>
 
-#### Marieta Nona Alfani-5</br>
+#### Marieta Nona Alfani-5
 [Kembali ke percobaan 5](#Percobaan-5-Menghentikan-dan-memulai-kembali-job)</br>
 
 
-#### Ale Perdana Putra Darmawan-5</br>
+#### Ale Perdana Putra Darmawan-5
 [Kembali ke percobaan 5](#Percobaan-5-Menghentikan-dan-memulai-kembali-job)</br>
 ![ss](assets/percobaan/ale/p5/1.png)</br>
 ![ss](assets/percobaan/ale/p5/2.png)</br>
@@ -119,7 +119,7 @@ Untuk menghentikannya tidak dapat menggunakan Ctrl-C. Job harus dipindah ke fore
 ![ss](assets/percobaan/ale/p5/13.png)</br>
 ![ss](assets/percobaan/ale/p5/14.png)</br>
 
-#### Kanisius Keru Okok Dinggon-5</br>
+#### Kanisius Keru Okok Dinggon-5
 [Kembali ke percobaan 5](#Percobaan-5-Menghentikan-dan-memulai-kembali-job)</br>
 
 ### Percobaan 6-Percobaan dengan Penjadwalan Prioritas
@@ -164,28 +164,40 @@ akan muncul. Ketik ```i```. Top akan menampilkan proses yang aktif. Ketik ```lmt
 [Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-6)</br>
 [Kembali ke Percobaan](#Percobaan)</br>
 
-#### Marieta Nona Alfani-6</br>
+#### Marieta Nona Alfani-6
 [Kembali ke percobaan 6](#Percobaan-6-Percobaan-dengan-Penjadwalan-Prioritas)</br>
 
 
-#### Ale Perdana Putra Darmawan-6</br>
+#### Ale Perdana Putra Darmawan-6
 [Kembali ke percobaan 6](#Percobaan-6-Percobaan-dengan-Penjadwalan-Prioritas)</br>
-![ss](assets/percobaan/ale/p5/1.png)</br>
-![ss](assets/percobaan/ale/p5/2.png)</br>
-![ss](assets/percobaan/ale/p5/3.png)</br>
-![ss](assets/percobaan/ale/p5/4.png)</br>
-![ss](assets/percobaan/ale/p5/5.png)</br>
-![ss](assets/percobaan/ale/p5/6.png)</br>
-![ss](assets/percobaan/ale/p5/7.png)</br>
-![ss](assets/percobaan/ale/p5/8.png)</br>
-![ss](assets/percobaan/ale/p5/9.png)</br>
-![ss](assets/percobaan/ale/p5/10.png)</br>
-![ss](assets/percobaan/ale/p5/11.png)</br>
-![ss](assets/percobaan/ale/p5/12.png)</br>
-![ss](assets/percobaan/ale/p5/13.png)</br>
-![ss](assets/percobaan/ale/p5/14.png)</br>
+![ss](assets/percobaan/ale/p6/1.png)</br>
+![ss](assets/percobaan/ale/p6/2.png)</br>
+![ss](assets/percobaan/ale/p6/3.png)</br>
+![ss](assets/percobaan/ale/p6/4.png)</br>
+![ss](assets/percobaan/ale/p6/5.png)</br>
+![ss](assets/percobaan/ale/p6/6.png)</br>
+![ss](assets/percobaan/ale/p6/7.png)</br>
+![ss](assets/percobaan/ale/p6/8.png)</br>
+![ss](assets/percobaan/ale/p6/9.png)</br>
+![ss](assets/percobaan/ale/p6/10.png)</br>
+![ss](assets/percobaan/ale/p6/11.png)</br>
+![ss](assets/percobaan/ale/p6/12.png)</br>
+![ss](assets/percobaan/ale/p6/13.png)</br>
+![ss](assets/percobaan/ale/p6/14.png)</br>
+![ss](assets/percobaan/ale/p6/15.png)</br>
+![ss](assets/percobaan/ale/p6/16.png)</br>
+![ss](assets/percobaan/ale/p6/17.png)</br>
+![ss](assets/percobaan/ale/p6/18.png)</br>
+![ss](assets/percobaan/ale/p6/19.png)</br>
+![ss](assets/percobaan/ale/p6/20.png)</br>
+![ss](assets/percobaan/ale/p6/21.png)</br>
+![ss](assets/percobaan/ale/p6/22.png)</br>
+![ss](assets/percobaan/ale/p6/23.png)</br>
+![ss](assets/percobaan/ale/p6/24.png)</br>
+![ss](assets/percobaan/ale/p6/25.png)</br>
+![ss](assets/percobaan/ale/p6/26.png)</br>
 
-#### Kanisius Keru Okok Dinggon-6</br>
+#### Kanisius Keru Okok Dinggon-6
 [Kembali ke percobaan 6](#Percobaan-6-Percobaan-dengan-Penjadwalan-Prioritas)</br>
 
 
