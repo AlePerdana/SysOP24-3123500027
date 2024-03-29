@@ -63,7 +63,7 @@ Shortcut:</br>
 [Percobaan 5](#Percobaan-5-Menghentikan-dan-memulai-kembali-job)</br>
 [Percobaan 6](#Percobaan-6-Percobaan-dengan-Penjadwalan-Prioritas)</br>
 
-#### Percobaan 5-Menghentikan dan memulai kembali job
+### Percobaan 5-Menghentikan dan memulai kembali job
 1. Cara lain meletakkan job pada background dengan memulai job secara normal (pada foreground), stop job dan memulai lagi pada background</br>
 ```$ yes > /dev/null``` </br>
 Hentikan sementara job (suspend), bukan menghentikannya (terminate), tetapi menghentikan sementara job sampai di restart. Untuk menghentikan sementara job gunakan Ctrl-Z.</br>
@@ -98,11 +98,11 @@ Untuk menghentikannya tidak dapat menggunakan Ctrl-C. Job harus dipindah ke fore
 [Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-5)</br>
 [Kembali ke Percobaan](#Percobaan)</br>
 
-# Marieta Nona Alfani-5</br>
+#### Marieta Nona Alfani-5</br>
 [Kembali ke percobaan 5](#Percobaan-5-Menghentikan-dan-memulai-kembali-job)</br>
 
 
-# Ale Perdana Putra Darmawan-5</br>
+#### Ale Perdana Putra Darmawan-5</br>
 [Kembali ke percobaan 5](#Percobaan-5-Menghentikan-dan-memulai-kembali-job)</br>
 ![ss](assets/percobaan/ale/p5/1.png)</br>
 ![ss](assets/percobaan/ale/p5/2.png)</br>
@@ -119,10 +119,10 @@ Untuk menghentikannya tidak dapat menggunakan Ctrl-C. Job harus dipindah ke fore
 ![ss](assets/percobaan/ale/p5/13.png)</br>
 ![ss](assets/percobaan/ale/p5/14.png)</br>
 
-# Kanisius Keru Okok Dinggon-5</br>
+#### Kanisius Keru Okok Dinggon-5</br>
 [Kembali ke percobaan 5](#Percobaan-5-Menghentikan-dan-memulai-kembali-job)</br>
 
-#### Percobaan 6-Percobaan dengan Penjadwalan Prioritas
+### Percobaan 6-Percobaan dengan Penjadwalan Prioritas
 1. Login sebagai root.
 
 2. Buka 3 terminal, tampilkan pada screen yang sama. 
@@ -164,11 +164,11 @@ akan muncul. Ketik ```i```. Top akan menampilkan proses yang aktif. Ketik ```lmt
 [Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-6)</br>
 [Kembali ke Percobaan](#Percobaan)</br>
 
-# Marieta Nona Alfani-6</br>
+#### Marieta Nona Alfani-6</br>
 [Kembali ke percobaan 6](#Percobaan-6-Percobaan-dengan-Penjadwalan-Prioritas)</br>
 
 
-# Ale Perdana Putra Darmawan-6</br>
+#### Ale Perdana Putra Darmawan-6</br>
 [Kembali ke percobaan 6](#Percobaan-6-Percobaan-dengan-Penjadwalan-Prioritas)</br>
 ![ss](assets/percobaan/ale/p5/1.png)</br>
 ![ss](assets/percobaan/ale/p5/2.png)</br>
@@ -185,7 +185,7 @@ akan muncul. Ketik ```i```. Top akan menampilkan proses yang aktif. Ketik ```lmt
 ![ss](assets/percobaan/ale/p5/13.png)</br>
 ![ss](assets/percobaan/ale/p5/14.png)</br>
 
-# Kanisius Keru Okok Dinggon-6</br>
+#### Kanisius Keru Okok Dinggon-6</br>
 [Kembali ke percobaan 6](#Percobaan-6-Percobaan-dengan-Penjadwalan-Prioritas)</br>
 
 
