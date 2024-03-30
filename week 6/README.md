@@ -202,6 +202,69 @@ akan muncul. Ketik ```i```. Top akan menampilkan proses yang aktif. Ketik ```lmt
 
 
 ## Latihan
+1. Masuk ke tty2 dengan Ctrl+Alt+F2. Ketik ps –au dan tekan Enter. Kemudian perhatikan keluaran sebagai berikut :
+a. Sebutkan nama-nama proses yang bukan root
+
+
+b. Tulis PID dan COMMAND dari proses yang paling banyak menggunakan CPU time
+
+
+c. Sebutkan buyut proses dan PID dari proses tersebut
+
+
+d. Sebutkan beberapa proses daemon
+
+
+e. Pada prompt login lakukan hal- hal sebagai berikut :
+```$ csh```
+```$ who```
+```$ bash```
+```$ ls```
+```$ sh```
+```$ ps```
+f. Sebutkan PID yang paling besar dan kemudian buat urut-urutan proses sampai ke PPID = 1. 
+
+2. Cobalah format tampilan ps dengan opsi berikut dan perhatikan hasil tampilannya :
+· ```-f``` daftar penuh
+· ```-j``` format job
+· ```j```format job control
+· ```l``` daftar memanjang
+· ```s``` format sinyal
+· ```v``` format virtual memory
+· ```X``` format register i386
+
+2. Lakukan urutan pekerjaan berikut :
+a. Gunakan perintah find ke seluruh direktory pada sistem, belokkan output sehingga daftar direktori dialihkan ke file directories.txt dan daftar pesan error dialihkan ke file errors.txt
+
+
+b. Gunakan perintah sleep 5. Apa yang terjadi dengan perintah ini ?
+
+
+c. Jalankan perintah pada background menggunakan &
+
+
+d. Jalankan sleep 15 pada foreground, hentikan sementara dengan Ctrl-Z dan kemudian letakkan pada background dengan bg. Ketikkan jobs. Ketikkan ps. Kembalikan job ke foreground dengan perintah fg. 
+
+
+e. Jalankan sleep 15 pada background menggunakan & dan kemudian gunakan perintah kill untuk menghentikan proses diikuti job number. 
+
+
+f. Jalankan sleep 15 pada background menggunakan & dan kemudian gunakan kill untuk menghentikan sementara proses. Gunakan bg untuk melanjutkan menjalankan proses. 
+
+
+g. Jalankan sleep 60 pada background 5 kali dan terminasi semua pada dengan menggunakan perintah killall.
+
+
+h. Gunakan perintah ps, w dan top untuk menunjukkan semua proses yang
+sedang dieksekusi.
+
+i. Gunakan perintah ps –aeH untuk menampilkan hierarki proses. Carilah init proses. Apakah Anda bisa identifikasi sistem daemon yang penting ? Dapatkan Anda identifikasi shell dan subprose s ?
+
+
+j. Kombinasikan ps –fae dan grep, apa yang Anda lihat ?
+
+
+k. Jalankan proses sleep 300 pada background. Log off komputer dan log in kembali. Lihat daftar semua proses yang berjalan. Apa yang terjadi pada proses sleep ?
 
 
 ## Kesimpulan
