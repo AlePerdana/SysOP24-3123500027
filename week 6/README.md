@@ -203,26 +203,65 @@ akan muncul. Ketik ```i```. Top akan menampilkan proses yang aktif. Ketik ```lmt
 
 ## Latihan
 1. Masuk ke tty2 dengan Ctrl+Alt+F2. Ketik ps –au dan tekan Enter. Kemudian perhatikan keluaran sebagai berikut :
-a. Sebutkan nama-nama proses yang bukan root
+Hasil ```ps -au```:</br>
+![ss](assets/latihan/l1/au.png)</br>
+![ss](assets/latihan/l1/aux1.png)</br>
+![ss](assets/latihan/l1/aux2.png)</br>
+![ss](assets/latihan/l1/aux3.png)</br>
+![ss](assets/latihan/l1/aux4.png)</br>
+![ss](assets/latihan/l1/aux5.png)</br>
+![ss](assets/latihan/l1/aux6.png)</br>
+![ss](assets/latihan/l1/aux7.png)</br>
+![ss](assets/latihan/l1/aux8.png)</br>
+![ss](assets/latihan/l1/aux9.png)</br>
+![ss](assets/latihan/l1/aux10.png)</br>
+![ss](assets/latihan/l1/aux11.png)</br>
 
+a. Sebutkan nama-nama proses yang bukan root
+- USER=ale; PID=1122; COMMAND=/usr/libexec/gdm-wayland-session /usr/bin/gnome-session
+- USER=ale; PID=1126; COMMAND=/usr/libexec/gnome-session-binary
+- USER=ale; PID=1901; COMMAND=bash
+- USER=ale; PID=2188; COMMAND=ps -au
 
 b. Tulis PID dan COMMAND dari proses yang paling banyak menggunakan CPU time
-
+- PID=1231; COMMAND=/usr/bin/gnome-shell; CPU time=4.3
 
 c. Sebutkan buyut proses dan PID dari proses tersebut
-
+- Dengan menggunakan ```pstree```, buyut proses gnome-shell adalah systemd
 
 d. Sebutkan beberapa proses daemon
+- USER=root; PID=475; COMMAND=/usr/libexec/accounts-daemon
+- USER=avahi; PID=479; COMMAND=avahi-daemon: running [SysOp-3123500027.local]
+- USER=root; PID=493; COMMAND=/usr/libexec/power-profiles-daemon
+- USER=ale; PID=1301; COMMAND=usr/libexec/goa-daemon
 
-
-e. Pada prompt login lakukan hal- hal sebagai berikut :
+e. Pada prompt login lakukan hal-hal sebagai berikut :
 ```$ csh```
 ```$ who```
 ```$ bash```
 ```$ ls```
 ```$ sh```
 ```$ ps```
+hasil:
+![ss](assets/latihan/l1/prompt.png)</br>
+Analisa:
+- ```$ csh``` : CSH adalah juru bahasa baris perintah yang memungkinkan pengguna untuk menjalankan perintah dan program di komputer. CSH juga menyediakan bahasa pemrograman yang dapat digunakan untuk membuat skrip shell.
+- ```$ who``` : Berfungsi untuk melihat user aktif yang login.
+- ```$ bash``` : shell default untuk sebagian besar distribusi Unix dan Linux dan banyak digunakan oleh pemrogram dan administrator sistem.
+- ```$ ls``` : Berfungsi untuk melihat nama file/direktori secara lengkap.
+- ```$ sh``` : Bourne Shell atau shell (command interpreter) default dari unix.
+- ```$ ps``` : Berufungsi untuk menampilkan kondisi proses yang ada.
+
 f. Sebutkan PID yang paling besar dan kemudian buat urut-urutan proses sampai ke PPID = 1. 
+- Untuk PID yang paling besar adalah 2382.
+- Berikut urutan proses terbesar ke terkecil (PPID = 1)
+![ss](assets/latihan/l1/ppid1.png)</br>
+![ss](assets/latihan/l1/ppid2.png)</br>
+![ss](assets/latihan/l1/ppid3.png)</br>
+![ss](assets/latihan/l1/ppid4.png)</br>
+![ss](assets/latihan/l1/ppid5.png)</br>
+![ss](assets/latihan/l1/ppid6.png)</br>
+![ss](assets/latihan/l1/ppid7.png)</br>
 
 2. Cobalah format tampilan ps dengan opsi berikut dan perhatikan hasil tampilannya :
 · ```-f``` daftar penuh
@@ -233,7 +272,7 @@ f. Sebutkan PID yang paling besar dan kemudian buat urut-urutan proses sampai ke
 · ```v``` format virtual memory
 · ```X``` format register i386
 
-2. Lakukan urutan pekerjaan berikut :
+3. Lakukan urutan pekerjaan berikut :
 a. Gunakan perintah find ke seluruh direktory pada sistem, belokkan output sehingga daftar direktori dialihkan ke file directories.txt dan daftar pesan error dialihkan ke file errors.txt
 
 
@@ -271,4 +310,5 @@ k. Jalankan proses sleep 300 pada background. Log off komputer dan log in kembal
 
 
 ## Referensi
+Sumber 1: https://perbedaan.budisma.net/perbedaan-antara-csh-dan-bash.html#:~:text=Shell%20CSH%20Unix%20dan%20Linux%20dibuat%20pada%20awal,pemrograman%20yang%20dapat%20digunakan%20untuk%20membuat%20skrip%20shell. </br>
 
