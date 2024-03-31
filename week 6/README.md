@@ -339,10 +339,15 @@ i. Gunakan perintah ps –aeH untuk menampilkan hierarki proses. Carilah init pr
 Analisa: Saat menggunakan perintah ps -aeH akan ditampilkan herarki proses. Dalam tampilan ini saya mendapatkan proses init/induk dari semua proses yang diindikasikan dengan pid=1 yang bernama systemd. untuk sistem daemon yang penting yaitu seperti accounts, avahi, dbus, rtkit, goa, dan ibus. untuk mengetahui perbedaan shell dengan subproses yaitu dengan melihat proses yang memiliki awalan proses awalan yang sama tapi diikuti dengan - yang menunjukkan subproses, contohnya seperti shell systemd dengan subproses systemd-journal, systemd-udevd, dan systemd-timesyn.
 
 j. Kombinasikan ps –fae dan grep, apa yang Anda lihat ?</br>
-
+![ss](assets/latihan/l3/10.png)</br>
+Analisa: Saat menjalankan ps -fae akan ditampilkan macam macam proses, tapi dengan menggunakan grep yang saya input dengan grep systemd, maka saya akan hanya ditampilkan dengan proses yang memiliki nama systemd dalam tampilan proses ps -fae.
 
 k. Jalankan proses sleep 300 pada background. Log off komputer dan log in kembali. Lihat daftar semua proses yang berjalan. Apa yang terjadi pada proses sleep ?</br>
-
+- Saat menjalankan sleep dan sebelum logout:</br>
+![ss](assets/latihan/l3/11a.png)</br>
+- Setelah logout dan login kembali:</br>
+![ss](assets/latihan/l3/11a.png)</br>
+Analisa: setelah menjalankan sleep dan logout dan login kembali, proses sleep telah berhenti yang dapat dibuktikan dengan perintah jobs setelah login kembali.
 
 ## Kesimpulan
 
