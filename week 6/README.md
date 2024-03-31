@@ -263,47 +263,85 @@ f. Sebutkan PID yang paling besar dan kemudian buat urut-urutan proses sampai ke
 ![ss](assets/latihan/l1/ppid6.png)</br>
 ![ss](assets/latihan/l1/ppid7.png)</br>
 
-2. Cobalah format tampilan ps dengan opsi berikut dan perhatikan hasil tampilannya :
-· ```-f``` daftar penuh
-· ```-j``` format job
-· ```j```format job control
-· ```l``` daftar memanjang
-· ```s``` format sinyal
-· ```v``` format virtual memory
-· ```X``` format register i386
+2. Cobalah format tampilan ps dengan opsi berikut dan perhatikan hasil tampilannya :</br>
+· ```-f``` daftar penuh</br>
+Analisa: Menampilkan UID, PID, PPID, C, STIME, TTY, TIME, dan CMD</br>
+· ```-j``` format job</br>
+Analisa: Menampilkan PID, PGID, SID, TTY, TPGID, STAT, UID, TIME, dan COMMAND</br>
+· ```j```format job control</br>
+Analisa: Menampilkan PPID, PID, PGID, SID, TTY, TPGID, STAT, UID, TIME, dan COMMAND</br>
+· ```l``` daftar memanjang</br>
+Analisa: Menampilkan F, UID, PPID, PRI, NI, VSZ, RSS, WCHAN, STAT, TTY, TIME, dan COMMAND</br>
+· ```s``` format sinyal</br>
+Analisa: Menampilkan UID, PID, PENDING, BLOCKED, IGNORED, CAUGHT, STAT, TTY, TIME, dan COMMAND</br>
+· ```v``` format virtual memory</br>
+Analisa: Menampilkan PID, TTY, STAT, TIME, MAJFL, TRS, DRS, RSS, %MEM, dan COMMAND</br>
+· ```X``` format register i386</br>
+Analisa: Menampilkan PID, STACKP, ESP, EIP, TMOUT, ALARM, STAT, TTY, TIME, dan COMMAND</br>
+Hasil:</br>
+![ss](assets/latihan/l2/1.png)</br>
+![ss](assets/latihan/l2/2.png)</br>
 
-3. Lakukan urutan pekerjaan berikut :
-a. Gunakan perintah find ke seluruh direktory pada sistem, belokkan output sehingga daftar direktori dialihkan ke file directories.txt dan daftar pesan error dialihkan ke file errors.txt
+3. Lakukan urutan pekerjaan berikut :</br>
+a. Gunakan perintah find ke seluruh direktory pada sistem, belokkan output sehingga daftar direktori dialihkan ke file directories.txt dan daftar pesan error dialihkan ke file errors.txt</br>
+![ss](assets/latihan/l3/1a.png)</br>
+![ss](assets/latihan/l3/1b.png)</br>
+![ss](assets/latihan/l3/1c.png)</br>
 
+b. Gunakan perintah sleep 5. Apa yang terjadi dengan perintah ini ?</br>
+![ss](assets/latihan/l3/2a.png)</br>
+![ss](assets/latihan/l3/2b.png)</br>
+![ss](assets/latihan/l3/2c.png)</br>
+Analisa: Saat menjalankan perintah sleep 5, terminal akan berada dalam keadaan berhenti selama 5 detik. saat menjalankan perintah lain, maka perintah yang dijalankan akan dijalankan saat perintah sleep selesai berjalan sesuai detik yang telah diberikan.
 
-b. Gunakan perintah sleep 5. Apa yang terjadi dengan perintah ini ?
+c. Jalankan perintah pada background menggunakan &</br>
+![ss](assets/latihan/l3/3.png)</br>
+Analisa: Saat menjalankan sleep dibackground dan dilihat dalam perintah jobs saat 5 detik pertama, maka perintah akan ditampilkan dengan kondisi running/bernjalan. saat setelah 5 detik telah berjalan, maka perintah sleep akan dalam kondisi done/selesai.
 
+d. Jalankan sleep 15 pada foreground, hentikan sementara dengan Ctrl-Z dan kemudian letakkan pada background dengan bg. Ketikkan jobs. Ketikkan ps. Kembalikan job ke foreground dengan perintah fg. </br>
+![ss](assets/latihan/l3/4.png)</br>
+Analisa: Saat pertama menjalankan sleep 15 pada foreground dan menghentikannya menggunakan ctrl-z, perintah sleep 15 akan berhenti sementara. saat perintah sleep 15 diletakkan ke background, perintah sleep akan kembali jalan dan dapat dilihat pada perintah jobs yang menunjukkan status running dan muncul dalam perintah ps. dan terakhir perintah sleep diletakkan pada foreground dan akan menghentikan terminal dengan sisa waktu yang ada.
 
-c. Jalankan perintah pada background menggunakan &
+e. Jalankan sleep 15 pada background menggunakan & dan kemudian gunakan perintah kill untuk menghentikan proses diikuti job number.</br>
+![ss](assets/latihan/l3/5.png)</br>
+Analisa: Setelah menjalankan sleep 15 dalam background menggunakan &, maka akan ditampilkan proses sleep dengan job number disebelah kiri proses. setelah mengetahui job number, saya gunakan perintah kill untuk mematikan perintah sleep 15 yang akan langsung berhenti berjalan.
 
+f. Jalankan sleep 15 pada background menggunakan & dan kemudian gunakan kill untuk menghentikan sementara proses. Gunakan bg untuk melanjutkan menjalankan proses. </br>
+![ss](assets/latihan/l3/6.png)</br>
+Analisa: Setelah menjalankan perintah sleep 15 dalam background menggunakan &, saya menggunakan perintah kill -STOP %1 untuk menghentikan proses sleep sementara. setelah dicek menggunakan jobs yang menampilkan kondisi proses stopped, saya menjalankannya kembali dibackground menggunakan bg. saat dicek menggunakan jobs, proses yang ditampilkan sudah dalam kondisi done dikarenakan proses sleep telah selesai berjalan selama 15 detik.
 
-d. Jalankan sleep 15 pada foreground, hentikan sementara dengan Ctrl-Z dan kemudian letakkan pada background dengan bg. Ketikkan jobs. Ketikkan ps. Kembalikan job ke foreground dengan perintah fg. 
-
-
-e. Jalankan sleep 15 pada background menggunakan & dan kemudian gunakan perintah kill untuk menghentikan proses diikuti job number. 
-
-
-f. Jalankan sleep 15 pada background menggunakan & dan kemudian gunakan kill untuk menghentikan sementara proses. Gunakan bg untuk melanjutkan menjalankan proses. 
-
-
-g. Jalankan sleep 60 pada background 5 kali dan terminasi semua pada dengan menggunakan perintah killall.
-
+g. Jalankan sleep 60 pada background 5 kali dan terminasi semua pada dengan menggunakan perintah killall.</br>
+![ss](assets/latihan/l3/7.png)</br>
+Analisa: Pertama, menjalankan sleep 60 dalam background menggunakan & lalu ditampilkan semua proses dengan menggunakan perintah jobs yang menunjukkan semua proses sleep sedang berjalan. setelah itu, menjalankan perintah killall sleep untuk menghentikan semua proses sleep yang akan ditampilkan dengan pesan terminated yang menunjukkan bahwa proses sleep sudah dihentikan.
 
 h. Gunakan perintah ps, w dan top untuk menunjukkan semua proses yang
-sedang dieksekusi.
+sedang dieksekusi.</br>
+- Perintah ps:
+![ss](assets/latihan/l3/8a.png)</br>
+Analisa: Perintah ps akan menampilkan semua proses yang sedang dijalankan.
 
-i. Gunakan perintah ps –aeH untuk menampilkan hierarki proses. Carilah init proses. Apakah Anda bisa identifikasi sistem daemon yang penting ? Dapatkan Anda identifikasi shell dan subprose s ?
+- perintah w:
+![ss](assets/latihan/l3/8b.png)</br>
+Analisa: Perintah w akan menampilkan semua proses yang sedang dijalankan dengan tampilan yang lebih detail dibandingkan perintah ps.
+
+- Perintah top:
+![ss](assets/latihan/l3/8c.png)</br>
+Analisa: Perintah top akan menampilkan semua proses foreground dan background yang akan ditampilkan secara real-time atau secara lamgsung dengan memperlihatkan semua informasi seperti PID, USER, %CPU, %MEM, TIME, dan COMMAND.
+
+i. Gunakan perintah ps –aeH untuk menampilkan hierarki proses. Carilah init proses. Apakah Anda bisa identifikasi sistem daemon yang penting ? Dapatkan Anda identifikasi shell dan subprose s ?</br>
+![ss](assets/latihan/l3/9a.png)</br>
+![ss](assets/latihan/l3/9b.png)</br>
+![ss](assets/latihan/l3/9c.png)</br>
+![ss](assets/latihan/l3/9d.png)</br>
+![ss](assets/latihan/l3/9e.png)</br>
+![ss](assets/latihan/l3/9f.png)</br>
+![ss](assets/latihan/l3/9g.png)</br>
+Analisa: Saat menggunakan perintah ps -aeH akan ditampilkan herarki proses. Dalam tampilan ini saya mendapatkan proses init/induk dari semua proses yang diindikasikan dengan pid=1 yang bernama systemd. untuk sistem daemon yang penting yaitu seperti accounts, avahi, dbus, rtkit, goa, dan ibus. untuk mengetahui perbedaan shell dengan subproses yaitu dengan melihat proses yang memiliki awalan proses awalan yang sama tapi diikuti dengan - yang menunjukkan subproses, contohnya seperti shell systemd dengan subproses systemd-journal, systemd-udevd, dan systemd-timesyn.
+
+j. Kombinasikan ps –fae dan grep, apa yang Anda lihat ?</br>
 
 
-j. Kombinasikan ps –fae dan grep, apa yang Anda lihat ?
-
-
-k. Jalankan proses sleep 300 pada background. Log off komputer dan log in kembali. Lihat daftar semua proses yang berjalan. Apa yang terjadi pada proses sleep ?
+k. Jalankan proses sleep 300 pada background. Log off komputer dan log in kembali. Lihat daftar semua proses yang berjalan. Apa yang terjadi pada proses sleep ?</br>
 
 
 ## Kesimpulan
@@ -311,4 +349,5 @@ k. Jalankan proses sleep 300 pada background. Log off komputer dan log in kembal
 
 ## Referensi
 Sumber 1: https://perbedaan.budisma.net/perbedaan-antara-csh-dan-bash.html#:~:text=Shell%20CSH%20Unix%20dan%20Linux%20dibuat%20pada%20awal,pemrograman%20yang%20dapat%20digunakan%20untuk%20membuat%20skrip%20shell. </br>
-
+Sumber 2: https://unix.stackexchange.com/questions/68611/whats-the-difference-between-ctrl-z-and-kill-stop </br>
+Sumber 3: https://id.eyewated.com/cara-menggunakan-perintah-init-di-linux/ </br>
