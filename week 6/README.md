@@ -100,7 +100,13 @@ Untuk menghentikannya tidak dapat menggunakan Ctrl-C. Job harus dipindah ke fore
 
 #### Marieta Nona Alfani-5
 [Kembali ke percobaan 5](#Percobaan-5-Menghentikan-dan-memulai-kembali-job)</br>
-
+![ss](assets/percobaan/alfani/p5/1.jpg)</br>
+![ss](assets/percobaan/alfani/p5/2.jpg)</br>
+![ss](assets/percobaan/alfani/p5/3.jpg)</br>
+![ss](assets/percobaan/alfani/p5/4.jpg)</br>
+![ss](assets/percobaan/alfani/p5/5.jpg)</br>
+![ss](assets/percobaan/alfani/p5/6.jpg)</br>
+![ss](assets/percobaan/alfani/p5/7.jpg)</br>
 
 #### Ale Perdana Putra Darmawan-5
 [Kembali ke percobaan 5](#Percobaan-5-Menghentikan-dan-memulai-kembali-job)</br>
