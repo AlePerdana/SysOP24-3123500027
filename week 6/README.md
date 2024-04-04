@@ -172,7 +172,20 @@ akan muncul. Ketik ```i```. Top akan menampilkan proses yang aktif. Ketik ```lmt
 
 #### Marieta Nona Alfani-6
 [Kembali ke percobaan 6](#Percobaan-6-Percobaan-dengan-Penjadwalan-Prioritas)</br>
-
+![ss](assets/percobaan/alfani/p6/1.jpg)</br>
+![ss](assets/percobaan/alfani/p6/2.jpg)</br>
+![ss](assets/percobaan/alfani/p6/3.jpg)</br>
+![ss](assets/percobaan/alfani/p6/4.jpg)</br>
+![ss](assets/percobaan/alfani/p6/5.jpg)</br>
+![ss](assets/percobaan/alfani/p6/6.jpg)</br>
+![ss](assets/percobaan/alfani/p6/7.jpg)</br>
+![ss](assets/percobaan/alfani/p6/8.jpg)</br>
+![ss](assets/percobaan/alfani/p6/9.jpg)</br>
+![ss](assets/percobaan/alfani/p6/10.jpg)</br>
+![ss](assets/percobaan/alfani/p6/11.jpg)</br>
+![ss](assets/percobaan/alfani/p6/12.jpg)</br>
+![ss](assets/percobaan/alfani/p6/13.jpg)</br>
+![ss](assets/percobaan/alfani/p6/14.jpg)</br>
 
 #### Ale Perdana Putra Darmawan-6
 [Kembali ke percobaan 6](#Percobaan-6-Percobaan-dengan-Penjadwalan-Prioritas)</br>
@@ -356,7 +369,13 @@ k. Jalankan proses sleep 300 pada background. Log off komputer dan log in kembal
 Analisa: setelah menjalankan sleep dan logout dan login kembali, proses sleep telah berhenti yang dapat dibuktikan dengan perintah jobs setelah login kembali.
 
 ## Kesimpulan
+Proses merupakan program yang sedang dieksekusi di sistem, dan ada tiga tipe utama proses: foreground, batch, dan daemon. Selain itu, proses dapat berkomunikasi dengan proses lainnya melalui pengiriman dan penerimaan sinyal. Shell Linux menyediakan berbagai fasilitas kontrol proses, seperti menghentikan sementara (suspend) dan melanjutkan (resume) proses.
 
+Dengan menggunakan perintah-perintah seperti fg, bg, kill, dan ps, pengguna dapat menghentikan, memulai kembali, dan mengontrol proses dengan lebih efisien. Perintah fg digunakan untuk memindahkan proses dari background ke foreground, sementara bg digunakan untuk memindahkan proses dari foreground ke background. Perintah kill berguna untuk menghentikan proses secara paksa dengan menggunakan nomor PID, sedangkan perintah ps digunakan untuk melihat daftar proses yang sedang berjalan di sistem.
+
+Melalui penggunaan perintah renice, pengguna dapat mengubah prioritas proses yang sedang berjalan, sehingga mengatur seberapa banyak sumber daya sistem yang dialokasikan untuk proses tertentu. Dengan demikian, proses-proses yang lebih penting atau kritis dapat diberikan prioritas yang lebih tinggi untuk memastikan kinerja sistem yang optimal.Selain itu, penggunaan perintah top memberikan pengawasan real-time terhadap aktivitas sistem, termasuk informasi tentang penggunaan CPU, memori, dan proses-proses yang sedang berjalan. Dengan perintah ini, pengguna dapat mengidentifikasi proses-proses yang menggunakan sumber daya sistem secara berlebihan atau memiliki prioritas yang salah.
+
+penggunaan perintah shell seperti find, sleep, kill, dan ps memberikan kemampuan untuk mengelola dan memantau proses dengan efisien di sistem operasi Linux. Dengan memahami penggunaan perintah-perintah ini, pengguna dapat mencari, menghentikan, dan memantau proses-proses dengan cepat dan mudah, meningkatkan efektivitas dalam administrasi sistem.
 
 ## Referensi
 Sumber 1: https://perbedaan.budisma.net/perbedaan-antara-csh-dan-bash.html#:~:text=Shell%20CSH%20Unix%20dan%20Linux%20dibuat%20pada%20awal,pemrograman%20yang%20dapat%20digunakan%20untuk%20membuat%20skrip%20shell. </br>
