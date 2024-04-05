@@ -17,7 +17,7 @@
 
 ## Daftar Isi
 1. [Dasar Teori](#Dasar-teori)
-2. [Fork](#Fork)
+2. [Fork](#Fork-:-Parent---Child-Process)
 3. [Tugas](#Tugas)
 4. [Kesimpulan](#Kesimpulan)
 5. [Referensi](#Referensi)
@@ -39,8 +39,7 @@ wait adalah function yang digunakan untuk mendapatkan informasi ketika child pro
 
 ## Fork : Parent - Child Process
 - Buat tulisan tentang konsep fork dan implementasinya dengan menggunakan bahasa pemrograman C! (minimal 2 paragraf disertai dengan gambar)</br>
-Jawab:
-konsep fork:
+Jawab:</br>
 Konsep fork dalam sistem operasi adalah mekanisme untuk menduplikasi proses yang sedang berjalan. Proses yang dihasilkan disebut sebagai child process, yang merupakan salinan dari parent process. Proses ini memiliki PID (Process ID) yang unik dan PPID (Parent Process ID) yang merujuk pada PID dari parent process. Fork memungkinkan eksekusi program secara paralel dan independen.
 
 Dalam implementasi fork, setiap proses memiliki hubungan hierarki seperti orang tua dan anak. Misalnya, jika sebuah main process melakukan fork, maka akan tercipta parent process dan child process. Child process ini akan memiliki PPID yang sama dengan PID dari parent process. Fungsi ini sering digunakan dalam pemrograman untuk menciptakan proses baru dan memanfaatkan multithreading.
