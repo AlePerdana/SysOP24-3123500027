@@ -293,7 +293,7 @@ fork();		+
 	stop	 					
 ```
 
-- fork04.cpp
+- fork05.cpp
 Program:
 ```
 #include <iostream>
