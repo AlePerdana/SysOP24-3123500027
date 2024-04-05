@@ -466,4 +466,6 @@ fork();		+
 
 
 ## Referensi
-
+Sumber 1: https://man7.org/linux/man-pages/man2/fork.2.html </br>
+Sumber 2: https://man7.org/linux/man-pages/man2/waitid.2.html </br>
+Sumber 3: https://man7.org/linux/man-pages/man3/exec.3.html
