@@ -581,7 +581,10 @@ int main(void) {
 
 ```
 Output:</br>
+Ale - 3123500027:</br>
 ![ss](assets/tugas/1.png)</br>
+alfani - 3123500026:</br>
+![ss](assets/tugas/1fani.jpg)</br>
 
 Deskripsi Kode Program:
 - Program ini menciptakan dua proses: proses induk (parent process) dan proses anak (child process) menggunakan fungsi `fork()`. </br>
