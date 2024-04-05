@@ -67,6 +67,11 @@ using namespace std;
 #include <sys/types.h>
 #include <unistd.h>
 
+
+/* getpid() adalah system call yg dideklarasikan pada unistd.h.
+Menghasilkan suatu nilai dengan type pid_t.
+pid_t adalah type khusus untuk process id yg ekuivalen dg int
+*/
 int main(void) {
 	pid_t mypid;
 	uid_t myuid;
@@ -76,6 +81,9 @@ int main(void) {
 		cout << "My parent process ID is " << getppid() << endl;
 		cout << "The owner of this process has uid " << getuid()
 	<< endl;
+/* sleep adalah system call atau fungsi library
+yang menghentikan proses ini dalam detik
+*/
 	sleep(3);
 	}
 return 0;
@@ -92,14 +100,18 @@ Output:</br>
 
 2. Visualisasi Pohon Proses:</br>
 ```
-Main Process (PID: A)
-|
-| \
-|  Child Process (PID: B) //loop pertama
-| \
-|  Child Process (PID: B) //loop kedua
- \ 
-   Child Process (PID: B) /loop ketiga
+ 	   Process (PID)
+		|
+	      Sleep
+		|
+	       loop
+		|
+  	   Process (PID)
+		|
+	      Sleep
+		|
+	       loop
+
 ```
 
 - fork02.cpp
@@ -110,6 +122,12 @@ Program:
 #include <unistd.h>
 using namespace std;
 
+
+/* getpid() dan fork() adalah system call yg dideklarasikan
+pada unistd.h.
+Menghasilkan suatu nilai dengan type pid_t.
+pid_t adalah type khusus untuk process id yg ekuivalen dg int
+*/
 int main(void) {
 	pid_t childpid;
 	int x = 5;
@@ -125,7 +143,212 @@ int main(void) {
 }
 ```
 Output:</br>
-![ss](assets/fork/f2.png)
+![ss](assets/fork/f2.png)</br>
+
+1. Deskripsi Kode Program:</br>
+    - Program ini menggunakan fungsi fork() untuk menciptakan proses anak.
+    - Fungsi fork() menghasilkan dua proses: proses induk (parent process) dan proses anak (child process).
+    - Proses anak adalah duplikat dari proses induk, dan keduanya melanjutkan eksekusi dari titik di mana fork() dieksekusi.
+    - Dalam program ini memiliki variabel x yang ditambahkan nilainya setiap 2 detik.
+
+2. Visualisasi Pohon Proses:
+```
+	  Proses utama
+		|
+fork();		+
+	       / \
+   Proses utama   Proses anak
+	 |		|
+	cout	       cout
+	 |		|
+       sleep	      sleep
+	 |		|
+	x++	       x++
+	 |		|
+	loop	       loop
+```
+
+- fork03.cpp
+Program:
+```
+#include <iostream>
+using namespace std;
+#include <sys/types.h>
+#include <unistd.h>
+
+
+/* getpid() dan fork() adalah system call yg dideklarasikan
+pada unistd.h.
+Menghasilkan suatu nilai dengan type pid_t.
+pid_t adalah type khusus untuk process id yg ekuivalen dg int
+*/
+int main(void) {
+	pid_t childpid;
+	childpid = fork();
+	for (int i = 0; i < 5; i++) {
+		cout << "This is process " << getpid() << endl;
+		sleep(2);
+	}
+	return 0;
+}
+```
+Output:</br>
+![ss](assets/fork/f3.png)</br>
+
+1. Deskripsi Kode Program:
+    - Program ini menciptakan dua proses: proses induk (parent process) dan proses anak (child process) menggunakan fungsi fork().
+    - Proses anak adalah duplikat dari proses induk, dan keduanya melanjutkan eksekusi dari titik di mana fork() dieksekusi.
+    - Dalam program ini memiliki variabel childpid yang menyimpan nilai hasil dari fork().
+
+2. Visualisasi Pohon Proses:
+```
+	  Proses utama
+		|
+fork();		+
+	       / \
+   Proses utama   Proses anak
+	 |		|
+	cout	       cout
+	 |		|
+       sleep	      sleep
+	 |		|
+	loop	       loop
+```
+
+- fork04.cpp
+Program:
+```
+#include <iostream>
+using namespace std;
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/wait.h>
+/* pid_t fork() dideklarasikan pada unistd.h.
+pid_t adalah type khusus untuk process id yg ekuivalen dg int
+*/
+
+int main(void) {
+	pid_t child_pid;
+	int status;
+	pid_t wait_result;
+	child_pid = fork();
+	if (child_pid == 0) {
+		/* kode ini hanya dieksekusi proses child */
+		cout << "I am a child and my pid = " << getpid() << endl;
+		cout << "My parent is " << getppid() << endl;
+		/* keluar if akan menghentikan hanya proses child */
+	}
+	else if (child_pid > 0) {
+		/* kode ini hanya mengeksekusi proses parent */
+		cout << "I am the parent and my pid = " << getpid() << endl;
+		cout << "My child has pid = " << child_pid << endl;
+	}
+	else {
+		cout << "The fork system call failed to create a new process" << endl;
+		exit(1);
+	}
+		/* kode ini dieksekusi baik oleh proses parent dan child */
+		cout << "I am a happy, healthy process and my pid = " << getpid() << endl;
+		if (child_pid == 0) {
+		/* kode ini hanya dieksekusi oleh proses child */
+		cout << "I am a child and I am quitting work now!"<< endl;
+	}
+	else {
+		/* kode ini hanya dieksekusi oleh proses parent */
+		cout << "I am a parent and I am going to wait for my child" << endl;
+	do {
+		/* parent menunggu sinyal SIGCHLD mengirim tanda bahwa proses child diterminasi */
+		wait_result = wait(&status);
+	} while (wait_result != child_pid);
+		cout << "I am a parent and I am quitting." << endl;
+	}
+	return 0;
+}
+```
+Output:
+![ss](assets/fork/f4.png)</br>
+
+1. Deskripsi Kode Program:</br>
+    - Program ini menciptakan dua proses: proses induk (parent process) dan proses anak (child process) menggunakan fungsi fork().
+    - Fungsi fork() menghasilkan dua proses yang memiliki ruang memori yang terpisah.
+    - Proses anak adalah duplikat dari proses induk, dan keduanya melanjutkan eksekusi dari titik di mana fork() dieksekusi.
+    - Dalam program ini, kita juga menggunakan sistem panggilan wait() untuk menunggu hingga proses anak selesai.
+
+2. Visualisasi Pohon Proses:</br>
+```
+	  Proses utama
+		|
+fork();		+
+	       / \
+   Proses utama   Proses anak
+	 |		|
+	cout	       cout
+	 |		|
+	wait	       cout
+	 |		|
+	wait	   exit/terminated
+	 |
+	cout
+	 |
+	stop	 					
+```
+
+- fork04.cpp
+Program:
+```
+#include <iostream>
+using namespace std;
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/wait.h>
+/* pid_t fork() dideklarasikan pada unistd.h.
+pid_t adalah type khusus untuk process id yg ekuivalen dg int
+*/
+
+int main(void) {
+  pid_t child_pid;
+  int status; 
+  pid_t wait_result;
+  child_pid = fork();
+  if (child_pid == 0) {
+    /* kode ini hanya dieksekusi proses child */
+    cout << "I am a child and my pid = " << getpid() << endl;
+    execl("/bin/ls", "ls", "-l", "/home", NULL);
+    /* jika execl berhasil kode ini tidak pernah digunakan */
+    cout << "Could not execl file /bin/ls" << endl;
+    exit(1);
+    /* exit menghentikan hanya proses child */
+   }
+  else if (child_pid > 0) {
+    /* kode ini hanya mengeksekusi proses parent */
+   cout << "I am the parent and my pid = " << getpid() << endl;
+   cout << "My child has pid = " << child_pid << endl;
+  }
+  else {
+   cout << "The fork system call failed to create a new process" << endl;
+   exit(1);
+  }
+  /* kode ini hanya dieksekusi oleh proses parent karena
+  child mengeksekusi dari “/bin/ls” atau keluar */
+   cout << "I am a happy, healthy process and my pid = " << getpid() << endl;
+   if (child_pid == 0) {
+  /* kode ini tidak pernah dieksekusi */
+   printf("This code will never be executed!\n");
+  }
+  else {
+   /* kode ini hanya dieksekusi oleh proses parent */
+    cout << "I am a parent and I am going to wait for my child" << endl;
+    do {
+      /* parent menunggu sinyal SIGCHLD mengirim tanda bila proses child diterminasi */
+      wait_result = wait(&status);
+    } while (wait_result != child_pid);
+    cout << "I am a parent and I am quitting." << endl;
+  }
+  return 0;
+}
+```
+Output:
+![ss](assets/fork/f5.png)</br>
 
 
 
