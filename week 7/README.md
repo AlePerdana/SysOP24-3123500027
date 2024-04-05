@@ -17,7 +17,7 @@
 
 ## Daftar Isi
 1. [Dasar Teori](#Dasar-teori)
-2. [Fork](#Fork-Parent---Child-Process)
+2. [Soal](#Soal)
 3. [Tugas](#Tugas)
 4. [Kesimpulan](#Kesimpulan)
 5. [Referensi](#Referensi)
@@ -37,7 +37,7 @@ Exec adalah function yang digunakan untuk menjalankan program baru dan mengganti
 
 wait adalah function yang digunakan untuk mendapatkan informasi ketika child proses berganti state-nya. Pergantian state dapat berupa termination, resume, atau stop.
 
-## Fork Parent - Child Process
+## Soal
 - Buat tulisan tentang konsep fork dan implementasinya dengan menggunakan bahasa pemrograman C! (minimal 2 paragraf disertai dengan gambar)</br>
 Jawab:</br>
 Konsep fork dalam sistem operasi adalah mekanisme untuk menduplikasi proses yang sedang berjalan. Proses yang dihasilkan disebut sebagai child process, yang merupakan salinan dari parent process. Proses ini memiliki PID (Process ID) yang unik dan PPID (Parent Process ID) yang merujuk pada PID dari parent process. Fork memungkinkan eksekusi program secara paralel dan independen.
@@ -494,6 +494,7 @@ fork();		+
 
 ## Tugas
 Buatlah program perkalian 2 matriks [4 x 4] dalam bahasa C yang memanfaatkan fork().</br>
+Jawab: </br>
 Program:
 ```
 #include <stdio.h>
