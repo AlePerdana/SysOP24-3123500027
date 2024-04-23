@@ -17,7 +17,7 @@
 
 ## Daftar Isi
 1. [Dasar Teori](#Dasar-teori)
-2. [Bash - Variabel](#Bash-Variabel)
+2. [Bash - Variabel](#Bash---Variabel)
 3. [Kesimpulan](#Kesimpulan)
 4. [Referensi](#Referensi)
 
