@@ -17,9 +17,12 @@
 
 ## Daftar Isi
 1. [Dasar Teori](#Dasar-teori)
-2. [Bash - Variabel](#Bash---Variabel)
-3. [Kesimpulan](#Kesimpulan)
-4. [Referensi](#Referensi)
+2. [Bash - Variable](#Bash---Variable)
+3. [Bash - Loop File](#Bash---Loop-File)
+4. [Bash - Comments](#Bash---Comments)
+5. [Bash - Array](#Bash---Array)
+6. [Kesimpulan](#Kesimpulan)
+7. [Referensi](#Referensi)
 
 ## Dasar Teori
 - Shell
@@ -354,6 +357,109 @@ IFS | Pemisah Bidang Internal secara default adalah spasi, diatur oleh Shell, Di
 PATH | Berisi jalur perintah yang dipisahkan titik koma, Dikonfigurasi untuk mencari perintah
 UID | Mencetak nomor Identifikasi Pengguna
 Home |	Direktori beranda pengguna saat ini 
+
+## Bash - Loop File
+Terkadang, Anda ingin membaca konten file dengan pemrograman bash.
+
+Ada berbagai cara yang bisa kita lakukan
+Bagaimana cara membaca file demi baris di bash Shell?
+- menggunakan perulangan while
+
+```
+#!/bin/bash
+while IFS= read -r line; do
+   echo "$line"
+done <filename.txt>
+```
+
+Percobaan 1:
+- [Alfani - Variable 1](Alfani---Variable-1)
+- [Ale - Variable 1](Ale---Variable-1)
+- [Kanisius - Variable 1](Kanisius---Variable-1)
+
+## Alfani - Variable 1
+
+## Ale - Variable 1
+
+## Kanisius - Variable 1
+
+## Bash - Comments
+```Comments``` adalah pernyataan kode yang berisi teks yang dapat dibaca pengguna yang dilewati shell selama eksekusi. Setiap bahasa pemrograman menyertakan fitur komentar, yang memberikan deskripsi baris kode atau pernyataan.
+
+Komentar sebaris dalam kode membantu pengembang dalam mengedit dan memahami kode dengan lebih baik.
+
+Bahasa skrip bash memungkinkan Anda menggunakan jenis komentar berikut.
+- Komentar tunggal
+- Komentar multi-baris 
+
+Komentar berguna bagi manusia, kode ditulis untuk scripting.
+
+<h3>Komentar satu baris di bash shell</h3>
+Komentar satu baris dalam skrip shell dilambangkan dengan # simbol di awal setiap baris.
+
+Komentar ini mencakup string yang memberikan informasi tentang baris kode terkait dalam skrip shell.
+
+Penting untuk menempatkan komentar satu baris pada baris terpisah untuk kejelasan.
+
+Untuk komentar sebaris, gunakan simbol # di awal komentar. Komentar satu baris selalu dimulai dengan # simbol.
+
+Sintaks:
+
+```
+# Single-line comments
+```
+
+Ruang kosong setelah # simbol tidak akan muncul di output. Berikut ini adalah contoh komentar satu baris dalam skrip shell. 
+
+```
+# Single-line comments.
+AGE=45
+echo "Age:$AGE" ## printing age inline comment
+```
+
+<h3>Komentar multi-Baris dalam skrip shell</h3>
+Komentar multi-baris melibatkan penggunaan lebih dari satu baris untuk komentar.
+
+Cara pertama untuk membuat komentar multi-baris adalah dengan memanfaatkan komentar satu baris yang setiap barisnya dimulai dengan simbol komentar satu baris.
+
+Sintaks: 
+
+```
+# Line1 comments
+# Line1 comments
+# Line1 comments
+```
+
+Cara kedua untuk membuat komentar multi-baris adalah dengan mengapit beberapa baris di dalam (```:```) Dan (```'```).
+
+Sintaks ini melibatkan:
+
+- Komentar dimulai dengan titik dua (```:```) diikuti dengan ```'```.
+- Ini diikuti oleh beberapa baris komentar.
+- Komentar diakhiri dengan ```'```.
+
+Berikut sintaksnya: 
+
+```
+: '
+multiline comments example1
+multiline comments example2
+multiline comments example3
+'
+```
+
+Berikut adalah contoh Komentar Multi-Baris:
+```
+: '
+multiline comments example1
+multiline comments example2
+multiline comments example3
+'
+echo "testing multi-line comments"
+```
+Hal ini berguna untuk memasukkan lebih banyak teks yang mencakup beberapa baris, juga melayani tujuan dokumentasi. 
+
+## Bash - Array
 
 ## Kesimpulan
 
