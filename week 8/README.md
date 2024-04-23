@@ -360,9 +360,7 @@ Home |	Direktori beranda pengguna saat ini
 
 ## Bash - Loop File
 Terkadang, Anda ingin membaca konten file dengan pemrograman bash.
-
-Ada berbagai cara yang bisa kita lakukan
-Bagaimana cara membaca file demi baris di bash Shell?
+<h3>Bagaimana cara membaca file demi baris di bash Shell?</h3>
 - menggunakan perulangan while
 
 ```
@@ -372,16 +370,17 @@ while IFS= read -r line; do
 done <filename.txt>
 ```
 
-Percobaan 1:
-- [Alfani - Variable 1](Alfani---Variable-1)
-- [Ale - Variable 1](Ale---Variable-1)
-- [Kanisius - Variable 1](Kanisius---Variable-1)
+Percobaan:
+- [Alfani - Loop File](Alfani---Loop-File)
+- [Ale - Loop File](Ale---Loop-File)
+- [Kanisius - Loop File](Kanisius---Loop-File)
 
-## Alfani - Variable 1
+## Alfani - Loop File
 
-## Ale - Variable 1
+## Ale - Loop File
 
-## Kanisius - Variable 1
+## Kanisius - Loop File
+
 
 ## Bash - Comments
 ```Comments``` adalah pernyataan kode yang berisi teks yang dapat dibaca pengguna yang dilewati shell selama eksekusi. Setiap bahasa pemrograman menyertakan fitur komentar, yang memberikan deskripsi baris kode atau pernyataan.
@@ -416,6 +415,18 @@ Ruang kosong setelah # simbol tidak akan muncul di output. Berikut ini adalah co
 AGE=45
 echo "Age:$AGE" ## printing age inline comment
 ```
+
+Percobaan 1:
+- [Alfani - Comments 1](Alfani---Comments-1)
+- [Ale - Comments 1](Ale---Comments-1)
+- [Kanisius - Comments 1](Kanisius---Comments-1)
+
+## Alfani - Comments 1
+
+## Ale - Comments 1
+
+## Kanisius - Comments 1
+
 
 <h3>Komentar multi-Baris dalam skrip shell</h3>
 Komentar multi-baris melibatkan penggunaan lebih dari satu baris untuk komentar.
@@ -457,9 +468,381 @@ multiline comments example3
 '
 echo "testing multi-line comments"
 ```
+
+Percobaan 2:
+- [Alfani - Comments 2](Alfani---Comments-2)
+- [Ale - Comments 2](Ale---Comments-2)
+- [Kanisius - Comments 2](Kanisius---Comments-2)
+
+## Alfani - Comments 2
+
+## Ale - Comments 2
+
+## Kanisius - Comments 2
+
+
 Hal ini berguna untuk memasukkan lebih banyak teks yang mencakup beberapa baris, juga melayani tujuan dokumentasi. 
 
 ## Bash - Array
+Array di shell adalah variabel yang menyimpan lebih dari satu nilai.
+
+Misalkan, Anda memiliki daftar nomor 1 2 3.. 10 dan ingin menyimpan nomor-nomor ini di Shell Script.
+
+Tanpa array, Anda harus mendeklarasikan sebagai berikut:
+
+```
+let number1=1
+let number1=1
+...
+...
+let number10=10
+```
+
+Iterasinya sulit dan jika kita ingin menyimpan 100 angka, itu sangat sulit.
+
+Jadi, Anda bisa menggunakan array yang merujuk ke satu variabel dan menyimpannya.
+
+<h3>Bagaimana cara mendeklarasikan dan membuat array?</h3>
+
+Ada dua jenis array yang bisa kita buat:
+- indexed array: elemen array disimpan dengan indeks mulai dari nol.
+- associated array: array disimpan dengan pasangan nilai kunci.
+
+<h3>pendeklerasian sebuah array</h3>
+Untuk membuat array, kita perlu mendeklarasikan sebuah array. 
+
+```
+declare -a array; # indexed array
+declare -A array; # associative array
+```
+
+ebuah array dideklarasikan dengan kata kunci ```declare``` dengan opsi ```-a``` atau ```-A```.
+
+contoh indexed array Dalam hal ini, nilai Array disimpan dengan indeks=0 dan seterusnya. ini dibuat dengan opsi ```declare``` Dan ```-a```.
+
+```
+declare -a array
+array=(one two three)
+```
+
+Array ini adalah penyimpanan dengan indeks=0, ditambah 1 sebagai berikut.
+
+```
+array[0]=one
+array[1]=two
+array[2]=three
+```
+
+contoh associated array Dalam hal ini, nilai Array disimpan dengan kunci. ini dibuat dengan opsi ```declare``` Dan ```-A```.
+
+```
+declare -A array
+array=(one two three)
+```
+
+Dalam array ini terdapat penyimpanan dengan indeks=0, ditambah 1 sebagai berikut:
+
+```
+array[key1]=one
+array[key2]=two
+array[key3]=three
+```
+
+Contoh pemberian nilai kedalam array:
+
+```
+array=(1,2,3,4)
+```
+
+jika ingin memberikan nilai tanpa mendeklarasikan array:
+```
+arrayvariable[index]=value
+```
+
+Artinya, itu arrayvariable dideklarasikan dan diberi indeks array dengan nilai. 
+
+Array diindeks nol berdasarkan nol pada panjang array -1 indeks=0 - mengembalikan elemen pertama indeks=-1 mengembalikan elemen terakhir. 
+
+Array dapat berisi angka, string, dan campurannya.
+
+<h3>Mengakses nilai array</h3>
+Array berisi indeks untuk mendapatkan elemen. Elemen array dapat diakses menggunakan sintaks di bawah ini.
+
+```
+${array_name[index]}
+```
+
+<h3>mendeklarasikan array angka dan pengulangan</h3>
+Array dapat berisi angka Contoh ini berisi array angka dan loop for untuk dicetak.
+
+```
+nums=(1 3 12)
+for i in "${nums[@]}"
+do
+  echo "$i"
+done
+```
+
+Output:
+
+```
+1
+3
+12
+```
+
+Percobaan 1:
+- [Alfani - Array 1](Alfani---Array-1)
+- [Ale - Array 1](Ale---Array-1)
+- [Kanisius - Array 1](Kanisius---Array-1)
+
+## Alfani - Array 1
+
+## Ale - Array 1
+
+## Kanisius - Array 1
+
+
+<h3>mendeklarasikan Array string dan pengulangan</h3>
+Array dapat berisi angka Contoh ini berisi array angka dan loop for untuk dicetak.
+
+```
+numbers=("element1" "element2" "element3")
+for i in "${numbers[@]}"
+do
+  echo "$i"
+done
+```
+
+Output:
+
+```
+element1
+element2
+element3
+```
+
+Percobaan 2:
+- [Alfani - Array 2](Alfani---Array-2)
+- [Ale - Array 2](Ale---Array-2)
+- [Kanisius - Array 2](Kanisius---Array-2)
+
+## Alfani - Array 2
+
+## Ale - Array 2
+
+## Kanisius - Array 2
+
+
+<h3>Mengakses elemen pertama dalam array</h3>
+Dalam elemen Array, indeks elemen Pertama adalah nol, dan array[0] mengembalikan elemen pertama.
+
+```
+numbers=("element1" "element2" "element3")
+
+echo ${numbers[0]}
+echo ${numbers}
+```
+
+Output:
+
+```
+element1
+element1
+```
+
+Percobaan 3:
+- [Alfani - Array 3](Alfani---Array-3)
+- [Ale - Array 3](Ale---Array-3)
+- [Kanisius - Array 3](Kanisius---Array-3)
+
+## Alfani - Array 3
+
+## Ale - Array 3
+
+## Kanisius - Array 3
+
+
+<h3>Mengambil elemen terakhir dari sebuah array</h3>
+Dalam skrip bash, Anda dapat menggunakan indeks=-1 untuk mendapatkan elemen array terakhir.
+
+```
+numbers=("element1" "element2" "element3")
+echo ${numbers[-1]}
+```
+
+Percobaan 4:
+- [Alfani - Array 4](Alfani---Array-4)
+- [Ale - Array 4](Ale---Array-4)
+- [Kanisius - Array 4](Kanisius---Array-4)
+
+## Alfani - Array 4
+
+## Ale - Array 4
+
+## Kanisius - Array 4
+
+<h3>iterasi atau pengulangan elemen array</h3>
+For loop digunakan untuk mengulangi elemen. 
+
+Berikut adalah contoh contoh loop array untuk mencetak semua elemen:
+
+```
+numbers=("element1" "element2" "element3")
+
+for i in "${numbers[@]}"
+do
+  echo "$i"
+done
+```
+
+Output:
+
+```
+element1
+element2
+element3
+```
+
+Percobaan 5:
+- [Alfani - Array 5](Alfani---Array-5)
+- [Ale - Array 5](Ale---Array-5)
+- [Kanisius - Array 5](Kanisius---Array-5)
+
+## Alfani - Array 5
+
+## Ale - Array 5
+
+## Kanisius - Array 5
+
+<h3>mencetak semua elemen array</h3>
+Gunakan [@] atau [*] untuk mencetak semua elemen array.
+
+```
+arr=("element1" "element2" "element3") //
+echo ${arr[@]} #element1 element2 element3
+echo ${arr[*]}  #element1 element2 element3
+```
+
+Percobaan 6:
+- [Alfani - Array 6](Alfani---Array-6)
+- [Ale - Array 6](Ale---Array-6)
+- [Kanisius - Array 6](Kanisius---Array-6)
+
+## Alfani - Array 6
+
+## Ale - Array 6
+
+## Kanisius - Array 6
+
+<h3>Menghapus elemen dari array</h3>
+
+Anda dapat menghapus elemen dari array menggunakan ```unset``` untuk indeks tertentu. 
+
+```
+numbers=("element1" "element2" "element3")
+echo ${numbers[*]}
+unset numbers[-1]
+echo ${numbers[*]}
+```
+
+Percobaan 7:
+- [Alfani - Array 7](Alfani---Array-7)
+- [Ale - Array 7](Ale---Array-7)
+- [Kanisius - Array 7](Kanisius---Array-7)
+
+## Alfani - Array 7
+
+## Ale - Array 7
+
+## Kanisius - Array 7
+
+<h3>Menambahkan elemen ke array</h3>
+Anda dapat menambahkan elemen di posisi indeks mana pun menggunakan sintaks di bawah ini:
+
+```
+array[index]=value
+```
+
+Contoh penambahan elemen awal dan akhir serta tengah:
+
+```
+numbers=("element1" "element2" "element3")
+echo ${numbers[*]}
+
+ numbers[0]="element0"
+echo ${numbers[*]}
+ numbers[5]="element5"
+echo ${numbers[*]}
+ numbers[6]="element6"
+echo ${numbers[*]}
+```
+
+Output:
+
+```
+element1 element2 element3
+element0 element2 element3
+element0 element2 element3 element5
+element0 element2 element3 element5 element6
+```
+
+Percobaan 8:
+- [Alfani - Array 8](Alfani---Array-8)
+- [Ale - Array 8](Ale---Array-8)
+- [Kanisius - Array 8](Kanisius---Array-8)
+
+## Alfani - Array 8
+
+## Ale - Array 8
+
+## Kanisius - Array 8
+
+
+<h3>Panjang sebuah array</h3>
+Dalam hal ini, Temukan jumlah semua elemen dalam array.
+
+Skrip shell menyediakan # 
+
+```
+arr=("element1" "element2" "element3")
+echo ${#arr[@]} # returns 3
+echo ${#arr[*]} # returns 3
+```
+
+Percobaan 9:
+- [Alfani - Array 9](Alfani---Array-9)
+- [Ale - Array 9](Ale---Array-9)
+- [Kanisius - Array 9](Kanisius---Array-9)
+
+## Alfani - Array 9
+
+## Ale - Array 9
+
+## Kanisius - Array 9
+
+Contoh Array cheat sheet
+
+Example | Description
+---|---
+declare -a array | Mendeklarasikan indexed array
+declare -A array | Mendeklarasikan associated array
+declare -a array=() | Mendeklarasikan array yang diindeks dengan array kosong
+array=() | buat array kosong dengan menyatakan valid
+array=(1 6 3) | Inisialisasi array dengan angka
+array=(one two three)	| Inisialisasi array dengan string
+array=(one two 1)	| Inisialisasi array dengan data campuran
+${array[0]}	| Mengambil elemen pertama
+${array[1]}	| Menagmbil elemen kedua
+${array[-1]} | Mengambil elemen akhir
+${array[@]} | Mengambil semua elemen
+${array[*]}	| Mengambil semua elemen
+${!array[!]} | Mengambil semua indeks
+${#array[!]} | Menampilkan panjang array
+array[0]=12 | Tambahkan elemen ke array di posisi pertama.yaitu indeks=0
+array[-1]=22 | Tambahkan elemen ke array di posisi terakhir.
+array+=(11) | Menambahkan nilai ke dalam sebuah array
+${array[@]:k:i} | Mengambil elemen indeks=1 dimulai dari indeks=k
 
 ## Kesimpulan
 
