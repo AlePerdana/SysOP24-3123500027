@@ -21,8 +21,10 @@
 3. [Bash - Loop File](#Bash---Loop-File)
 4. [Bash - Comments](#Bash---Comments)
 5. [Bash - Array](#Bash---Array)
-6. [Kesimpulan](#Kesimpulan)
-7. [Referensi](#Referensi)
+6. [Bash - Expansion](#Bash---Expansion)
+7. [Bash - Conditional Expression](#Bash---Conditional-Expression)
+8. [Kesimpulan](#Kesimpulan)
+9. [Referensi](#Referensi)
 
 ## Dasar Teori
 - Shell
@@ -106,7 +108,7 @@ Variabel berfungsi sebagai wadah yang digunakan untuk menyimpan data dalam pemro
 
 Deklarasikan variabel : Untuk membuat variabel, Anda harus memberikan nilai padanya. 
 
-```
+```bash
 variableName=VariableValue
 ```
 
@@ -116,7 +118,7 @@ variableName=VariableValue
 
 Misalnya:
 
-```
+```bash
 AGE=25
 ```
 
@@ -125,7 +127,7 @@ Sebuah variabel bernama AGEdibuat dan diberi nilai 25.
 <h3>Cara Mengakses Variabel di Bash</h3>
 Setelah mendeklarasikan dan menetapkan nilai ke variabel, Anda dapat mengaksesnya menggunakan simbol dolar ( $) diikuti dengan nama variabel. 
 
-```
+```bash
 AGE=25
 echo $AGE
 ```
@@ -135,7 +137,7 @@ Kode di atas mendeklarasikan variabel bernama ```AGE``` dengan nilai ```25``` da
 <h3>Variabel readonly Bash Shell</h3> 
 Setelah variabel diberi nilai, Anda dapat mengubahnya ke nilai baru menggunakan operator penugasan =. 
 
-```
+```bash
 AGE=25
 echo $AGE
 AGE=35
@@ -144,7 +146,7 @@ echo $AGE
 
 Output:
 
-```
+```bash
 25
 35
 ```
@@ -164,7 +166,7 @@ Bagaimana Anda membuat variabel tidak dapat diperbarui?
 
 Itu readonlykata kunci mencegah variabel diperbarui, secara efektif mengubahnya menjadi a constant. 
 
-```
+```bash
 AGE=25
 echo $AGE
 readonly AGE
@@ -176,7 +178,7 @@ AGE adalah sebuah batasan, menetapkan nilai baru menimbulkan kesalahan, dan pesa
 
 Output: 
 
-```
+```bash
 25
  line 6: AGE: is read-only
 ```
@@ -196,7 +198,7 @@ Percobaan 2:
 
 Itu ```unset``` kata kunci membantu menghilangkan nilai dari variabel yang ditentukan. Variabel tetap dapat diakses tetapi mencetak nilai kosong.
 
-```
+```bash
 AGE=25
 echo $AGE
 unset AGE
@@ -205,7 +207,7 @@ echo "empty":$AGE
 
 Output:
 
-```
+```bash
 25
 empty:
 ```
@@ -242,7 +244,7 @@ Variabel global dapat diakses dalam suatu fungsi atau blok bersarang apa pun dar
 
 Variabel default yang dideklarasikan dalam file skrip disebut variabel global.
 
-```
+```bash
 setAge() {
     echo "Inside Function Age: $AGE"
 }
@@ -253,7 +255,7 @@ echo "Script Age: $tmp"
 
 Output:
 
-```
+```bash
 Inside Function Age: 40
 Script Age: 40
 ```
@@ -280,7 +282,7 @@ local variablename=variablevalue
 
 Dalam sintaks ini, variabel dideklarasikan dan ditugaskan dengan ```local``` kata kunci.
 
-```
+```bash
 setAge() {
     local AGE=25
     echo "Local Variable Age: $AGE"
@@ -292,7 +294,7 @@ echo "Global Age: $tmp"
 
 Output:
 
-```
+```bash
 Local Variable Age: 25
 Global Age: 40
 ```
@@ -313,7 +315,7 @@ Variabel lokal dideklarasikan di dalam suatu fungsi dan hanya terlihat di dalam 
 <h3>Pengetikan variabel</h3>
 Skrip Bash bukan bahasa yang diketik, namun Anda dapat mendeklarasikan variabel dengan tipe data menggunakan perintah deklarasi Berdasarkan jenis variabelnya, memungkinkan jenis datanya.
 
-```
+```bash
 declare options variablename=value
 ```
 
@@ -363,7 +365,7 @@ Terkadang, Anda ingin membaca konten file dengan pemrograman bash.
 <h3>Bagaimana cara membaca file demi baris di bash Shell?</h3>
 - menggunakan perulangan while
 
-```
+```bash
 #!/bin/bash
 while IFS= read -r line; do
    echo "$line"
@@ -404,13 +406,13 @@ Untuk komentar sebaris, gunakan simbol # di awal komentar. Komentar satu baris s
 
 Sintaks:
 
-```
+```bash
 # Single-line comments
 ```
 
 Ruang kosong setelah # simbol tidak akan muncul di output. Berikut ini adalah contoh komentar satu baris dalam skrip shell. 
 
-```
+```bash
 # Single-line comments.
 AGE=45
 echo "Age:$AGE" ## printing age inline comment
@@ -435,7 +437,7 @@ Cara pertama untuk membuat komentar multi-baris adalah dengan memanfaatkan komen
 
 Sintaks: 
 
-```
+```bash
 # Line1 comments
 # Line1 comments
 # Line1 comments
@@ -451,7 +453,7 @@ Sintaks ini melibatkan:
 
 Berikut sintaksnya: 
 
-```
+```bash
 : '
 multiline comments example1
 multiline comments example2
@@ -460,7 +462,7 @@ multiline comments example3
 ```
 
 Berikut adalah contoh Komentar Multi-Baris:
-```
+```bash
 : '
 multiline comments example1
 multiline comments example2
@@ -490,7 +492,7 @@ Misalkan, Anda memiliki daftar nomor 1 2 3.. 10 dan ingin menyimpan nomor-nomor 
 
 Tanpa array, Anda harus mendeklarasikan sebagai berikut:
 
-```
+```bash
 let number1=1
 let number1=1
 ...
@@ -511,7 +513,7 @@ Ada dua jenis array yang bisa kita buat:
 <h3>pendeklerasian sebuah array</h3>
 Untuk membuat array, kita perlu mendeklarasikan sebuah array. 
 
-```
+```bash
 declare -a array; # indexed array
 declare -A array; # associative array
 ```
@@ -520,14 +522,14 @@ ebuah array dideklarasikan dengan kata kunci ```declare``` dengan opsi ```-a``` 
 
 contoh indexed array Dalam hal ini, nilai Array disimpan dengan indeks=0 dan seterusnya. ini dibuat dengan opsi ```declare``` Dan ```-a```.
 
-```
+```bash
 declare -a array
 array=(one two three)
 ```
 
 Array ini adalah penyimpanan dengan indeks=0, ditambah 1 sebagai berikut.
 
-```
+```bash
 array[0]=one
 array[1]=two
 array[2]=three
@@ -535,14 +537,14 @@ array[2]=three
 
 contoh associated array Dalam hal ini, nilai Array disimpan dengan kunci. ini dibuat dengan opsi ```declare``` Dan ```-A```.
 
-```
+```bash
 declare -A array
 array=(one two three)
 ```
 
 Dalam array ini terdapat penyimpanan dengan indeks=0, ditambah 1 sebagai berikut:
 
-```
+```bash
 array[key1]=one
 array[key2]=two
 array[key3]=three
@@ -550,12 +552,12 @@ array[key3]=three
 
 Contoh pemberian nilai kedalam array:
 
-```
+```bash
 array=(1,2,3,4)
 ```
 
 jika ingin memberikan nilai tanpa mendeklarasikan array:
-```
+```bash
 arrayvariable[index]=value
 ```
 
@@ -568,14 +570,14 @@ Array dapat berisi angka, string, dan campurannya.
 <h3>Mengakses nilai array</h3>
 Array berisi indeks untuk mendapatkan elemen. Elemen array dapat diakses menggunakan sintaks di bawah ini.
 
-```
+```bash
 ${array_name[index]}
 ```
 
 <h3>mendeklarasikan array angka dan pengulangan</h3>
 Array dapat berisi angka Contoh ini berisi array angka dan loop for untuk dicetak.
 
-```
+```bash
 nums=(1 3 12)
 for i in "${nums[@]}"
 do
@@ -585,7 +587,7 @@ done
 
 Output:
 
-```
+```bash
 1
 3
 12
@@ -606,7 +608,7 @@ Percobaan 1:
 <h3>mendeklarasikan Array string dan pengulangan</h3>
 Array dapat berisi angka Contoh ini berisi array angka dan loop for untuk dicetak.
 
-```
+```bash
 numbers=("element1" "element2" "element3")
 for i in "${numbers[@]}"
 do
@@ -616,7 +618,7 @@ done
 
 Output:
 
-```
+``` bash
 element1
 element2
 element3
@@ -637,7 +639,7 @@ Percobaan 2:
 <h3>Mengakses elemen pertama dalam array</h3>
 Dalam elemen Array, indeks elemen Pertama adalah nol, dan array[0] mengembalikan elemen pertama.
 
-```
+```bash
 numbers=("element1" "element2" "element3")
 
 echo ${numbers[0]}
@@ -646,7 +648,7 @@ echo ${numbers}
 
 Output:
 
-```
+```bash
 element1
 element1
 ```
@@ -666,7 +668,7 @@ Percobaan 3:
 <h3>Mengambil elemen terakhir dari sebuah array</h3>
 Dalam skrip bash, Anda dapat menggunakan indeks=-1 untuk mendapatkan elemen array terakhir.
 
-```
+```bash
 numbers=("element1" "element2" "element3")
 echo ${numbers[-1]}
 ```
@@ -687,7 +689,7 @@ For loop digunakan untuk mengulangi elemen.
 
 Berikut adalah contoh contoh loop array untuk mencetak semua elemen:
 
-```
+```bash
 numbers=("element1" "element2" "element3")
 
 for i in "${numbers[@]}"
@@ -698,7 +700,7 @@ done
 
 Output:
 
-```
+```bash
 element1
 element2
 element3
@@ -718,7 +720,7 @@ Percobaan 5:
 <h3>mencetak semua elemen array</h3>
 Gunakan [@] atau [*] untuk mencetak semua elemen array.
 
-```
+```bash
 arr=("element1" "element2" "element3") //
 echo ${arr[@]} #element1 element2 element3
 echo ${arr[*]}  #element1 element2 element3
@@ -739,7 +741,7 @@ Percobaan 6:
 
 Anda dapat menghapus elemen dari array menggunakan ```unset``` untuk indeks tertentu. 
 
-```
+```bash
 numbers=("element1" "element2" "element3")
 echo ${numbers[*]}
 unset numbers[-1]
@@ -760,13 +762,13 @@ Percobaan 7:
 <h3>Menambahkan elemen ke array</h3>
 Anda dapat menambahkan elemen di posisi indeks mana pun menggunakan sintaks di bawah ini:
 
-```
+```bash
 array[index]=value
 ```
 
 Contoh penambahan elemen awal dan akhir serta tengah:
 
-```
+```bash
 numbers=("element1" "element2" "element3")
 echo ${numbers[*]}
 
@@ -780,7 +782,7 @@ echo ${numbers[*]}
 
 Output:
 
-```
+```bash
 element1 element2 element3
 element0 element2 element3
 element0 element2 element3 element5
@@ -804,7 +806,7 @@ Dalam hal ini, Temukan jumlah semua elemen dalam array.
 
 Skrip shell menyediakan # 
 
-```
+```bash
 arr=("element1" "element2" "element3")
 echo ${#arr[@]} # returns 3
 echo ${#arr[*]} # returns 3
@@ -843,6 +845,80 @@ array[0]=12 | Tambahkan elemen ke array di posisi pertama.yaitu indeks=0
 array[-1]=22 | Tambahkan elemen ke array di posisi terakhir.
 array+=(11) | Menambahkan nilai ke dalam sebuah array
 ${array[@]:k:i} | Mengambil elemen indeks=1 dimulai dari indeks=k
+
+## Bash - Expansion
+perintah dimasukkan ke OS untuk membuat panggilan sistem dan melakukan tindakan. perintah masukan pengguna di terminal untuk melakukan operasi seperti ls, cd, mkdir dll. 
+
+Cara lain, Beberapa perintah dapat ditempatkan dalam satu file, juru bahasa bash membaca perintah dan menjalankannya
+
+Cara menulis skrip shell di bash
+- Pilih Editor atau editor teks
+- Buat file dengan ekstensi .sh atau .bash
+- Tulis perintah dalam file
+- Simpan file sebagai hello.sh
+
+```bash
+#!/bin/bash
+echo "Hello World"
+```
+Ubah izin untuk mengeksekusi file
+
+```bash
+chmod +x hello.sh
+```
+
+Percobaan 1:
+- [Alfani - Expansion 1](Alfani---Expansion-1)
+- [Ale - Expansion 1](Ale---Expansion-1)
+- [Kanisius - Expansion 1](Kanisius---Expansion-1)
+
+## Alfani - Expansion 1
+
+## Ale - Expansion 1
+
+## Kanisius - Expansion 1
+
+
+## Bash - Conditional Expression
+Ekspresi kondisional dievaluasi pada waktu eksekusi skrip, berdasarkan hasil, Ini mengeksekusi blok perintah yang spesifik.
+
+Ada berbagai jenis ekspresi kondisional di Bash:
+- Operator Perbandingan String
+- Operator Perbandingan Numerik
+- Operator File
+- Operator Logis 
+
+<h3>Operator File</h3>
+Bash menyediakan operator logika pada FIle dan direktori untuk menguji ekspresi kondisional. Ini memungkinkan Anda untuk memeriksa berbagai operasi seperti keberadaan, dan izin, ukuran. Ini digunakan ekspresi kondisional dalam pernyataan kondisional seperti if else dan case. 
+
+sintaks:
+
+```bash
+if [[ conditiona_expressions]]; then
+# code to handle
+fi
+```
+
+conditiona_expressions berisi opsi, dan jalur file, yang selalu mengembalikan nilai benar atau salah.
+
+berikut adalah opsi yang disediakan:
+
+Operator | Keterangan
+---|---
+-e file	| Mengembalikan nilai benar jika file yang diberikan ada, file dapat berupa file atau direktori normal
+-f file |	Mengembalikan nilai benar jika file yang diberikan ada dan file (bukan direktori)
+-d file	| Mengembalikan nilai benar jika file adalah direktori
+-r file	| Mengembalikan nilai benar jika file ada dan memiliki izin yang dapat dibaca
+-w file	| Mengembalikan nilai benar jika file ada dan memiliki izin yang dapat ditulis
+-x file	| Mengembalikan nilai benar jika file ada dan memiliki izin yang dapat dieksekusi
+-s file	| Mengembalikan nilai benar jika file ada dan ukurannya tidak kosong
+-G file	| Mengembalikan nilai benar jika file ada dan dimiliki oleh ID Grup yang cocok
+-O file	| Mengembalikan nilai benar jika file ada dan dimiliki oleh ID pengguna yang cocok
+-N file	| Mengembalikan nilai benar jika file ada dan diubah berdasarkan tanggal baca terakhir
+-L file	| Mengembalikan nilai benar jika file ada dan merupakan Tautan simbolis
+file1 -ot file2	| Mengembalikan nilai benar jika file1 lebih tua dari file2 atau file2 ada, file1 tidak ada
+file1 -ne file2	| Mengembalikan nilai benar jika file1 lebih baru dari file2, file1 ada, file2 tidak ada
+file1 -ef file2	| Mengembalikan nilai benar jika file1 dan file2 menunjuk ke perangkat dan inode yang sama 
 
 ## Kesimpulan
 
