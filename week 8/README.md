@@ -77,7 +77,7 @@ Ada berbagai jenis shell di OS Unix.
 |---|---|---|
 | SH | Bourne Shell |	#!/bin/sh |
 | Bash | Bourne Again Shell | #!/bin/bash |
-| cshell | C shel | #!/bin/csh | 
+| cshell | C shell | #!/bin/csh | 
 | tcsh | TENEX C shell | #!/bin/tcsh |
 | ksh | Korn shell | #!/bin/ksh |
 
@@ -94,6 +94,7 @@ File skrip
 - Prompt masih dapat ditulis dalam file skrip.
 - Hanya satu baris dalam sebuah file yang dijalankan secara berurutan.
 
+## Bash - Variabel
 
 ## Kesimpulan
 
