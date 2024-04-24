@@ -33,8 +33,10 @@
 15. [Bash - Operators](#Bash---Operators)
 16. [Bash - Numbers Comparison](Bash---Numbers-Comparison)
 17. [Bash - Check Directory](#Bash---Check-Directory)
-18. [Kesimpulan](#Kesimpulan)
-19. [Referensi](#Referensi)
+18. [Bash - File Name](#Bash---File-Name)
+19. [Bash - Split String](#Bash---Split-String)
+20. [Kesimpulan](#Kesimpulan)
+21. [Referensi](#Referensi)
 
 ## Dasar Teori
 - Shell
@@ -2197,7 +2199,7 @@ Jika ingin memeriksa apakah file atau direktori tersebut ada. Opsi ```-e``` meme
 
 Contoh:
 
-```
+```bash
 FILE_DIRECTORY=test
 if [ -e "$FILE_DIRECTORY" ]
 then
@@ -2215,6 +2217,231 @@ Percobaan 6:
 ## Ale - Check Directory 6
 
 ## Kanisius - Check Directory 6
+
+## Bash - File Name
+
+<h3>Ekstrak nama file dengan ekstensi</h3>
+
+Untuk mendapatkan nama file beserta ekstensinya, yaitu perintah ```basename``` dapat digunakan untuk menghapus direktori dan hanya mengembalikan ```filename``` untuk jalur tertentu, apakah itu  ```variable``` atau ```string```.
+
+Misalnya, jika jalannya ```/home/john/run.sh```, nama file yang dikembalikan adalah ```run.sh```. Proses ini melibatkan pengambilan jalur lengkap dan hanya mengekstraksinya filenamedengan menghilangkan jalurnya. Hasilnya ```filename``` kemudian disimpan dalam variabel dan dicetak ke konsol.
+
+nama dasar digunakan untuk menghapus direktori dan mengembalikan nama file untuk jalur yang diberikan. jalurnya adalah variabel atau string. Misalnya, jalannya adalah ```/home/john/run.sh```, dan nama file yang dikembalikan adalah ```run.sh``` Dalam hal ini, jalur lengkap diberikan dan mengembalikan nama file dengan menghapus jalur. 
+
+Nama file disimpan ke variabel dan dicetak ke konsol:
+
+```bash
+file_path="/home/john/run.sh"
+filename=$(basename "$file_path")
+echo $filename
+```
+
+Output:
+
+```bash
+run.sh
+```
+
+Percobaan 1:
+- [Alfani - File Name 1](#Alfani---File-Name-1)
+- [Ale - File Name 1](#Ale---File-Name-1)
+- [Kanisius - File Name 1](#Kanisius---File-Name-1)
+
+## Alfani - File Name 1
+
+## Ale - File Name 1
+	
+## Kanisius - File Name 1
+
+<h3>Ekstrak nama file tanpa ekstensi</h3>
+
+Untuk mendapatkan nama file saja tanpa ekstensi, Anda dapat menggunakan sintaks file ```${filename%.*}```.
+
+Misalnya, pertimbangkan jalannya ```/home/john/run.sh``` nama file yang dihasilkan adalah ```run.sh```.
+
+Awalnya, itu perintah ```basename``` digunakan untuk menghilangkan direktori dan menghasilkan nama file untuk jalur yang ditentukan dan mengembalikan variabel, dan variabel ini kemudian digunakan bersama dengan sintaks ekspresi untuk menghapus ekstensi dari nama file.
+
+Ekspresi ini secara efektif menghapus ekstensi dari nama file. 
+
+```bash
+filepath="/home/john/run.sh"
+filename=$(basename "$filepath")
+echo $filename
+echo "File Name: ${filename%.*}"
+```
+
+Output:
+
+```bash
+File Name: run
+```
+
+Percobaan 2:
+- [Alfani - File Name 2](#Alfani---File-Name-2)
+- [Ale - File Name 2](#Ale---File-Name-2)
+- [Kanisius - File Name 2](#Kanisius---File-Name-2)
+
+## Alfani - File Name 2
+
+## Ale - File Name 2
+	
+## Kanisius - File Name 2
+
+<h3>Ekstrak ekstensi untuk jalur file</h3>
+
+Untuk mengisolasi ekstensi file dari jalur file yang diberikan, ```${filename##*.}``` dapat dimanfaatkan. Ekspresi ini hanya mengembalikan ekstensi file.
+
+Misalnya, pertimbangkan jalannya ```/home/john/run.sh``` ekstensi yang dihasilkan adalah sh.
+
+Awalnya, itu perintah ```basename```  digunakan untuk menghapus jalur direktori dan mengembalikan nama file untuk jalur yang ditentukan, dan nama file ini kemudian digunakan bersama dengan sintaks ekspresi untuk mengembalikan ekstensi saja. 
+
+```bash
+filepath="/home/john/run.sh"
+filename=$(basename "$filepath")
+echo $filename
+echo "File Extension: ${filename##*.}"
+```
+
+Output:
+
+```bash
+File Extension:sh
+```
+
+Percobaan 3:
+- [Alfani - File Name 3](#Alfani---File-Name-3)
+- [Ale - File Name 3](#Ale---File-Name-3)
+- [Kanisius - File Name 3](#Kanisius---File-Name-3)
+
+## Alfani - File Name 3
+
+## Ale - File Name 3
+	
+## Kanisius - File Name 3
+
+
+Berikut adalah contoh komprehensif yang menunjukkan cara mendapatkan nama file dengan atau tanpa ekstensi file. Setelah menjalankan skrip di bawah ini, skrip tersebut akan dicetak
+- file dengan ekstensi,
+- hanya nama file tanpa ekstensi,
+- dan ekstensinya saja.
+
+Contoh:
+
+```bash
+filepath="/home/username/run.sh"
+filename=$(basename "$filepath")
+echo "File :$filename"
+echo "File Name: ${filename%.*}"
+echo "File Extension: ${filename##*.}"
+```
+
+Output:
+
+```bash
+File:run.sh
+File Name:run
+File Extension:sh
+```
+
+Percobaan 4:
+- [Alfani - File Name 4](#Alfani---File-Name-4)
+- [Ale - File Name 4](#Ale---File-Name-4)
+- [Kanisius - File Name 4](#Kanisius---File-Name-4)
+
+## Alfani - File Name 4
+
+## Ale - File Name 4
+	
+## Kanisius - File Name 4
+
+## Bash - Split String
+
+<h3>Memisahkan string menggunakan perintah awk dalam skrip bash shell</h3>
+
+perintah ```awk```, utilitas Linux yang kompatibel dengan semua distribusi bash dan shell, digunakan untuk membagi string berdasarkan yang ditentukan ```delimiter```.
+
+Input diberikan menggunakan simbol pipa (|), dan contoh di bawah ini menunjukkan pemisahan string yang mengandung titik dua (:)
+
+```bash
+str="abc:def:ghi"
+echo "$str" | awk -F':' '{print $1,$2,$3}'
+```
+
+Output:
+
+```
+abc def ghi
+```
+
+Percobaan 1:
+- [Alfani - Split String 1](#Alfani---Split-String-1)
+- [Ale - Split String 1](#Ale---Split-String-1)
+- [Kanisius - Split String 1](#Kanisius---Split-String-1)
+
+## Alfani - Split String 1
+
+## Ale - Split String 1
+	
+## Kanisius - Split String 1
+
+<h3>Pemisahan menggunakan variabel IFS</h3>
+
+Di sini, string masukan terdiri dari elemen yang dipisahkan oleh ```hyphens```. Variabel cangkang ```IFS```(Internal Field Separator)  diatur ke tanda hubung, dan string diiterasi menggunakan for loop.
+
+Setiap elemen dicetak setelah tanda hubung dihilangkan.
+
+```
+input="one-two-three"
+IFS='-' array=($input)
+for element in "${array[@]}";
+do
+ echo $element;
+ done
+```
+
+Output:
+
+```
+one
+two
+three
+```
+
+Percobaan 2:
+- [Alfani - Split String 2](#Alfani---Split-String-2)
+- [Ale - Split String 2](#Ale---Split-String-2)
+- [Kanisius - Split String 2](#Kanisius---Split-String-2)
+
+## Alfani - Split String 2
+
+## Ale - Split String 2
+	
+## Kanisius - Split String 2
+
+<h3>Menggunakan ekspansi Parameter dan loop</h3>
+Perluasan parameter digunakan untuk mengubah nilai variabel berdasarkan opsi yang ditentukan. Dalam hal ini, variabel string diubah menjadi array. Array kemudian diiterasi menggunakan sintaks for loop, mencetak setiap elemen ke konsol: 
+
+```
+msg="Welcome to my site."
+
+array=($msg)
+
+
+for item in "${array[@]}"; do
+    echo "$item"
+done
+```
+
+Percobaan 3:
+- [Alfani - Split String 3](#Alfani---Split-String-3)
+- [Ale - Split String 3](#Ale---Split-String-3)
+- [Kanisius - Split String 3](#Kanisius---Split-String-3)
+
+## Alfani - Split String 3
+
+## Ale - Split String 3
+	
+## Kanisius - Split String 3
 
 
 
