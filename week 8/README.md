@@ -227,6 +227,8 @@ Percobaan 3:
 - [Kanisius - Variable 3](#Kanisius---Variable-3)
 
 ## Alfani - Variable 3
+![ss](assets/alfani/v3a.jpg)
+![ss](assets/alfani/v3b.jpg)
 
 ## Ale - Variable 3
 ![ss](assets/ale/v3a.png)
@@ -278,6 +280,8 @@ Percobaan 4:
 - [Kanisius - Variable 4](#Kanisius---Variable-4)
 
 ## Alfani - Variable 4
+![ss](assets/alfani/v4a.jpg)
+![ss](assets/alfani/v4b.jpg)
 
 ## Ale - Variable 4
 ![ss](assets/ale/v4a.png)
@@ -319,6 +323,8 @@ Percobaan 5:
 - [Kanisius - Variable 5](#Kanisius---Variable-5)
 
 ## Alfani - Variable 5
+![ss](assets/alfani/v5a.jpg)
+![ss](assets/alfani/v5b.jpg)
 
 ## Ale - Variable 5
 ![ss](assets/ale/v5a.png)
@@ -394,6 +400,8 @@ Percobaan:
 - [Kanisius - Loop File](#Kanisius---Loop-File)
 
 ## Alfani - Loop File
+![ss](assets/alfani/lf1a.png)
+![ss](assets/alfani/lf1b.png)
 
 ## Ale - Loop File
 ![ss](assets/ale/lf1a.png)
@@ -445,6 +453,9 @@ Percobaan 1:
 ## Alfani - Comments 1
 
 ## Ale - Comments 1
+![ss](assets/ale/c1a.png)
+![ss](assets/ale/c1b.png)
+
 
 ## Kanisius - Comments 1
 
@@ -498,6 +509,8 @@ Percobaan 2:
 ## Alfani - Comments 2
 
 ## Ale - Comments 2
+![ss](assets/ale/c2a.png)
+![ss](assets/ale/c2b.png)
 
 ## Kanisius - Comments 2
 
@@ -620,6 +633,8 @@ Percobaan 1:
 ## Alfani - Array 1
 
 ## Ale - Array 1
+![ss](assets/ale/a1a.png)
+![ss](assets/ale/a1b.png)
 
 ## Kanisius - Array 1
 
@@ -651,6 +666,8 @@ Percobaan 2:
 ## Alfani - Array 2
 
 ## Ale - Array 2
+![ss](assets/ale/a2a.png)
+![ss](assets/ale/a2b.png)
 
 ## Kanisius - Array 2
 
@@ -680,6 +697,8 @@ Percobaan 3:
 ## Alfani - Array 3
 
 ## Ale - Array 3
+![ss](assets/ale/a3a.png)
+![ss](assets/ale/a3b.png)
 
 ## Kanisius - Array 3
 
