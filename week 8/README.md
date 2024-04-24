@@ -1,4 +1,4 @@
-<div align="center">
+![image](https://github.com/AlePerdana/SysOP24-3123500027/assets/149743435/dcae20b5-d54f-41aa-826e-db222a1e38df)![image](https://github.com/AlePerdana/SysOP24-3123500027/assets/149743435/8e7ee4d2-47cc-49f1-a77e-0a16ea8122d8)<div align="center">
   <h1 style="text-align: center;font-weight: bold">PRAKTIKUM 8<br>SISTEM OPERASI</h1>
   <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
@@ -25,8 +25,11 @@
 7. [Bash - Conditional Expression](#Bash---Conditional-Expression)
 8. [Bash - Case Statements](Bash---Case-Statements)
 9. [Bash - Special Characters](#Bash---Special-Characters)
-10. [Kesimpulan](#Kesimpulan)
-11. [Referensi](#Referensi)
+10. [Bash - if elif else](#Bash---if-elif-else)
+11. [Bash - Loop](#Bash---Loop)
+12. [Bash - Append String A](#Bash---Append-String)
+13. [Kesimpulan](#Kesimpulan)
+14. [Referensi](#Referensi)
 
 ## Dasar Teori
 - Shell
@@ -944,6 +947,8 @@ Percobaan 1:
 - [Kanisius - Expansion 1](#Kanisius---Expansion-1)
 
 ## Alfani - Expansion 1
+![ss](assets/alfani/e1a.jpg)
+![ss](assets/alfani/e1b.jpg)
 
 ## Ale - Expansion 1
 ![ss](assets/ale/e1a.png)
@@ -1079,12 +1084,29 @@ Percobaan 1:
 simbol tanda dolar digunakan untuk berbagai jenis ekspansi perluasan parameter ( $variable, ${variable}), Substitusi ( $(expression)), ekspresi artema ( $((expression))).
 
 <h3>Ambersand (&)</h3>
-Menambahkan &di akhir perintah memungkinkan Anda menjalankan perintah di latar belakang. 
 
-Misalnya, Untuk menjalankan server redis di latar belakang, gunakan perintah di bawah ini:
+Menambahkan ```&``` di akhir perintah memungkinkan Anda menjalankan perintah di latar belakang. 
+
 ```bash
-redis-server &
+command &
 ```
+
+Misalnya, Untuk menjalankan perintah yes di latar belakang, gunakan perintah di bawah ini:
+```bash
+yes &
+```
+
+Percobaan 2:
+- [Alfani - Special Characters 2](#Alfani---Special-Characters-2)
+- [Ale - Special Characters 2](#Ale---Special-Characters-2)
+- [Kanisius - Special Characters 2](#Kanisius---Special-Characters-2)
+
+## Alfani - Special Characters 2
+
+## Ale - Special Characters 2
+
+## Kanisius - Special Characters 2
+
 
 <h3>Pipe (|) </h3>
 ni digunakan untuk meneruskan keluaran dari satu perintah ke masukan ke perintah lain dari kiri ke kanan. Hal ini memungkinkan untuk membentuk rantai perintah 
@@ -1093,22 +1115,47 @@ Sintaksnya adalah ```command1 | command2```
 
 Contoh : ```echo "hello" | wc``` mengembalikan jumlah karakter.
 
+Percobaan 3:
+- [Alfani - Special Characters 3](#Alfani---Special-Characters-3)
+- [Ale - Special Characters 3](#Ale---Special-Characters-3)
+- [Kanisius - Special Characters 3](#Kanisius---Special-Characters-3)
+
+## Alfani - Special Characters 3
+
+## Ale - Special Characters 3
+
+## Kanisius - Special Characters 3
+
+
 <h3>Semicolon (;)</h3>
 
 Ini digunakan untuk memisahkan beberapa perintah menggunakan ```;``` dalam satu baris. ```;``` adalah pemisah perintah untuk mendefinisikan beberapa perintah dalam satu baris.
 Sintaks: 
-```
+
+```bash
 command1; command2;command3
 ```
 
-Contoh: ```cd /app/;ls;```
+Contoh: ```cd ../operatingsystem/;ls;```
+
+Percobaan 4:
+- [Alfani - Special Characters 4](#Alfani---Special-Characters-4)
+- [Ale - Special Characters 4](#Ale---Special-Characters-4)
+- [Kanisius - Special Characters 4](#Kanisius---Special-Characters-4)
+
+## Alfani - Special Characters 4
+
+## Ale - Special Characters 4
+
+## Kanisius - Special Characters 4
+
 
 <h3>Single quotes</h3>
 
 Kutipan tunggal (') digunakan untuk mendefinisikan string tanpa arti khusus. Artinya semua variabel dan ekspansi tidak diinterpretasikan dan mencetak string literal yang sama.
 
 contoh:
-```
+```bash
 name="Eric"
 
 echo "Hi, $name"  # Hi, Eric
@@ -1119,6 +1166,18 @@ echo pertama, variabel nama diperluas dan diinterpretasikan sebagai string dan d
 
 echo kedua, menggunakan tanda kutip tunggal, dan variabel nama tidak diperluas dan dicetak sebagai string literal.
 
+Percobaan 5:
+- [Alfani - Special Characters 5](#Alfani---Special-Characters-5)
+- [Ale - Special Characters 5](#Ale---Special-Characters-5)
+- [Kanisius - Special Characters 5](#Kanisius---Special-Characters-5)
+
+## Alfani - Special Characters 5
+
+## Ale - Special Characters 5
+
+## Kanisius - Special Characters 5
+
+
 <h3>Double quotes</h3>
 Tanda kutip ganda (") digunakan untuk mendefinisikan string literal dengan arti khusus.
 
@@ -1127,7 +1186,7 @@ jika string berisi variabel dan sintaks expansion, Ini diinterprestasikan dan di
 Jika string tidak ingin memperluas variabel mereka, maka Anda dapat melewatkan karakter \ sebelum simbol $ dollar.
 
 Contoh:
-```
+```bash
 name="Eric"
 
 echo "Hi, $name"  # Hi, Eric
@@ -1137,34 +1196,508 @@ echo pertama, variabel nama diperluas dan diinterpretasikan sebagai string dan d
 
 echo kedua, karakter escape dengan awalan $ \, dicetak sebagai string literal.
 
+Percobaan 6:
+- [Alfani - Special Characters 6](#Alfani---Special-Characters-6)
+- [Ale - Special Characters 6](#Ale---Special-Characters-6)
+- [Kanisius - Special Characters 6](#Kanisius---Special-Characters-6)
+
+## Alfani - Special Characters 6
+
+## Ale - Special Characters 6
+
+## Kanisius - Special Characters 6
+
+
 <h3>Backslash Character (\)</h3>
 Karakter backslash digunakan untuk menghindari karakter-karakter dalam string. Ini digunakan dalam string yang dikutip oleh tanda kutip ganda.
 
-```
+```bash
 echo escape $$ example # escape 3225 example
 echo escape \$$ example # escape $$ example
 ```
+Percobaan 7:
+- [Alfani - Special Characters 7](#Alfani---Special-Characters-7)
+- [Ale - Special Characters 7](#Ale---Special-Characters-7)
+- [Kanisius - Special Characters 7](#Kanisius---Special-Characters-7)
+
+## Alfani - Special Characters 7
+
+## Ale - Special Characters 7
+
+## Kanisius - Special Characters 7
+
 
 <h3>Comment (#)</h3>
 Simbol komentar digunakan untuk mengomentari sebaris kode. Baris komentar selalu dimulai dengan #.
 
 komentar akan diabaikan oleh penerjemah bash.
-```
+```bash
 # Line comment
 echo "comment example" # Inline comment
 ```
 
-<h3>Tanda tanya (?)</h3>
-tanda tanya mempunyai arti yang berbeda dalam konteksnya.
+Percobaan 8:
+- [Alfani - Special Characters 8](#Alfani---Special-Characters-8)
+- [Ale - Special Characters 8](#Ale---Special-Characters-8)
+- [Kanisius - Special Characters 8](#Kanisius---Special-Characters-8)
 
-    Dalam konteks ekspresi reguler
-    Di dalam 
+## Alfani - Special Characters 8
+
+## Ale - Special Characters 8
+
+## Kanisius - Special Characters 8
+
+
+<h3>Question mark (?)</h3>
+tanda tanya mempunyai arti yang berbeda dalam konteksnya.
+- Dalam konteks ekspresi reguler
+- Di dalam 
 
 periksa status keluar dari eksekusi perintah terakhir. 
 
 <h3>Dot (.)</h3>
-Titik dalam bash berguna untuk mengeksekusi file
-## Kesimpulan.
+Titik dalam bash berguna untuk mengeksekusi file. Ketika Anda menggunakan perintah ini untuk mengeksekusi skrip, shell akan membaca dan mengeksekusi perintah dari file skrip yang ditentukan seolah-olah perintah tersebut diketik langsung ke dalam sesi shell saat ini.
+
+## Bash - if elif else
+Skrip Bash menyediakan ekspresi kondisional untuk mengeksekusi kode berbeda berdasarkan kondisi yang ditentukan.
+
+<h3>Pernyataan kondisional Bash Shell</h3>
+Terkadang, Anda mungkin perlu mengeksekusi beragam blok kode bergantung pada berbagai keputusan berdasarkan kondisi tertentu.
+
+Skrip Bash memfasilitasi hal ini melalui pernyataan kondisional.
+```bash
+  if condition; then
+     # true code
+  elif another_condition; then
+     # condition is false, and another_condition is true
+  else
+     # none of the above conditions are true
+  fi
+```
+
+- Pernyataan ```if``` digunakan untuk mengeksekusi blok kode jika suatu kondisi benar, dengan sintaksis if then fi.
+- Pernyataan ```else``` digunakan untuk mengeksekusi kode jika suatu kondisi salah, mengikuti sintaksisnya if then else fi.
+- Pernyataan ```if..elif..else``` ini berguna ketika Anda perlu mengeksekusi kode jika tidak ada kondisi sebelumnya yang benar.
+
+Catatan:
+- Kondisi adalah ekspresi yang mengevaluasi true atau false dalam skrip shell.
+- Spasi diperlukan sebelum dan sesudah [ and ].
+- Diperlukan titik koma sebelum itu.
+- if, else, then, elif, fi adalah kata-kata khusus di Bash.
+- Kondisi adalah ekspresi dengan perintah:
+  - Perintah yang berisi sintaks tanda kurung tunggal, contoh sintaks [expression] dan digunakan untuk operasi string file.
+  - Sintaks kurung ganda, contohnya adalah [[expression]], yang digunakan untuk menggabungkan beberapa kondisi dan menangani pola regex.
+  - Tanda kurung ganda, contoh sintaksnya adalah ((expression)), digunakan untuk operasi aritmatika.
+ 
+<h3>Pernyataan kondisional if</h3>
+
+Pernyataan ```if``` di Bash digunakan untuk mengeksekusi blok kode ketika kondisi tertentu terpenuhi true. 
+
+```bash
+if [ condition ]; then
+   # Execute code block if the condition is true
+fi
+```
+
+Dalam sintaks di atas:
+- Mengganti [ condition ] dengan ekspresi kondisional.
+- Blok kode dalam pernyataan if dieksekusi hanya jika kondisi yang ditentukan bernilai benar.
+- Setiap ```if``` pernyataan harus diakhiri dengan ```fi```. 
+
+Contoh:
+
+```bash
+age=10
+if [ $age -lt 50 ]; then
+   echo "$age is less than 50"
+fi
+```
+
+Output:
+
+```bash
+10 is less than 50
+```
+
+Percobaan 1:
+- [Alfani - If elif else 1](#Alfani---If elif-else-1)
+- [Ale - If elif else 1](#Ale---If-elif-else-1)
+- [Kanisius - If elif else 1](#Kanisius---If-elif-else-1)
+
+## Alfani - If elif else 1
+
+## Ale - If elif else 1
+
+## Kanisius - If elif else 1
+
+<h3>Pernyataan Kondisional If-Else</h3>
+
+Pernyataan ```if-else``` kondisional di Bash memungkinkan Anda mengeksekusi blok kode yang berbeda tergantung pada kondisinya true atau false.
+
+```bash
+if [ condition ]; then
+   # Execute code block if the condition is true
+else
+   # Execute code block if the condition is false
+fi
+```
+
+Dalam sintaks di atas:
+- Mengganti [ condition ] dengan ekspresi untuk menguji.
+- Blok kode di dalam ```if``` pernyataan dijalankan jika kondisi yang ditentukan terpenuhi true.
+- Blok kode di dalam elsepernyataan dijalankan jika kondisinya adalah false.
+- Setiap pernyataan if-else harus diakhiri dengan fi.
+
+contoh:
+
+```bash
+#!/bin/sh
+age=25
+if [[ $age -gt 60 ]]; then
+     echo "Senior Citizen"
+else
+     echo "Not Senior Citizen"
+fi
+```
+Dalam contoh ini, jika usianya lebih dari 60 tahun, maka akan dihasilkan “Warga Negara Lanjut Usia”; jika tidak, akan ditampilkan “Bukan Warga Negara Lanjut Usia”. 
+
+Percobaan 2:
+- [Alfani - If elif else 2](#Alfani---If-elif-else-2)
+- [Ale - If elif else 2](#Ale---If-elif-else-2)
+- [Kanisius - If elif else 2](#Kanisius---If-elif-else-2)
+
+## Alfani - If elif else 2
+
+## Ale - If elif else 2
+
+## Kanisius - If elif else 2
+
+<h3>Pernyataan If..Elif..Else</h3>
+
+Menggunakan ```if..elif..else``` pernyataan kondisional di Bash untuk mengeksekusi blok kode yang berbeda berdasarkan beberapa kondisi. 
+
+```bash
+if [ condition1 ]; then
+	# Execute code if condition1 is true
+elif [ condition2 ]; then
+	# Execute code if condition1 is false and condition2 is true
+else
+	# Execute code if both condition1 and condition2 are false
+fi
+```
+
+- Blok kode di dalam pernyataan ```if``` yang pertama dieksekusi jika ```condition1``` adalah true.
+- Blok kode di dalam pernyataan ```elif``` yang pertama dieksekusi jika ```condition1``` adalah false Dan ```condition2``` benar.
+- pernyataan ```else``` blok dieksekusi jika keduanya ```condition1``` Dan ```condition2``` salah.
+- Setiap if..elif..elsepernyataan harus diakhiri dengan fi.
+
+Contoh:
+
+```bash
+age=25
+if [[ $age -gt 60 ]]; then
+    echo "Senior Citizen"
+elif [[ $age -lt 14 ]]; then
+    echo "Child"
+else
+    echo "Adult"
+fi
+```
+
+Dalam contoh ini, skrip memeriksa apakah usia lebih besar dari 60, kurang dari 14, atau tidak termasuk dalam kategori apa pun, dan menampilkan pesan yang sesuai. 
+
+Percobaan 3:
+- [Alfani - If elif else 3](#Alfani---If-elif-else-3)
+- [Ale - If elif else 3](#Ale---If-elif-else-3)
+- [Kanisius - If elif else 3](#Kanisius---If-elif-else-3)
+
+## Alfani - If elif else 3
+
+## Ale - If elif else 3
+
+## Kanisius - If elif else 3
+
+## Bash - Loop
+Loop digunakan untuk mengeksekusi blok kode beberapa kali.
+
+Misalkan Anda ingin menjalankan perintah berulang kali atau mencetak array, for loop digunakan di Bash
+
+Skrip Bash menyediakan berbagai jenis loop
+- for loop
+- for index loop
+- while loop
+- until loop
+
+<h3>For loop</h3>
+for loop digunakan untuk mengeksekusi kode beberapa kali berdasarkan:
+
+```
+for element in [list]
+do
+ ## Code block
+done
+```
+
+Contoh ini mengulangi daftar dan mencetak ke konsol:
+
+```bash
+for element in 1 2 3 4 5
+do
+  echo $element
+done
+```
+
+Percobaan 1:
+- [Alfani - Loop 1](#Alfani---Loop-1)
+- [Ale - Loop 1](#Ale---Loop-1)
+- [Kanisius - Loop 1](#Kanisius---Loop-1)
+
+## Alfani - Loop 1
+
+## Ale - Loop 1
+
+## Kanisius - Loop 1
+
+<h3>for index loop</h3>
+untuk loop indeks mirip dengan bahasa C untuk loop indeks Itu mengeksekusi kode beberapa kali berdasarkan kondisi benar, Ini dimulai dengan nilai awal dan iterasi berisi nilai yang akan bertambah 1.
+
+```bash
+for (( assignment; condition; iteration )); do
+  # code block
+done
+```
+
+Contoh:
+
+```bash
+for ((i=0;i<5;i++));do
+ echo $i
+done
+```
+
+Ini mencetak angka dari 0 hingga 5 
+
+Percobaan 2:
+- [Alfani - Loop 2](#Alfani---Loop-2)
+- [Ale - Loop 2](#Ale---Loop-2)
+- [Kanisius - Loop 2](#Kanisius---Loop-2)
+
+## Alfani - Loop 2
+
+## Ale - Loop 2
+
+## Kanisius - Loop 2
+
+<h3>while loop</h3>
+
+```while``` loop di Bash memungkinkan eksekusi kode berulang selama kondisi yang ditentukan true. Jika kondisinya menjadi false, loop keluar.
+
+Struktur dasar perulangan while adalah sebagai berikut:
+
+```
+while [ condition ]; do
+  # code block
+done
+```
+
+Contoh:
+
+```
+i=0
+while [[ i -lt 100 ]]; do
+  echo "$i"
+  i=$((i+1))
+done
+```
+
+while loop mengeksekusi kode selama kondisi yang ditentukan ( [[ i -lt 100 ]]) adalah benar.
+
+Blok kode menambah nilai sebesar 1 dan mencetak nilainya.
+
+jika kondisi salah, loop keluar. 
+
+Percobaan 3:
+- [Alfani - Loop 3](#Alfani---Loop-3)
+- [Ale - Loop 3](#Ale---Loop-3)
+- [Kanisius - Loop 3](#Kanisius---Loop-3)
+
+## Alfani - Loop 3
+
+## Ale - Loop 3
+
+## Kanisius - Loop 3
+
+<h3>until loop</h3>
+```until``` merupakan kata kunci di Bash digunakan untuk mengeksekusi kode berulang kali hingga kondisi tertentu tercapai true, pada titik mana perulangan keluar.
+
+Struktur dasar dari perulangan sampai adalah sebagai berikut:
+```
+until [ condition ]; do
+  # code block
+done
+```
+
+kata kunci ```until``` digunakan di Bash dan diakhiri dengan done. 
+
+contoh:
+
+```
+i=0
+until [[ i -eq 100 ]];
+do
+ echo "$i"
+ i=$((i+1))
+done
+```
+
+Dalam contoh, blok kode dijalankan selama [[ i -eq 100 ]]adalah salah. Ini menambah nilai sebesar 1 dan mencetak nilainya. output mencetak angka dari 0 hingga 99 angka 
+
+Percobaan 4:
+- [Alfani - Loop 4](#Alfani---Loop-4)
+- [Ale - Loop 4](#Ale---Loop-4)
+- [Kanisius - Loop 4](#Kanisius---Loop-4)
+
+## Alfani - Loop 4
+
+## Ale - Loop 4
+
+## Kanisius - Loop 4
+
+## Bash - Append String A
+expression atau expresi adalah istilah yang digunakan dalam matematika untuk menunjukkan suatu operasi. Ini berisi operan dan operator untuk melakukan operasi matematika. ```a<b``` adalah sebuah ekspresi. Ini mungkin berisi operator biner atau unary.
+
+Di bash, ekspresi dibuat menggunakan (())tanda kurung dengan operan dan operator sebagai argumen. ((a )) adalah ekspresi bash.
+
+Sintaksnya adalah:
+
+```
+((expression))
+```
+
+contoh:
+
+```
+result=$((12 + 11))
+echo "$result"
+```
+
+Percobaan 1:
+- [Alfani - Append String A 1](#Alfani---Append-String-A-1)
+- [Ale - Append String A 1](#Ale---Append-String-A-1)
+- [Kanisius - Append String A 1](#Kanisius---Append-String-A-1)
+
+## Alfani - Append String A 1
+
+## Ale - Append String A 1
+
+## Kanisius - Append String A 1
+
+<h3>Bash Athematic expressions</h3>
+Ekspresi artema dibuat menggunakan operator di bawah ini:
+- Operator Artmatik
+- Operator Perbandingan 
+
+Operator perbandingan digunakan untuk mengecek satu sama lain dengan membandingkan nilai Operator ( <, <=, >, >=, ==, !=) 
+
+contoh:
+
+```
+a=10
+b=2
+if ((a > b)); then
+    echo "a is greater than b"
+fi
+```
+
+Percobaan 2:
+- [Alfani - Append String A 2](#Alfani---Append-String-A-2)
+- [Ale - Append String A 2](#Ale---Append-String-A-2)
+- [Kanisius - Append String A 2](#Kanisius---Append-String-A-2)
+
+## Alfani - Append String A 2
+
+## Ale - Append String A 2
+
+## Kanisius - Append String A 2
+
+<h3>Expansion Bash Athematic</h3>
+
+```Expansion``` sama dengan ekspresi, Ini menghitung nilai ekspresi dan hasilnya diganti dengan nilai. Itu selalu diawali dengan tanda dolar. 
+
+sintaks:
+
+```
+$((expression))
+```
+
+Misalnya menghitung rata-rata dua angka, cetak hasilnya. Di sini digunakan sintaks ekspansi, Ini mengevaluasi ekspresi dan hasilnya diganti dengan output ekspresi. 
+
+contoh:
+
+```
+first=12
+second=2
+echo "The average is $(((first+second)/2))".
+```
+
+Percobaan 3:
+- [Alfani - Append String A 3](#Alfani---Append-String-A-3)
+- [Ale - Append String A 3](#Ale---Append-String-A-3)
+- [Kanisius - Append String A 3](#Kanisius---Append-String-A-3)
+
+## Alfani - Append String A 3
+
+## Ale - Append String A 3
+
+## Kanisius - Append String A 3
+
+
+## Bash - Functions
+Function adalah kode yang dapat digunakan kembali dan dikelompokkan dalam satu nama.
+
+<h3>Bagaimana mendeklarasikan suatu Fungsi dan memanggilnya?</h3>
+Definisi fungsi berisi beberapa baris kode yang akan dieksekusi.
+
+Fungsi berisi nama fungsi yang diapit {}.
+
+Itu dapat dideklarasikan dengan dua cara:
+
+```
+
+function function_name {
+# Commands or valid bash code
+# multiple lines
+}
+```
+
+atau
+
+```
+
+function function_name() {
+  # Commands or valid bash code
+  # multiple lines
+}
+```
+
+<h3>Cara meneruskan parameter ke suatu fungsi</h3>
+
+```
+function_name "parameter1" "parameter2" "parameter3".. "parametern"
+```
+
+Parameter dapat diakses menggunakan $1 $2 $3.. $n 
+
+```
+function function_name() {
+# $1 represents first paramter
+# $2 represents second paramter
+
+# $n represents nth paramter
+}
+```
+
+## Kesimpulan
 
 
 ## Referensi
