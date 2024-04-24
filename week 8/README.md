@@ -159,8 +159,12 @@ Percobaan 1:
 - [Kanisius - Variable 1](#Kanisius---Variable-1)
 
 ## Alfani - Variable 1
+![ss](assets/alfani/v1a)
+![ss](assets/alfani/v1b)
 
 ## Ale - Variable 1
+![ss](assets/ale/v1a)
+![ss](assets/ale/v1b)
 
 ## Kanisius - Variable 1
 
@@ -191,8 +195,12 @@ Percobaan 2:
 - [Kanisius - Variable 2](K#anisius---Variable-2)
 
 ## Alfani - Variable 2
+![ss](assets/alfani/v2a)
+![ss](assets/alfani/v2b)
 
 ## Ale - Variable 2
+![ss](assets/ale/v2a)
+![ss](assets/ale/v2b)
 
 ## Kanisius - Variable 2
 
@@ -221,6 +229,8 @@ Percobaan 3:
 ## Alfani - Variable 3
 
 ## Ale - Variable 3
+![ss](assets/ale/v3a)
+![ss](assets/ale/v3b)
 
 ## Kanisius - Variable 3
 
@@ -270,6 +280,8 @@ Percobaan 4:
 ## Alfani - Variable 4
 
 ## Ale - Variable 4
+![ss](assets/ale/v4a)
+![ss](assets/ale/v4b)
 
 ## Kanisius - Variable 4
 
@@ -309,6 +321,8 @@ Percobaan 5:
 ## Alfani - Variable 5
 
 ## Ale - Variable 5
+![ss](assets/ale/v5a)
+![ss](assets/ale/v5b)
 
 ## Kanisius - Variable 5
 
@@ -382,6 +396,9 @@ Percobaan:
 ## Alfani - Loop File
 
 ## Ale - Loop File
+![ss](assets/ale/lf1a)
+![ss](assets/ale/lf1b)
+![ss](assets/ale/lf1c)
 
 ## Kanisius - Loop File
 
