@@ -252,7 +252,7 @@ setAge() {
 }
 AGE=40
 setAge
-echo "Script Age: $tmp"
+echo "Script Age: $AGE"
 ```
 
 Output:
