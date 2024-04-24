@@ -371,7 +371,7 @@ Terkadang, Anda ingin membaca konten file dengan pemrograman bash.
 #!/bin/bash
 while IFS= read -r line; do
    echo "$line"
-done <filename.txt>
+done <filename.txt
 ```
 
 Percobaan:
