@@ -983,7 +983,7 @@ Percobaan 1:
 ## Bash - Special Characters
 Karakter khusus di bash dievaluasi dengan arti khusus dalam interpretasi suatu perintah. Karakter-karakter ini memiliki instruksi khusus, penggunaan karakter ini memiliki arti berbeda dalam konteks berbeda.
 
-<h3>Blankspace(" “)</h3>
+<h3>Blankspace (" “)</h3>
 Ini juga disebut spasi putih, berisi tab, spasi, kembali, baris baru. Ini memberitahu penerjemah bash untuk memisahkan perintah dan konten. Ini adalah pembatas untuk memisahkan perintah dan string.
 
 Contoh:
@@ -1002,24 +1002,96 @@ Percobaan 1:
 
 ## Kanisius - Special Characters 1
 
-<h3>Expansion($)</h3>
+<h3>Expansion ($)</h3>
 simbol tanda dolar digunakan untuk berbagai jenis ekspansi perluasan parameter ( $variable, ${variable}), Substitusi ( $(expression)), ekspresi artema ( $((expression))).
 
 <h3>Ambersand (&)</h3>
 Menambahkan &di akhir perintah memungkinkan Anda menjalankan perintah di latar belakang. 
 
+Misalnya, Untuk menjalankan server redis di latar belakang, gunakan perintah di bawah ini:
 ```bash
-command $
+redis-server &
 ```
+
+<h3>Pipe (|) </h3>
+ni digunakan untuk meneruskan keluaran dari satu perintah ke masukan ke perintah lain dari kiri ke kanan. Hal ini memungkinkan untuk membentuk rantai perintah 
+
+Sintaksnya adalah ```command1 | command2```
+
+Contoh : ```echo "hello" | wc``` mengembalikan jumlah karakter.
+
+<h3>Semicolon (;)</h3>
+
+Ini digunakan untuk memisahkan beberapa perintah menggunakan ```;``` dalam satu baris. ```;``` adalah pemisah perintah untuk mendefinisikan beberapa perintah dalam satu baris.
+Sintaks: 
+```
+command1; command2;command3
+```
+
+Contoh: ```cd /app/;ls;```
+
+<h3>Single quotes</h3>
+
+Kutipan tunggal (') digunakan untuk mendefinisikan string tanpa arti khusus. Artinya semua variabel dan ekspansi tidak diinterpretasikan dan mencetak string literal yang sama.
 
 contoh:
-```bash
-yes &
+```
+name="Eric"
+
+echo "Hi, $name"  # Hi, Eric
+echo 'Hello, $name'  # Hi $name
 ```
 
-Misalnya, Untuk menjalankan server redis di latar belakang, gunakan perintah di bawah ini 
+echo pertama, variabel nama diperluas dan diinterpretasikan sebagai string dan dicetak.
 
-## Kesimpulan
+echo kedua, menggunakan tanda kutip tunggal, dan variabel nama tidak diperluas dan dicetak sebagai string literal.
+
+<h3>Double quotes</h3>
+Tanda kutip ganda (") digunakan untuk mendefinisikan string literal dengan arti khusus.
+
+jika string berisi variabel dan sintaks expansion, Ini diinterprestasikan dan diperluaskan, dengan nilai yang dievaluasi saat runtime.
+
+Jika string tidak ingin memperluas variabel mereka, maka Anda dapat melewatkan karakter \ sebelum simbol $ dollar.
+
+Contoh:
+```
+name="Eric"
+
+echo "Hi, $name"  # Hi, Eric
+echo "Hi, \$name"  # Hi, $name
+```
+echo pertama, variabel nama diperluas dan diinterpretasikan sebagai string dan dicetak.
+
+echo kedua, karakter escape dengan awalan $ \, dicetak sebagai string literal.
+
+<h3>Backslash Character (\)</h3>
+Karakter backslash digunakan untuk menghindari karakter-karakter dalam string. Ini digunakan dalam string yang dikutip oleh tanda kutip ganda.
+
+```
+echo escape $$ example # escape 3225 example
+echo escape \$$ example # escape $$ example
+```
+
+<h3>Comment (#)</h3>
+Simbol komentar digunakan untuk mengomentari sebaris kode. Baris komentar selalu dimulai dengan #.
+
+komentar akan diabaikan oleh penerjemah bash.
+```
+# Line comment
+echo "comment example" # Inline comment
+```
+
+<h3>Tanda tanya (?)</h3>
+tanda tanya mempunyai arti yang berbeda dalam konteksnya.
+
+    Dalam konteks ekspresi reguler
+    Di dalam 
+
+periksa status keluar dari eksekusi perintah terakhir. 
+
+<h3>Dot (.)</h3>
+Titik dalam bash berguna untuk mengeksekusi file
+## Kesimpulan.
 
 
 ## Referensi
