@@ -23,8 +23,10 @@
 5. [Bash - Array](#Bash---Array)
 6. [Bash - Expansion](#Bash---Expansion)
 7. [Bash - Conditional Expression](#Bash---Conditional-Expression)
-8. [Kesimpulan](#Kesimpulan)
-9. [Referensi](#Referensi)
+8. [Bash - Case Statements](Bash---Case-Statements)
+9. [Bash - Special Characters](#Bash---Special-Characters)
+10. [Kesimpulan](#Kesimpulan)
+11. [Referensi](#Referensi)
 
 ## Dasar Teori
 - Shell
@@ -919,6 +921,103 @@ Operator | Keterangan
 file1 -ot file2	| Mengembalikan nilai benar jika file1 lebih tua dari file2 atau file2 ada, file1 tidak ada
 file1 -ne file2	| Mengembalikan nilai benar jika file1 lebih baru dari file2, file1 ada, file2 tidak ada
 file1 -ef file2	| Mengembalikan nilai benar jika file1 dan file2 menunjuk ke perangkat dan inode yang sama 
+
+## Bash - Case Statements
+Case Statements mirip dengan switch case dalam bahasa pemrograman lain.
+
+Ini digunakan untuk membandingkan masukan yang diberikan dengan a beberapa pola, dan perintah di dalam pola yang cocok dijalankan.
+
+Sintaks:
+
+```bash
+case expression in
+
+pattern1)
+  ## Commands
+  ;;
+pattern1)
+  ## Commands
+  ;;
+*)
+  ## Default case to execute if none of the pattern is matched
+  ;;
+```
+
+- expression adalah variabel atau ekspresi yang valid untuk dievaluasi.
+- Ini berisi pola-pola yang didefinisikan di dalam kasus yang dievaluasi dengan membandingkan ekspresi, mencocokkan kasus yang ditemukan, lalu mengeksekusi perintah di dalamnya.
+- kasus bawaan (```*)```) untuk dieksekusi jika tidak ada pola yang cocok.
+- Setiap blok pola diakhiri dengan ```;;```.
+- ```case``` adalah kata awal dan ```esac``` adalah sebuah kata yang mengakhiri pernyataan kasus.
+
+Contoh dari Case Statements:
+
+```bash
+name="john1"
+
+case $name in
+    "john")
+        echo "John."
+        ;;
+    "others" | "others2")
+        echo "Other names."
+        ;;
+
+    *)
+        echo "Default Name."
+        ;;
+esac
+```
+
+Percobaan 1:
+- [Alfani - Case Statements 1](Alfani---Case-Statements-1)
+- [Ale - Case Statements 1](Ale---Case-Statements-1)
+- [Kanisius - Case Statements 1](Kanisius---Case-Statements-1)
+
+## Alfani - Case Statements 1
+
+## Ale - Case Statements 1
+
+## Kanisius - Case Statements 1
+
+
+## Bash - Special Characters
+Karakter khusus di bash dievaluasi dengan arti khusus dalam interpretasi suatu perintah. Karakter-karakter ini memiliki instruksi khusus, penggunaan karakter ini memiliki arti berbeda dalam konteks berbeda.
+
+<h3>Blankspace(" “)</h3>
+Ini juga disebut spasi putih, berisi tab, spasi, kembali, baris baru. Ini memberitahu penerjemah bash untuk memisahkan perintah dan konten. Ini adalah pembatas untuk memisahkan perintah dan string.
+
+Contoh:
+```bash
+echo "Hello World"
+```
+
+Percobaan 1:
+- [Alfani - Special Characters 1](Alfani---Special-Characters-1)
+- [Ale - Special Characters 1](Ale---Special-Characters-1)
+- [Kanisius - Special Characters 1](Kanisius---Special-Characters-1)
+
+## Alfani - Special Characters 1
+
+## Ale - Special Characters 1
+
+## Kanisius - Special Characters 1
+
+<h3>Expansion($)</h3>
+simbol tanda dolar digunakan untuk berbagai jenis ekspansi perluasan parameter ( $variable, ${variable}), Substitusi ( $(expression)), ekspresi artema ( $((expression))).
+
+<h3>Ambersand (&)</h3>
+Menambahkan &di akhir perintah memungkinkan Anda menjalankan perintah di latar belakang. 
+
+```bash
+command $
+```
+
+contoh:
+```bash
+yes &
+```
+
+Misalnya, Untuk menjalankan server redis di latar belakang, gunakan perintah di bawah ini 
 
 ## Kesimpulan
 
