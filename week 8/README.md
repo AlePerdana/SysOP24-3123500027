@@ -101,7 +101,7 @@ File skrip
 - Prompt masih dapat ditulis dalam file skrip.
 - Hanya satu baris dalam sebuah file yang dijalankan secara berurutan.
 
-## Bash - Variabel
+## Bash - Variable
 <h3>Variabel Bash Shell</h3>
 
 Variabel merupakan elemen dasar dari bahasa pemrograman apa pun. Pemrograman skrip shell dan bash menawarkan variabel, seperti bahasa lainnya.
