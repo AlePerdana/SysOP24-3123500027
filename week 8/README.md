@@ -1,4 +1,4 @@
-![image](https://github.com/AlePerdana/SysOP24-3123500027/assets/149743435/dcae20b5-d54f-41aa-826e-db222a1e38df)![image](https://github.com/AlePerdana/SysOP24-3123500027/assets/149743435/8e7ee4d2-47cc-49f1-a77e-0a16ea8122d8)<div align="center">
+<div align="center">
   <h1 style="text-align: center;font-weight: bold">PRAKTIKUM 8<br>SISTEM OPERASI</h1>
   <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
@@ -27,9 +27,12 @@
 9. [Bash - Special Characters](#Bash---Special-Characters)
 10. [Bash - if elif else](#Bash---if-elif-else)
 11. [Bash - Loop](#Bash---Loop)
-12. [Bash - Append String A](#Bash---Append-String)
-13. [Kesimpulan](#Kesimpulan)
-14. [Referensi](#Referensi)
+12. [Bash - Append String A](#Bash---Append-String-A)
+13. [Bash - Functions](#Bash---Functions)
+14. [Bash - Append String B](#Bash---Append-String-B)
+15. [Bash - Operators](#Bash---Operators)
+16. [Kesimpulan](#Kesimpulan)
+17. [Referensi](#Referensi)
 
 ## Dasar Teori
 - Shell
@@ -1696,6 +1699,382 @@ function function_name() {
 # $n represents nth paramter
 }
 ```
+
+## Bash - Append String B
+
+<h3>Penambahan variabel sederhana</h3>
+deklarasikan dua variabel string dalam skrip Bash, yang dapat dicetak ke konsol menggunakan echo dengan mengapit variabel dalam tanda kutip ganda.
+
+```
+string1="Hello, "
+string2='Welcome to w3schools.'
+echo "$string1 $string2 "
+```
+
+atau
+
+```
+echo $string1 $string2
+```
+
+Output:
+
+```
+Hello, Welcome to w3schools.
+```
+
+Percobaan 1:
+- [Alfani - Append String B 1](#Alfani---Append-String-B-1)
+- [Ale - Append String B 1](#Ale---Append-String-B-1)
+- [Kanisius - Append String B 1](#Kanisius---Append-String-B-1)
+
+## Alfani - Append String B 1
+
+## Ale - Append String B 1
+
+## Kanisius - Append String B 1
+
+Pendekatan ini memiliki pro dan kontra
+- Sederhana dan mudah untuk menambahkan string.
+- Jika Anda menambahkan beberapa variabel, keterbacaannya akan berkurang.
+- Memahami sintaksisnya mungkin awalnya sulit bagi pengguna Bash baru.
+
+<h3>Gunakan Operator Aritmatika Singkatan</h3>
+Operator aritmatika singkatan ( += ) biasanya digunakan dalam aritmatika untuk menambahkan nilai ke variabel. Ini juga dapat digunakan untuk string untuk menambahkan string ke variabel.
+
+Misalnya.
+- a+=1 setara dengan a=a+1 dalam hal angka.
+- str+="test" akan menjadi str=str+"test" dalam hal string. 
+
+Contoh:
+
+```
+nums="One Two"
+nums+=" three"
+echo "$nums"
+```
+Percobaan 2:
+- [Alfani - Append String B 2](#Alfani---Append String B-2)
+- [Ale - Append String B 2](#Ale---Append String B-2)
+- [Kanisius - Append String B 2](#Kanisius---Append String B-2)
+
+## Alfani - Append String B 2
+
+## Ale - Append String B 2
+
+## Kanisius - Append String B 2
+
+Catatan:
+- Mudah untuk menambahkan string dan mudah dibaca, karena operator aritmatika ada di setiap bahasa.
+- Tidak disarankan dan tidak efisien untuk string yang lebih besar.
+
+<h3>Gunakan perintah printf</h3>
+
+```printf``` digunakan untuk memformat string dengan berbagai opsi pemformatan yang kompleks. Kita bisa menggunakan perintah ```printf```  untuk menggabungkan string. Formatnya adalah ```%s%s```,yang menambahkan dua variabel string. 
+
+contoh:
+
+```
+str1="Hello, "
+str2='Welcome to w3schools.'
+output=$(printf "%s%s" "$str1" "$str2")
+
+echo $output
+```
+
+Percobaan 3:
+- [Alfani - Append String B 3](#Alfani---Append String B-3)
+- [Ale - Append String B 3](#Ale---Append String B-3)
+- [Kanisius - Append String B 3](#Kanisius---Append String B-3)
+
+## Alfani - Append String B 3
+
+## Ale - Append String B 3
+
+## Kanisius - Append String B 3
+
+<h3>Menggunakan here string</h3>
+
+```Here string``` sadalah sintaks khusus untuk meneruskan string ke perintah dalam skrip Bash. Mereka digunakan untuk meneruskan string input tanpa menggunakan sumber lain, seperti file. Ini memungkinkan meneruskan string ke perintah Bash apa pun dari file atau baris perintah.
+
+Sintaks:
+
+```
+command <<< string
+```
+
+perintah: perintah yang valid ```<<<```: adalah ```here string operator```
+
+string adalah string masukan
+
+Contoh:
+
+```
+first="first "
+second" second"
+output="$first$(<<<" $second")"
+echo $output
+```
+
+Percobaan 4:
+- [Alfani - Append String B 4](#Alfani---Append String B-4)
+- [Ale - Append String B 4](#Ale---Append String B-4)
+- [Kanisius - Append String B 4](#Kanisius---Append String B-4)
+
+## Alfani - Append String B 4
+
+## Ale - Append String B 4
+
+## Kanisius - Append String B 4
+
+Catatan:
+- Cara lain untuk menambahkan string dengan sederhana.
+- Pendekatan ini berguna untuk meneruskan string ke perintah dari file atau baris perintah saja, meskipun berfungsi untuk menambahkan string, namun kurang mudah dibaca.
+
+## Bash - Operators
+Operator adalah simbol dalam pemrograman yang melakukan operasi pada operan
+
+Sintaks:
+
+```
+operand1 operator operand2
+```
+
+Ada dua jenis operator.
+- Operator Biner: Ini beroperasi pada dua operan seperti penjumlahan, pengurangan, perkalian, pembagian, dan modulus
+- operator unary: Ini beroperasi pada operan tunggal seperti kenaikan dan penurunan 
+
+<h3>Operator Aritmatika Bash</h3>
+Operator aritmatika di Bash menyediakan operasi aritmatika seperti operator penjumlahan, pembagian, pengurangan, dan perkalian pembagian. 
+
+Operator | Judul | Keterangan | Contoh
+---|---|---|---
+`+` | Penambahan | penambahan dua atau lebih operan | p+q=50
+`-` | Pengurangan | pengurangan dua atau lebih operan | qp=10
+`*` | Perkalian | perkalian dua atau lebih operan | p*q=600
+`/` | Membagi | hasil bagi setelah pembagian nilai | q/p=1,5
+`%` | Modulus | Kembalikan sisanya setelah pembagian nilai | q%p=10
+`-expr` | Minus Unary | kebalikan dari suatu ekspresi | -(10-7) adalah -3
+`~/` | pembagain Int | mengembalikan nilai int pembagian | (10~/7) adalah 1
+`++` | Increment | Tambahkan nilainya sebesar 1 | ++p=21
+`--` | Decrement | Kurangi nilainya sebesar 1 | --q=29
+
+<h3>Penugasan Operator</h3>
+Operator penugasan digunakan untuk menetapkan nilai ke suatu variabel. Operasi dasarnya sama dengan (=) 
+
+Operasi | Simbol | Keterangan | Hasil
+---|---|---|---
+Tambahkan Tugas | += | Penambahan dan penugasan ke variabel | ((p += 3)) adalah 23
+Kurangi Tugas | -= | Kurangi dan tugaskan ke variabel | ((p -= 3)) adalah 17
+Perkalian Tugas | *= | Perkalian dan penugasan ke variabel | ((p *= 2)) adalah 40
+Penugasan Divisi | /= | Penambahan dan penugasan ke variabel | ((p /= 5)) adalah 4 
+
+<h3>Bitwise Operator</h3>
+
+Operasi | Simbol | Keterangan | Hasil
+---|---|---|---
+DAN | &	| Bitwise AND dari dua operan | $op1 & $op2 adalah 0
+DAN | Setara | &= | Bitwise DAN Sama dengan dua operan | $op1 & $op2 adalah 0
+OR | \| | Bitwise OR dari dua operan | $op1 \| $op2 is 7
+XOR | ^ | XOR bitwise dari dua operan | $op1 ^ $op2 adalah 7
+Left Shift | <<	| Pergeseran Kiri Bitwise dari dua operan | $op1 & $op2 adalah 0
+Left Shift eql | <<= | Pergeseran Kiri Bitwise Sama dengan dua operan | $op1 \| $op2 is 7
+XOR | ^ | XOR bitwise dari dua operan | $op1 ^ $op2 adalah 7
+XOR | ^= | Bitwise XOR Sama dengan dua operan | $op1 ^ $op2 adalah 7 
+
+<h3>Operator logika</h3>
+Operator ini digunakan untuk melakukan operasi logika pada variabel/ekspresi/data.
+
+Operasi | Simbol | Keterangan | Hasil
+---|---|---|---
+Logical DAN | && | Kembalikan nilai benar (status keluar = 0) jika kedua operan benar, jika tidak, kembalikan salah (status keluar bukan nol) | $op1 &&& $op2 adalah 0
+Logical OR | \|\| | Logis OR dari dua operan | $op1 & $op2 adalah 0
+Logical NOT | \! | Balikkan nilai bersyarat | $op1 s 7
+
+Operator Perbandingan String
+
+Operasi | Keterangan
+---|---
+-z String | mengembalikan nilai true jika string kosong, jika tidak false
+-n String | mengembalikan nilai true, Jika string tidak kosong
+str1=str2 | mengembalikan nilai true, jika str1 dan str2 sama
+str1!=str2 | mengembalikan nilai true, jika str1 dan str2 tidak sama
+str1>str2 | mengembalikan nilai true, jika str1 mengurutkan sebelum str2
+str1<str2 | mengembalikan nilai true, jika str1 mengurutkan setelah str2
+
+<h3>Operator Perbandingan Numerik</h3>
+Berikut ini adalah operator Perbandingan. 
+
+menggunakan operator -eq di if fi pernyataan kondisional:
+
+```
+first=13
+second=15
+
+if [ "$first" -eq "$second" ]; then
+  echo "Two numbers are equal";
+fi
+```
+
+Percobaan 1:
+- [Alfani - Operators 1](#Alfani---Operators-1)
+- [Ale - Operators 1](#Ale---Operators-1)
+- [Kanisius - Operators 1](#Kanisius---Operators-1)
+
+## Alfani - Operators 1
+
+## Ale - Operators 1
+
+## Kanisius - Operators 1
+
+    String
+    Pesta - Fungsi
+    Bash - Tambahkan String
+    Pesta - Operator
+    Bash - Perbandingan Angka
+    Bash - Periksa Direktori
+    Pesta - Nama File
+    Bash - Pisahkan String
+    Bash - Panjang Tali
+    pesta - bashrc
+    Bash - Operator Terner
+    Bash - Huruf kecil
+    Pesta - Huruf besar
+    Pesta - Substring
+    Bash - kumpulan variabel
+    Bash - Ulangi No 
+
+    Rumah
+    Pelajari Perintah terminal
+    Tutorial Pesta
+    Pesta - Operator 
+
+Pesta - Operator
+
+Operator yang Didukung dalam contoh pemrograman skrip Bash untuk operator aritmatika Logis, Bitwise, Perbandingan.
+
+Apa itu operator?
+
+Operator adalah simbol dalam pemrograman yang melakukan operasi pada operan
+
+Sintaksis
+
+operand1 operator operand2
+
+Ada dua jenis operator.
+
+    Operator Biner: Ini beroperasi pada dua operan seperti penjumlahan, pengurangan, perkalian, pembagian, dan modulus
+    operator unary: Ini beroperasi pada operan tunggal seperti kenaikan dan penurunan 
+
+Operator Aritmatika Bash
+
+Operator aritmatika di Bash menyediakan operasi aritmatika seperti operator penjumlahan, pembagian, pengurangan, dan perkalian pembagian.
+Operator 	Judul 	Keterangan 	Contoh
++ 	Tambahan 	penambahan dua atau lebih operan 	p+q=50
+- 	Pengurangan 	pengurangan dua atau lebih operan 	qp=10
+* 	Perkalian 	perkalian dua atau lebih operan 	p*q=600
+/ 	Membagi 	hasil bagi setelah pembagian nilai 	q/p=1,5
+% 	Modulus 	Kembalikan sisanya setelah pembagian nilai 	q%p=10
+% 	Modulus 	Kembalikan sisanya setelah pembagian nilai 	q%p=10
+-expr 	Minus Unary 	kebalikan dari suatu ekspresi 	-(10-7) adalah -3
+~/ 	Divisi Int 	mengembalikan nilai int pembagian 	(10~/7) adalah 1
+++ 	Kenaikan 	Tambahkan nilainya sebesar 1 	++p=21
+-- 	Pengurangan 	Kurangi nilainya sebesar 1 	--q=29
+
+Berikut adalah contoh operator aritmatika
+Operator Penugasan
+
+Operator penugasan digunakan untuk menetapkan nilai ke suatu variabel. Operasi dasarnya sama dengan (=)
+
+Selain itu, Ada operator penugasan lainnya.
+
+misalnya, p adalah 20
+Operasi 	Simbol 	Keterangan 	Hasil
+Tambahkan Tugas 	+=	Penambahan dan penugasan ke variabel 	((p += 3)) adalah 23
+Kurangi Tugas 	-=	Kurangi dan tugaskan ke variabel 	((p -= 3)) adalah 17
+Perkalian Tugas 	*=	Perkalian dan penugasan ke variabel 	((p *= 2)) adalah 40
+Penugasan Divisi 	/=	Penambahan dan penugasan ke variabel 	((p /= 5)) adalah 4
+
+Operator Bitwise
+Operasi 	Simbol 	Keterangan 	Hasil
+DAN 	&	Bitwise AND dari dua operan 	$op1 & $op2 adalah 0
+DAN Setara 	&=	Bitwise DAN Sama dengan dua operan 	$op1 & $op2 adalah 0
+ATAU 	|	Bitwise OR dari dua operan 	$op1 | $op2 is 7
+XOR 	^	XOR bitwise dari dua operan 	$op1 ^ $op2 adalah 7
+Pergeseran Kiri 	<<	Pergeseran Kiri Bitwise dari dua operan 	$op1 & $op2 adalah 0
+Persamaan Pergeseran Kiri 	<<=	Pergeseran Kiri Bitwise Sama dengan dua operan 	$op1| $op2 is 7
+XOR 	^	XOR bitwise dari dua operan 	$op1 ^ $op2 adalah 7
+XOR 	^=	Bitwise XOR Sama dengan dua operan 	$op1 ^ $op2 adalah 7
+Operator logika
+
+Operator ini digunakan untuk melakukan operasi logika pada variabel/ekspresi/data.
+Operasi 	Simbol 	Keterangan 	Hasil
+Logis DAN 	&&	Kembalikan nilai benar (status keluar = 0) jika kedua operan benar, jika tidak, kembalikan salah (status keluar bukan nol) 	$op1 &&& $op2 adalah 0
+Logis ATAU 	||	Logis OR dari dua operan 	$op1 & $op2 adalah 0
+Logis TIDAK 	\!	Balikkan nilai bersyarat. 	$op1 s 7
+
+Ini sebuah contoh
+Operator Perbandingan String
+Operasi 	Keterangan
+-z Tali 	Kembalikan nilai benar jika string kosong, jika tidak salah.
+-n Tali 	KEMBALI benar, Jika string tidak kosong
+str1=str2 	kembalikan nilai true, jika str1 dan str2 sama
+str1!=str2 	mengembalikan nilai true, jika str1 dan str2 tidak sama
+str1>str2 	kembali benar, jika str1 mengurutkan sebelum str2
+str1<str2 	kembali benar, jika str1 mengurutkan setelah str2
+Operator Perbandingan Numerik
+
+Berikut ini adalah operator Perbandingan.
+
+menggunakan operator -eq di if fipernyataan bersyarat
+
+first=13
+second=15
+
+if [ "$first" -eq "$second" ]; then
+  echo "Two numbers are equal";
+fi
+
+| Operasi | Nama | Deskripsi |
+---|---|---
+| -eq | sama | Periksa apakah dua variabel sama | 
+| -ne | Tidak sama | Periksa apakah dua variabel tidak sama |
+| -lt | Kurang dari | Periksa apakah variabel pertama lebih kecil dari variabel kedua |
+| -le | Kurang dari sama | Periksa variabel pertama kurang dari sama dengan variabel kedua |
+| -gt | lebih besar dari | Periksa apakah variabel pertama lebih besar dari variabel kedua |
+| -ge | lebih besar dari sama | Periksa apakah variabel pertama lebih besar dari sama dengan variabel kedua | 
+
+Contoh:
+
+```
+p=11
+q=5
+
+if [ "$p" -ne "$q" ]; then
+  echo "Two numbers are not equal";
+fi
+```
+
+Percobaan 2:
+- [Alfani - Operators 2](#Alfani---Operators-2)
+- [Ale - Operators 2](#Ale---Operators-2)
+- [Kanisius - Operators 2](#Kanisius---Operators-2)
+
+## Alfani - Operators 2
+
+## Ale - Operators 2
+
+## Kanisius - Operators 2
+
+<h3>Operator lain</h3>
+
+Operasi | Keterangan
+---|---
+-v variable | Mengembalikan nilai benar jika suatu variabel menetapkan nilai, berarti nilai ditetapkan
+-o optname | Mengembalikan nilai benar jika nama optname shell diaktifkan
+-R variable | Mengembalikan nilai benar jika suatu variabel menetapkan nilai, dan itu adalah referensi bernama 
+
+
 
 ## Kesimpulan
 
