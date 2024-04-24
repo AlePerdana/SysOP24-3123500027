@@ -286,12 +286,12 @@ Dalam sintaks ini, variabel dideklarasikan dan ditugaskan dengan ```local``` kat
 
 ```bash
 setAge() {
-    local AGE=25
+    local AGE=35
     echo "Local Variable Age: $AGE"
 }
 AGE=40
 setAge
-echo "Global Age: $tmp"
+echo "Global Age: $AGE"
 ```
 
 Output:
