@@ -31,8 +31,10 @@
 13. [Bash - Functions](#Bash---Functions)
 14. [Bash - Append String B](#Bash---Append-String-B)
 15. [Bash - Operators](#Bash---Operators)
-16. [Kesimpulan](#Kesimpulan)
-17. [Referensi](#Referensi)
+16. [Bash - Numbers Comparison](Bash---Numbers-Comparison)
+17. [Bash - Check Directory](#Bash---Check-Directory)
+18. [Kesimpulan](#Kesimpulan)
+19. [Referensi](#Referensi)
 
 ## Dasar Teori
 - Shell
@@ -1497,7 +1499,7 @@ Percobaan 2:
 
 Struktur dasar perulangan while adalah sebagai berikut:
 
-```
+```bash
 while [ condition ]; do
   # code block
 done
@@ -1505,7 +1507,7 @@ done
 
 Contoh:
 
-```
+```bash
 i=0
 while [[ i -lt 100 ]]; do
   echo "$i"
@@ -1534,7 +1536,7 @@ Percobaan 3:
 ```until``` merupakan kata kunci di Bash digunakan untuk mengeksekusi kode berulang kali hingga kondisi tertentu tercapai true, pada titik mana perulangan keluar.
 
 Struktur dasar dari perulangan sampai adalah sebagai berikut:
-```
+```bash
 until [ condition ]; do
   # code block
 done
@@ -1544,7 +1546,7 @@ kata kunci ```until``` digunakan di Bash dan diakhiri dengan done.
 
 contoh:
 
-```
+```bash
 i=0
 until [[ i -eq 100 ]];
 do
@@ -1573,13 +1575,13 @@ Di bash, ekspresi dibuat menggunakan (())tanda kurung dengan operan dan operator
 
 Sintaksnya adalah:
 
-```
+```bash
 ((expression))
 ```
 
 contoh:
 
-```
+```bash
 result=$((12 + 11))
 echo "$result"
 ```
@@ -1604,7 +1606,7 @@ Operator perbandingan digunakan untuk mengecek satu sama lain dengan membandingk
 
 contoh:
 
-```
+```bash
 a=10
 b=2
 if ((a > b)); then
@@ -1629,7 +1631,7 @@ Percobaan 2:
 
 sintaks:
 
-```
+```bash
 $((expression))
 ```
 
@@ -1637,7 +1639,7 @@ Misalnya menghitung rata-rata dua angka, cetak hasilnya. Di sini digunakan sinta
 
 contoh:
 
-```
+```bash
 first=12
 second=2
 echo "The average is $(((first+second)/2))".
@@ -1665,8 +1667,7 @@ Fungsi berisi nama fungsi yang diapit {}.
 
 Itu dapat dideklarasikan dengan dua cara:
 
-```
-
+```bash
 function function_name {
 # Commands or valid bash code
 # multiple lines
@@ -1675,8 +1676,7 @@ function function_name {
 
 atau
 
-```
-
+```bash
 function function_name() {
   # Commands or valid bash code
   # multiple lines
@@ -1685,13 +1685,13 @@ function function_name() {
 
 <h3>Cara meneruskan parameter ke suatu fungsi</h3>
 
-```
+```bash
 function_name "parameter1" "parameter2" "parameter3".. "parametern"
 ```
 
 Parameter dapat diakses menggunakan $1 $2 $3.. $n 
 
-```
+```bash
 function function_name() {
 # $1 represents first paramter
 # $2 represents second paramter
@@ -1705,7 +1705,7 @@ function function_name() {
 <h3>Penambahan variabel sederhana</h3>
 deklarasikan dua variabel string dalam skrip Bash, yang dapat dicetak ke konsol menggunakan echo dengan mengapit variabel dalam tanda kutip ganda.
 
-```
+```bash
 string1="Hello, "
 string2='Welcome to w3schools.'
 echo "$string1 $string2 "
@@ -1713,13 +1713,13 @@ echo "$string1 $string2 "
 
 atau
 
-```
+```bash
 echo $string1 $string2
 ```
 
 Output:
 
-```
+```bash
 Hello, Welcome to w3schools.
 ```
 
@@ -1748,7 +1748,7 @@ Misalnya.
 
 Contoh:
 
-```
+```bash
 nums="One Two"
 nums+=" three"
 echo "$nums"
@@ -1774,7 +1774,7 @@ Catatan:
 
 contoh:
 
-```
+```bash
 str1="Hello, "
 str2='Welcome to w3schools.'
 output=$(printf "%s%s" "$str1" "$str2")
@@ -1799,7 +1799,7 @@ Percobaan 3:
 
 Sintaks:
 
-```
+```bash
 command <<< string
 ```
 
@@ -1809,7 +1809,7 @@ string adalah string masukan
 
 Contoh:
 
-```
+```bash
 first="first "
 second" second"
 output="$first$(<<<" $second")"
@@ -1836,7 +1836,7 @@ Operator adalah simbol dalam pemrograman yang melakukan operasi pada operan
 
 Sintaks:
 
-```
+```bash
 operand1 operator operand2
 ```
 
@@ -1907,7 +1907,7 @@ Berikut ini adalah operator Perbandingan.
 
 menggunakan operator -eq di if fi pernyataan kondisional:
 
-```
+```bash
 first=13
 second=15
 
@@ -1927,114 +1927,6 @@ Percobaan 1:
 
 ## Kanisius - Operators 1
 
-    String
-    Pesta - Fungsi
-    Bash - Tambahkan String
-    Pesta - Operator
-    Bash - Perbandingan Angka
-    Bash - Periksa Direktori
-    Pesta - Nama File
-    Bash - Pisahkan String
-    Bash - Panjang Tali
-    pesta - bashrc
-    Bash - Operator Terner
-    Bash - Huruf kecil
-    Pesta - Huruf besar
-    Pesta - Substring
-    Bash - kumpulan variabel
-    Bash - Ulangi No 
-
-    Rumah
-    Pelajari Perintah terminal
-    Tutorial Pesta
-    Pesta - Operator 
-
-Pesta - Operator
-
-Operator yang Didukung dalam contoh pemrograman skrip Bash untuk operator aritmatika Logis, Bitwise, Perbandingan.
-
-Apa itu operator?
-
-Operator adalah simbol dalam pemrograman yang melakukan operasi pada operan
-
-Sintaksis
-
-operand1 operator operand2
-
-Ada dua jenis operator.
-
-    Operator Biner: Ini beroperasi pada dua operan seperti penjumlahan, pengurangan, perkalian, pembagian, dan modulus
-    operator unary: Ini beroperasi pada operan tunggal seperti kenaikan dan penurunan 
-
-Operator Aritmatika Bash
-
-Operator aritmatika di Bash menyediakan operasi aritmatika seperti operator penjumlahan, pembagian, pengurangan, dan perkalian pembagian.
-Operator 	Judul 	Keterangan 	Contoh
-+ 	Tambahan 	penambahan dua atau lebih operan 	p+q=50
-- 	Pengurangan 	pengurangan dua atau lebih operan 	qp=10
-* 	Perkalian 	perkalian dua atau lebih operan 	p*q=600
-/ 	Membagi 	hasil bagi setelah pembagian nilai 	q/p=1,5
-% 	Modulus 	Kembalikan sisanya setelah pembagian nilai 	q%p=10
-% 	Modulus 	Kembalikan sisanya setelah pembagian nilai 	q%p=10
--expr 	Minus Unary 	kebalikan dari suatu ekspresi 	-(10-7) adalah -3
-~/ 	Divisi Int 	mengembalikan nilai int pembagian 	(10~/7) adalah 1
-++ 	Kenaikan 	Tambahkan nilainya sebesar 1 	++p=21
--- 	Pengurangan 	Kurangi nilainya sebesar 1 	--q=29
-
-Berikut adalah contoh operator aritmatika
-Operator Penugasan
-
-Operator penugasan digunakan untuk menetapkan nilai ke suatu variabel. Operasi dasarnya sama dengan (=)
-
-Selain itu, Ada operator penugasan lainnya.
-
-misalnya, p adalah 20
-Operasi 	Simbol 	Keterangan 	Hasil
-Tambahkan Tugas 	+=	Penambahan dan penugasan ke variabel 	((p += 3)) adalah 23
-Kurangi Tugas 	-=	Kurangi dan tugaskan ke variabel 	((p -= 3)) adalah 17
-Perkalian Tugas 	*=	Perkalian dan penugasan ke variabel 	((p *= 2)) adalah 40
-Penugasan Divisi 	/=	Penambahan dan penugasan ke variabel 	((p /= 5)) adalah 4
-
-Operator Bitwise
-Operasi 	Simbol 	Keterangan 	Hasil
-DAN 	&	Bitwise AND dari dua operan 	$op1 & $op2 adalah 0
-DAN Setara 	&=	Bitwise DAN Sama dengan dua operan 	$op1 & $op2 adalah 0
-ATAU 	|	Bitwise OR dari dua operan 	$op1 | $op2 is 7
-XOR 	^	XOR bitwise dari dua operan 	$op1 ^ $op2 adalah 7
-Pergeseran Kiri 	<<	Pergeseran Kiri Bitwise dari dua operan 	$op1 & $op2 adalah 0
-Persamaan Pergeseran Kiri 	<<=	Pergeseran Kiri Bitwise Sama dengan dua operan 	$op1| $op2 is 7
-XOR 	^	XOR bitwise dari dua operan 	$op1 ^ $op2 adalah 7
-XOR 	^=	Bitwise XOR Sama dengan dua operan 	$op1 ^ $op2 adalah 7
-Operator logika
-
-Operator ini digunakan untuk melakukan operasi logika pada variabel/ekspresi/data.
-Operasi 	Simbol 	Keterangan 	Hasil
-Logis DAN 	&&	Kembalikan nilai benar (status keluar = 0) jika kedua operan benar, jika tidak, kembalikan salah (status keluar bukan nol) 	$op1 &&& $op2 adalah 0
-Logis ATAU 	||	Logis OR dari dua operan 	$op1 & $op2 adalah 0
-Logis TIDAK 	\!	Balikkan nilai bersyarat. 	$op1 s 7
-
-Ini sebuah contoh
-Operator Perbandingan String
-Operasi 	Keterangan
--z Tali 	Kembalikan nilai benar jika string kosong, jika tidak salah.
--n Tali 	KEMBALI benar, Jika string tidak kosong
-str1=str2 	kembalikan nilai true, jika str1 dan str2 sama
-str1!=str2 	mengembalikan nilai true, jika str1 dan str2 tidak sama
-str1>str2 	kembali benar, jika str1 mengurutkan sebelum str2
-str1<str2 	kembali benar, jika str1 mengurutkan setelah str2
-Operator Perbandingan Numerik
-
-Berikut ini adalah operator Perbandingan.
-
-menggunakan operator -eq di if fipernyataan bersyarat
-
-first=13
-second=15
-
-if [ "$first" -eq "$second" ]; then
-  echo "Two numbers are equal";
-fi
-
 | Operasi | Nama | Deskripsi |
 ---|---|---
 | -eq | sama | Periksa apakah dua variabel sama | 
@@ -2046,7 +1938,7 @@ fi
 
 Contoh:
 
-```
+```bash
 p=11
 q=5
 
@@ -2073,6 +1965,256 @@ Operasi | Keterangan
 -v variable | Mengembalikan nilai benar jika suatu variabel menetapkan nilai, berarti nilai ditetapkan
 -o optname | Mengembalikan nilai benar jika nama optname shell diaktifkan
 -R variable | Mengembalikan nilai benar jika suatu variabel menetapkan nilai, dan itu adalah referensi bernama 
+
+## Bash - Numbers Comparison
+Angka dapat berupa integer atau angka floating.
+
+<h3>Cara Memeriksa apakah dua angka sama atau tidak di Bash</h3>
+
+Program ini mengambil nilai masukan dan memeriksa apakah dua nilai sama atau tidak. 
+
+```bash
+first=13
+second=15
+if (( first == second )); then
+  echo "Two numbers are equal";
+fi
+```
+
+Percobaan 1:
+- [Alfani - Numbers Comparison 1](#Alfani---Numbers-Comparison-1)
+- [Ale - Numbers Comparison 1](#Ale---Numbers-Comparison-1)
+- [Kanisius - Numbers Comparison 1](#Kanisius---Numbers-Comparison-1)
+
+## Alfani - Numbers Comparison 1
+
+## Ale - Numbers Comparison 1
+
+## Kanisius - Numbers Comparison 1
+
+Beberapa skrip shell tidak mendukung (()), gunakan [[]] dengan operator Perbandingan
+
+Berikut ini adalah operator Perbandingan:
+- -eq: setara
+  	Periksa apakah dua variabel sama 
+- -ne: Tidak sama
+        Periksa apakah dua variabel tidak sama 
+- -lt: Kurang dari
+        Periksa apakah variabel pertama lebih kecil dari variabel 	kedua 
+- -le: Kurang dari sama
+        Periksa apakah variabel pertama kurang dari sama dengan 	variabel kedua 
+- -gt: Lebih besar dari
+  	Periksa apakah variabel pertama lebih besar dari variabel 	kedua 
+- -ge: Lebih besar dari atau sama dengan
+        Bandingkan Periksa apakah variabel pertama lebih besar dari 	sama dengan variabel kedua 
+
+menggunakan operator -eq di if fi pernyataan kondisional:
+
+```bash
+first=13
+second=15
+
+if [ "$first" -eq "$second" ]; then
+  echo "Two numbers are equal";
+fi
+```
+
+Percobaan 2:
+- [Alfani - Numbers Comparison 2](#Alfani---Numbers-Comparison-2)
+- [Ale - Numbers Comparison 2](#Ale---Numbers-Comparison-2)
+- [Kanisius - Numbers Comparison 2](#Kanisius---Numbers-Comparison-2)
+
+## Alfani - Numbers Comparison 2
+
+## Ale - Numbers Comparison 2
+
+## Kanisius - Numbers Comparison 2
+
+dengan operator ternary:
+
+```bash
+first=13
+second=15
+
+echo $(( first == second ?  "equal": "not equal" ))
+```
+
+Percobaan 3:
+- [Alfani - Numbers Comparison 3](#Alfani---Numbers-Comparison-3)
+- [Ale - Numbers Comparison 3](#Ale---Numbers-Comparison-3)
+- [Kanisius - Numbers Comparison 3](#Kanisius---Numbers-Comparison-3)
+
+## Alfani - Numbers Comparison 3
+
+## Ale - Numbers Comparison 3
+
+## Kanisius - Numbers Comparison 3
+
+
+## Bash - Check Directory
+
+<h3>Skrip Bash Periksa apakah direktori tersebut ada</h3>
+
+Dalam contoh di bawah ini, ```if``` blok digunakan untuk menguji ekspresi kondisional untuk keberadaan direktori
+
+<h3>Periksa apakah Direktori Ada dan Cetak Pesan </h3>
+Ekspresi kondisional menggunakan -dopsi untuk memeriksa apakah direktori tersebut ada. 
+
+<h3>periksa direktori yang ada dan cetak pesannya</h3>
+
+Ekspresi kondisional berisi ```-d```opsi dan jalur direktori. ```-d``` opsi yang memeriksa apakah direktori ada atau tidak. 
+
+Contoh:
+
+```bash
+FOLDER=test
+
+if [ -d "$FOLDER" ]; then
+    echo "Directory Exists"
+fi
+```
+
+Percobaan 1:
+- [Alfani - Check Directory 1](#Alfani---Check-Directory-1)
+- [Ale - Check Directory 1](#Ale---Check-Directory-1)
+- [Kanisius - Check Directory 1](#Kanisius---Check-Directory-1)
+
+## Alfani - Check Directory 1
+
+## Ale - Check Directory 1
+
+## Kanisius - Check Directory 1
+
+Harap dicatat bahwa tambahkan spasi setelahnya ```[``` dan sebelumnya ```-d```.
+
+<h3>Bagaimana cara mkdir hanya jika direktori belum ada?</h3>
+Dalam contoh ini, menggunakan blok kondisional if-else.
+- Diperiksa apakah direktori tersebut ada menggunakan -d.
+- else blok akan memiliki kode untuk tidak ada dan membuat direktori menggunakan jalur direktori.
+
+Contoh:
+
+```bash
+FOLDER=test
+
+if [ -d "$FOLDER" ]; then
+    echo "Directory Exists"
+else
+    echo "Directory Exists"
+    mkdir "$FOLDER"
+fi
+```
+
+Percobaan 2:
+- [Alfani - Check Directory 2](#Alfani---Check-Directory-2)
+- [Ale - Check Directory 2](#Ale---Check-Directory-2)
+- [Kanisius - Check Directory 2](#Kanisius---Check-Directory-2)
+
+## Alfani - Check Directory 2
+
+## Ale - Check Directory 2
+
+## Kanisius - Check Directory 2
+
+<h3>Periksa keberadaan direktori menggunakan sintaks ternary</h3>
+Alternatifnya, ekspresi kondisional ternary digunakan sebagai pengganti ekspresi kondisional if.
+
+Berikut adalah contoh ekspresi kondisional:
+
+```bash
+FOLDER=test
+[ -d "$folder" ] && echo "folder exists" || echo "folder not exist"
+```
+
+Percobaan 3:
+- [Alfani - Check Directory 3](#Alfani---Check-Directory-3)
+- [Ale - Check Directory 3](#Ale---Check-Directory-3)
+- [Kanisius - Check Directory 3](#Kanisius---Check-Directory-3)
+
+## Alfani - Check Directory 3
+
+## Ale - Check Directory 3
+
+## Kanisius - Check Directory 3
+
+<h3>Periksa apakah ada beberapa direktori</h3>
+jika ingin memeriksa apakah ada beberapa direktori, Kita harus menggunakan pernyataan kondisional if dengan operator logika AND(&&). 
+
+Contoh:
+
+```bash
+FOLDER1=test1
+FOLDER2=test2
+
+if [ -d "$FOLDER1" ] && [ -d "$FOLDER2" ] then
+   echo "Folder1 and Folder2 exist"
+fi
+```
+
+Percobaan 4:
+- [Alfani - Check Directory 4](#Alfani---Check-Directory-4)
+- [Ale - Check Directory 4](#Ale---Check-Directory-4)
+- [Kanisius - Check Directory 4](#Kanisius---Check-Directory-4)
+
+## Alfani - Check Directory 4
+
+## Ale - Check Directory 4
+
+## Kanisius - Check Directory 4
+
+<h3> Periksa apakah direktori ada dan dapat ditulis serta dieksekusi</h3>
+
+Dalam contoh ini, Kode memeriksa hal-hal di bawah ini
+- foldernya ada atau tidak
+- jika ada, Folder tersebut memiliki izin untuk menulis dan dieksekusi.
+- Terakhir, Cetak pesan string 
+
+Contoh:
+
+```bash
+FOLDER=test
+
+if [ -d "$FOLDER" -a -w -x "$FOLDER" ]
+then
+    echo "Directory exists, writable and executable"
+fi
+```
+
+Percobaan 5:
+- [Alfani - Check Directory 5](#Alfani---Check-Directory-5)
+- [Ale - Check Directory 5](#Ale---Check-Directory-5)
+- [Kanisius - Check Directory 5](#Kanisius---Check-Directory-5)
+
+## Alfani - Check Directory 5
+
+## Ale - Check Directory 5
+
+## Kanisius - Check Directory 5
+
+<h3>Periksa file atau direktori yang ada</h3>
+
+Jika ingin memeriksa apakah file atau direktori tersebut ada. Opsi ```-e``` memeriksa file atau direktori untuk jalur yang diberikan ada atau tidak.
+
+Contoh:
+
+```
+FILE_DIRECTORY=test
+if [ -e "$FILE_DIRECTORY" ]
+then
+    echo "file or directory of test exists."
+fi
+```
+
+Percobaan 6:
+- [Alfani - Check Directory 6](#Alfani---Check-Directory-6)
+- [Ale - Check Directory 6](#Ale---Check-Directory-6)
+- [Kanisius - Check Directory 6](#Kanisius---Check-Directory-6)
+
+## Alfani - Check Directory 6
+
+## Ale - Check Directory 6
+
+## Kanisius - Check Directory 6
 
 
 
