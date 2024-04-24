@@ -400,8 +400,8 @@ Percobaan:
 - [Kanisius - Loop File](#Kanisius---Loop-File)
 
 ## Alfani - Loop File
-![ss](assets/alfani/lf1a.png)
-![ss](assets/alfani/lf1b.png)
+![ss](assets/alfani/lf1a.jpg)
+![ss](assets/alfani/lf1b.jpg)
 
 ## Ale - Loop File
 ![ss](assets/ale/lf1a.png)
@@ -451,11 +451,12 @@ Percobaan 1:
 - [Kanisius - Comments 1](#Kanisius---Comments-1)
 
 ## Alfani - Comments 1
+![ss](assets/alfani/c1a.jpg)
+![ss](assets/alfani/c1b.jpg)
 
 ## Ale - Comments 1
 ![ss](assets/ale/c1a.png)
 ![ss](assets/ale/c1b.png)
-
 
 ## Kanisius - Comments 1
 
@@ -507,6 +508,8 @@ Percobaan 2:
 - [Kanisius - Comments 2](#Kanisius---Comments-2)
 
 ## Alfani - Comments 2
+![ss](assets/alfani/c2a.jpg)
+![ss](assets/alfani/c2b.jpg)
 
 ## Ale - Comments 2
 ![ss](assets/ale/c2a.png)
@@ -631,6 +634,8 @@ Percobaan 1:
 - [Kanisius - Array 1](#Kanisius---Array-1)
 
 ## Alfani - Array 1
+![ss](assets/alfani/a1a.jpg)
+![ss](assets/alfani/a1b.jpg)
 
 ## Ale - Array 1
 ![ss](assets/ale/a1a.png)
@@ -664,6 +669,8 @@ Percobaan 2:
 - [Kanisius - Array 2](#Kanisius---Array-2)
 
 ## Alfani - Array 2
+![ss](assets/alfani/a2a.jpg)
+![ss](assets/alfani/a2b.jpg)
 
 ## Ale - Array 2
 ![ss](assets/ale/a2a.png)
@@ -695,6 +702,8 @@ Percobaan 3:
 - [Kanisius - Array 3](#Kanisius---Array-3)
 
 ## Alfani - Array 3
+![ss](assets/alfani/a3a.jpg)
+![ss](assets/alfani/a3b.jpg)
 
 ## Ale - Array 3
 ![ss](assets/ale/a3a.png)
@@ -717,8 +726,12 @@ Percobaan 4:
 - [Kanisius - Array 4](#Kanisius---Array-4)
 
 ## Alfani - Array 4
+![ss](assets/alfani/a4a.jpg)
+![ss](assets/alfani/a4b.jpg)
 
 ## Ale - Array 4
+![ss](assets/ale/a4a.png)
+![ss](assets/ale/a4b.png)
 
 ## Kanisius - Array 4
 
@@ -750,8 +763,12 @@ Percobaan 5:
 - [Kanisius - Array 5](#Kanisius---Array-5)
 
 ## Alfani - Array 5
+![ss](assets/alfani/a5a.jpg)
+![ss](assets/alfani/a5b.jpg)
 
 ## Ale - Array 5
+![ss](assets/ale/a5a.png)
+![ss](assets/ale/a5b.png)
 
 ## Kanisius - Array 5
 
@@ -770,8 +787,12 @@ Percobaan 6:
 - [Kanisius - Array 6](#Kanisius---Array-6)
 
 ## Alfani - Array 6
+![ss](assets/alfani/a6a.jpg)
+![ss](assets/alfani/a6b.jpg)
 
 ## Ale - Array 6
+![ss](assets/ale/a6a.png)
+![ss](assets/ale/a6b.png)
 
 ## Kanisius - Array 6
 
@@ -792,8 +813,12 @@ Percobaan 7:
 - [Kanisius - Array 7](#Kanisius---Array-7)
 
 ## Alfani - Array 7
+![ss](assets/alfani/a7a.jpg)
+![ss](assets/alfani/a7b.jpg)
 
 ## Ale - Array 7
+![ss](assets/ale/a7a.png)
+![ss](assets/ale/a7b.png)
 
 ## Kanisius - Array 7
 
@@ -833,8 +858,12 @@ Percobaan 8:
 - [Kanisius - Array 8](#Kanisius---Array-8)
 
 ## Alfani - Array 8
+![ss](assets/alfani/a8a.jpg)
+![ss](assets/alfani/a8b.jpg)
 
 ## Ale - Array 8
+![ss](assets/ale/a8a.png)
+![ss](assets/ale/a8b.png)
 
 ## Kanisius - Array 8
 
@@ -856,8 +885,12 @@ Percobaan 9:
 - [Kanisius - Array 9](#Kanisius---Array-9)
 
 ## Alfani - Array 9
+![ss](assets/alfani/a9a.jpg)
+![ss](assets/alfani/a9b.jpg)
 
 ## Ale - Array 9
+![ss](assets/ale/a9a.png)
+![ss](assets/ale/a9b.png)
 
 ## Kanisius - Array 9
 
@@ -913,6 +946,8 @@ Percobaan 1:
 ## Alfani - Expansion 1
 
 ## Ale - Expansion 1
+![ss](assets/ale/e1a.png)
+![ss](assets/ale/e1b.png)
 
 ## Kanisius - Expansion 1
 
@@ -1012,6 +1047,8 @@ Percobaan 1:
 ## Alfani - Case Statements 1
 
 ## Ale - Case Statements 1
+![ss](assets/ale/cs1a.png)
+![ss](assets/ale/cs1b.png)
 
 ## Kanisius - Case Statements 1
 
