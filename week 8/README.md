@@ -154,9 +154,9 @@ Output:
 ```
 
 Percobaan 1:
-- [Alfani - Variable 1](Alfani---Variable-1)
-- [Ale - Variable 1](Ale---Variable-1)
-- [Kanisius - Variable 1](Kanisius---Variable-1)
+- [Alfani - Variable 1](#Alfani---Variable-1)
+- [Ale - Variable 1](#Ale---Variable-1)
+- [Kanisius - Variable 1](#Kanisius---Variable-1)
 
 ## Alfani - Variable 1
 
@@ -186,9 +186,9 @@ Output:
 ```
 
 Percobaan 2:
-- [Alfani - Variable 2](Alfani---Variable-2)
-- [Ale - Variable 2](Ale---Variable-2)
-- [Kanisius - Variable 2](Kanisius---Variable-2)
+- [Alfani - Variable 2](#Alfani---Variable-2)
+- [Ale - Variable 2](#Ale---Variable-2)
+- [Kanisius - Variable 2](K#anisius---Variable-2)
 
 ## Alfani - Variable 2
 
@@ -214,9 +214,9 @@ Output:
 empty:
 ```
 Percobaan 3:
-- [Alfani - Variable 3](Alfani---Variable-3)
-- [Ale - Variable 3](Ale---Variable-3)
-- [Kanisius - Variable 3](Kanisius---Variable-3)
+- [Alfani - Variable 3](#Alfani---Variable-3)
+- [Ale - Variable 3](#Ale---Variable-3)
+- [Kanisius - Variable 3](#Kanisius---Variable-3)
 
 ## Alfani - Variable 3
 
@@ -263,9 +263,9 @@ Script Age: 40
 ```
 
 Percobaan 4:
-- [Alfani - Variable 4](Alfani---Variable-4)
-- [Ale - Variable 4](Ale---Variable-4)
-- [Kanisius - Variable 4](Kanisius---Variable-4)
+- [Alfani - Variable 4](#Alfani---Variable-4)
+- [Ale - Variable 4](#Ale---Variable-4)
+- [Kanisius - Variable 4](#Kanisius---Variable-4)
 
 ## Alfani - Variable 4
 
@@ -302,9 +302,9 @@ Global Age: 40
 ```
 
 Percobaan 5:
-- [Alfani - Variable 5](Alfani---Variable-5)
-- [Ale - Variable 5](Ale---Variable-5)
-- [Kanisius - Variable 5](Kanisius---Variable-5)
+- [Alfani - Variable 5](#Alfani---Variable-5)
+- [Ale - Variable 5](#Ale---Variable-5)
+- [Kanisius - Variable 5](#Kanisius---Variable-5)
 
 ## Alfani - Variable 5
 
@@ -375,9 +375,9 @@ done <filename.txt
 ```
 
 Percobaan:
-- [Alfani - Loop File](Alfani---Loop-File)
-- [Ale - Loop File](Ale---Loop-File)
-- [Kanisius - Loop File](Kanisius---Loop-File)
+- [Alfani - Loop File](#Alfani---Loop-File)
+- [Ale - Loop File](#Ale---Loop-File)
+- [Kanisius - Loop File](#Kanisius---Loop-File)
 
 ## Alfani - Loop File
 
@@ -421,9 +421,9 @@ echo "Age:$AGE" ## printing age inline comment
 ```
 
 Percobaan 1:
-- [Alfani - Comments 1](Alfani---Comments-1)
-- [Ale - Comments 1](Ale---Comments-1)
-- [Kanisius - Comments 1](Kanisius---Comments-1)
+- [Alfani - Comments 1](#Alfani---Comments-1)
+- [Ale - Comments 1](#Ale---Comments-1)
+- [Kanisius - Comments 1](#Kanisius---Comments-1)
 
 ## Alfani - Comments 1
 
@@ -474,9 +474,9 @@ echo "testing multi-line comments"
 ```
 
 Percobaan 2:
-- [Alfani - Comments 2](Alfani---Comments-2)
-- [Ale - Comments 2](Ale---Comments-2)
-- [Kanisius - Comments 2](Kanisius---Comments-2)
+- [Alfani - Comments 2](#Alfani---Comments-2)
+- [Ale - Comments 2](#Ale---Comments-2)
+- [Kanisius - Comments 2](#Kanisius---Comments-2)
 
 ## Alfani - Comments 2
 
@@ -596,9 +596,9 @@ Output:
 ```
 
 Percobaan 1:
-- [Alfani - Array 1](Alfani---Array-1)
-- [Ale - Array 1](Ale---Array-1)
-- [Kanisius - Array 1](Kanisius---Array-1)
+- [Alfani - Array 1](#Alfani---Array-1)
+- [Ale - Array 1](#Ale---Array-1)
+- [Kanisius - Array 1](#Kanisius---Array-1)
 
 ## Alfani - Array 1
 
@@ -627,9 +627,9 @@ element3
 ```
 
 Percobaan 2:
-- [Alfani - Array 2](Alfani---Array-2)
-- [Ale - Array 2](Ale---Array-2)
-- [Kanisius - Array 2](Kanisius---Array-2)
+- [Alfani - Array 2](#Alfani---Array-2)
+- [Ale - Array 2](#Ale---Array-2)
+- [Kanisius - Array 2](#Kanisius---Array-2)
 
 ## Alfani - Array 2
 
@@ -656,9 +656,9 @@ element1
 ```
 
 Percobaan 3:
-- [Alfani - Array 3](Alfani---Array-3)
-- [Ale - Array 3](Ale---Array-3)
-- [Kanisius - Array 3](Kanisius---Array-3)
+- [Alfani - Array 3](#Alfani---Array-3)
+- [Ale - Array 3](#Ale---Array-3)
+- [Kanisius - Array 3](#Kanisius---Array-3)
 
 ## Alfani - Array 3
 
@@ -676,9 +676,9 @@ echo ${numbers[-1]}
 ```
 
 Percobaan 4:
-- [Alfani - Array 4](Alfani---Array-4)
-- [Ale - Array 4](Ale---Array-4)
-- [Kanisius - Array 4](Kanisius---Array-4)
+- [Alfani - Array 4](#Alfani---Array-4)
+- [Ale - Array 4](#Ale---Array-4)
+- [Kanisius - Array 4](#Kanisius---Array-4)
 
 ## Alfani - Array 4
 
@@ -709,9 +709,9 @@ element3
 ```
 
 Percobaan 5:
-- [Alfani - Array 5](Alfani---Array-5)
-- [Ale - Array 5](Ale---Array-5)
-- [Kanisius - Array 5](Kanisius---Array-5)
+- [Alfani - Array 5](#Alfani---Array-5)
+- [Ale - Array 5](#Ale---Array-5)
+- [Kanisius - Array 5](#Kanisius---Array-5)
 
 ## Alfani - Array 5
 
@@ -729,9 +729,9 @@ echo ${arr[*]}  #element1 element2 element3
 ```
 
 Percobaan 6:
-- [Alfani - Array 6](Alfani---Array-6)
-- [Ale - Array 6](Ale---Array-6)
-- [Kanisius - Array 6](Kanisius---Array-6)
+- [Alfani - Array 6](#Alfani---Array-6)
+- [Ale - Array 6](#Ale---Array-6)
+- [Kanisius - Array 6](#Kanisius---Array-6)
 
 ## Alfani - Array 6
 
@@ -751,9 +751,9 @@ echo ${numbers[*]}
 ```
 
 Percobaan 7:
-- [Alfani - Array 7](Alfani---Array-7)
-- [Ale - Array 7](Ale---Array-7)
-- [Kanisius - Array 7](Kanisius---Array-7)
+- [Alfani - Array 7](#Alfani---Array-7)
+- [Ale - Array 7](#Ale---Array-7)
+- [Kanisius - Array 7](#Kanisius---Array-7)
 
 ## Alfani - Array 7
 
@@ -792,9 +792,9 @@ element0 element2 element3 element5 element6
 ```
 
 Percobaan 8:
-- [Alfani - Array 8](Alfani---Array-8)
-- [Ale - Array 8](Ale---Array-8)
-- [Kanisius - Array 8](Kanisius---Array-8)
+- [Alfani - Array 8](#Alfani---Array-8)
+- [Ale - Array 8](#Ale---Array-8)
+- [Kanisius - Array 8](#Kanisius---Array-8)
 
 ## Alfani - Array 8
 
@@ -815,9 +815,9 @@ echo ${#arr[*]} # returns 3
 ```
 
 Percobaan 9:
-- [Alfani - Array 9](Alfani---Array-9)
-- [Ale - Array 9](Ale---Array-9)
-- [Kanisius - Array 9](Kanisius---Array-9)
+- [Alfani - Array 9](#Alfani---Array-9)
+- [Ale - Array 9](#Ale---Array-9)
+- [Kanisius - Array 9](#Kanisius---Array-9)
 
 ## Alfani - Array 9
 
@@ -870,9 +870,9 @@ chmod +x hello.sh
 ```
 
 Percobaan 1:
-- [Alfani - Expansion 1](Alfani---Expansion-1)
-- [Ale - Expansion 1](Ale---Expansion-1)
-- [Kanisius - Expansion 1](Kanisius---Expansion-1)
+- [Alfani - Expansion 1](#Alfani---Expansion-1)
+- [Ale - Expansion 1](#Ale---Expansion-1)
+- [Kanisius - Expansion 1](#Kanisius---Expansion-1)
 
 ## Alfani - Expansion 1
 
@@ -969,9 +969,9 @@ esac
 ```
 
 Percobaan 1:
-- [Alfani - Case Statements 1](Alfani---Case-Statements-1)
-- [Ale - Case Statements 1](Ale---Case-Statements-1)
-- [Kanisius - Case Statements 1](Kanisius---Case-Statements-1)
+- [Alfani - Case Statements 1](#Alfani---Case-Statements-1)
+- [Ale - Case Statements 1](#Ale---Case-Statements-1)
+- [Kanisius - Case Statements 1](#Kanisius---Case-Statements-1)
 
 ## Alfani - Case Statements 1
 
@@ -992,9 +992,9 @@ echo "Hello World"
 ```
 
 Percobaan 1:
-- [Alfani - Special Characters 1](Alfani---Special-Characters-1)
-- [Ale - Special Characters 1](Ale---Special-Characters-1)
-- [Kanisius - Special Characters 1](Kanisius---Special-Characters-1)
+- [Alfani - Special Characters 1](#Alfani---Special-Characters-1)
+- [Ale - Special Characters 1](#Ale---Special-Characters-1)
+- [Kanisius - Special Characters 1](#Kanisius---Special-Characters-1)
 
 ## Alfani - Special Characters 1
 
