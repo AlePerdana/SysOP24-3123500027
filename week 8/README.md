@@ -35,8 +35,12 @@
 17. [Bash - Check Directory](#Bash---Check-Directory)
 18. [Bash - File Name](#Bash---File-Name)
 19. [Bash - Split String](#Bash---Split-String)
-20. [Kesimpulan](#Kesimpulan)
-21. [Referensi](#Referensi)
+20. [Bash - String Length](#Bash---String-Length)
+21. [Bash - bashrc](#Bash---bashrc)
+22. [Bash - Ternary Operator](#Bash---Ternary-Operator)
+23. [Bash - Lowercase](#Bash---Lowercase)
+24. [Kesimpulan](#Kesimpulan)
+25. [Referensi](#Referensi)
 
 ## Dasar Teori
 - Shell
@@ -2442,6 +2446,408 @@ Percobaan 3:
 ## Ale - Split String 3
 	
 ## Kanisius - Split String 3
+
+# Bash - String Length
+Panjang string ditentukan oleh jumlah karakter yang dikandungnya, dan umumnya mudah untuk memastikan panjangnya untuk teks normal.
+
+Postingan kali ini akan membahas berbagai metode untuk menghitung jumlah karakter dalam sebuah string dengan pengkodean UTF.
+
+Menggunakan Sintaks ${#variable} 
+
+Metode pertama melibatkan pemanfaatan ${#variable}sintaks untuk mendapatkan panjang variabel string.
+
+Dalam hal ini, jumlah karakter dalam variabel string:
+
+```bash
+msg="Hello World."
+count=${#msg}
+
+echo $count # 12
+```
+
+Output:
+
+```bash
+12
+```
+Percobaan 1:
+- [Alfani - String Length 1](#Alfani---String-Length-1)
+- [Ale - String Length 1](#Ale---String-Length-1)
+- [Kanisius - String Length 1](#Kanisius---String-Length-1)
+
+## Alfani - String Length 1
+
+## Ale - String Length 1
+	
+## Kanisius - String Length 1
+
+
+Menggunakan Perintah wc -m 
+
+Metode kedua melibatkan penggunaan wc -mperintah, baik secara langsung dengan string atau melalui variabel. 
+
+```
+echo -n 'Hello World.' | wc -m; # 12
+
+result=`echo -n $msg | wc -m`
+echo $result # 12
+
+result1=`echo  $msg | wc -m`
+echo $result1 # 12
+```
+
+Dalam contoh ini, echo -n "string" digunakan untuk mencetak string tanpa baris baru ( -n option). Itu |operator pipa mengarahkan output dari perintah sisi kiri ke perintah sisi kanan, dan wc -mmenghitung jumlah karakter dalam sebuah string. 
+
+Output:
+
+```
+12
+12
+12
+```
+
+Percobaan 2:
+- [Alfani - String Length 2](#Alfani---String-Length-2)
+- [Ale - String Length 2](#Ale---String-Length-2)
+- [Kanisius - String Length 2](#Kanisius---String-Length-2)
+
+## Alfani - String Length 2
+
+## Ale - String Length 2
+	
+## Kanisius - String Length 2
+
+
+Menggunakan expr Memerintah Metode lain melibatkan penggunaan expr perintah untuk mencari panjang string.
+
+```
+
+msg="Hello World."
+
+count=$(expr length "$msg")
+
+echo $count # 12
+```
+
+Percobaan 3:
+- [Alfani - String Length 3](#Alfani---String-Length-3)
+- [Ale - String Length 3](#Ale---String-Length-3)
+- [Kanisius - String Length 3](#Kanisius---String-Length-3)
+
+## Alfani - String Length 3
+
+## Ale - String Length 3
+	
+## Kanisius - String Length 3
+
+Di Sini, ${} mewakili substitusi ekspresi, menggantikan nilai ekspresi ke dalam string. expr mengeksekusi expressions, Dan lengtha dalah argumen yang diteruskan expruntuk menemukan panjang string.
+
+$(expr length "$msg") mengembalikan jumlah karakter dalam string, ditetapkan ke variabel, nilai variabel dicetak ke konsol
+- menggunakan perintah awk Awkmenyediakan cara lain untuk menghitung panjang string menggunakan ekspresi.
+
+```
+msg="Hello World."
+count=${#msg}
+
+echo $count # 12
+
+count=$(echo -n "$msg" | awk '{print length}')
+echo $count # 12
+```
+
+Percobaan 4:
+- [Alfani - String Length 4](#Alfani---String-Length-4)
+- [Ale - String Length 4](#Ale---String-Length-4)
+- [Kanisius - String Length 4](#Kanisius---String-Length-4)
+
+## Alfani - String Length 4
+
+## Ale - String Length 4
+	
+## Kanisius - String Length 4
+
+
+Pada kasus ini, echo -n "$variable" mengeluarkan string tanpa baris baru, dan hasilnya disalurkan ke awkmenggunakan pipa (\|) simbol. Itu awk '{print length}'perintah menghitung dan mencetak panjang baris input.
+
+Dengan menggabungkan metode di atas dalam sebuah ekspresi ${}, Anda bisa mendapatkan panjang string.
+
+# Bash - bashrc
+File .bashrc adalah file skrip bash yang dijalankan dalam kasus berikut
+- menggunakan eksekusi skrip bash
+- bash shell dibuka dan dimulai secara interaktif 
+
+File ini disembunyikan secara default karena file dimulai dengan . disembunyikan.
+
+<h3>Di mana file bashrc di Linux?</h3>
+
+File .bashrc adalah skrip yang dijalankan saat pengguna login. File ini terletak di direktori home pengguna.
+
+Ini berisi variabel lingkungan dan preferensi pengguna yang akan dikonfigurasi dalam file ini.
+Bagaimana cara melihat file .bashrc?
+
+<h3>Bagaimana cara melihat file .bashrc?</h3>
+
+Anda dapat menggunakan editor Vi atau Nano untuk melihat file bashrc.
+
+Berikut ini adalah sebuah perintah
+
+```
+nano ~/.bashrc
+nano ~/.bashrc
+```
+
+<h3>Di mana file bashrc berada?</h3>
+file bashrc terletak di dua tempat
+- direktori home pengguna
+- Direktori sistem 
+
+Dalam kasus direktori home pengguna, file ini disembunyikan secara default. Lokasinya adalah ~/.bashrcdi mana ~ adalah pengguna saat ini yang login di direktori home.
+
+Dalam hal direktori Sistem, file ini terletak di /etc/bash.bashrc. 
+
+```
+source ~/.bashrc
+```
+atau untuk lebih pendek
+
+```
+. ~/.bashrc
+```
+
+atau untuk menjalankan
+
+```
+exec bash
+```
+
+perintah exec mengatur ulang sesi saat ini, dan memulai lagi. 
+
+## Bash - Ternary Operator
+
+Pemrograman Bash tidak memiliki dukungan untuk sintaks operator ternary.
+
+Operator ternary ditulis dalam bahasa Java
+```
+expression?value1:value2
+```
+
+Sintaksnya mirip dengan ekspresi kondisional if dan else. jika ekspresi benar, nilai1 dikembalikan, jika tidak, nilai2 dikembalikan.
+
+<h3>Cara menggunakan Operator ternary di Bash</h3>
+
+Ada beberapa cara kita dapat menulis sintaksis sebagai pengganti sintaksis operator ternary.
+Cara pertama, gunakan if-else dengan sintaks ekspresi.
+```
+AGE=25
+if [ "$AGE" -eq 25 ]; then result="true"; else result="false"; fi
+echo "$result" ;
+```
+
+Percobaan 1:
+- [Alfani - Ternary Operator 1](#Alfani---Ternary-Operator-1)
+- [Ale - Ternary Operator 1](#Ale---Ternary-Operator-1)
+- [Kanisius - Ternary Operator 1](#Kanisius---Ternary-Operator-1)
+
+## Alfani - Ternary Operator 1
+
+## Ale - Ternary Operator 1
+	
+## Kanisius - Ternary Operator 1
+
+
+Cara kedua, gunakan ekspresi aritmatika menggunakan && dan \|\| Sintaksnya adalah:
+
+```
+[expression1] && Expression2|| Expression3
+```
+
+jika ekspresi1 benar, Ekspresi2 dievaluasi, jika tidak, Ekspresi3 dievaluasi
+Berikut adalah contoh programnya
+
+```
+[ $AGE == 25 ] && result="true" || result="false"
+echo "$result" ;
+```
+
+Percobaan 2:
+- [Alfani - Ternary Operator 2](#Alfani---Ternary-Operator-2)
+- [Ale - Ternary Operator 2](#Ale---Ternary-Operator-2)
+- [Kanisius - Ternary Operator 2](#Kanisius---Ternary-Operator-2)
+
+## Alfani - Ternary Operator 2
+
+## Ale - Ternary Operator 2
+	
+## Kanisius - Ternary Operator 2
+
+
+Ada cara lain untuk menetapkan variabel, bukan ekspresi.
+dengan menggunakan mari kita dapat menetapkan variabel berdasarkan hasil ekspresi kondisi
+
+```
+first=10
+second=true
+third=false
+let result="(first==10)?second:third"
+
+echo $result # true
+```
+
+Percobaan 3:
+- [Alfani - Ternary Operator 3](#Alfani---Ternary-Operator-3)
+- [Ale - Ternary Operator 3](#Ale---Ternary-Operator-3)
+- [Kanisius - Ternary Operator 3](#Kanisius---Ternary-Operator-3)
+
+## Alfani - Ternary Operator 3
+
+## Ale - Ternary Operator 3
+	
+## Kanisius - Ternary Operator 3
+
+## Bash - Lowercase
+Tutorial ini menjelaskan cara mengonversi string menjadi huruf kecil dalam skrip Bash.
+
+Misalnya, jika string inputnya adalah “Selamat Datang Halo Dunia”, outputnya akan menjadi “selamat datang di dunia”. menggunakan perintah tr. 
+
+Perintah tr, kependekan dari translator, adalah perintah Unix yang digunakan untuk mengonversi karakter dari satu format ke format lainnya.
+
+Sintaksnya adalah sebagai berikut:
+
+```
+tr input_format output_format
+```
+
+Berikut skrip bash shell yang digunakan truntuk mengonversi string menjadi huruf kecil:
+
+```
+message="Hello World, Welcome."
+echo "$message" | tr '[:upper:]' '[:lower:]'
+```
+
+Output:
+
+```
+hello world, welcome.
+```
+
+Percobaan 1:
+- [Alfani - Lowercase 1](#Alfani---Lowercase-1)
+- [Ale - Lowercase 1](#Ale---Lowercase-1)
+- [Kanisius - Lowercase 1](#Kanisius---Lowercase-1)
+
+## Alfani - Lowercase 1
+
+## Ale - Lowercase 1
+	
+## Kanisius - Lowercase 1
+
+
+Sebagai alternatif, Anda dapat menggunakan.
+
+```
+message="Hello World, Welcome."
+echo "$message" | tr 'A-Z' 'a-z'
+```
+
+Percobaan 2:
+- [Alfani - Lowercase 2](#Alfani---Lowercase-2)
+- [Ale - Lowercase 2](#Ale---Lowercase-2)
+- [Kanisius - Lowercase 2](#Kanisius---Lowercase-2)
+
+## Alfani - Lowercase 2
+
+## Ale - Lowercase 2
+	
+## Kanisius - Lowercase 2
+
+
+Catatan: tr berfungsi dengan ASCIIdan tidak mendukung UTF karakter.
+- menggunakan perintah awk
+Untuk mengubah string menjadi huruf kecil menggunakan awkperintah, tolower fungsinya digabungkan dengan awk.
+
+Hasilnya kemudian diteruskan ke perintah echo menggunakan operator pipa:
+
+```
+message="Hello World, Welcome"
+echo "$message" | awk '{print tolower($0)}'
+```
+
+Percobaan 3:
+- [Alfani - Lowercase 3](#Alfani---Lowercase-3)
+- [Ale - Lowercase 3](#Ale---Lowercase-3)
+- [Kanisius - Lowercase 3](#Kanisius---Lowercase-3)
+
+## Alfani - Lowercase 3
+
+## Ale - Lowercase 3
+	
+## Kanisius - Lowercase 3
+
+
+Metode ini paling baik untuk karakter ASCII dan UTF.
+- Gunakan Perl di Bash Script Printing lcdengan Perlmengubah string menjadi huruf kecil.
+lc adalah alias untuk huruf kecil.
+
+```
+echo "$message" | perl -ne 'print lc'
+```
+
+Percobaan 4:
+- [Alfani - Lowercase 4](#Alfani---Lowercase-4)
+- [Ale - Lowercase 4](#Ale---Lowercase-4)
+- [Kanisius - Lowercase 4](#Kanisius---Lowercase-4)
+
+## Alfani - Lowercase 4
+
+## Ale - Lowercase 4
+	
+## Kanisius - Lowercase 4
+
+- gunakan ekspansi Parameter Bash 4.0 memperkenalkan utilitas manipulasi string bawaan. Untuk mengonversi string menjadi huruf kecil, cukup tambahkan dua commaske string. Ini juga disebut sintaks perluasan parameter.
+Sintaksnya adalah ${variable[options]}.
+Misalnya,
+
+```
+message="Hello World, Welcome"
+echo "${message,,}"
+echo "${message}"
+```
+
+Percobaan 5:
+- [Alfani - Lowercase 5](#Alfani---Lowercase-5)
+- [Ale - Lowercase 5](#Ale---Lowercase-5)
+- [Kanisius - Lowercase 5](#Kanisius---Lowercase-5)
+
+## Alfani - Lowercase 5
+
+## Ale - Lowercase 5
+	
+## Kanisius - Lowercase 5
+
+
+```
+msg="Hello World."
+result="${msg,,}"
+echo $result # hello world.
+```
+
+Percobaan 6:
+- [Alfani - Lowercase 6](#Alfani---Lowercase-6)
+- [Ale - Lowercase 6](#Ale---Lowercase-6)
+- [Kanisius - Lowercase 6](#Kanisius---Lowercase-6)
+
+## Alfani - Lowercase 6
+
+## Ale - Lowercase 6
+	
+## Kanisius - Lowercase 6
+
+
+Di sini, ${msg,,} gunakan ,,opsi untuk mengonversi variabel menjadi huruf kecil.
+
+
+
+
 
 
 
