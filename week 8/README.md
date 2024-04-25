@@ -23,7 +23,7 @@
 5. [Bash - Array](#Bash---Array)
 6. [Bash - Expansion](#Bash---Expansion)
 7. [Bash - Conditional Expression](#Bash---Conditional-Expression)
-8. [Bash - Case Statements](Bash---Case-Statements)
+8. [Bash - Case Statements](#Bash---Case-Statements)
 9. [Bash - Special Characters](#Bash---Special-Characters)
 10. [Bash - if elif else](#Bash---if-elif-else)
 11. [Bash - Loop](#Bash---Loop)
