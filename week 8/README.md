@@ -39,8 +39,12 @@
 21. [Bash - bashrc](#Bash---bashrc)
 22. [Bash - Ternary Operator](#Bash---Ternary-Operator)
 23. [Bash - Lowercase](#Bash---Lowercase)
-24. [Kesimpulan](#Kesimpulan)
-25. [Referensi](#Referensi)
+24. [Bash - Uppercase](#Bash---Uppercase)
+25. [Bash - Substring](#Bash---Substring)
+26. [Bash - variable set](#Bash---variable-set)
+27. [Bash - Iterate Nos](#Bash---Iterate-Nos)
+28. [Kesimpulan](#Kesimpulan)
+29. [Referensi](#Referensi)
 
 ## Dasar Teori
 - Shell
@@ -2845,13 +2849,584 @@ Percobaan 6:
 
 Di sini, ${msg,,} gunakan ,,opsi untuk mengonversi variabel menjadi huruf kecil.
 
+## Bash - Uppercase
+
+Tutorial ini memandu Anda melalui proses mengonversi string ke uppercaseskrip bash dan shell.
+
+String huruf besar mengacu pada string yang berisi semua huruf dalam huruf besar.
+
+Misalnya, jika string inputnya adalah “Hello World Welcome”, outputnya akan menjadi “HELLO WORLD WELCOME”.
+
+Bergantung pada jenis dan versi bash, ada beberapa metode untuk mengonversi string menjadi huruf besar.
+- menggunakan perintah tr
+- 
+Perintah tersebut tr, yang dikenal sebagai translator, adalah perintah Unix yang digunakan untuk mengonversi karakter dari satu format ke format lainnya.
+
+Sintaksnya adalah sebagai berikut:
+```
+tr input_format output_format
+```
+
+Berikut skrip shell untuk mengonversi ke huruf besar.
+```
+message="This is a lowercase string converted to uppercase"
+echo "$message" | tr '[:lower:]' '[:upper:]'
+```
+
+Output:
+```
+THIS IS A LOWERCASE STRING CONVERTED TO UPPERCASE
+```
+
+Percobaan 1:
+- [Alfani - Uppercase 1](#Alfani---Uppercase-1)
+- [Ale - Uppercase 1](#Ale---Uppercase-1)
+- [Kanisius - Uppercase 1](#Kanisius---Uppercase-1)
+
+## Alfani - Uppercase 1
+
+## Ale - Uppercase 1
+	
+## Kanisius - Uppercase 1
 
 
+Cara lain untuk mengganti kode di atas
+```
+message="This is a lowercase string converted to uppercase"
+echo "$message" | tr 'a-z' 'A-Z'
+```
+
+Percobaan 2:
+- [Alfani - Uppercase 2](#Alfani---Uppercase-2)
+- [Ale - Uppercase 2](#Ale---Uppercase-2)
+- [Kanisius - Uppercase 2](#Kanisius---Uppercase-2)
+
+## Alfani - Uppercase 2
+
+## Ale - Uppercase 2
+	
+## Kanisius - Uppercase 2
 
 
+Catatan: tr berfungsi dengan ASCII dan tidak mendukung UTF karakter.
+- menggunakan perintah awk
+Untuk mengubah string menjadi huruf besar menggunakan awk perintah, toupper fungsinya digabungkan dengan awk. Hasilnya kemudian diteruskan ke perintah echo menggunakan operator pipa:
+```
+message="It is a lowercase string converted to uppercase."
+echo "$message" | awk '{print toupper($0)}'
+```
+
+Percobaan 3:
+- [Alfani - Uppercase 3](#Alfani---Uppercase-3)
+- [Ale - Uppercase 3](#Ale---Uppercase-3)
+- [Kanisius - Uppercase 3](#Kanisius---Uppercase-3)
+
+## Alfani - Uppercase 3
+
+## Ale - Uppercase 3
+	
+## Kanisius - Uppercase 3
+
+
+Yang terbaik adalah bekerja dengan ASCIIdan UTFkarakter.
+- dalam versi bash 4.0 bash 4.0menyediakan utilitas manipulasi string bawaan. Menambahkan dua tanda sirkumfleks (^) ke sebuah string akan membuat string menjadi string huruf besar.
+
+```
+message="This is a lowercase string converted to uppercase"
+echo "${message^^}"
+echo "${message}"
+```
+
+Percobaan 4:
+- [Alfani - Uppercase 4](#Alfani---Uppercase-4)
+- [Ale - Uppercase 4](#Ale---Uppercase-4)
+- [Kanisius - Uppercase 4](#Kanisius---Uppercase-4)
+
+## Alfani - Uppercase 4
+
+## Ale - Uppercase 4
+	
+## Kanisius - Uppercase 4
+
+
+- menggunakan Perl dalam skrip bash
+print uc perintah di Perl mengubah string menjadi huruf besar
+```
+echo "$message" | perl -ne 'print uc'
+```
+
+Percobaan 5:
+- [Alfani - Uppercase 5](#Alfani---Uppercase-5)
+- [Ale - Uppercase 5](#Ale---Uppercase-5)
+- [Kanisius - Uppercase 5](#Kanisius---Uppercase-5)
+
+## Alfani - Uppercase 5
+
+## Ale - Uppercase 5
+	
+## Kanisius - Uppercase 5
+
+- Gunakan sintaks perluasan parameter Bash 4.0 menyediakan utilitas manipulasi string bawaan. Menambahkan dua tanda sirkumfleks (^) ke sebuah string menjadikannya string huruf besar, juga disebut sintaks perluasan parameter.
+
+Sintaksnya adalah${variable[options]}
+
+variabel untuk dimodifikasi berdasarkan opsi. Opsi bersifat opsional yang berisi perluasan parameter
+```
+#!/bin/bash
+
+# Input string
+message="hello, world!"
+
+# Convert to uppercase
+result="${message^^}"
+
+# Display the result
+echo "Original: $message"
+echo "Uppercase: $result"
+```
+
+Percobaan 6:
+- [Alfani - Uppercase 6](#Alfani---Uppercase-6)
+- [Ale - Uppercase 6](#Ale---Uppercase-6)
+- [Kanisius - Uppercase 6](#Kanisius---Uppercase-6)
+
+## Alfani - Uppercase 6
+
+## Ale - Uppercase 6
+	
+## Kanisius - Uppercase 6
+
+
+Sintaks perluasan parameter mengubah string menjadi huruf besar. ${message^^}berisi ^^ opsi untuk mengubah string pesan variabel menjadi huruf besar.
+Fitur ini tersedia di Bash versi 4.0 ke atas.
+
+## Bash - Substring
+Dalam tutorial ini, skrip Bash dirancang untuk menentukan apakah suatu string berisi substring tertentu.
+
+Ada beberapa cara untuk melakukan pemeriksaan ini, masing-masing diuraikan di bawah ini untuk kejelasan.
+
+<h3>Menggunakan Operator Perbandingan untuk Memeriksa Substring ada atau tidak</h3>
+
+- Tentukan variabel string yang berisi teks.
+- Gunakan pernyataan if untuk membandingkan string dengan substring yang diinginkan menggunakan operator kesetaraan ( ==) dan wildcard (*).
+- Terakhir, cetak string jika substring ditemukan.
+
+```
+mainstring='Welcome to w3schools'
+if [[ $mainstring == *"w3schools"* ]]; then
+  echo "w3schools exists in the main string"
+fi
+```
+
+Percobaan 1:
+- [Alfani - Substring 1](#Alfani---Substring-1)
+- [Ale - Substring 1](#Ale---Substring-1)
+- [Kanisius - Substring 1](#Kanisius---Substring-1)
+
+## Alfani - Substring 1
+
+## Ale - Substring 1
+	
+## Kanisius - Substring 1
+
+
+<h3>Gunakan Ekspresi Reguler untuk Menemukan Substring</h3>
+
+Operator =~memfasilitasi pencarian substring dalam string tertentu, digunakan dalam blok if.
+Contoh kode:
+```
+mainstring='Welcome to w3schools'
+if [[ $mainstring =~ "w3schools" ]]; then
+  echo "w3schools exists in the main string"
+fi
+```
+
+Percobaan 2:
+- [Alfani - Substring 2](#Alfani---Substring-2)
+- [Ale - Substring 2](#Ale---Substring-2)
+- [Kanisius - Substring 2](#Kanisius---Substring-2)
+
+## Alfani - Substring 2
+
+## Ale - Substring 2
+	
+## Kanisius - Substring 2
+
+
+### Gunakan perintah grep
+Perintah grep digunakan untuk mencari string tertentu, disalurkan ke string utama untuk perbandingan.
+```
+mainstring='Welcome to w3schools'
+
+if echo "$mainstring" | grep -q "w3schools"; then
+  echo "w3schools exists in the main string"
+fi
+```
+
+Percobaan 3:
+- [Alfani - Substring 3](#Alfani---Substring-3)
+- [Ale - Substring 3](#Ale---Substring-3)
+- [Kanisius - Substring 3](#Kanisius---Substring-3)
+
+## Alfani - Substring 3
+
+## Ale - Substring 3
+	
+## Kanisius - Substring 3
+
+
+Metode ini menawarkan pendekatan berbeda untuk memeriksa apakah suatu string berisi substring tertentu, sehingga memberikan fleksibilitas untuk kasus penggunaan yang berbeda.
+
+## Bash - variable set
+
+Tutorial ini tentang memeriksa variabel dalam pemrograman skrip bash shell
+- Periksa variabel disetel atau tidak
+- variabel kosong atau tidak kosong
+- Periksa variabel apakah string kosong atau tidak
+Berikut beberapa contoh penggunaan variabel untuk variabel price
+ 
+Deklarasi variabel|Keterangan
+---|---
+price;|variabel tidak dideklarasikan dan tidak disetel
+price=;|variabel dideklarasikan dan tidak disetel
+price=3000|variabel dideklarasikan, ditetapkan, dan tidak disetel
+Price=(3000)|variabel dideklarasikan, ditetapkan, dan tidak disetel
+unset price;|variabel tidak dideklarasikan dan tidak disetel
+
+### Bagaimana cara memeriksa apakah suatu variabel diatur dalam skrip bash?
+Misalnya variabelnya di set artinya,
+- Itu dideklarasikan dan ditetapkan dengan kosong atau tidak kosong.
+Dalam contoh di bawah ini,
+- variable1 dideklarasikan tetapi kosong
+- variable2 tidak dideklarasikan dan tidak disetel.
+
+```
+#!/bin/bash
+variable1=""
+if [[  ${variable1+x}  ]]
+then
+  echo 'variable1 is set'
+else
+  echo 'variable1 is not set'
+fi
+
+if [[  ${variable2+x}  ]]
+then
+  echo 'variable2 is set'
+else
+  echo 'variable2 is not set'
+fi
+```
+
+Output:
+```
+variable1 is set
+variable2 is not set
+```
+
+Percobaan 1:
+- [Alfani - Variable set 1](#Alfani---Variable-set-1)
+- [Ale - Variable set 1](#Ale---Variable-set-1)
+- [Kanisius - Variable set 1](#Kanisius---Variable-set-1)
+
+## Alfani - Variable set 1
+
+## Ale - Variable set 1
+	
+## Kanisius - Variable set 1
+
+
+Cara lain untuk memeriksa suatu variabel adalah dengan menyetel menggunakan -vopsi
+```
+variable1=""
+if [ ! -v $variable1 ]
+then
+    echo "variable1 is unset"
+else
+    echo "variable1 is set"
+
+fi
+```
+
+Output:
+```
+variable1 is unset
+```
+
+Percobaan 2:
+- [Alfani - Variable set 2](#Alfani---Variable-set-2)
+- [Ale - Variable set 2](#Ale---Variable-set-2)
+- [Kanisius - Variable set 2](#Kanisius---Variable-set-2)
+
+## Alfani - Variable set 2
+
+## Ale - Variable set 2
+	
+## Kanisius - Variable set 2
+
+### Bagaimana cara memeriksa apakah variabel tidak disetel di skrip bash?
+Misalnya variabelnya tidak disetel artinya
+- Itu tidak ada dan tidak diumumkan.
+
+Dalam contoh di bawah ini,
+- variable1 dideklarasikan tetapi kosong
+- variable2 tidak dideklarasikan dan tidak disetel.
+
+```
+#!/bin/bash
+variable1=""
+if [[ ! ${variable1+x}  ]]
+then
+  echo 'variable1 is not set'
+else
+  echo 'variable1 is set'
+fi
+
+if [[ ! ${variable2+x}  ]]
+then
+  echo 'variable2 is not set or unset'
+else
+  echo 'variable2 is  set'
+fi
+```
+
+Output:
+```
+variable1 is set
+variable2 is not set or unset
+```
+
+Percobaan 3:
+- [Alfani - Variable set 3](#Alfani---Variable-set-3)
+- [Ale - Variable set 3](#Ale---Variable-set-3)
+- [Kanisius - Variable set 3](#Kanisius---Variable-set-3)
+
+## Alfani - Variable set 3
+
+## Ale - Variable set 3
+	
+## Kanisius - Variable set 3
+
+### Cara mengecek variabel kosong atau tidak kosong
+Tutorial ini memeriksa pemeriksaan variabel dibandingkan dengan spasi dan membungkus ekspresi ini di dalam [[]].
+
+```
+variable1=""
+if [[ $variable1 = "" ]]
+then
+  echo 'variable1 is empty'
+else
+  echo 'variable1 is not empty'
+fi
+```
+
+Percobaan 4:
+- [Alfani - Variable set 4](#Alfani---Variable-set-4)
+- [Ale - Variable set 4](#Ale---Variable-set-4)
+- [Kanisius - Variable set 4](#Kanisius---Variable-set-4)
+
+## Alfani - Variable set 4
+
+## Ale - Variable set 4
+	
+## Kanisius - Variable set 4
+
+
+Hal yang sama juga dapat ditulis menggunakan variabel dalam tanda kutip ganda yang dibungkus dalam tanda kurung tunggal [].
+```
+variable1=""
+if [ "$variable1" = "" ]
+    then
+    echo "variable1 is empty"
+else
+  echo 'variable1 is not empty'
+fi
+```
+
+Output:
+```
+variable1 is empty
+```
+
+Percobaan 5:
+- [Alfani - Variable set 5](#Alfani---Variable-set-5)
+- [Ale - Variable set 5](#Ale---Variable-set-5)
+- [Kanisius - Variable set 5](#Kanisius---Variable-set-5)
+
+## Alfani - Variable set 5
+
+## Ale - Variable set 5
+	
+## Kanisius - Variable set 5
+
+Mari kita periksa juga untuk tidak mengosongkan menggunakan ! operator.
+ 
+Berikut adalah kode untuk example checks if a variable is non-empty.
+cara pertama,
+```
+variable1=""
+if [[ ! $variable1 = "" ]]
+then
+  echo 'variable1 is empty'
+else
+  echo 'variable1 is not empty'
+fi
+```
+
+Percobaan 6:
+- [Alfani - Variable set 6](#Alfani---Variable-set-6)
+- [Ale - Variable set 6](#Ale---Variable-set-6)
+- [Kanisius - Variable set 6](#Kanisius---Variable-set-6)
+
+## Alfani - Variable set 6
+
+## Ale - Variable set 6
+	
+## Kanisius - Variable set 6
+
+
+Cara lain,
+```
+variable1=""
+if [ ! "$variable1" = "" ]
+then
+  echo 'variable1 is empty'
+else
+  echo 'variable1 is not empty'
+fi
+```
+
+Percobaan 7:
+- [Alfani - Variable set 7](#Alfani---Variable-set-7)
+- [Ale - Variable set 7](#Ale---Variable-set-7)
+- [Kanisius - Variable set 7](#Kanisius---Variable-set-7)
+
+## Alfani - Variable set 7
+
+## Ale - Variable set 7
+	
+## Kanisius - Variable set 7
+
+
+Opsi penggunaan -z lainnya untuk memeriksa variabel disetel dan kosong atau tidak kosong menggunakan kode di bawah ini:
+```
+variable2=""
+variable3="test"
+
+if [ -z "$variable2" ]
+then
+    echo "variable2 is set and empty"
+else
+    echo "variable2 is set and nonempty"
+fi
+
+if [ -z "$variable3" ]
+then
+    echo "variable3 is set and empty"
+else
+    echo "variable3 is set and non-empty"
+fi
+```
+
+Output:
+```
+variable2 is set and empty
+variable3 is set and non-empty
+```
+
+Percobaan 8:
+- [Alfani - Variable set 8](#Alfani---Variable-set-8)
+- [Ale - Variable set 8](#Ale---Variable-set-8)
+- [Kanisius - Variable set 8](#Kanisius---Variable-set-8)
+
+## Alfani - Variable set 8
+
+## Ale - Variable set 8
+	
+## Kanisius - Variable set 8
+
+## Bash - Iterate Nos
+Tutorial ini membahas berbagai cara untuk mengulangi rentang angka yang disimpan dalam variabel dan mencetaknya ke konsol.
+
+### Menghasilkan serangkaian angka dalam skrip bash
+- menggunakan alat seq seq menghasilkan urutan angka.
+
+```
+number=4
+for k in $(seq 1 $number); do echo $k; done
+```
+Output:
+```
+1
+2
+3
+4
+```
+
+Percobaan 1:
+- [Alfani - Iterate Nos 1](#Alfani---Iterate Nos-1)
+- [Ale - Iterate Nos 1](#Ale---Iterate Nos-1)
+- [Kanisius - Iterate Nos 1](#Kanisius---Iterate Nos-1)
+
+## Alfani - Iterate Nos 1
+
+## Ale - Iterate Nos 1
+	
+## Kanisius - Iterate Nos 1
+
+- menggunakan for loop
+```
+number=5
+for ((k=1;k<=number;k++)); do
+    echo $k
+done
+```
+
+Output:
+```
+1
+2
+3
+4
+5
+```
+
+Percobaan 2:
+- [Alfani - Iterate Nos 2](#Alfani---Iterate Nos-2)
+- [Ale - Iterate Nos 2](#Ale---Iterate Nos-2)
+- [Kanisius - Iterate Nos 2](#Kanisius---Iterate Nos-2)
+
+## Alfani - Iterate Nos 2
+
+## Ale - Iterate Nos 2
+	
+## Kanisius - Iterate Nos 2
+
+
+- while loop
+```
+number=5
+k=1 ;
+while [[ $k -le $number ]] ; do
+    echo $k
+    ((k = k + 1))
+done
+```
+
+Percobaan 3:
+- [Alfani - Iterate Nos 3](#Alfani---Iterate Nos-3)
+- [Ale - Iterate Nos 3](#Ale---Iterate Nos-3)
+- [Kanisius - Iterate Nos 3](#Kanisius---Iterate Nos-3)
+
+## Alfani - Iterate Nos 3
+
+## Ale - Iterate Nos 3
+	
+## Kanisius - Iterate Nos 3
 
 
 ## Kesimpulan
-
+Dengan menggunakan bahasa bash, Kita dapat menulis skrip bash untuk menjalankan beberapa perintah secara bersamaan dan mengotomatiskan proses yang tidak dapat dilakukan pada foreground baris perintah.
 
 ## Referensi
+Sumber 1: https://www.w3schools.io/terminal/bash-tutorials/
