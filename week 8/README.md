@@ -1065,6 +1065,8 @@ Percobaan 1:
 - [Kanisius - Case Statements 1](#Kanisius---Case-Statements-1)
 
 ## Alfani - Case Statements 1
+![ss](assets/alfani/cs1a.jpg)
+![ss](assets/alfani/cs1b.jpg)
 
 ## Ale - Case Statements 1
 ![ss](assets/ale/cs1a.png)
@@ -1090,6 +1092,8 @@ Percobaan 1:
 - [Kanisius - Special Characters 1](#Kanisius---Special-Characters-1)
 
 ## Alfani - Special Characters 1
+![ss](assets/alfani/sc1a.jpg)
+![ss](assets/alfani/sc1b.jpg)
 
 ## Ale - Special Characters 1
 
@@ -1117,6 +1121,8 @@ Percobaan 2:
 - [Kanisius - Special Characters 2](#Kanisius---Special-Characters-2)
 
 ## Alfani - Special Characters 2
+![ss](assets/alfani/sc2a.jpg)
+![ss](assets/alfani/sc2b.jpg)
 
 ## Ale - Special Characters 2
 
@@ -1136,6 +1142,8 @@ Percobaan 3:
 - [Kanisius - Special Characters 3](#Kanisius---Special-Characters-3)
 
 ## Alfani - Special Characters 3
+![ss](assets/alfani/sc3a.jpg)
+![ss](assets/alfani/sc3b.jpg)
 
 ## Ale - Special Characters 3
 
@@ -1159,6 +1167,8 @@ Percobaan 4:
 - [Kanisius - Special Characters 4](#Kanisius---Special-Characters-4)
 
 ## Alfani - Special Characters 4
+![ss](assets/alfani/sc4a.jpg)
+![ss](assets/alfani/sc4b.jpg)
 
 ## Ale - Special Characters 4
 
@@ -1187,6 +1197,8 @@ Percobaan 5:
 - [Kanisius - Special Characters 5](#Kanisius---Special-Characters-5)
 
 ## Alfani - Special Characters 5
+![ss](assets/alfani/sc5a.jpg)
+![ss](assets/alfani/sc5b.jpg)
 
 ## Ale - Special Characters 5
 
@@ -1217,6 +1229,8 @@ Percobaan 6:
 - [Kanisius - Special Characters 6](#Kanisius---Special-Characters-6)
 
 ## Alfani - Special Characters 6
+![ss](assets/alfani/sc6a.jpg)
+![ss](assets/alfani/sc6b.jpg)
 
 ## Ale - Special Characters 6
 
@@ -1236,6 +1250,8 @@ Percobaan 7:
 - [Kanisius - Special Characters 7](#Kanisius---Special-Characters-7)
 
 ## Alfani - Special Characters 7
+![ss](assets/alfani/sc7a.jpg)
+![ss](assets/alfani/sc7b.jpg)
 
 ## Ale - Special Characters 7
 
@@ -1257,6 +1273,8 @@ Percobaan 8:
 - [Kanisius - Special Characters 8](#Kanisius---Special-Characters-8)
 
 ## Alfani - Special Characters 8
+![ss](assets/alfani/sc8a.jpg)
+![ss](assets/alfani/sc8b.jpg)
 
 ## Ale - Special Characters 8
 
@@ -1340,6 +1358,8 @@ Percobaan 1:
 - [Kanisius - If elif else 1](#Kanisius---If-elif-else-1)
 
 ## Alfani - If elif else 1
+![ss](assets/alfani/iee1a.jpg)
+![ss](assets/alfani/iee1b.jpg)
 
 ## Ale - If elif else 1
 
@@ -1382,6 +1402,8 @@ Percobaan 2:
 - [Kanisius - If elif else 2](#Kanisius---If-elif-else-2)
 
 ## Alfani - If elif else 2
+![ss](assets/alfani/iee2a.jpg)
+![ss](assets/alfani/iee2b.jpg)
 
 ## Ale - If elif else 2
 
@@ -1427,6 +1449,8 @@ Percobaan 3:
 - [Kanisius - If elif else 3](#Kanisius---If-elif-else-3)
 
 ## Alfani - If elif else 3
+![ss](assets/alfani/iee3a.jpg)
+![ss](assets/alfani/iee3b.jpg)
 
 ## Ale - If elif else 3
 
@@ -1468,6 +1492,8 @@ Percobaan 1:
 - [Kanisius - Loop 1](#Kanisius---Loop-1)
 
 ## Alfani - Loop 1
+![ss](assets/alfani/l1a.jpg)
+![ss](assets/alfani/l1a.jpg)
 
 ## Ale - Loop 1
 
@@ -1498,6 +1524,8 @@ Percobaan 2:
 - [Kanisius - Loop 2](#Kanisius---Loop-2)
 
 ## Alfani - Loop 2
+![ss](assets/alfani/l2a.jpg)
+![ss](assets/alfani/l2b.jpg)
 
 ## Ale - Loop 2
 
@@ -1537,6 +1565,8 @@ Percobaan 3:
 - [Kanisius - Loop 3](#Kanisius---Loop-3)
 
 ## Alfani - Loop 3
+![ss](assets/alfani/l3a.jpg)
+![ss](assets/alfani/l3b.jpg)
 
 ## Ale - Loop 3
 
@@ -1573,6 +1603,8 @@ Percobaan 4:
 - [Kanisius - Loop 4](#Kanisius---Loop-4)
 
 ## Alfani - Loop 4
+![ss](assets/alfani/l14a.jpg)
+![ss](assets/alfani/l4b.jpg)
 
 ## Ale - Loop 4
 
@@ -1602,6 +1634,8 @@ Percobaan 1:
 - [Kanisius - Append String A 1](#Kanisius---Append-String-A-1)
 
 ## Alfani - Append String A 1
+![ss](assets/alfani/asa1a.jpg)
+![ss](assets/alfani/asa1b.jpg)
 
 ## Ale - Append String A 1
 
@@ -1630,6 +1664,8 @@ Percobaan 2:
 - [Kanisius - Append String A 2](#Kanisius---Append-String-A-2)
 
 ## Alfani - Append String A 2
+![ss](assets/alfani/asa2a.jpg)
+![ss](assets/alfani/asa2b.jpg)
 
 ## Ale - Append String A 2
 
@@ -1661,6 +1697,8 @@ Percobaan 3:
 - [Kanisius - Append String A 3](#Kanisius---Append-String-A-3)
 
 ## Alfani - Append String A 3
+![ss](assets/alfani/asa3a.jpg)
+![ss](assets/alfani/asa3b.jpg)
 
 ## Ale - Append String A 3
 
@@ -1739,6 +1777,9 @@ Percobaan 1:
 - [Kanisius - Append String B 1](#Kanisius---Append-String-B-1)
 
 ## Alfani - Append String B 1
+![ss](assets/alfani/asb1a.jpg)
+![ss](assets/alfani/asb1b.jpg)
+
 
 ## Ale - Append String B 1
 
@@ -1769,6 +1810,8 @@ Percobaan 2:
 - [Kanisius - Append String B 2](#Kanisius---Append String B-2)
 
 ## Alfani - Append String B 2
+![ss](assets/alfani/asb2a.jpg)
+![ss](assets/alfani/asb2b.jpg)
 
 ## Ale - Append String B 2
 
@@ -1798,6 +1841,8 @@ Percobaan 3:
 - [Kanisius - Append String B 3](#Kanisius---Append String B-3)
 
 ## Alfani - Append String B 3
+![ss](assets/alfani/asb3a.jpg)
+![ss](assets/alfani/asb3b.jpg)
 
 ## Ale - Append String B 3
 
@@ -1832,6 +1877,8 @@ Percobaan 4:
 - [Kanisius - Append String B 4](#Kanisius---Append String B-4)
 
 ## Alfani - Append String B 4
+![ss](assets/alfani/asb4a.jpg)
+![ss](assets/alfani/asb4b.jpg)
 
 ## Ale - Append String B 4
 
@@ -1932,6 +1979,8 @@ Percobaan 1:
 - [Kanisius - Operators 1](#Kanisius---Operators-1)
 
 ## Alfani - Operators 1
+![ss](assets/alfani/o1a.jpg)
+![ss](assets/alfani/o1b.jpg)
 
 ## Ale - Operators 1
 
@@ -1963,6 +2012,8 @@ Percobaan 2:
 - [Kanisius - Operators 2](#Kanisius---Operators-2)
 
 ## Alfani - Operators 2
+![ss](assets/alfani/o2a.jpg)
+![ss](assets/alfani/o2b.jpg)
 
 ## Ale - Operators 2
 
@@ -1997,6 +2048,8 @@ Percobaan 1:
 - [Kanisius - Numbers Comparison 1](#Kanisius---Numbers-Comparison-1)
 
 ## Alfani - Numbers Comparison 1
+![ss](assets/alfani/nc1a.jpg)
+![ss](assets/alfani/nc1b.jpg)
 
 ## Ale - Numbers Comparison 1
 
@@ -2035,6 +2088,8 @@ Percobaan 2:
 - [Kanisius - Numbers Comparison 2](#Kanisius---Numbers-Comparison-2)
 
 ## Alfani - Numbers Comparison 2
+![ss](assets/alfani/nc2a.jpg)
+![ss](assets/alfani/nc2b.jpg)
 
 ## Ale - Numbers Comparison 2
 
@@ -2055,6 +2110,8 @@ Percobaan 3:
 - [Kanisius - Numbers Comparison 3](#Kanisius---Numbers-Comparison-3)
 
 ## Alfani - Numbers Comparison 3
+![ss](assets/alfani/nc3a.jpg)
+![ss](assets/alfani/nc3b.jpg)
 
 ## Ale - Numbers Comparison 3
 
