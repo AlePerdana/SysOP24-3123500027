@@ -2147,6 +2147,8 @@ Percobaan 1:
 - [Kanisius - Check Directory 1](#Kanisius---Check-Directory-1)
 
 ## Alfani - Check Directory 1
+![ss](assets/alfani/cd1a.jpg)
+![ss](assets/alfani/cd1b.jpg)
 
 ## Ale - Check Directory 1
 
@@ -2178,6 +2180,8 @@ Percobaan 2:
 - [Kanisius - Check Directory 2](#Kanisius---Check-Directory-2)
 
 ## Alfani - Check Directory 2
+![ss](assets/alfani/cd2a.jpg)
+![ss](assets/alfani/cd2b.jpg)
 
 ## Ale - Check Directory 2
 
@@ -2199,6 +2203,8 @@ Percobaan 3:
 - [Kanisius - Check Directory 3](#Kanisius---Check-Directory-3)
 
 ## Alfani - Check Directory 3
+![ss](assets/alfani/cd3a.jpg)
+![ss](assets/alfani/cd3b.jpg)
 
 ## Ale - Check Directory 3
 
@@ -2224,6 +2230,8 @@ Percobaan 4:
 - [Kanisius - Check Directory 4](#Kanisius---Check-Directory-4)
 
 ## Alfani - Check Directory 4
+![ss](assets/alfani/cd4a.jpg)
+![ss](assets/alfani/cd4b.jpg)
 
 ## Ale - Check Directory 4
 
@@ -2253,6 +2261,8 @@ Percobaan 5:
 - [Kanisius - Check Directory 5](#Kanisius---Check-Directory-5)
 
 ## Alfani - Check Directory 5
+![ss](assets/alfani/cd5a.jpg)
+![ss](assets/alfani/cd5b.jpg)
 
 ## Ale - Check Directory 5
 
@@ -2278,6 +2288,8 @@ Percobaan 6:
 - [Kanisius - Check Directory 6](#Kanisius---Check-Directory-6)
 
 ## Alfani - Check Directory 6
+![ss](assets/alfani/cd6a.jpg)
+![ss](assets/alfani/cd6b.jpg)
 
 ## Ale - Check Directory 6
 
@@ -2313,6 +2325,8 @@ Percobaan 1:
 - [Kanisius - File Name 1](#Kanisius---File-Name-1)
 
 ## Alfani - File Name 1
+![ss](assets/alfani/fn1a.jpg)
+![ss](assets/alfani/fn1b.jpg)
 
 ## Ale - File Name 1
 	
@@ -2347,6 +2361,8 @@ Percobaan 2:
 - [Kanisius - File Name 2](#Kanisius---File-Name-2)
 
 ## Alfani - File Name 2
+![ss](assets/alfani/fn2a.jpg)
+![ss](assets/alfani/fn2b.jpg)
 
 ## Ale - File Name 2
 	
@@ -2379,6 +2395,8 @@ Percobaan 3:
 - [Kanisius - File Name 3](#Kanisius---File-Name-3)
 
 ## Alfani - File Name 3
+![ss](assets/alfani/fn3a.jpg)
+![ss](assets/alfani/fn3b.jpg)
 
 ## Ale - File Name 3
 	
@@ -2414,10 +2432,13 @@ Percobaan 4:
 - [Kanisius - File Name 4](#Kanisius---File-Name-4)
 
 ## Alfani - File Name 4
+![ss](assets/alfani/fn4a.jpg)
+![ss](assets/alfani/fn4b.jpg)
 
 ## Ale - File Name 4
 	
 ## Kanisius - File Name 4
+
 
 ## Bash - Split String
 
