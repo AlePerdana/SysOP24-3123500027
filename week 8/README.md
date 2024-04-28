@@ -31,7 +31,7 @@
 13. [Bash - Functions](#Bash---Functions)
 14. [Bash - Append String B](#Bash---Append-String-B)
 15. [Bash - Operators](#Bash---Operators)
-16. [Bash - Numbers Comparison](Bash---Numbers-Comparison)
+16. [Bash - Numbers Comparison](#Bash---Numbers-Comparison)
 17. [Bash - Check Directory](#Bash---Check-Directory)
 18. [Bash - File Name](#Bash---File-Name)
 19. [Bash - Split String](#Bash---Split-String)
