@@ -2104,6 +2104,8 @@ second=15
 echo $(( first == second ?  "equal": "not equal" ))
 ```
 
+Analisa: Percobaan 3 ini tidak bisa dilakukan, dikarenakan bash tidak mendukung operator ternary (```?```). maka output yang dikeluarkan akan error.
+
 Percobaan 3:
 - [Alfani - Numbers Comparison 3](#Alfani---Numbers-Comparison-3)
 - [Ale - Numbers Comparison 3](#Ale---Numbers-Comparison-3)
