@@ -3216,14 +3216,14 @@ Percobaan 1:
 ## Kanisius - Variable set 1
 
 
-Cara lain untuk memeriksa suatu variabel adalah dengan menyetel menggunakan -vopsi
+Cara lain untuk memeriksa suatu variabel adalah dengan menyetel menggunakan -v opsi
 ```
 variable1=""
 if [ ! -v $variable1 ]
 then
-    echo "variable1 is unset"
-else
     echo "variable1 is set"
+else
+    echo "variable1 is unset"
 
 fi
 ```
