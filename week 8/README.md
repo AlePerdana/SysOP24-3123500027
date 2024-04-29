@@ -1096,6 +1096,8 @@ Percobaan 1:
 ![ss](assets/alfani/sc1b.jpg)
 
 ## Ale - Special Characters 1
+![ss](assets/ale/sc1a.png)
+![ss](assets/ale/sc1b.png)
 
 ## Kanisius - Special Characters 1
 
