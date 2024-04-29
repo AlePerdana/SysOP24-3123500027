@@ -2540,6 +2540,8 @@ Percobaan 1:
 - [Kanisius - Split String 1](#Kanisius---Split-String-1)
 
 ## Alfani - Split String 1
+![ss](assets/alfani/ss1a.jpg)
+![ss](assets/alfani/ss1b.jpg)
 
 ## Ale - Split String 1
 ![ss](assets/ale/ss1a.png)
@@ -2576,6 +2578,8 @@ Percobaan 2:
 - [Kanisius - Split String 2](#Kanisius---Split-String-2)
 
 ## Alfani - Split String 2
+![ss](assets/alfani/ss2a.jpg)
+![ss](assets/alfani/ss2b.jpg)
 
 ## Ale - Split String 2
 ![ss](assets/ale/ss2a.png)
@@ -2603,6 +2607,8 @@ Percobaan 3:
 - [Kanisius - Split String 3](#Kanisius---Split-String-3)
 
 ## Alfani - Split String 3
+![ss](assets/alfani/ss3a.jpg)
+![ss](assets/alfani/ss3b.jpg)
 
 ## Ale - Split String 3
 ![ss](assets/ale/ss3a.png)
@@ -2639,6 +2645,8 @@ Percobaan 1:
 - [Kanisius - String Length 1](#Kanisius---String-Length-1)
 
 ## Alfani - String Length 1
+![ss](assets/alfani/sl1a.jpg)
+![ss](assets/alfani/sl1b.jpg)
 
 ## Ale - String Length 1
 ![ss](assets/ale/sl1a.png)
@@ -2677,6 +2685,8 @@ Percobaan 2:
 - [Kanisius - String Length 2](#Kanisius---String-Length-2)
 
 ## Alfani - String Length 2
+![ss](assets/alfani/sl2a.jpg)
+![ss](assets/alfani/sl2b.jpg)
 
 ## Ale - String Length 2
 ![ss](assets/ale/sl2a.png)
@@ -2702,6 +2712,8 @@ Percobaan 3:
 - [Kanisius - String Length 3](#Kanisius---String-Length-3)
 
 ## Alfani - String Length 3
+![ss](assets/alfani/sl2a.jpg)
+![ss](assets/alfani/sl2b.jpg)
 
 ## Ale - String Length 3
 ![ss](assets/ale/sl3a.png)
@@ -2730,6 +2742,8 @@ Percobaan 4:
 - [Kanisius - String Length 4](#Kanisius---String-Length-4)
 
 ## Alfani - String Length 4
+![ss](assets/alfani/sl2a.jpg)
+![ss](assets/alfani/sl2b.jpg)
 
 ## Ale - String Length 4
 ![ss](assets/ale/sl4a.png)
