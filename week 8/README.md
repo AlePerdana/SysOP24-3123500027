@@ -1127,6 +1127,8 @@ Percobaan 2:
 ![ss](assets/alfani/sc2b.jpg)
 
 ## Ale - Special Characters 2
+![ss](assets/ale/sc2a.png)
+![ss](assets/ale/sc2b.png)
 
 ## Kanisius - Special Characters 2
 
@@ -1148,6 +1150,8 @@ Percobaan 3:
 ![ss](assets/alfani/sc3b.jpg)
 
 ## Ale - Special Characters 3
+![ss](assets/ale/sc3a.png)
+![ss](assets/ale/sc3b.png)
 
 ## Kanisius - Special Characters 3
 
@@ -1173,6 +1177,8 @@ Percobaan 4:
 ![ss](assets/alfani/sc4b.jpg)
 
 ## Ale - Special Characters 4
+![ss](assets/ale/sc4a.png)
+![ss](assets/ale/sc4b.png)
 
 ## Kanisius - Special Characters 4
 
@@ -1203,6 +1209,8 @@ Percobaan 5:
 ![ss](assets/alfani/sc5b.jpg)
 
 ## Ale - Special Characters 5
+![ss](assets/ale/sc5a.png)
+![ss](assets/ale/sc5b.png)
 
 ## Kanisius - Special Characters 5
 
@@ -1235,6 +1243,8 @@ Percobaan 6:
 ![ss](assets/alfani/sc6b.jpg)
 
 ## Ale - Special Characters 6
+![ss](assets/ale/sc6a.png)
+![ss](assets/ale/sc6b.png)
 
 ## Kanisius - Special Characters 6
 
@@ -1256,6 +1266,8 @@ Percobaan 7:
 ![ss](assets/alfani/sc7b.jpg)
 
 ## Ale - Special Characters 7
+![ss](assets/ale/sc7a.png)
+![ss](assets/ale/sc7b.png)
 
 ## Kanisius - Special Characters 7
 
@@ -1279,6 +1291,8 @@ Percobaan 8:
 ![ss](assets/alfani/sc8b.jpg)
 
 ## Ale - Special Characters 8
+![ss](assets/ale/sc8a.png)
+![ss](assets/ale/sc8b.png)
 
 ## Kanisius - Special Characters 8
 
@@ -1355,7 +1369,7 @@ Output:
 ```
 
 Percobaan 1:
-- [Alfani - If elif else 1](#Alfani---If elif-else-1)
+- [Alfani - If elif else 1](#Alfani---If-elif-else-1)
 - [Ale - If elif else 1](#Ale---If-elif-else-1)
 - [Kanisius - If elif else 1](#Kanisius---If-elif-else-1)
 
@@ -1364,6 +1378,8 @@ Percobaan 1:
 ![ss](assets/alfani/iee1b.jpg)
 
 ## Ale - If elif else 1
+![ss](assets/ale/iee1a.png)
+![ss](assets/ale/iee1b.png)
 
 ## Kanisius - If elif else 1
 
@@ -1408,6 +1424,8 @@ Percobaan 2:
 ![ss](assets/alfani/iee2b.jpg)
 
 ## Ale - If elif else 2
+![ss](assets/ale/iee2a.png)
+![ss](assets/ale/iee2b.png)
 
 ## Kanisius - If elif else 2
 
@@ -1455,6 +1473,8 @@ Percobaan 3:
 ![ss](assets/alfani/iee3b.jpg)
 
 ## Ale - If elif else 3
+![ss](assets/ale/iee3a.png)
+![ss](assets/ale/iee3b.png)
 
 ## Kanisius - If elif else 3
 
@@ -1498,6 +1518,8 @@ Percobaan 1:
 ![ss](assets/alfani/l1a.jpg)
 
 ## Ale - Loop 1
+![ss](assets/ale/l1a.png)
+![ss](assets/ale/l1b.png)
 
 ## Kanisius - Loop 1
 
@@ -1530,6 +1552,8 @@ Percobaan 2:
 ![ss](assets/alfani/l2b.jpg)
 
 ## Ale - Loop 2
+![ss](assets/ale/l2a.png)
+![ss](assets/ale/l2b.png)
 
 ## Kanisius - Loop 2
 
@@ -1571,6 +1595,8 @@ Percobaan 3:
 ![ss](assets/alfani/l3b.jpg)
 
 ## Ale - Loop 3
+![ss](assets/ale/l3a.png)
+![ss](assets/ale/l3b.png)
 
 ## Kanisius - Loop 3
 
@@ -1609,6 +1635,8 @@ Percobaan 4:
 ![ss](assets/alfani/l4b.jpg)
 
 ## Ale - Loop 4
+![ss](assets/ale/l4a.png)
+![ss](assets/ale/l4b.png)
 
 ## Kanisius - Loop 4
 
@@ -1640,6 +1668,8 @@ Percobaan 1:
 ![ss](assets/alfani/asa1b.jpg)
 
 ## Ale - Append String A 1
+![ss](assets/ale/asa1a.png)
+![ss](assets/ale/asa1b.png)
 
 ## Kanisius - Append String A 1
 
@@ -1670,6 +1700,8 @@ Percobaan 2:
 ![ss](assets/alfani/asa2b.jpg)
 
 ## Ale - Append String A 2
+![ss](assets/ale/asa2a.png)
+![ss](assets/ale/asa2b.png)
 
 ## Kanisius - Append String A 2
 
@@ -1703,6 +1735,8 @@ Percobaan 3:
 ![ss](assets/alfani/asa3b.jpg)
 
 ## Ale - Append String A 3
+![ss](assets/ale/asa3a.png)
+![ss](assets/ale/asa3b.png)
 
 ## Kanisius - Append String A 3
 
@@ -1782,8 +1816,9 @@ Percobaan 1:
 ![ss](assets/alfani/asb1a.jpg)
 ![ss](assets/alfani/asb1b.jpg)
 
-
 ## Ale - Append String B 1
+![ss](assets/ale/asb1a.png)
+![ss](assets/ale/asb1b.png)
 
 ## Kanisius - Append String B 1
 
@@ -1816,6 +1851,8 @@ Percobaan 2:
 ![ss](assets/alfani/asb2b.jpg)
 
 ## Ale - Append String B 2
+![ss](assets/ale/asb2a.png)
+![ss](assets/ale/asb2b.png)
 
 ## Kanisius - Append String B 2
 
@@ -1847,6 +1884,8 @@ Percobaan 3:
 ![ss](assets/alfani/asb3b.jpg)
 
 ## Ale - Append String B 3
+![ss](assets/ale/asb3a.png)
+![ss](assets/ale/asb3b.png)
 
 ## Kanisius - Append String B 3
 
@@ -1883,6 +1922,8 @@ Percobaan 4:
 ![ss](assets/alfani/asb4b.jpg)
 
 ## Ale - Append String B 4
+![ss](assets/ale/asb4a.png)
+![ss](assets/ale/asb4b.png)
 
 ## Kanisius - Append String B 4
 
@@ -1985,6 +2026,8 @@ Percobaan 1:
 ![ss](assets/alfani/o1b.jpg)
 
 ## Ale - Operators 1
+![ss](assets/ale/o1a.png)
+![ss](assets/ale/o1b.png)
 
 ## Kanisius - Operators 1
 
@@ -2018,6 +2061,8 @@ Percobaan 2:
 ![ss](assets/alfani/o2b.jpg)
 
 ## Ale - Operators 2
+![ss](assets/ale/o2a.png)
+![ss](assets/ale/o2b.png)
 
 ## Kanisius - Operators 2
 
@@ -2054,6 +2099,8 @@ Percobaan 1:
 ![ss](assets/alfani/nc1b.jpg)
 
 ## Ale - Numbers Comparison 1
+![ss](assets/ale/nc1a.png)
+![ss](assets/ale/nc1b.png)
 
 ## Kanisius - Numbers Comparison 1
 
@@ -2094,6 +2141,8 @@ Percobaan 2:
 ![ss](assets/alfani/nc2b.jpg)
 
 ## Ale - Numbers Comparison 2
+![ss](assets/ale/nc2a.png)
+![ss](assets/ale/nc2b.png)
 
 ## Kanisius - Numbers Comparison 2
 
@@ -2118,6 +2167,8 @@ Percobaan 3:
 ![ss](assets/alfani/nc3b.jpg)
 
 ## Ale - Numbers Comparison 3
+![ss](assets/ale/nc3a.png)
+![ss](assets/ale/nc3b.png)
 
 ## Kanisius - Numbers Comparison 3
 
@@ -2155,6 +2206,8 @@ Percobaan 1:
 ![ss](assets/alfani/cd1b.jpg)
 
 ## Ale - Check Directory 1
+![ss](assets/ale/cs1a.png)
+![ss](assets/ale/cd1b.png)
 
 ## Kanisius - Check Directory 1
 
@@ -2188,6 +2241,8 @@ Percobaan 2:
 ![ss](assets/alfani/cd2b.jpg)
 
 ## Ale - Check Directory 2
+![ss](assets/ale/cs2a.png)
+![ss](assets/ale/cd2b.png)
 
 ## Kanisius - Check Directory 2
 
@@ -2211,6 +2266,8 @@ Percobaan 3:
 ![ss](assets/alfani/cd3b.jpg)
 
 ## Ale - Check Directory 3
+![ss](assets/ale/cs3a.png)
+![ss](assets/ale/cd3b.png)
 
 ## Kanisius - Check Directory 3
 
@@ -2238,6 +2295,8 @@ Percobaan 4:
 ![ss](assets/alfani/cd4b.jpg)
 
 ## Ale - Check Directory 4
+![ss](assets/ale/cs4a.png)
+![ss](assets/ale/cd4b.png)
 
 ## Kanisius - Check Directory 4
 
@@ -2269,6 +2328,8 @@ Percobaan 5:
 ![ss](assets/alfani/cd5b.jpg)
 
 ## Ale - Check Directory 5
+![ss](assets/ale/cs5a.png)
+![ss](assets/ale/cd5b.png)
 
 ## Kanisius - Check Directory 5
 
@@ -2296,6 +2357,8 @@ Percobaan 6:
 ![ss](assets/alfani/cd6b.jpg)
 
 ## Ale - Check Directory 6
+![ss](assets/ale/cs6a.png)
+![ss](assets/ale/cd6b.png)
 
 ## Kanisius - Check Directory 6
 
@@ -2333,6 +2396,8 @@ Percobaan 1:
 ![ss](assets/alfani/fn1b.jpg)
 
 ## Ale - File Name 1
+![ss](assets/ale/fn1a.png)
+![ss](assets/ale/fn1b.png)
 	
 ## Kanisius - File Name 1
 
@@ -2369,7 +2434,9 @@ Percobaan 2:
 ![ss](assets/alfani/fn2b.jpg)
 
 ## Ale - File Name 2
-	
+![ss](assets/ale/fn2a.png)
+![ss](assets/ale/fn2b.png)
+
 ## Kanisius - File Name 2
 
 <h3>Ekstrak ekstensi untuk jalur file</h3>
@@ -2403,7 +2470,9 @@ Percobaan 3:
 ![ss](assets/alfani/fn3b.jpg)
 
 ## Ale - File Name 3
-	
+![ss](assets/ale/fn3a.png)
+![ss](assets/ale/fn3b.png)
+
 ## Kanisius - File Name 3
 
 
@@ -2440,6 +2509,8 @@ Percobaan 4:
 ![ss](assets/alfani/fn4b.jpg)
 
 ## Ale - File Name 4
+![ss](assets/ale/fn4a.png)
+![ss](assets/ale/fn4b.png)
 	
 ## Kanisius - File Name 4
 
@@ -2471,6 +2542,8 @@ Percobaan 1:
 ## Alfani - Split String 1
 
 ## Ale - Split String 1
+![ss](assets/ale/ss1a.png)
+![ss](assets/ale/ss1b.png)
 	
 ## Kanisius - Split String 1
 
@@ -2505,6 +2578,8 @@ Percobaan 2:
 ## Alfani - Split String 2
 
 ## Ale - Split String 2
+![ss](assets/ale/ss2a.png)
+![ss](assets/ale/ss2b.png)
 	
 ## Kanisius - Split String 2
 
@@ -2530,6 +2605,8 @@ Percobaan 3:
 ## Alfani - Split String 3
 
 ## Ale - Split String 3
+![ss](assets/ale/ss3a.png)
+![ss](assets/ale/ss3b.png)
 	
 ## Kanisius - Split String 3
 
@@ -2564,6 +2641,8 @@ Percobaan 1:
 ## Alfani - String Length 1
 
 ## Ale - String Length 1
+![ss](assets/ale/sl1a.png)
+![ss](assets/ale/sl1b.png)
 	
 ## Kanisius - String Length 1
 
@@ -2600,6 +2679,8 @@ Percobaan 2:
 ## Alfani - String Length 2
 
 ## Ale - String Length 2
+![ss](assets/ale/sl2a.png)
+![ss](assets/ale/sl2b.png)
 	
 ## Kanisius - String Length 2
 
@@ -2623,6 +2704,8 @@ Percobaan 3:
 ## Alfani - String Length 3
 
 ## Ale - String Length 3
+![ss](assets/ale/sl3a.png)
+![ss](assets/ale/sl3b.png)
 	
 ## Kanisius - String Length 3
 
@@ -2649,6 +2732,8 @@ Percobaan 4:
 ## Alfani - String Length 4
 
 ## Ale - String Length 4
+![ss](assets/ale/sl4a.png)
+![ss](assets/ale/sl4b.png)
 	
 ## Kanisius - String Length 4
 
@@ -2737,6 +2822,8 @@ Percobaan 1:
 ## Alfani - Ternary Operator 1
 
 ## Ale - Ternary Operator 1
+![ss](assets/ale/to1a.png)
+![ss](assets/ale/to1b.png)
 	
 ## Kanisius - Ternary Operator 1
 
@@ -2763,6 +2850,8 @@ Percobaan 2:
 ## Alfani - Ternary Operator 2
 
 ## Ale - Ternary Operator 2
+![ss](assets/ale/to2a.png)
+![ss](assets/ale/to2b.png)
 	
 ## Kanisius - Ternary Operator 2
 
@@ -2787,6 +2876,8 @@ Percobaan 3:
 ## Alfani - Ternary Operator 3
 
 ## Ale - Ternary Operator 3
+![ss](assets/ale/to3a.png)
+![ss](assets/ale/to3b.png)
 	
 ## Kanisius - Ternary Operator 3
 
@@ -2824,6 +2915,8 @@ Percobaan 1:
 ## Alfani - Lowercase 1
 
 ## Ale - Lowercase 1
+![ss](assets/ale/lc1a.png)
+![ss](assets/ale/lc1b.png)
 	
 ## Kanisius - Lowercase 1
 
@@ -2843,6 +2936,8 @@ Percobaan 2:
 ## Alfani - Lowercase 2
 
 ## Ale - Lowercase 2
+![ss](assets/ale/lc2a.png)
+![ss](assets/ale/lc2b.png)
 	
 ## Kanisius - Lowercase 2
 
@@ -2866,6 +2961,8 @@ Percobaan 3:
 ## Alfani - Lowercase 3
 
 ## Ale - Lowercase 3
+![ss](assets/ale/lc3a.png)
+![ss](assets/ale/lc3b.png)
 	
 ## Kanisius - Lowercase 3
 
@@ -2886,6 +2983,8 @@ Percobaan 4:
 ## Alfani - Lowercase 4
 
 ## Ale - Lowercase 4
+![ss](assets/ale/lc4a.png)
+![ss](assets/ale/lc4b.png)
 	
 ## Kanisius - Lowercase 4
 
@@ -2907,6 +3006,8 @@ Percobaan 5:
 ## Alfani - Lowercase 5
 
 ## Ale - Lowercase 5
+![ss](assets/ale/lc5a.png)
+![ss](assets/ale/lc5b.png)
 	
 ## Kanisius - Lowercase 5
 
@@ -2925,6 +3026,8 @@ Percobaan 6:
 ## Alfani - Lowercase 6
 
 ## Ale - Lowercase 6
+![ss](assets/ale/lc6a.png)
+![ss](assets/ale/lc6b.png)
 	
 ## Kanisius - Lowercase 6
 
@@ -2968,6 +3071,8 @@ Percobaan 1:
 ## Alfani - Uppercase 1
 
 ## Ale - Uppercase 1
+![ss](assets/ale/up1a.png)
+![ss](assets/ale/up1b.png)
 	
 ## Kanisius - Uppercase 1
 
@@ -2986,6 +3091,8 @@ Percobaan 2:
 ## Alfani - Uppercase 2
 
 ## Ale - Uppercase 2
+![ss](assets/ale/up2a.png)
+![ss](assets/ale/up2b.png)
 	
 ## Kanisius - Uppercase 2
 
@@ -3006,6 +3113,8 @@ Percobaan 3:
 ## Alfani - Uppercase 3
 
 ## Ale - Uppercase 3
+![ss](assets/ale/up3a.png)
+![ss](assets/ale/up3b.png)
 	
 ## Kanisius - Uppercase 3
 
@@ -3027,6 +3136,8 @@ Percobaan 4:
 ## Alfani - Uppercase 4
 
 ## Ale - Uppercase 4
+![ss](assets/ale/up4a.png)
+![ss](assets/ale/up4b.png)
 	
 ## Kanisius - Uppercase 4
 
@@ -3045,6 +3156,8 @@ Percobaan 5:
 ## Alfani - Uppercase 5
 
 ## Ale - Uppercase 5
+![ss](assets/ale/up5a.png)
+![ss](assets/ale/up5b.png)
 	
 ## Kanisius - Uppercase 5
 
@@ -3075,6 +3188,8 @@ Percobaan 6:
 ## Alfani - Uppercase 6
 
 ## Ale - Uppercase 6
+![ss](assets/ale/up6a.png)
+![ss](assets/ale/up6b.png)
 	
 ## Kanisius - Uppercase 6
 
@@ -3108,6 +3223,8 @@ Percobaan 1:
 ## Alfani - Substring 1
 
 ## Ale - Substring 1
+![ss](assets/ale/s1a.png)
+![ss](assets/ale/s1b.png)
 	
 ## Kanisius - Substring 1
 
@@ -3131,6 +3248,8 @@ Percobaan 2:
 ## Alfani - Substring 2
 
 ## Ale - Substring 2
+![ss](assets/ale/s2a.png)
+![ss](assets/ale/s2b.png)
 	
 ## Kanisius - Substring 2
 
@@ -3153,6 +3272,8 @@ Percobaan 3:
 ## Alfani - Substring 3
 
 ## Ale - Substring 3
+![ss](assets/ale/s3a.png)
+![ss](assets/ale/s3b.png)
 	
 ## Kanisius - Substring 3
 
@@ -3214,6 +3335,8 @@ Percobaan 1:
 ## Alfani - Variable set 1
 
 ## Ale - Variable set 1
+![ss](assets/ale/vs1a.png)
+![ss](assets/ale/vs1b.png)
 	
 ## Kanisius - Variable set 1
 
@@ -3243,6 +3366,8 @@ Percobaan 2:
 ## Alfani - Variable set 2
 
 ## Ale - Variable set 2
+![ss](assets/ale/vs2a.png)
+![ss](assets/ale/vs2b.png)
 	
 ## Kanisius - Variable set 2
 
@@ -3286,6 +3411,8 @@ Percobaan 3:
 ## Alfani - Variable set 3
 
 ## Ale - Variable set 3
+![ss](assets/ale/vs3a.png)
+![ss](assets/ale/vs3b.png)
 	
 ## Kanisius - Variable set 3
 
@@ -3310,6 +3437,8 @@ Percobaan 4:
 ## Alfani - Variable set 4
 
 ## Ale - Variable set 4
+![ss](assets/ale/vs4a.png)
+![ss](assets/ale/vs4b.png)
 	
 ## Kanisius - Variable set 4
 
@@ -3338,6 +3467,8 @@ Percobaan 5:
 ## Alfani - Variable set 5
 
 ## Ale - Variable set 5
+![ss](assets/ale/vs5a.png)
+![ss](assets/ale/vs5b.png)
 	
 ## Kanisius - Variable set 5
 
@@ -3363,6 +3494,8 @@ Percobaan 6:
 ## Alfani - Variable set 6
 
 ## Ale - Variable set 6
+![ss](assets/ale/vs6a.png)
+![ss](assets/ale/vs6b.png)
 	
 ## Kanisius - Variable set 6
 
@@ -3386,6 +3519,8 @@ Percobaan 7:
 ## Alfani - Variable set 7
 
 ## Ale - Variable set 7
+![ss](assets/ale/vs7a.png)
+![ss](assets/ale/vs7b.png)
 	
 ## Kanisius - Variable set 7
 
@@ -3424,6 +3559,8 @@ Percobaan 8:
 ## Alfani - Variable set 8
 
 ## Ale - Variable set 8
+![ss](assets/ale/vs8a.png)
+![ss](assets/ale/vs8b.png)
 	
 ## Kanisius - Variable set 8
 
@@ -3453,6 +3590,8 @@ Percobaan 1:
 ## Alfani - Iterate Nos 1
 
 ## Ale - Iterate Nos 1
+![ss](assets/ale/in1a.png)
+![ss](assets/ale/in1b.png)
 	
 ## Kanisius - Iterate Nos 1
 
@@ -3481,6 +3620,8 @@ Percobaan 2:
 ## Alfani - Iterate Nos 2
 
 ## Ale - Iterate Nos 2
+![ss](assets/ale/in2a.png)
+![ss](assets/ale/in2b.png)
 	
 ## Kanisius - Iterate Nos 2
 
@@ -3503,6 +3644,8 @@ Percobaan 3:
 ## Alfani - Iterate Nos 3
 
 ## Ale - Iterate Nos 3
+![ss](assets/ale/in3a.png)
+![ss](assets/ale/in3b.png)
 	
 ## Kanisius - Iterate Nos 3
 
