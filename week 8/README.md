@@ -1842,9 +1842,9 @@ nums+=" three"
 echo "$nums"
 ```
 Percobaan 2:
-- [Alfani - Append String B 2](#Alfani---Append String B-2)
-- [Ale - Append String B 2](#Ale---Append String B-2)
-- [Kanisius - Append String B 2](#Kanisius---Append String B-2)
+- [Alfani - Append String B 2](#Alfani---Append-String-B-2)
+- [Ale - Append String B 2](#Ale---Append-String-B-2)
+- [Kanisius - Append String B 2](#Kanisius---Append-String-B-2)
 
 ## Alfani - Append String B 2
 ![ss](assets/alfani/asb2a.jpg)
@@ -1875,9 +1875,9 @@ echo $output
 ```
 
 Percobaan 3:
-- [Alfani - Append String B 3](#Alfani---Append String B-3)
-- [Ale - Append String B 3](#Ale---Append String B-3)
-- [Kanisius - Append String B 3](#Kanisius---Append String B-3)
+- [Alfani - Append String B 3](#Alfani---Append-String-B-3)
+- [Ale - Append String B 3](#Ale---Append-String-B-3)
+- [Kanisius - Append String B 3](#Kanisius---Append-String-B-3)
 
 ## Alfani - Append String B 3
 ![ss](assets/alfani/asb3a.jpg)
@@ -1913,9 +1913,9 @@ echo $output
 ```
 
 Percobaan 4:
-- [Alfani - Append String B 4](#Alfani---Append String B-4)
-- [Ale - Append String B 4](#Ale---Append String B-4)
-- [Kanisius - Append String B 4](#Kanisius---Append String B-4)
+- [Alfani - Append String B 4](#Alfani---Append-String-B-4)
+- [Ale - Append String B 4](#Ale---Append-String-B-4)
+- [Kanisius - Append String B 4](#Kanisius---Append-String-B-4)
 
 ## Alfani - Append String B 4
 ![ss](assets/alfani/asb4a.jpg)
@@ -2834,6 +2834,8 @@ Percobaan 1:
 - [Kanisius - Ternary Operator 1](#Kanisius---Ternary-Operator-1)
 
 ## Alfani - Ternary Operator 1
+![ss](assets/alfani/to1a.jpg)
+![ss](assets/alfani/to1b.jpg)
 
 ## Ale - Ternary Operator 1
 ![ss](assets/ale/to1a.png)
@@ -2862,6 +2864,8 @@ Percobaan 2:
 - [Kanisius - Ternary Operator 2](#Kanisius---Ternary-Operator-2)
 
 ## Alfani - Ternary Operator 2
+![ss](assets/alfani/to2a.jpg)
+![ss](assets/alfani/to2b.jpg)
 
 ## Ale - Ternary Operator 2
 ![ss](assets/ale/to2a.png)
@@ -2888,6 +2892,8 @@ Percobaan 3:
 - [Kanisius - Ternary Operator 3](#Kanisius---Ternary-Operator-3)
 
 ## Alfani - Ternary Operator 3
+![ss](assets/alfani/to3a.jpg)
+![ss](assets/alfani/to3b.jpg)
 
 ## Ale - Ternary Operator 3
 ![ss](assets/ale/to3a.png)
@@ -2927,6 +2933,8 @@ Percobaan 1:
 - [Kanisius - Lowercase 1](#Kanisius---Lowercase-1)
 
 ## Alfani - Lowercase 1
+![ss](assets/alfani/lc1a.jpg)
+![ss](assets/alfani/lc1b.jpg)
 
 ## Ale - Lowercase 1
 ![ss](assets/ale/lc1a.png)
@@ -2948,6 +2956,8 @@ Percobaan 2:
 - [Kanisius - Lowercase 2](#Kanisius---Lowercase-2)
 
 ## Alfani - Lowercase 2
+![ss](assets/alfani/lc2a.jpg)
+![ss](assets/alfani/lc2b.jpg)
 
 ## Ale - Lowercase 2
 ![ss](assets/ale/lc2a.png)
@@ -2973,6 +2983,8 @@ Percobaan 3:
 - [Kanisius - Lowercase 3](#Kanisius---Lowercase-3)
 
 ## Alfani - Lowercase 3
+![ss](assets/alfani/lc3a.jpg)
+![ss](assets/alfani/lc3b.jpg)
 
 ## Ale - Lowercase 3
 ![ss](assets/ale/lc3a.png)
@@ -2995,6 +3007,8 @@ Percobaan 4:
 - [Kanisius - Lowercase 4](#Kanisius---Lowercase-4)
 
 ## Alfani - Lowercase 4
+![ss](assets/alfani/lc4a.jpg)
+![ss](assets/alfani/lc4b.jpg)
 
 ## Ale - Lowercase 4
 ![ss](assets/ale/lc4a.png)
@@ -3018,6 +3032,8 @@ Percobaan 5:
 - [Kanisius - Lowercase 5](#Kanisius---Lowercase-5)
 
 ## Alfani - Lowercase 5
+![ss](assets/alfani/lc5a.jpg)
+![ss](assets/alfani/lc5b.jpg)
 
 ## Ale - Lowercase 5
 ![ss](assets/ale/lc5a.png)
@@ -3038,6 +3054,8 @@ Percobaan 6:
 - [Kanisius - Lowercase 6](#Kanisius---Lowercase-6)
 
 ## Alfani - Lowercase 6
+![ss](assets/alfani/lc6a.jpg)
+![ss](assets/alfani/lc6b.jpg)
 
 ## Ale - Lowercase 6
 ![ss](assets/ale/lc6a.png)
@@ -3083,6 +3101,8 @@ Percobaan 1:
 - [Kanisius - Uppercase 1](#Kanisius---Uppercase-1)
 
 ## Alfani - Uppercase 1
+![ss](assets/alfani/uc1a.jpg)
+![ss](assets/alfani/uc1b.jpg)
 
 ## Ale - Uppercase 1
 ![ss](assets/ale/up1a.png)
@@ -3103,6 +3123,8 @@ Percobaan 2:
 - [Kanisius - Uppercase 2](#Kanisius---Uppercase-2)
 
 ## Alfani - Uppercase 2
+![ss](assets/alfani/uc2a.jpg)
+![ss](assets/alfani/uc2b.jpg)
 
 ## Ale - Uppercase 2
 ![ss](assets/ale/up2a.png)
@@ -3125,6 +3147,8 @@ Percobaan 3:
 - [Kanisius - Uppercase 3](#Kanisius---Uppercase-3)
 
 ## Alfani - Uppercase 3
+![ss](assets/alfani/uc3a.jpg)
+![ss](assets/alfani/uc3b.jpg)
 
 ## Ale - Uppercase 3
 ![ss](assets/ale/up3a.png)
@@ -3148,6 +3172,8 @@ Percobaan 4:
 - [Kanisius - Uppercase 4](#Kanisius---Uppercase-4)
 
 ## Alfani - Uppercase 4
+![ss](assets/alfani/uc4a.jpg)
+![ss](assets/alfani/uc4b.jpg)
 
 ## Ale - Uppercase 4
 ![ss](assets/ale/up4a.png)
@@ -3235,6 +3261,8 @@ Percobaan 1:
 - [Kanisius - Substring 1](#Kanisius---Substring-1)
 
 ## Alfani - Substring 1
+![ss](assets/alfani/s1a.jpg)
+![ss](assets/alfani/s1b.jpg)
 
 ## Ale - Substring 1
 ![ss](assets/ale/s1a.png)
@@ -3260,6 +3288,8 @@ Percobaan 2:
 - [Kanisius - Substring 2](#Kanisius---Substring-2)
 
 ## Alfani - Substring 2
+![ss](assets/alfani/s2a.jpg)
+![ss](assets/alfani/s2b.jpg)
 
 ## Ale - Substring 2
 ![ss](assets/ale/s2a.png)
@@ -3284,6 +3314,8 @@ Percobaan 3:
 - [Kanisius - Substring 3](#Kanisius---Substring-3)
 
 ## Alfani - Substring 3
+![ss](assets/alfani/s3a.jpg)
+![ss](assets/alfani/s3b.jpg)
 
 ## Ale - Substring 3
 ![ss](assets/ale/s3a.png)
@@ -3347,6 +3379,8 @@ Percobaan 1:
 - [Kanisius - Variable set 1](#Kanisius---Variable-set-1)
 
 ## Alfani - Variable set 1
+![ss](assets/alfani/vs1a.jpg)
+![ss](assets/alfani/vs1b.jpg)
 
 ## Ale - Variable set 1
 ![ss](assets/ale/vs1a.png)
@@ -3378,6 +3412,8 @@ Percobaan 2:
 - [Kanisius - Variable set 2](#Kanisius---Variable-set-2)
 
 ## Alfani - Variable set 2
+![ss](assets/alfani/vs2a.jpg)
+![ss](assets/alfani/vs2b.jpg)
 
 ## Ale - Variable set 2
 ![ss](assets/ale/vs2a.png)
@@ -3423,6 +3459,8 @@ Percobaan 3:
 - [Kanisius - Variable set 3](#Kanisius---Variable-set-3)
 
 ## Alfani - Variable set 3
+![ss](assets/alfani/vs3a.jpg)
+![ss](assets/alfani/vs3b.jpg)
 
 ## Ale - Variable set 3
 ![ss](assets/ale/vs3a.png)
@@ -3449,6 +3487,8 @@ Percobaan 4:
 - [Kanisius - Variable set 4](#Kanisius---Variable-set-4)
 
 ## Alfani - Variable set 4
+![ss](assets/alfani/vs4a.jpg)
+![ss](assets/alfani/vs4b.jpg)
 
 ## Ale - Variable set 4
 ![ss](assets/ale/vs4a.png)
@@ -3479,6 +3519,8 @@ Percobaan 5:
 - [Kanisius - Variable set 5](#Kanisius---Variable-set-5)
 
 ## Alfani - Variable set 5
+![ss](assets/alfani/vs5a.jpg)
+![ss](assets/alfani/vs5b.jpg)
 
 ## Ale - Variable set 5
 ![ss](assets/ale/vs5a.png)
@@ -3506,6 +3548,8 @@ Percobaan 6:
 - [Kanisius - Variable set 6](#Kanisius---Variable-set-6)
 
 ## Alfani - Variable set 6
+![ss](assets/alfani/vs6a.jpg)
+![ss](assets/alfani/vs6b.jpg)
 
 ## Ale - Variable set 6
 ![ss](assets/ale/vs6a.png)
@@ -3531,6 +3575,8 @@ Percobaan 7:
 - [Kanisius - Variable set 7](#Kanisius---Variable-set-7)
 
 ## Alfani - Variable set 7
+![ss](assets/alfani/vs7a.jpg)
+![ss](assets/alfani/vs7b.jpg)
 
 ## Ale - Variable set 7
 ![ss](assets/ale/vs7a.png)
@@ -3571,6 +3617,8 @@ Percobaan 8:
 - [Kanisius - Variable set 8](#Kanisius---Variable-set-8)
 
 ## Alfani - Variable set 8
+![ss](assets/alfani/vs8a.jpg)
+![ss](assets/alfani/vs8b.jpg)
 
 ## Ale - Variable set 8
 ![ss](assets/ale/vs8a.png)
@@ -3597,11 +3645,13 @@ Output:
 ```
 
 Percobaan 1:
-- [Alfani - Iterate Nos 1](#Alfani---Iterate Nos-1)
-- [Ale - Iterate Nos 1](#Ale---Iterate Nos-1)
-- [Kanisius - Iterate Nos 1](#Kanisius---Iterate Nos-1)
+- [Alfani - Iterate Nos 1](#Alfani---Iterate-Nos-1)
+- [Ale - Iterate Nos 1](#Ale---Iterate-Nos-1)
+- [Kanisius - Iterate Nos 1](#Kanisius---Iterate-Nos-1)
 
 ## Alfani - Iterate Nos 1
+![ss](assets/alfani/in1a.jpg)
+![ss](assets/alfani/in1b.jpg)
 
 ## Ale - Iterate Nos 1
 ![ss](assets/ale/in1a.png)
@@ -3627,11 +3677,13 @@ Output:
 ```
 
 Percobaan 2:
-- [Alfani - Iterate Nos 2](#Alfani---Iterate Nos-2)
-- [Ale - Iterate Nos 2](#Ale---Iterate Nos-2)
-- [Kanisius - Iterate Nos 2](#Kanisius---Iterate Nos-2)
+- [Alfani - Iterate Nos 2](#Alfani---Iterate-Nos-2)
+- [Ale - Iterate Nos 2](#Ale---Iterate-Nos-2)
+- [Kanisius - Iterate Nos 2](#Kanisius---Iterate-Nos-2)
 
 ## Alfani - Iterate Nos 2
+![ss](assets/alfani/in2a.jpg)
+![ss](assets/alfani/in2b.jpg)
 
 ## Ale - Iterate Nos 2
 ![ss](assets/ale/in2a.png)
@@ -3651,11 +3703,13 @@ done
 ```
 
 Percobaan 3:
-- [Alfani - Iterate Nos 3](#Alfani---Iterate Nos-3)
-- [Ale - Iterate Nos 3](#Ale---Iterate Nos-3)
-- [Kanisius - Iterate Nos 3](#Kanisius---Iterate Nos-3)
+- [Alfani - Iterate Nos 3](#Alfani---Iterate-Nos-3)
+- [Ale - Iterate Nos 3](#Ale---Iterate-Nos-3)
+- [Kanisius - Iterate Nos 3](#Kanisius---Iterate-Nos-3)
 
 ## Alfani - Iterate Nos 3
+![ss](assets/alfani/in3a.jpg)
+![ss](assets/alfani/in3b.jpg)
 
 ## Ale - Iterate Nos 3
 ![ss](assets/ale/in3a.png)
