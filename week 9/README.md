@@ -29,10 +29,9 @@
 
 ### Masalah Produsen-Konsumen
 
-Masalah produsen-konsumen adalah contoh masalah sinkronisasi multi-proses . Masalahnya menggambarkan dua proses, produsen dan konsumen yang berbagi buffer berukuran tetap dan menggunakannya sebagai antrian .
-
-    Tugas produser adalah menghasilkan data, memasukkannya ke dalam buffer, dan memulai lagi.
-    Pada saat yang sama, konsumen mengkonsumsi data (yaitu, menghapusnya dari buffer), satu per satu. 
+Masalah produsen-konsumen adalah contoh masalah sinkronisasi multi-proses. Masalahnya menggambarkan dua proses, produsen dan konsumen yang berbagi buffer berukuran tetap dan menggunakannya sebagai antrian.
+Tugas produser adalah menghasilkan data, memasukkannya ke dalam buffer, dan memulai lagi.
+Pada saat yang sama, konsumen mengkonsumsi data yaitu, menghapusnya dari buffer, satu persatu. 
 
 ### Masalah Sebenarnya
 
