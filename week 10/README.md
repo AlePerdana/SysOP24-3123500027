@@ -445,6 +445,14 @@ Karena sebuah thread lebih kecil daripada sebuah proses, pembuatan thread biasan
 Jawaban:
 Ya. Timing sangat penting untuk aplikasi real-time. Jika sebuah thread ditandai sebagai real-time tetapi tidak diikat ke LWP, thread mungkin harus menunggu untuk dihubungkan ke LWP sebelum berjalan. Pertimbangkan jika sebuah real-time thread sedang berjalan (terhubung ke LWP) dan kemudian mengalami blocking (misalnya harus melakukan I/O, di-preempt oleh thread real-time dengan prioritas lebih tinggi, menunggu lock eksklusi mutual, dll). Saat real-time thread diblokir, LWP yang terhubung dengannya telah dialokasikan ke thread lain. Ketika real-time thread dijadwalkan untuk berjalan lagi, ia harus menunggu terlebih dahulu untuk dihubungkan ke LWP. Dengan mengikat LWP ke real-time thread, Anda memastikan bahwa thread dapat berjalan dengan penundaan minimal setelah dijadwalkan.
 
+6. Apa itu Thread?
+Jawaban:
+Thread adalah unit dasar pemanfaatan CPU yang membentuk dasar sistem komputer multithread.
+
+7. Apa keuntungan dari Multithreading?
+Jawaban:
+Multithreading menawarkan beberapa keuntungan seperti responsivitas yang lebih baik, berbagi sumber daya yang lebih mudah, ekonomi karena pembuatan thread lebih murah daripada pembuatan proses, dan skalabilitas yang memungkinkan proses memanfaatkan arsitektur multiprosesor.
+
 ## Kesimpulan
 
 
