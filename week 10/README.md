@@ -31,6 +31,9 @@
   - [Pthreads](#pthreads)
   - [Java thread](#java-thread)
 - [Implicit Threading](#implicit-threading)
+  - [Thread Pools](#thread-pools)
+  - [OpenMP](#openmp)
+  - [Grand Central Dispatch](#grand-central-dispatch)
 - [Threading Issues](#threading-issues)
 - [Operating System Example](#operating-system-example)
 - [Pertanyaan dan jawaban](#pertanyaan-dan-jawaban)
@@ -331,7 +334,85 @@ public class Driver
 ```
 
 ## Implicit Threading
+Semakin populer seiring bertambahnya jumlah thread, program menjadi lebih sulit untuk benar dengan thread eksplisit. Pembuatan dan pengelolaan thread dilakukan oleh kompiler dan pustaka run-time daripada oleh programmer.
+Ada tiga metode yang telah dieksplorisasi:
+- Thread Pools
+- OpenMP
+- Grand Central Dispatch
+Metode lain termasuk Microsoft Threading Building Blocks (TBB), paket java.util.concurrent
 
+### Thread Pools
+Membuat sejumlah thread dalam sebuah pool di mana mereka menunggu pekerjaan.
+Keuntungannya:
+- Biasanya sedikit lebih cepat untuk melayani permintaan dengan thread yang sudah ada daripada membuat thread baru
+- Memungkinkan jumlah thread dalam aplikasi untuk dibatasi sesuai dengan ukuran pool
+- Memisahkan tugas yang akan dilakukan dari mekanisme pembuatan tugas memungkinkan strategi yang berbeda untuk menjalankan tugas. contoh: Tugas dapat dijadwalkan untuk dijalankan secara berkala
+
+Windows API mendukung thread pools:
+```
+DWORD WINAPI PoolFunction(AVOID Param) {
+/*
+* fungsi ini menjalankan thread yang berbeda.
+*/
+}
+```
+
+### OpenMP
+- Sekumpulan direktif kompiler dan sebuah API untuk C, C++, FORTRAN
+- Menyediakan dukungan untuk pemrograman paralel dalam lingkungan memori bersama
+- Mengidentifikasi wilayah paralel – blok kode yang dapat dijalankan secara paralel
+
+#pragma omp parallel 
+Membuat thread sebanyak jumlah core
+
+#pragma omp parallel for 
+```
+for(i=0;i<N;i++) { 
+c[i] = a[i] + b[i]; 
+}
+```
+Menjalankan for loop secara paralel
+
+contoh kode:
+```
+#include <omp.h>
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+/* kode sekuensial */
+
+#pragma omp parallel
+{
+printf("I am parallel region.");
+}
+/* kode sekuensial */
+
+return 0;
+}
+```
+
+### Grand Central Dispatch
+- Teknologi Apple untuk sistem operasi Mac OS X dan iOS.
+- Ekstensi untuk bahasa C, C++, API, dan pustaka run-time.
+- Memungkinkan identifikasi bagian paralel.
+- Mengelola sebagian besar detail threading.
+- Block berada dalam “^{ }” - ˆ{ printf("I am a block"); } 
+- Block yang ditempatkan dalam dispatch queue ditugaskan ke thread yang tersedia dalam thread pool saat dihapus dari queue.
+
+Ada dua jenis dispatch queues:
+- serial – blocks dihapus dalam urutan FIFO, queue adalah per proses, disebut main queue
+  - Pemrogram dapat membuat serial queue tambahan dalam program
+- concurrent – dihapus dalam urutan FIFO tetapi beberapa dapat dihapus sekaligus
+  - Tiga system wide queues dengan prioritas rendah, default, tinggi
+
+contoh kode:
+```
+dispatch.queue.t queue = dispatch.get.global.queue
+(DISPATCH.QUEUE.PRIORITY.DEFAULT, 0);
+
+dispatch.async(queue, ^{ printf("I am a block."); });
+```
 
 ## Threading Issues
 
