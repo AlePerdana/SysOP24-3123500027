@@ -454,7 +454,7 @@ Jawaban:
 Multithreading menawarkan beberapa keuntungan seperti responsivitas yang lebih baik, berbagi sumber daya yang lebih mudah, ekonomi karena pembuatan thread lebih murah daripada pembuatan proses, dan skalabilitas yang memungkinkan proses memanfaatkan arsitektur multiprosesor.
 
 ## Kesimpulan
-
+Thread merupakan unit dasar dari penggunaan CPU. Setiap thread memiliki thread ID, program counter, register set, dan stack. Thread juga sering disebut sebagai lightweight process. Sebuah thread berbagi code section, data section, dan sumber daya sistem operasi dengan thread lain yang dimiliki oleh proses yang sama.
 
 ## Referensi
 Sumber 1: https://gustibgsbayu.medium.com/sistem-operasi-thread-c7fb4a35d89a
