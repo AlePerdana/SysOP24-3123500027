@@ -35,7 +35,14 @@
   - [OpenMP](#openmp)
   - [Grand Central Dispatch](#grand-central-dispatch)
 - [Threading Issues](#threading-issues)
+  - [Penanganan Sinyal](#penanganan-sinyal)
+  - [Pembatalan Thread](#pembatalan-thread)
+  - [Thread-Local Storage](#thread-local-storage)
+  - [Scheduler Activations](#scheduler-activations)
 - [Operating System Example](#operating-system-example)
+  - [Windows Threads](#windows-threads)
+  - [Windows Threads Data Structures](#windows-threads-data-structures)
+  - [Linux Threads](#linux-threads)
 - [Pertanyaan dan jawaban](#pertanyaan-dan-jawaban)
 - [Kesimpulan](#kesimpulan)
 - [Referensi](#referensi)
@@ -415,10 +422,110 @@ dispatch.async(queue, ^{ printf("I am a block."); });
 ```
 
 ## Threading Issues
+- Semantik dari fork() dan exec() system calls
+- Penanganan sinyal
+  - Sinkron dan asinkron
+- Pembatalan thread dari target thread
+  - Asinkron atau ditunda
+- Penyimpanan lokal thread
+- Scheduler Activations
+Semantik dari fork() dan exec()
+- Apakah fork() menduplikasi hanya thread yang memanggil atau semua thread?
+  - Beberapa UNIX memiliki dua versi fork
+- exec() biasanya bekerja seperti biasa – menggantikan proses yang berjalan termasuk semua thread
 
+### Penanganan Sinyal
+- Sinyal digunakan dalam sistem UNIX untuk memberi tahu sebuah proses bahwa sebuah peristiwa tertentu telah terjadi.
+- Sebuah signal handler digunakan untuk memproses sinyal
+  1. Sinyal dihasilkan oleh peristiwa tertentu
+  2. Sinyal dikirim ke sebuah proses
+  3. Sinyal ditangani oleh salah satu dari dua signal handlers:
+    1. default
+    2. user-defined
+- Setiap sinyal memiliki handler default yang dijalankan kernel saat menangani sinyal
+  - User-defined signal handler dapat menggantikan default
+  - Untuk single-threaded, sinyal dikirim ke proses
+- Di mana sinyal harus dikirim untuk multi-threaded?
+  - Mengirim sinyal ke thread yang relevan dengan sinyal tersebut
+  - Mengirim sinyal ke setiap thread dalam proses
+  - Mengirim sinyal ke thread tertentu dalam proses
+  - Menetapkan thread spesifik untuk menerima semua sinyal untuk proses
+
+### Pembatalan Thread
+- Mengakhiri sebuah thread sebelum selesai
+- Thread yang akan dibatalkan adalah target thread
+- Dua pendekatan umum:
+  - Pembatalan asinkron mengakhiri target thread segera
+  - Pembatalan ditunda memungkinkan target thread secara periodik memeriksa apakah ia harus dibatalkan
+- Kode Pthread untuk membuat dan membatalkan sebuah thread:
+
+| Mode | State | Type |
+|---|---|---|
+off | Disabled | - |
+Deferred | Enabled | Deferred |
+Asynchronous | Enabled | Asynchronous |
+
+- Memanggil permintaan pembatalan thread meminta pembatalan, tetapi pembatalan yang sebenarnya bergantung pada keadaan thread
+Jika thread memiliki pembatalan yang dinonaktifkan, pembatalan tetap tertunda sampai thread mengaktifkannya
+- Tipe default adalah ditunda
+  - Pembatalan hanya terjadi ketika thread mencapai titik pembatalan
+    > contoh, pthread_testcancel()
+    > Kemudian handler cleanup dipanggil
+- Pada sistem Linux, pembatalan thread ditangani melalui sinyal
+
+### Thread-Local Storage
+- Penyimpanan lokal thread (Thread-local storage/TLS) memungkinkan setiap thread memiliki salinan datanya sendiri
+- Berguna ketika Anda tidak memiliki kontrol atas proses pembuatan thread (misalnya, saat menggunakan thread pool)
+- Berbeda dari variabel lokal
+  - Variabel lokal hanya terlihat selama satu pemanggilan fungsi
+  - TLS terlihat di seluruh pemanggilan fungsi
+- Mirip dengan data statis
+  - TLS unik untuk setiap thread
+
+### Scheduler Activations
+![ss](assets/scheduleractivation.png)<br>
+- Model M:M dan model dua tingkat memerlukan komunikasi untuk menjaga jumlah thread kernel yang dialokasikan ke aplikasi secara tepat
+- Biasanya menggunakan struktur data perantara antara thread pengguna dan thread kernel – lightweight process (LWP)
+  - Tampak seperti prosesor virtual di mana proses dapat menjadwalkan thread pengguna untuk dijalankan
+  - Setiap LWP terhubung ke thread kernel
+  - Berapa banyak LWP yang harus dibuat?
+- Scheduler activations menyediakan upcalls - mekanisme komunikasi dari kernel ke upcall handler di pustaka thread
+- Komunikasi ini memungkinkan aplikasi untuk menjaga jumlah thread kernel yang tepat
 
 ## Operating System Example
+- Windows Threads
+- Linux Threads
 
+### Windows Threads
+- Windows mengimplementasikan Windows API – API utama untuk Win 98, Win NT, Win 2000, Win XP, dan Win 7
+- Mengimplementasikan pemetaan one-to-one, level kernel
+- Setiap thread berisi:
+  - Sebuah id thread
+  - Set register yang merepresentasikan status prosesor
+  - Stack pengguna dan kernel yang terpisah untuk saat thread berjalan dalam mode pengguna atau mode kernel
+  - Area penyimpanan data pribadi yang digunakan oleh pustaka run-time dan pustaka tautan dinamis (DLLs)
+- Set register, stack, dan area penyimpanan pribadi dikenal sebagai konteks thread
+- Struktur data utama dari sebuah thread meliputi:
+  - ETHREAD (executive thread block) – mencakup pointer ke proses tempat thread berada dan ke KTHREAD, di ruang kernel
+  - KTHREAD (kernel thread block) – informasi penjadwalan dan sinkronisasi, stack mode kernel, pointer ke TEB, di ruang kernel
+  - TEB (thread environment block) – id thread, stack mode pengguna, penyimpanan lokal thread, di ruang pengguna
+
+### Windows Threads Data Structures
+![ss](assets/windowthreadstruct.png)<br>
+
+### Linux Threads
+Flag | Pengertian
+---|---
+CLONE_FS | Informasi sistem file dibagikan
+CLONE_VM | Tempat memory yang sama dibagikan
+CLONE_SIGHAND | Penanganan sinyal dibagikan
+CLONE_FILES | Kumpulan file yang terbuka dibagikan
+
+- Di Linux, thread disebut sebagai tasks.
+- Pembuatan thread dilakukan melalui sistem panggilan clone().
+- clone() memungkinkan task anak untuk berbagi ruang alamat dengan task induk (proses)
+  - Flags mengontrol perilaku
+- struct task_struct menunjuk ke struktur data proses (berbagi atau unik)
 
 ## Pertanyaan dan jawaban
 1. Berikan tiga contoh pemrograman di mana multithreading memberikan kinerja yang lebih baik daripada solusi single-threaded.
