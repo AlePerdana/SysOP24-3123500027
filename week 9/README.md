@@ -137,6 +137,9 @@ void consumer()
 }
 ```
 
+Output:<br>
+![ss](assets/pc1.png)
+
 Analisa jalannya program:
 - Program dimulai dengan mendeklarasikan empat variabel global: mutex, full, empty, dan x. mutex digunakan untuk menyinkronkan akses ke buffer, full dan empty adalah semafor untuk melacak status buffer, dan x adalah penghitung untuk item yang diproduksi/dikonsumsi.
 - Fungsi utama menampilkan menu dengan tiga pilihan: Produsen, Konsumen, dan Keluar.
@@ -322,6 +325,10 @@ if(pthread_mutex_lock(&mutex) < 0)
     return 0;
 }
 ```
+
+Output:<br>
+![ss](assets/pcws1.png)
+![ss](assets/pcws2.png)
 
 Analisa jalannya program:
 - Fungsi utama menginisialisasi mutex dan variabel kondisi, membuat thread produsen dan konsumen, dan menunggu hingga mereka selesai.
