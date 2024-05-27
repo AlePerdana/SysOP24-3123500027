@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 style="text-align: center;font-weight: bold">PRAKTIKUM 10<br>SISTEM OPERASI</h1>
+  <h1 style="text-align: center;font-weight: bold">PRAKTIKUM 11<br>SISTEM OPERASI</h1>
   <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
 <br />
