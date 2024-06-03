@@ -17,6 +17,8 @@
 - [Daftar Isi](#daftar-isi)
 - [Dasar Teori](#dasar-teori)
 - [Program](#program)
+  - [Program 1 (tanpa mutex):](#program-1-tanpa-mutex)
+  - [Program 2 (dengan mutex):](#program-2-dengan-mutex)
 - [Kesimpulan](#kesimpulan)
 - [Referensi](#referensi)
 
@@ -24,7 +26,7 @@
 Mutual Exclusion (Mutex) adalah konsep dalam pemrograman yang mengatur akses simultan ke sumber daya bersama. Ketika dua thread bekerja pada data yang sama secara bersamaan, mutex bertindak sebagai kunci yang memastikan hanya satu thread yang dapat mengakses sumber daya tersebut pada satu waktu tertentu. Dengan demikian, mutex mencegah race conditions dan memastikan bahwa bagian kritis dari kode, di mana proses atau utas mengakses sumber daya bersama, hanya dapat diakses oleh satu utas pada suatu waktu. 
 
 ## Program
-Program 1 (tanpa mutex):
+### Program 1 (tanpa mutex):
 ```c
 // beri komentar
 #include <pthread.h>
@@ -111,7 +113,7 @@ Output:
 
 Analisa: Dalam program ini, penyelesaian proses dijalankan pada 1 thread yang mengakibatkan race condition yang dimana beberapa proses merebutkan sebuah thread untuk menyelesaikan proses tersebut.
 
-Program 2 (dengan mutex):
+### Program 2 (dengan mutex):
 ```c
 #include <pthread.h>
 #include <stdio.h>
