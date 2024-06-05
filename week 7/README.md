@@ -44,30 +44,18 @@ Dalam implementasi fork, setiap proses memiliki hubungan hierarki seperti orang 
 
 ### Contoh implementasi c</br>
 #### Source Code:</br>
-Ale - 3123500027:</br>
 ![ss](assets/peta/3.png)</br>
-alfani - 3123500026:</br>
-![ss](assets/peta/1fani.jpg)</br>
 
 #### Output:</br>
-Ale - 3123500027:</br>
 ![ss](assets/peta/1.png)</br>
-alfani - 3123500026:</br>
-![ss](assets/peta/2fani.jpg)</br>
 
 #### Peta Logika:</br>
-Ale - 3123500027:</br>
 ![ss](assets/peta/2.png)</br>
-alfani - 3123500026:</br>
-![ss](assets/peta/3fani.jpg)</br>
 
 Analisa: Saat pembuatan fork, proses yang ditunjuk akan menunjukkan PID unik sendiri sedangkan PPID menunjukkan terminal yang menjalankan proses tersebut. Untuk child process, PID unik yang didapatkan akan hampir sama dengan parent process dan untuk PPID akan menunjuk ke parent process yang telah di fork. Contohnya seperti program diatas yang dijalankan untuk mengambil PID dan PPID, saat menjalankan testc2.2 untuk fork testc, dapat dilihat bahwa PID testc memiliki PID unik dan PPID menunjuk ke terminal bash pada main process. Saat setelah di fork, PID dan PPID testc tetap sama seperti main process dan untuk child process, proses akan memiliki PID unik sendiri yang hampir mendekati parent process sedangkan untuk PPID akan menunjuk ke parent process yaitu testc.
 
 - Akses dan cloning repo : https://github.com/ferryastika/operatingsystem.git
-Ale - 3123500027:</br>
 ![ss](assets/clone/1.png)</br>
-alfani - 3123500026:</br>
-![ss](assets/clone/1fani.jpg)</br>
 
 - Deskripsikan dan visualisasikan pohon proses hasil eksekusi dari kode program fork01.c, fork02.c, fork03.c, fork04.c, fork05.cdan fork06.c.</br>
 Jawab:</br>
@@ -103,10 +91,7 @@ return 0;
 }
 ```
 Output:</br>
-Ale - 3123500027:</br>
 ![ss](assets/fork/f1.png)</br>
-alfani - 3123500026:</br>
-![ss](assets/fork/1fani.jpg)</br>
 
 1. Deskripsi Kode Program:</br>
     - Fungsi getpid() mengambilkan ID proses saat ini.
@@ -159,10 +144,7 @@ int main(void) {
 }
 ```
 Output:</br>
-Ale - 3123500027:</br>
 ![ss](assets/fork/f2.png)</br>
-alfani - 3123500026:</br>
-![ss](assets/fork/2fani.jpg)</br>
 
 1. Deskripsi Kode Program:</br>
     - Program ini menggunakan fungsi fork() untuk menciptakan proses anak.
@@ -212,10 +194,7 @@ int main(void) {
 }
 ```
 Output:</br>
-Ale - 3123500027:</br>
 ![ss](assets/fork/f3.png)</br>
-alfani - 3123500026:</br>
-![ss](assets/fork/3fani.jpg)</br>
 
 1. Deskripsi Kode Program:
     - Program ini menciptakan dua proses: proses induk (parent process) dan proses anak (child process) menggunakan fungsi fork().
@@ -288,10 +267,7 @@ int main(void) {
 }
 ```
 Output:
-Ale - 3123500027:</br>
 ![ss](assets/fork/f4.png)</br>
-alfani - 3123500026:</br>
-![ss](assets/fork/4fani.jpg)</br>
 
 1. Deskripsi Kode Program:</br>
     - Program ini menciptakan dua proses: proses induk (parent process) dan proses anak (child process) menggunakan fungsi fork().
@@ -373,10 +349,7 @@ int main(void) {
 }
 ```
 Output:
-Ale - 3123500027:</br>
 ![ss](assets/fork/f5.png)</br>
-alfani - 3123500026:</br>
-![ss](assets/fork/5fani.jpg)</br>
 
 1. Deskripsi Kode Program:
     - Program ini menciptakan dua proses: proses induk (parent process) dan proses anak (child process) menggunakan fungsi fork().
@@ -459,10 +432,7 @@ int main(void) {
 }
 ```
 Output:
-Ale - 3123500027:</br>
 ![ss](assets/fork/f6.png)</br>
-alfani - 3123500026:</br>
-![ss](assets/fork/6fani.jpg)</br>
 
 1. Deskripsi Kode Program:
     - Program ini menciptakan dua proses: proses induk (parent process) dan proses anak (child process) menggunakan fungsi fork().
@@ -579,25 +549,22 @@ int main(void) {
 
 ```
 Output:</br>
-Ale - 3123500027:</br>
 ![ss](assets/tugas/1.png)</br>
-alfani - 3123500026:</br>
-![ss](assets/tugas/1fani.jpg)</br>
 
 Deskripsi Kode Program:
 - Program ini menciptakan dua proses: proses induk (parent process) dan proses anak (child process) menggunakan fungsi `fork()`. </br>
 - Fungsi `fork()` digunakan untuk menciptakan proses baru yang merupakan salinan identik dari proses pemanggil.
 - Setelah pemanggilan `fork()`, kedua proses (induk dan anak) memiliki ruang memori yang terpisah.</br>
 - Proses anak adalah duplikat dari proses induk, dan keduanya melanjutkan eksekusi dari titik di mana `fork()` dieksekusi.</br>
-- Dalam program ini dilakukan perkalian matriks antara `matrix1` dan `matrix2` menggunakan fungsi `perkalian_matriks()`. Proses anak bertanggung jawab untuk melakukan perkalian matriks dan mencetak hasilnya, sementara proses induk menunggu proses anak selesai dan mencetak hasil matriks setelahnya.</br>
+- Dalam program ini dilakukan perkalian matriks antara `matrix1` dan `matrix2` menggunakan fungsi `perkalian_matriks()`. Proses anak bertanggung jawab untuk melakukan perkalian matriks dan mencetak hasilnya, sementara proses induk menunggu proses anak selesai.</br>
  
 Urutan jalannya program:</br>
 - Proses utama (A) pertama kali dieksekusi.</br>
 - Kemudian, proses anak (B) dibuat oleh fork().</br>
-- Proses anak (B) mencetak hasil matriks sebagai child process.</br>
+- Proses anak (B) mencetak hasil matriks dan melakukan perkalian matriks sebagai child process.</br>
 - Proses induk (A) melakukan perkalian matriks.</br>
 - Proses induk menunggu hingga proses anak selesai (menggunakan wait()).</br>
-- Setelah proses anak selesai, proses induk mencetak hasil matriks dan program berakhir.</br>
+- Setelah proses anak selesai, program akan berakhir.</br>
 
 ## Kesimpulan
 Fork dalam sistem operasi memungkinkan untuk pembentukan hierarki proses dengan menciptakan parent process dan child process, yang saling berinteraksi seperti hubungan antara orang tua dan anak. Fork memungkinkan duplikasi proses yang sedang berjalan, memungkinkan eksekusi paralel dari tugas-tugas yang berbeda. Dengan memahami dan menggunakan konsep fork, pengembang dapat meningkatkan kinerja dan skalabilitas aplikasi, serta memanfaatkan sumber daya CPU dengan lebih efisien.
