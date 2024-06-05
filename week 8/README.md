@@ -170,19 +170,8 @@ Output:
 ```
 
 Percobaan 1:
-- [Alfani - Variable 1](#Alfani---Variable-1)
-- [Ale - Variable 1](#Ale---Variable-1)
-- [Kanisius - Variable 1](#Kanisius---Variable-1)
-
-## Alfani - Variable 1
-![ss](assets/alfani/v1a.jpg)
-![ss](assets/alfani/v1b.jpg)
-
-## Ale - Variable 1
 ![ss](assets/ale/v1a.png)
 ![ss](assets/ale/v1b.png)
-
-## Kanisius - Variable 1
 
 Bagaimana Anda membuat variabel tidak dapat diperbarui?
 
@@ -206,19 +195,8 @@ Output:
 ```
 
 Percobaan 2:
-- [Alfani - Variable 2](#Alfani---Variable-2)
-- [Ale - Variable 2](#Ale---Variable-2)
-- [Kanisius - Variable 2](K#anisius---Variable-2)
-
-## Alfani - Variable 2
-![ss](assets/alfani/v2a.jpg)
-![ss](assets/alfani/v2b.jpg)
-
-## Ale - Variable 2
 ![ss](assets/ale/v2a.png)
 ![ss](assets/ale/v2b.png)
-
-## Kanisius - Variable 2
 
 <h3>Variabel unset Bash</h3>
 
@@ -237,21 +215,9 @@ Output:
 25
 empty:
 ```
-Percobaan 3:
-- [Alfani - Variable 3](#Alfani---Variable-3)
-- [Ale - Variable 3](#Ale---Variable-3)
-- [Kanisius - Variable 3](#Kanisius---Variable-3)
-
-## Alfani - Variable 3
-![ss](assets/alfani/v3a.jpg)
-![ss](assets/alfani/v3b.jpg)
-
-## Ale - Variable 3
+Percobaan 3
 ![ss](assets/ale/v3a.png)
 ![ss](assets/ale/v3b.png)
-
-## Kanisius - Variable 3
-
 
 Kode di atas,
 - pertama-tama setel variabel AGE ke 25, cetak nilainya,
@@ -291,19 +257,8 @@ Script Age: 40
 ```
 
 Percobaan 4:
-- [Alfani - Variable 4](#Alfani---Variable-4)
-- [Ale - Variable 4](#Ale---Variable-4)
-- [Kanisius - Variable 4](#Kanisius---Variable-4)
-
-## Alfani - Variable 4
-![ss](assets/alfani/v4a.jpg)
-![ss](assets/alfani/v4b.jpg)
-
-## Ale - Variable 4
 ![ss](assets/ale/v4a.png)
 ![ss](assets/ale/v4b.png)
-
-## Kanisius - Variable 4
 
 <h3>Bash variabel Lokal</h3>
 Variabel lokal dideklarasikan di dalam blok kode atau fungsi. Cakupan variabel-variabel ini hanya terlihat di dalam blok tempat variabel-variabel tersebut dideklarasikan.
@@ -334,19 +289,8 @@ Global Age: 40
 ```
 
 Percobaan 5:
-- [Alfani - Variable 5](#Alfani---Variable-5)
-- [Ale - Variable 5](#Ale---Variable-5)
-- [Kanisius - Variable 5](#Kanisius---Variable-5)
-
-## Alfani - Variable 5
-![ss](assets/alfani/v5a.jpg)
-![ss](assets/alfani/v5b.jpg)
-
-## Ale - Variable 5
 ![ss](assets/ale/v5a.png)
 ![ss](assets/ale/v5b.png)
-
-## Kanisius - Variable 5
 
 Variabel lokal dideklarasikan di dalam suatu fungsi dan hanya terlihat di dalam fungsi tersebut. Variabel yang dideklarasikan di luar fungsi disebut variabel global dan tersedia untuk semua fungsi.
 
@@ -411,21 +355,9 @@ done <filename.txt
 ```
 
 Percobaan:
-- [Alfani - Loop File](#Alfani---Loop-File)
-- [Ale - Loop File](#Ale---Loop-File)
-- [Kanisius - Loop File](#Kanisius---Loop-File)
-
-## Alfani - Loop File
-![ss](assets/alfani/lf1a.jpg)
-![ss](assets/alfani/lf1b.jpg)
-
-## Ale - Loop File
 ![ss](assets/ale/lf1a.png)
 ![ss](assets/ale/lf1b.png)
 ![ss](assets/ale/lf1c.png)
-
-## Kanisius - Loop File
-
 
 ## Bash - Comments
 ```Comments``` adalah pernyataan kode yang berisi teks yang dapat dibaca pengguna yang dilewati shell selama eksekusi. Setiap bahasa pemrograman menyertakan fitur komentar, yang memberikan deskripsi baris kode atau pernyataan.
@@ -462,20 +394,8 @@ echo "Age:$AGE" ## printing age inline comment
 ```
 
 Percobaan 1:
-- [Alfani - Comments 1](#Alfani---Comments-1)
-- [Ale - Comments 1](#Ale---Comments-1)
-- [Kanisius - Comments 1](#Kanisius---Comments-1)
-
-## Alfani - Comments 1
-![ss](assets/alfani/c1a.jpg)
-![ss](assets/alfani/c1b.jpg)
-
-## Ale - Comments 1
 ![ss](assets/ale/c1a.png)
 ![ss](assets/ale/c1b.png)
-
-## Kanisius - Comments 1
-
 
 <h3>Komentar multi-Baris dalam skrip shell</h3>
 Komentar multi-baris melibatkan penggunaan lebih dari satu baris untuk komentar.
@@ -519,20 +439,8 @@ echo "testing multi-line comments"
 ```
 
 Percobaan 2:
-- [Alfani - Comments 2](#Alfani---Comments-2)
-- [Ale - Comments 2](#Ale---Comments-2)
-- [Kanisius - Comments 2](#Kanisius---Comments-2)
-
-## Alfani - Comments 2
-![ss](assets/alfani/c2a.jpg)
-![ss](assets/alfani/c2b.jpg)
-
-## Ale - Comments 2
 ![ss](assets/ale/c2a.png)
 ![ss](assets/ale/c2b.png)
-
-## Kanisius - Comments 2
-
 
 Hal ini berguna untuk memasukkan lebih banyak teks yang mencakup beberapa baris, juga melayani tujuan dokumentasi. 
 
@@ -645,20 +553,8 @@ Output:
 ```
 
 Percobaan 1:
-- [Alfani - Array 1](#Alfani---Array-1)
-- [Ale - Array 1](#Ale---Array-1)
-- [Kanisius - Array 1](#Kanisius---Array-1)
-
-## Alfani - Array 1
-![ss](assets/alfani/a1a.jpg)
-![ss](assets/alfani/a1b.jpg)
-
-## Ale - Array 1
 ![ss](assets/ale/a1a.png)
 ![ss](assets/ale/a1b.png)
-
-## Kanisius - Array 1
-
 
 <h3>mendeklarasikan Array string dan pengulangan</h3>
 Array dapat berisi angka Contoh ini berisi array angka dan loop for untuk dicetak.
@@ -680,20 +576,8 @@ element3
 ```
 
 Percobaan 2:
-- [Alfani - Array 2](#Alfani---Array-2)
-- [Ale - Array 2](#Ale---Array-2)
-- [Kanisius - Array 2](#Kanisius---Array-2)
-
-## Alfani - Array 2
-![ss](assets/alfani/a2a.jpg)
-![ss](assets/alfani/a2b.jpg)
-
-## Ale - Array 2
 ![ss](assets/ale/a2a.png)
 ![ss](assets/ale/a2b.png)
-
-## Kanisius - Array 2
-
 
 <h3>Mengakses elemen pertama dalam array</h3>
 Dalam elemen Array, indeks elemen Pertama adalah nol, dan array[0] mengembalikan elemen pertama.
@@ -713,20 +597,8 @@ element1
 ```
 
 Percobaan 3:
-- [Alfani - Array 3](#Alfani---Array-3)
-- [Ale - Array 3](#Ale---Array-3)
-- [Kanisius - Array 3](#Kanisius---Array-3)
-
-## Alfani - Array 3
-![ss](assets/alfani/a3a.jpg)
-![ss](assets/alfani/a3b.jpg)
-
-## Ale - Array 3
 ![ss](assets/ale/a3a.png)
 ![ss](assets/ale/a3b.png)
-
-## Kanisius - Array 3
-
 
 <h3>Mengambil elemen terakhir dari sebuah array</h3>
 Dalam skrip bash, Anda dapat menggunakan indeks=-1 untuk mendapatkan elemen array terakhir.
@@ -737,19 +609,8 @@ echo ${numbers[-1]}
 ```
 
 Percobaan 4:
-- [Alfani - Array 4](#Alfani---Array-4)
-- [Ale - Array 4](#Ale---Array-4)
-- [Kanisius - Array 4](#Kanisius---Array-4)
-
-## Alfani - Array 4
-![ss](assets/alfani/a4a.jpg)
-![ss](assets/alfani/a4b.jpg)
-
-## Ale - Array 4
 ![ss](assets/ale/a4a.png)
 ![ss](assets/ale/a4b.png)
-
-## Kanisius - Array 4
 
 <h3>iterasi atau pengulangan elemen array</h3>
 For loop digunakan untuk mengulangi elemen. 
@@ -774,19 +635,8 @@ element3
 ```
 
 Percobaan 5:
-- [Alfani - Array 5](#Alfani---Array-5)
-- [Ale - Array 5](#Ale---Array-5)
-- [Kanisius - Array 5](#Kanisius---Array-5)
-
-## Alfani - Array 5
-![ss](assets/alfani/a5a.jpg)
-![ss](assets/alfani/a5b.jpg)
-
-## Ale - Array 5
 ![ss](assets/ale/a5a.png)
 ![ss](assets/ale/a5b.png)
-
-## Kanisius - Array 5
 
 <h3>mencetak semua elemen array</h3>
 Gunakan [@] atau [*] untuk mencetak semua elemen array.
@@ -798,19 +648,8 @@ echo ${arr[*]}  #element1 element2 element3
 ```
 
 Percobaan 6:
-- [Alfani - Array 6](#Alfani---Array-6)
-- [Ale - Array 6](#Ale---Array-6)
-- [Kanisius - Array 6](#Kanisius---Array-6)
-
-## Alfani - Array 6
-![ss](assets/alfani/a6a.jpg)
-![ss](assets/alfani/a6b.jpg)
-
-## Ale - Array 6
 ![ss](assets/ale/a6a.png)
 ![ss](assets/ale/a6b.png)
-
-## Kanisius - Array 6
 
 <h3>Menghapus elemen dari array</h3>
 
@@ -824,19 +663,8 @@ echo ${numbers[*]}
 ```
 
 Percobaan 7:
-- [Alfani - Array 7](#Alfani---Array-7)
-- [Ale - Array 7](#Ale---Array-7)
-- [Kanisius - Array 7](#Kanisius---Array-7)
-
-## Alfani - Array 7
-![ss](assets/alfani/a7a.jpg)
-![ss](assets/alfani/a7b.jpg)
-
-## Ale - Array 7
 ![ss](assets/ale/a7a.png)
 ![ss](assets/ale/a7b.png)
-
-## Kanisius - Array 7
 
 <h3>Menambahkan elemen ke array</h3>
 Anda dapat menambahkan elemen di posisi indeks mana pun menggunakan sintaks di bawah ini:
@@ -869,20 +697,8 @@ element0 element2 element3 element5 element6
 ```
 
 Percobaan 8:
-- [Alfani - Array 8](#Alfani---Array-8)
-- [Ale - Array 8](#Ale---Array-8)
-- [Kanisius - Array 8](#Kanisius---Array-8)
-
-## Alfani - Array 8
-![ss](assets/alfani/a8a.jpg)
-![ss](assets/alfani/a8b.jpg)
-
-## Ale - Array 8
 ![ss](assets/ale/a8a.png)
 ![ss](assets/ale/a8b.png)
-
-## Kanisius - Array 8
-
 
 <h3>Panjang sebuah array</h3>
 Dalam hal ini, Temukan jumlah semua elemen dalam array.
@@ -896,19 +712,8 @@ echo ${#arr[*]} # returns 3
 ```
 
 Percobaan 9:
-- [Alfani - Array 9](#Alfani---Array-9)
-- [Ale - Array 9](#Ale---Array-9)
-- [Kanisius - Array 9](#Kanisius---Array-9)
-
-## Alfani - Array 9
-![ss](assets/alfani/a9a.jpg)
-![ss](assets/alfani/a9b.jpg)
-
-## Ale - Array 9
 ![ss](assets/ale/a9a.png)
 ![ss](assets/ale/a9b.png)
-
-## Kanisius - Array 9
 
 Contoh Array cheat sheet
 
@@ -955,20 +760,8 @@ chmod +x hello.sh
 ```
 
 Percobaan 1:
-- [Alfani - Expansion 1](#Alfani---Expansion-1)
-- [Ale - Expansion 1](#Ale---Expansion-1)
-- [Kanisius - Expansion 1](#Kanisius---Expansion-1)
-
-## Alfani - Expansion 1
-![ss](assets/alfani/e1a.jpg)
-![ss](assets/alfani/e1b.jpg)
-
-## Ale - Expansion 1
 ![ss](assets/ale/e1a.png)
 ![ss](assets/ale/e1b.png)
-
-## Kanisius - Expansion 1
-
 
 ## Bash - Conditional Expression
 Ekspresi kondisional dievaluasi pada waktu eksekusi skrip, berdasarkan hasil, Ini mengeksekusi blok perintah yang spesifik.
@@ -1058,20 +851,8 @@ esac
 ```
 
 Percobaan 1:
-- [Alfani - Case Statements 1](#Alfani---Case-Statements-1)
-- [Ale - Case Statements 1](#Ale---Case-Statements-1)
-- [Kanisius - Case Statements 1](#Kanisius---Case-Statements-1)
-
-## Alfani - Case Statements 1
-![ss](assets/alfani/cs1a.jpg)
-![ss](assets/alfani/cs1b.jpg)
-
-## Ale - Case Statements 1
 ![ss](assets/ale/cs1a.png)
 ![ss](assets/ale/cs1b.png)
-
-## Kanisius - Case Statements 1
-
 
 ## Bash - Special Characters
 Karakter khusus di bash dievaluasi dengan arti khusus dalam interpretasi suatu perintah. Karakter-karakter ini memiliki instruksi khusus, penggunaan karakter ini memiliki arti berbeda dalam konteks berbeda.
@@ -1085,19 +866,8 @@ echo "Hello World"
 ```
 
 Percobaan 1:
-- [Alfani - Special Characters 1](#Alfani---Special-Characters-1)
-- [Ale - Special Characters 1](#Ale---Special-Characters-1)
-- [Kanisius - Special Characters 1](#Kanisius---Special-Characters-1)
-
-## Alfani - Special Characters 1
-![ss](assets/alfani/sc1a.jpg)
-![ss](assets/alfani/sc1b.jpg)
-
-## Ale - Special Characters 1
 ![ss](assets/ale/sc1a.png)
 ![ss](assets/ale/sc1b.png)
-
-## Kanisius - Special Characters 1
 
 <h3>Expansion ($)</h3>
 simbol tanda dolar digunakan untuk berbagai jenis ekspansi perluasan parameter ( $variable, ${variable}), Substitusi ( $(expression)), ekspresi artema ( $((expression))).
@@ -1116,20 +886,8 @@ yes &
 ```
 
 Percobaan 2:
-- [Alfani - Special Characters 2](#Alfani---Special-Characters-2)
-- [Ale - Special Characters 2](#Ale---Special-Characters-2)
-- [Kanisius - Special Characters 2](#Kanisius---Special-Characters-2)
-
-## Alfani - Special Characters 2
-![ss](assets/alfani/sc2a.jpg)
-![ss](assets/alfani/sc2b.jpg)
-
-## Ale - Special Characters 2
 ![ss](assets/ale/sc2a.png)
 ![ss](assets/ale/sc2b.png)
-
-## Kanisius - Special Characters 2
-
 
 <h3>Pipe (|) </h3>
 ni digunakan untuk meneruskan keluaran dari satu perintah ke masukan ke perintah lain dari kiri ke kanan. Hal ini memungkinkan untuk membentuk rantai perintah 
@@ -1139,20 +897,8 @@ Sintaksnya adalah ```command1 | command2```
 Contoh : ```echo "hello" | wc``` mengembalikan jumlah karakter.
 
 Percobaan 3:
-- [Alfani - Special Characters 3](#Alfani---Special-Characters-3)
-- [Ale - Special Characters 3](#Ale---Special-Characters-3)
-- [Kanisius - Special Characters 3](#Kanisius---Special-Characters-3)
-
-## Alfani - Special Characters 3
-![ss](assets/alfani/sc3a.jpg)
-![ss](assets/alfani/sc3b.jpg)
-
-## Ale - Special Characters 3
 ![ss](assets/ale/sc3a.png)
 ![ss](assets/ale/sc3b.png)
-
-## Kanisius - Special Characters 3
-
 
 <h3>Semicolon (;)</h3>
 
@@ -1166,20 +912,8 @@ command1; command2;command3
 Contoh: ```cd ../operatingsystem/;ls;```
 
 Percobaan 4:
-- [Alfani - Special Characters 4](#Alfani---Special-Characters-4)
-- [Ale - Special Characters 4](#Ale---Special-Characters-4)
-- [Kanisius - Special Characters 4](#Kanisius---Special-Characters-4)
-
-## Alfani - Special Characters 4
-![ss](assets/alfani/sc4a.jpg)
-![ss](assets/alfani/sc4b.jpg)
-
-## Ale - Special Characters 4
 ![ss](assets/ale/sc4a.png)
 ![ss](assets/ale/sc4b.png)
-
-## Kanisius - Special Characters 4
-
 
 <h3>Single quotes</h3>
 
@@ -1198,20 +932,8 @@ echo pertama, variabel nama diperluas dan diinterpretasikan sebagai string dan d
 echo kedua, menggunakan tanda kutip tunggal, dan variabel nama tidak diperluas dan dicetak sebagai string literal.
 
 Percobaan 5:
-- [Alfani - Special Characters 5](#Alfani---Special-Characters-5)
-- [Ale - Special Characters 5](#Ale---Special-Characters-5)
-- [Kanisius - Special Characters 5](#Kanisius---Special-Characters-5)
-
-## Alfani - Special Characters 5
-![ss](assets/alfani/sc5a.jpg)
-![ss](assets/alfani/sc5b.jpg)
-
-## Ale - Special Characters 5
 ![ss](assets/ale/sc5a.png)
 ![ss](assets/ale/sc5b.png)
-
-## Kanisius - Special Characters 5
-
 
 <h3>Double quotes</h3>
 Tanda kutip ganda (") digunakan untuk mendefinisikan string literal dengan arti khusus.
@@ -1232,20 +954,8 @@ echo pertama, variabel nama diperluas dan diinterpretasikan sebagai string dan d
 echo kedua, karakter escape dengan awalan $ \, dicetak sebagai string literal.
 
 Percobaan 6:
-- [Alfani - Special Characters 6](#Alfani---Special-Characters-6)
-- [Ale - Special Characters 6](#Ale---Special-Characters-6)
-- [Kanisius - Special Characters 6](#Kanisius---Special-Characters-6)
-
-## Alfani - Special Characters 6
-![ss](assets/alfani/sc6a.jpg)
-![ss](assets/alfani/sc6b.jpg)
-
-## Ale - Special Characters 6
 ![ss](assets/ale/sc6a.png)
 ![ss](assets/ale/sc6b.png)
-
-## Kanisius - Special Characters 6
-
 
 <h3>Backslash Character (\)</h3>
 Karakter backslash digunakan untuk menghindari karakter-karakter dalam string. Ini digunakan dalam string yang dikutip oleh tanda kutip ganda.
@@ -1255,20 +965,8 @@ echo escape $$ example # escape 3225 example
 echo escape \$$ example # escape $$ example
 ```
 Percobaan 7:
-- [Alfani - Special Characters 7](#Alfani---Special-Characters-7)
-- [Ale - Special Characters 7](#Ale---Special-Characters-7)
-- [Kanisius - Special Characters 7](#Kanisius---Special-Characters-7)
-
-## Alfani - Special Characters 7
-![ss](assets/alfani/sc7a.jpg)
-![ss](assets/alfani/sc7b.jpg)
-
-## Ale - Special Characters 7
 ![ss](assets/ale/sc7a.png)
 ![ss](assets/ale/sc7b.png)
-
-## Kanisius - Special Characters 7
-
 
 <h3>Comment (#)</h3>
 Simbol komentar digunakan untuk mengomentari sebaris kode. Baris komentar selalu dimulai dengan #.
@@ -1280,20 +978,8 @@ echo "comment example" # Inline comment
 ```
 
 Percobaan 8:
-- [Alfani - Special Characters 8](#Alfani---Special-Characters-8)
-- [Ale - Special Characters 8](#Ale---Special-Characters-8)
-- [Kanisius - Special Characters 8](#Kanisius---Special-Characters-8)
-
-## Alfani - Special Characters 8
-![ss](assets/alfani/sc8a.jpg)
-![ss](assets/alfani/sc8b.jpg)
-
-## Ale - Special Characters 8
 ![ss](assets/ale/sc8a.png)
 ![ss](assets/ale/sc8b.png)
-
-## Kanisius - Special Characters 8
-
 
 <h3>Question mark (?)</h3>
 tanda tanya mempunyai arti yang berbeda dalam konteksnya.
@@ -1367,19 +1053,8 @@ Output:
 ```
 
 Percobaan 1:
-- [Alfani - If elif else 1](#Alfani---If-elif-else-1)
-- [Ale - If elif else 1](#Ale---If-elif-else-1)
-- [Kanisius - If elif else 1](#Kanisius---If-elif-else-1)
-
-## Alfani - If elif else 1
-![ss](assets/alfani/iee1a.jpg)
-![ss](assets/alfani/iee1b.jpg)
-
-## Ale - If elif else 1
 ![ss](assets/ale/iee1a.png)
 ![ss](assets/ale/iee1b.png)
-
-## Kanisius - If elif else 1
 
 <h3>Pernyataan Kondisional If-Else</h3>
 
@@ -1413,19 +1088,8 @@ fi
 Dalam contoh ini, jika usianya lebih dari 60 tahun, maka akan dihasilkan “Warga Negara Lanjut Usia”; jika tidak, akan ditampilkan “Bukan Warga Negara Lanjut Usia”. 
 
 Percobaan 2:
-- [Alfani - If elif else 2](#Alfani---If-elif-else-2)
-- [Ale - If elif else 2](#Ale---If-elif-else-2)
-- [Kanisius - If elif else 2](#Kanisius---If-elif-else-2)
-
-## Alfani - If elif else 2
-![ss](assets/alfani/iee2a.jpg)
-![ss](assets/alfani/iee2b.jpg)
-
-## Ale - If elif else 2
 ![ss](assets/ale/iee2a.png)
 ![ss](assets/ale/iee2b.png)
-
-## Kanisius - If elif else 2
 
 <h3>Pernyataan If..Elif..Else</h3>
 
@@ -1462,19 +1126,8 @@ fi
 Dalam contoh ini, skrip memeriksa apakah usia lebih besar dari 60, kurang dari 14, atau tidak termasuk dalam kategori apa pun, dan menampilkan pesan yang sesuai. 
 
 Percobaan 3:
-- [Alfani - If elif else 3](#Alfani---If-elif-else-3)
-- [Ale - If elif else 3](#Ale---If-elif-else-3)
-- [Kanisius - If elif else 3](#Kanisius---If-elif-else-3)
-
-## Alfani - If elif else 3
-![ss](assets/alfani/iee3a.jpg)
-![ss](assets/alfani/iee3b.jpg)
-
-## Ale - If elif else 3
 ![ss](assets/ale/iee3a.png)
 ![ss](assets/ale/iee3b.png)
-
-## Kanisius - If elif else 3
 
 ## Bash - Loop
 Loop digunakan untuk mengeksekusi blok kode beberapa kali.
@@ -1507,19 +1160,8 @@ done
 ```
 
 Percobaan 1:
-- [Alfani - Loop 1](#Alfani---Loop-1)
-- [Ale - Loop 1](#Ale---Loop-1)
-- [Kanisius - Loop 1](#Kanisius---Loop-1)
-
-## Alfani - Loop 1
-![ss](assets/alfani/l1a.jpg)
-![ss](assets/alfani/l1a.jpg)
-
-## Ale - Loop 1
 ![ss](assets/ale/l1a.png)
 ![ss](assets/ale/l1b.png)
-
-## Kanisius - Loop 1
 
 <h3>for index loop</h3>
 untuk loop indeks mirip dengan bahasa C untuk loop indeks Itu mengeksekusi kode beberapa kali berdasarkan kondisi benar, Ini dimulai dengan nilai awal dan iterasi berisi nilai yang akan bertambah 1.
@@ -1541,19 +1183,8 @@ done
 Ini mencetak angka dari 0 hingga 5 
 
 Percobaan 2:
-- [Alfani - Loop 2](#Alfani---Loop-2)
-- [Ale - Loop 2](#Ale---Loop-2)
-- [Kanisius - Loop 2](#Kanisius---Loop-2)
-
-## Alfani - Loop 2
-![ss](assets/alfani/l2a.jpg)
-![ss](assets/alfani/l2b.jpg)
-
-## Ale - Loop 2
 ![ss](assets/ale/l2a.png)
 ![ss](assets/ale/l2b.png)
-
-## Kanisius - Loop 2
 
 <h3>while loop</h3>
 
@@ -1584,19 +1215,8 @@ Blok kode menambah nilai sebesar 1 dan mencetak nilainya.
 jika kondisi salah, loop keluar. 
 
 Percobaan 3:
-- [Alfani - Loop 3](#Alfani---Loop-3)
-- [Ale - Loop 3](#Ale---Loop-3)
-- [Kanisius - Loop 3](#Kanisius---Loop-3)
-
-## Alfani - Loop 3
-![ss](assets/alfani/l3a.jpg)
-![ss](assets/alfani/l3b.jpg)
-
-## Ale - Loop 3
 ![ss](assets/ale/l3a.png)
 ![ss](assets/ale/l3b.png)
-
-## Kanisius - Loop 3
 
 <h3>until loop</h3>
 ```until``` merupakan kata kunci di Bash digunakan untuk mengeksekusi kode berulang kali hingga kondisi tertentu tercapai true, pada titik mana perulangan keluar.
@@ -1624,19 +1244,8 @@ done
 Dalam contoh, blok kode dijalankan selama [[ i -eq 100 ]]adalah salah. Ini menambah nilai sebesar 1 dan mencetak nilainya. output mencetak angka dari 0 hingga 99 angka 
 
 Percobaan 4:
-- [Alfani - Loop 4](#Alfani---Loop-4)
-- [Ale - Loop 4](#Ale---Loop-4)
-- [Kanisius - Loop 4](#Kanisius---Loop-4)
-
-## Alfani - Loop 4
-![ss](assets/alfani/l14a.jpg)
-![ss](assets/alfani/l4b.jpg)
-
-## Ale - Loop 4
 ![ss](assets/ale/l4a.png)
 ![ss](assets/ale/l4b.png)
-
-## Kanisius - Loop 4
 
 ## Bash - Append String A
 expression atau expresi adalah istilah yang digunakan dalam matematika untuk menunjukkan suatu operasi. Ini berisi operan dan operator untuk melakukan operasi matematika. ```a<b``` adalah sebuah ekspresi. Ini mungkin berisi operator biner atau unary.
@@ -1657,19 +1266,8 @@ echo "$result"
 ```
 
 Percobaan 1:
-- [Alfani - Append String A 1](#Alfani---Append-String-A-1)
-- [Ale - Append String A 1](#Ale---Append-String-A-1)
-- [Kanisius - Append String A 1](#Kanisius---Append-String-A-1)
-
-## Alfani - Append String A 1
-![ss](assets/alfani/asa1a.jpg)
-![ss](assets/alfani/asa1b.jpg)
-
-## Ale - Append String A 1
 ![ss](assets/ale/asa1a.png)
 ![ss](assets/ale/asa1b.png)
-
-## Kanisius - Append String A 1
 
 <h3>Bash Athematic expressions</h3>
 Ekspresi artema dibuat menggunakan operator di bawah ini:
@@ -1689,19 +1287,8 @@ fi
 ```
 
 Percobaan 2:
-- [Alfani - Append String A 2](#Alfani---Append-String-A-2)
-- [Ale - Append String A 2](#Ale---Append-String-A-2)
-- [Kanisius - Append String A 2](#Kanisius---Append-String-A-2)
-
-## Alfani - Append String A 2
-![ss](assets/alfani/asa2a.jpg)
-![ss](assets/alfani/asa2b.jpg)
-
-## Ale - Append String A 2
 ![ss](assets/ale/asa2a.png)
 ![ss](assets/ale/asa2b.png)
-
-## Kanisius - Append String A 2
 
 <h3>Expansion Bash Athematic</h3>
 
@@ -1724,20 +1311,8 @@ echo "The average is $(((first+second)/2))".
 ```
 
 Percobaan 3:
-- [Alfani - Append String A 3](#Alfani---Append-String-A-3)
-- [Ale - Append String A 3](#Ale---Append-String-A-3)
-- [Kanisius - Append String A 3](#Kanisius---Append-String-A-3)
-
-## Alfani - Append String A 3
-![ss](assets/alfani/asa3a.jpg)
-![ss](assets/alfani/asa3b.jpg)
-
-## Ale - Append String A 3
 ![ss](assets/ale/asa3a.png)
 ![ss](assets/ale/asa3b.png)
-
-## Kanisius - Append String A 3
-
 
 ## Bash - Functions
 Function adalah kode yang dapat digunakan kembali dan dikelompokkan dalam satu nama.
@@ -1806,19 +1381,8 @@ Hello, Welcome to w3schools.
 ```
 
 Percobaan 1:
-- [Alfani - Append String B 1](#Alfani---Append-String-B-1)
-- [Ale - Append String B 1](#Ale---Append-String-B-1)
-- [Kanisius - Append String B 1](#Kanisius---Append-String-B-1)
-
-## Alfani - Append String B 1
-![ss](assets/alfani/asb1a.jpg)
-![ss](assets/alfani/asb1b.jpg)
-
-## Ale - Append String B 1
 ![ss](assets/ale/asb1a.png)
 ![ss](assets/ale/asb1b.png)
-
-## Kanisius - Append String B 1
 
 Pendekatan ini memiliki pro dan kontra
 - Sederhana dan mudah untuk menambahkan string.
@@ -1840,19 +1404,8 @@ nums+=" three"
 echo "$nums"
 ```
 Percobaan 2:
-- [Alfani - Append String B 2](#Alfani---Append-String-B-2)
-- [Ale - Append String B 2](#Ale---Append-String-B-2)
-- [Kanisius - Append String B 2](#Kanisius---Append-String-B-2)
-
-## Alfani - Append String B 2
-![ss](assets/alfani/asb2a.jpg)
-![ss](assets/alfani/asb2b.jpg)
-
-## Ale - Append String B 2
 ![ss](assets/ale/asb2a.png)
 ![ss](assets/ale/asb2b.png)
-
-## Kanisius - Append String B 2
 
 Catatan:
 - Mudah untuk menambahkan string dan mudah dibaca, karena operator aritmatika ada di setiap bahasa.
@@ -1873,19 +1426,8 @@ echo $output
 ```
 
 Percobaan 3:
-- [Alfani - Append String B 3](#Alfani---Append-String-B-3)
-- [Ale - Append String B 3](#Ale---Append-String-B-3)
-- [Kanisius - Append String B 3](#Kanisius---Append-String-B-3)
-
-## Alfani - Append String B 3
-![ss](assets/alfani/asb3a.jpg)
-![ss](assets/alfani/asb3b.jpg)
-
-## Ale - Append String B 3
 ![ss](assets/ale/asb3a.png)
 ![ss](assets/ale/asb3b.png)
-
-## Kanisius - Append String B 3
 
 <h3>Menggunakan here string</h3>
 
@@ -1911,19 +1453,8 @@ echo $output
 ```
 
 Percobaan 4:
-- [Alfani - Append String B 4](#Alfani---Append-String-B-4)
-- [Ale - Append String B 4](#Ale---Append-String-B-4)
-- [Kanisius - Append String B 4](#Kanisius---Append-String-B-4)
-
-## Alfani - Append String B 4
-![ss](assets/alfani/asb4a.jpg)
-![ss](assets/alfani/asb4b.jpg)
-
-## Ale - Append String B 4
 ![ss](assets/ale/asb4a.png)
 ![ss](assets/ale/asb4b.png)
-
-## Kanisius - Append String B 4
 
 Catatan:
 - Cara lain untuk menambahkan string dengan sederhana.
@@ -2015,19 +1546,8 @@ fi
 ```
 
 Percobaan 1:
-- [Alfani - Operators 1](#Alfani---Operators-1)
-- [Ale - Operators 1](#Ale---Operators-1)
-- [Kanisius - Operators 1](#Kanisius---Operators-1)
-
-## Alfani - Operators 1
-![ss](assets/alfani/o1a.jpg)
-![ss](assets/alfani/o1b.jpg)
-
-## Ale - Operators 1
 ![ss](assets/ale/o1a.png)
 ![ss](assets/ale/o1b.png)
-
-## Kanisius - Operators 1
 
 | Operasi | Nama | Deskripsi |
 ---|---|---
@@ -2050,19 +1570,8 @@ fi
 ```
 
 Percobaan 2:
-- [Alfani - Operators 2](#Alfani---Operators-2)
-- [Ale - Operators 2](#Ale---Operators-2)
-- [Kanisius - Operators 2](#Kanisius---Operators-2)
-
-## Alfani - Operators 2
-![ss](assets/alfani/o2a.jpg)
-![ss](assets/alfani/o2b.jpg)
-
-## Ale - Operators 2
 ![ss](assets/ale/o2a.png)
 ![ss](assets/ale/o2b.png)
-
-## Kanisius - Operators 2
 
 <h3>Operator lain</h3>
 
@@ -2088,19 +1597,8 @@ fi
 ```
 
 Percobaan 1:
-- [Alfani - Numbers Comparison 1](#Alfani---Numbers-Comparison-1)
-- [Ale - Numbers Comparison 1](#Ale---Numbers-Comparison-1)
-- [Kanisius - Numbers Comparison 1](#Kanisius---Numbers-Comparison-1)
-
-## Alfani - Numbers Comparison 1
-![ss](assets/alfani/nc1a.jpg)
-![ss](assets/alfani/nc1b.jpg)
-
-## Ale - Numbers Comparison 1
 ![ss](assets/ale/nc1a.png)
 ![ss](assets/ale/nc1b.png)
-
-## Kanisius - Numbers Comparison 1
 
 Beberapa skrip shell tidak mendukung (()), gunakan [[]] dengan operator Perbandingan
 
@@ -2130,19 +1628,8 @@ fi
 ```
 
 Percobaan 2:
-- [Alfani - Numbers Comparison 2](#Alfani---Numbers-Comparison-2)
-- [Ale - Numbers Comparison 2](#Ale---Numbers-Comparison-2)
-- [Kanisius - Numbers Comparison 2](#Kanisius---Numbers-Comparison-2)
-
-## Alfani - Numbers Comparison 2
-![ss](assets/alfani/nc2a.jpg)
-![ss](assets/alfani/nc2b.jpg)
-
-## Ale - Numbers Comparison 2
 ![ss](assets/ale/nc2a.png)
 ![ss](assets/ale/nc2b.png)
-
-## Kanisius - Numbers Comparison 2
 
 dengan operator ternary:
 
@@ -2156,20 +1643,8 @@ echo $(( first == second ?  "equal": "not equal" ))
 Analisa: Percobaan 3 ini tidak bisa dilakukan, dikarenakan bash tidak mendukung operator ternary (```?```). maka output yang dikeluarkan akan error.
 
 Percobaan 3:
-- [Alfani - Numbers Comparison 3](#Alfani---Numbers-Comparison-3)
-- [Ale - Numbers Comparison 3](#Ale---Numbers-Comparison-3)
-- [Kanisius - Numbers Comparison 3](#Kanisius---Numbers-Comparison-3)
-
-## Alfani - Numbers Comparison 3
-![ss](assets/alfani/nc3a.jpg)
-![ss](assets/alfani/nc3b.jpg)
-
-## Ale - Numbers Comparison 3
 ![ss](assets/ale/nc3a.png)
 ![ss](assets/ale/nc3b.png)
-
-## Kanisius - Numbers Comparison 3
-
 
 ## Bash - Check Directory
 
@@ -2195,19 +1670,8 @@ fi
 ```
 
 Percobaan 1:
-- [Alfani - Check Directory 1](#Alfani---Check-Directory-1)
-- [Ale - Check Directory 1](#Ale---Check-Directory-1)
-- [Kanisius - Check Directory 1](#Kanisius---Check-Directory-1)
-
-## Alfani - Check Directory 1
-![ss](assets/alfani/cd1a.jpg)
-![ss](assets/alfani/cd1b.jpg)
-
-## Ale - Check Directory 1
 ![ss](assets/ale/cs1a.png)
 ![ss](assets/ale/cd1b.png)
-
-## Kanisius - Check Directory 1
 
 Harap dicatat bahwa tambahkan spasi setelahnya ```[``` dan sebelumnya ```-d```.
 
@@ -2230,19 +1694,8 @@ fi
 ```
 
 Percobaan 2:
-- [Alfani - Check Directory 2](#Alfani---Check-Directory-2)
-- [Ale - Check Directory 2](#Ale---Check-Directory-2)
-- [Kanisius - Check Directory 2](#Kanisius---Check-Directory-2)
-
-## Alfani - Check Directory 2
-![ss](assets/alfani/cd2a.jpg)
-![ss](assets/alfani/cd2b.jpg)
-
-## Ale - Check Directory 2
 ![ss](assets/ale/cs2a.png)
 ![ss](assets/ale/cd2b.png)
-
-## Kanisius - Check Directory 2
 
 <h3>Periksa keberadaan direktori menggunakan sintaks ternary</h3>
 Alternatifnya, ekspresi kondisional ternary digunakan sebagai pengganti ekspresi kondisional if.
@@ -2255,19 +1708,8 @@ FOLDER=test
 ```
 
 Percobaan 3:
-- [Alfani - Check Directory 3](#Alfani---Check-Directory-3)
-- [Ale - Check Directory 3](#Ale---Check-Directory-3)
-- [Kanisius - Check Directory 3](#Kanisius---Check-Directory-3)
-
-## Alfani - Check Directory 3
-![ss](assets/alfani/cd3a.jpg)
-![ss](assets/alfani/cd3b.jpg)
-
-## Ale - Check Directory 3
 ![ss](assets/ale/cs3a.png)
 ![ss](assets/ale/cd3b.png)
-
-## Kanisius - Check Directory 3
 
 <h3>Periksa apakah ada beberapa direktori</h3>
 jika ingin memeriksa apakah ada beberapa direktori, Kita harus menggunakan pernyataan kondisional if dengan operator logika AND(&&). 
@@ -2284,19 +1726,8 @@ fi
 ```
 
 Percobaan 4:
-- [Alfani - Check Directory 4](#Alfani---Check-Directory-4)
-- [Ale - Check Directory 4](#Ale---Check-Directory-4)
-- [Kanisius - Check Directory 4](#Kanisius---Check-Directory-4)
-
-## Alfani - Check Directory 4
-![ss](assets/alfani/cd4a.jpg)
-![ss](assets/alfani/cd4b.jpg)
-
-## Ale - Check Directory 4
 ![ss](assets/ale/cs4a.png)
 ![ss](assets/ale/cd4b.png)
-
-## Kanisius - Check Directory 4
 
 <h3> Periksa apakah direktori ada dan dapat ditulis serta dieksekusi</h3>
 
@@ -2317,19 +1748,8 @@ fi
 ```
 
 Percobaan 5:
-- [Alfani - Check Directory 5](#Alfani---Check-Directory-5)
-- [Ale - Check Directory 5](#Ale---Check-Directory-5)
-- [Kanisius - Check Directory 5](#Kanisius---Check-Directory-5)
-
-## Alfani - Check Directory 5
-![ss](assets/alfani/cd5a.jpg)
-![ss](assets/alfani/cd5b.jpg)
-
-## Ale - Check Directory 5
 ![ss](assets/ale/cs5a.png)
 ![ss](assets/ale/cd5b.png)
-
-## Kanisius - Check Directory 5
 
 <h3>Periksa file atau direktori yang ada</h3>
 
@@ -2346,19 +1766,8 @@ fi
 ```
 
 Percobaan 6:
-- [Alfani - Check Directory 6](#Alfani---Check-Directory-6)
-- [Ale - Check Directory 6](#Ale---Check-Directory-6)
-- [Kanisius - Check Directory 6](#Kanisius---Check-Directory-6)
-
-## Alfani - Check Directory 6
-![ss](assets/alfani/cd6a.jpg)
-![ss](assets/alfani/cd6b.jpg)
-
-## Ale - Check Directory 6
 ![ss](assets/ale/cs6a.png)
 ![ss](assets/ale/cd6b.png)
-
-## Kanisius - Check Directory 6
 
 ## Bash - File Name
 
@@ -2385,19 +1794,8 @@ run.sh
 ```
 
 Percobaan 1:
-- [Alfani - File Name 1](#Alfani---File-Name-1)
-- [Ale - File Name 1](#Ale---File-Name-1)
-- [Kanisius - File Name 1](#Kanisius---File-Name-1)
-
-## Alfani - File Name 1
-![ss](assets/alfani/fn1a.jpg)
-![ss](assets/alfani/fn1b.jpg)
-
-## Ale - File Name 1
 ![ss](assets/ale/fn1a.png)
 ![ss](assets/ale/fn1b.png)
-	
-## Kanisius - File Name 1
 
 <h3>Ekstrak nama file tanpa ekstensi</h3>
 
@@ -2423,19 +1821,8 @@ File Name: run
 ```
 
 Percobaan 2:
-- [Alfani - File Name 2](#Alfani---File-Name-2)
-- [Ale - File Name 2](#Ale---File-Name-2)
-- [Kanisius - File Name 2](#Kanisius---File-Name-2)
-
-## Alfani - File Name 2
-![ss](assets/alfani/fn2a.jpg)
-![ss](assets/alfani/fn2b.jpg)
-
-## Ale - File Name 2
 ![ss](assets/ale/fn2a.png)
 ![ss](assets/ale/fn2b.png)
-
-## Kanisius - File Name 2
 
 <h3>Ekstrak ekstensi untuk jalur file</h3>
 
@@ -2459,20 +1846,8 @@ File Extension:sh
 ```
 
 Percobaan 3:
-- [Alfani - File Name 3](#Alfani---File-Name-3)
-- [Ale - File Name 3](#Ale---File-Name-3)
-- [Kanisius - File Name 3](#Kanisius---File-Name-3)
-
-## Alfani - File Name 3
-![ss](assets/alfani/fn3a.jpg)
-![ss](assets/alfani/fn3b.jpg)
-
-## Ale - File Name 3
 ![ss](assets/ale/fn3a.png)
 ![ss](assets/ale/fn3b.png)
-
-## Kanisius - File Name 3
-
 
 Berikut adalah contoh komprehensif yang menunjukkan cara mendapatkan nama file dengan atau tanpa ekstensi file. Setelah menjalankan skrip di bawah ini, skrip tersebut akan dicetak
 - file dengan ekstensi,
@@ -2498,20 +1873,8 @@ File Extension:sh
 ```
 
 Percobaan 4:
-- [Alfani - File Name 4](#Alfani---File-Name-4)
-- [Ale - File Name 4](#Ale---File-Name-4)
-- [Kanisius - File Name 4](#Kanisius---File-Name-4)
-
-## Alfani - File Name 4
-![ss](assets/alfani/fn4a.jpg)
-![ss](assets/alfani/fn4b.jpg)
-
-## Ale - File Name 4
 ![ss](assets/ale/fn4a.png)
 ![ss](assets/ale/fn4b.png)
-	
-## Kanisius - File Name 4
-
 
 ## Bash - Split String
 
@@ -2533,19 +1896,8 @@ abc def ghi
 ```
 
 Percobaan 1:
-- [Alfani - Split String 1](#Alfani---Split-String-1)
-- [Ale - Split String 1](#Ale---Split-String-1)
-- [Kanisius - Split String 1](#Kanisius---Split-String-1)
-
-## Alfani - Split String 1
-![ss](assets/alfani/ss1a.jpg)
-![ss](assets/alfani/ss1b.jpg)
-
-## Ale - Split String 1
 ![ss](assets/ale/ss1a.png)
 ![ss](assets/ale/ss1b.png)
-	
-## Kanisius - Split String 1
 
 <h3>Pemisahan menggunakan variabel IFS</h3>
 
@@ -2571,19 +1923,8 @@ three
 ```
 
 Percobaan 2:
-- [Alfani - Split String 2](#Alfani---Split-String-2)
-- [Ale - Split String 2](#Ale---Split-String-2)
-- [Kanisius - Split String 2](#Kanisius---Split-String-2)
-
-## Alfani - Split String 2
-![ss](assets/alfani/ss2a.jpg)
-![ss](assets/alfani/ss2b.jpg)
-
-## Ale - Split String 2
 ![ss](assets/ale/ss2a.png)
 ![ss](assets/ale/ss2b.png)
-	
-## Kanisius - Split String 2
 
 <h3>Menggunakan ekspansi Parameter dan loop</h3>
 Perluasan parameter digunakan untuk mengubah nilai variabel berdasarkan opsi yang ditentukan. Dalam hal ini, variabel string diubah menjadi array. Array kemudian diiterasi menggunakan sintaks for loop, mencetak setiap elemen ke konsol: 
@@ -2600,19 +1941,8 @@ done
 ```
 
 Percobaan 3:
-- [Alfani - Split String 3](#Alfani---Split-String-3)
-- [Ale - Split String 3](#Ale---Split-String-3)
-- [Kanisius - Split String 3](#Kanisius---Split-String-3)
-
-## Alfani - Split String 3
-![ss](assets/alfani/ss3a.jpg)
-![ss](assets/alfani/ss3b.jpg)
-
-## Ale - Split String 3
 ![ss](assets/ale/ss3a.png)
 ![ss](assets/ale/ss3b.png)
-	
-## Kanisius - Split String 3
 
 # Bash - String Length
 Panjang string ditentukan oleh jumlah karakter yang dikandungnya, dan umumnya mudah untuk memastikan panjangnya untuk teks normal.
@@ -2638,20 +1968,8 @@ Output:
 12
 ```
 Percobaan 1:
-- [Alfani - String Length 1](#Alfani---String-Length-1)
-- [Ale - String Length 1](#Ale---String-Length-1)
-- [Kanisius - String Length 1](#Kanisius---String-Length-1)
-
-## Alfani - String Length 1
-![ss](assets/alfani/sl1a.jpg)
-![ss](assets/alfani/sl1b.jpg)
-
-## Ale - String Length 1
 ![ss](assets/ale/sl1a.png)
 ![ss](assets/ale/sl1b.png)
-	
-## Kanisius - String Length 1
-
 
 Menggunakan Perintah wc -m 
 
@@ -2678,20 +1996,8 @@ Output:
 ```
 
 Percobaan 2:
-- [Alfani - String Length 2](#Alfani---String-Length-2)
-- [Ale - String Length 2](#Ale---String-Length-2)
-- [Kanisius - String Length 2](#Kanisius---String-Length-2)
-
-## Alfani - String Length 2
-![ss](assets/alfani/sl2a.jpg)
-![ss](assets/alfani/sl2b.jpg)
-
-## Ale - String Length 2
 ![ss](assets/ale/sl2a.png)
 ![ss](assets/ale/sl2b.png)
-	
-## Kanisius - String Length 2
-
 
 Menggunakan expr Memerintah Metode lain melibatkan penggunaan expr perintah untuk mencari panjang string.
 
@@ -2705,19 +2011,8 @@ echo $count # 12
 ```
 
 Percobaan 3:
-- [Alfani - String Length 3](#Alfani---String-Length-3)
-- [Ale - String Length 3](#Ale---String-Length-3)
-- [Kanisius - String Length 3](#Kanisius---String-Length-3)
-
-## Alfani - String Length 3
-![ss](assets/alfani/sl2a.jpg)
-![ss](assets/alfani/sl2b.jpg)
-
-## Ale - String Length 3
 ![ss](assets/ale/sl3a.png)
 ![ss](assets/ale/sl3b.png)
-	
-## Kanisius - String Length 3
 
 Di Sini, ${} mewakili substitusi ekspresi, menggantikan nilai ekspresi ke dalam string. expr mengeksekusi expressions, Dan lengtha dalah argumen yang diteruskan expruntuk menemukan panjang string.
 
@@ -2735,20 +2030,8 @@ echo $count # 12
 ```
 
 Percobaan 4:
-- [Alfani - String Length 4](#Alfani---String-Length-4)
-- [Ale - String Length 4](#Ale---String-Length-4)
-- [Kanisius - String Length 4](#Kanisius---String-Length-4)
-
-## Alfani - String Length 4
-![ss](assets/alfani/sl2a.jpg)
-![ss](assets/alfani/sl2b.jpg)
-
-## Ale - String Length 4
 ![ss](assets/ale/sl4a.png)
 ![ss](assets/ale/sl4b.png)
-	
-## Kanisius - String Length 4
-
 
 Pada kasus ini, echo -n "$variable" mengeluarkan string tanpa baris baru, dan hasilnya disalurkan ke awkmenggunakan pipa (\|) simbol. Itu awk '{print length}'perintah menghitung dan mencetak panjang baris input.
 
@@ -2827,20 +2110,8 @@ echo "$result" ;
 ```
 
 Percobaan 1:
-- [Alfani - Ternary Operator 1](#Alfani---Ternary-Operator-1)
-- [Ale - Ternary Operator 1](#Ale---Ternary-Operator-1)
-- [Kanisius - Ternary Operator 1](#Kanisius---Ternary-Operator-1)
-
-## Alfani - Ternary Operator 1
-![ss](assets/alfani/to1a.jpg)
-![ss](assets/alfani/to1b.jpg)
-
-## Ale - Ternary Operator 1
 ![ss](assets/ale/to1a.png)
 ![ss](assets/ale/to1b.png)
-	
-## Kanisius - Ternary Operator 1
-
 
 Cara kedua, gunakan ekspresi aritmatika menggunakan && dan \|\| Sintaksnya adalah:
 
@@ -2857,20 +2128,8 @@ echo "$result" ;
 ```
 
 Percobaan 2:
-- [Alfani - Ternary Operator 2](#Alfani---Ternary-Operator-2)
-- [Ale - Ternary Operator 2](#Ale---Ternary-Operator-2)
-- [Kanisius - Ternary Operator 2](#Kanisius---Ternary-Operator-2)
-
-## Alfani - Ternary Operator 2
-![ss](assets/alfani/to2a.jpg)
-![ss](assets/alfani/to2b.jpg)
-
-## Ale - Ternary Operator 2
 ![ss](assets/ale/to2a.png)
 ![ss](assets/ale/to2b.png)
-	
-## Kanisius - Ternary Operator 2
-
 
 Ada cara lain untuk menetapkan variabel, bukan ekspresi.
 dengan menggunakan mari kita dapat menetapkan variabel berdasarkan hasil ekspresi kondisi
@@ -2885,19 +2144,8 @@ echo $result # true
 ```
 
 Percobaan 3:
-- [Alfani - Ternary Operator 3](#Alfani---Ternary-Operator-3)
-- [Ale - Ternary Operator 3](#Ale---Ternary-Operator-3)
-- [Kanisius - Ternary Operator 3](#Kanisius---Ternary-Operator-3)
-
-## Alfani - Ternary Operator 3
-![ss](assets/alfani/to3a.jpg)
-![ss](assets/alfani/to3b.jpg)
-
-## Ale - Ternary Operator 3
 ![ss](assets/ale/to3a.png)
 ![ss](assets/ale/to3b.png)
-	
-## Kanisius - Ternary Operator 3
 
 ## Bash - Lowercase
 Tutorial ini menjelaskan cara mengonversi string menjadi huruf kecil dalam skrip Bash.
@@ -2926,20 +2174,8 @@ hello world, welcome.
 ```
 
 Percobaan 1:
-- [Alfani - Lowercase 1](#Alfani---Lowercase-1)
-- [Ale - Lowercase 1](#Ale---Lowercase-1)
-- [Kanisius - Lowercase 1](#Kanisius---Lowercase-1)
-
-## Alfani - Lowercase 1
-![ss](assets/alfani/lc1a.jpg)
-![ss](assets/alfani/lc1b.jpg)
-
-## Ale - Lowercase 1
 ![ss](assets/ale/lc1a.png)
 ![ss](assets/ale/lc1b.png)
-	
-## Kanisius - Lowercase 1
-
 
 Sebagai alternatif, Anda dapat menggunakan.
 
@@ -2949,20 +2185,8 @@ echo "$message" | tr 'A-Z' 'a-z'
 ```
 
 Percobaan 2:
-- [Alfani - Lowercase 2](#Alfani---Lowercase-2)
-- [Ale - Lowercase 2](#Ale---Lowercase-2)
-- [Kanisius - Lowercase 2](#Kanisius---Lowercase-2)
-
-## Alfani - Lowercase 2
-![ss](assets/alfani/lc2a.jpg)
-![ss](assets/alfani/lc2b.jpg)
-
-## Ale - Lowercase 2
 ![ss](assets/ale/lc2a.png)
 ![ss](assets/ale/lc2b.png)
-	
-## Kanisius - Lowercase 2
-
 
 Catatan: tr berfungsi dengan ASCIIdan tidak mendukung UTF karakter.
 - menggunakan perintah awk
@@ -2976,20 +2200,8 @@ echo "$message" | awk '{print tolower($0)}'
 ```
 
 Percobaan 3:
-- [Alfani - Lowercase 3](#Alfani---Lowercase-3)
-- [Ale - Lowercase 3](#Ale---Lowercase-3)
-- [Kanisius - Lowercase 3](#Kanisius---Lowercase-3)
-
-## Alfani - Lowercase 3
-![ss](assets/alfani/lc3a.jpg)
-![ss](assets/alfani/lc3b.jpg)
-
-## Ale - Lowercase 3
 ![ss](assets/ale/lc3a.png)
 ![ss](assets/ale/lc3b.png)
-	
-## Kanisius - Lowercase 3
-
 
 Metode ini paling baik untuk karakter ASCII dan UTF.
 - Gunakan Perl di Bash Script Printing lcdengan Perlmengubah string menjadi huruf kecil.
@@ -3000,19 +2212,8 @@ echo "$message" | perl -ne 'print lc'
 ```
 
 Percobaan 4:
-- [Alfani - Lowercase 4](#Alfani---Lowercase-4)
-- [Ale - Lowercase 4](#Ale---Lowercase-4)
-- [Kanisius - Lowercase 4](#Kanisius---Lowercase-4)
-
-## Alfani - Lowercase 4
-![ss](assets/alfani/lc4a.jpg)
-![ss](assets/alfani/lc4b.jpg)
-
-## Ale - Lowercase 4
 ![ss](assets/ale/lc4a.png)
 ![ss](assets/ale/lc4b.png)
-	
-## Kanisius - Lowercase 4
 
 - gunakan ekspansi Parameter Bash 4.0 memperkenalkan utilitas manipulasi string bawaan. Untuk mengonversi string menjadi huruf kecil, cukup tambahkan dua commaske string. Ini juga disebut sintaks perluasan parameter.
 Sintaksnya adalah ${variable[options]}.
@@ -3025,20 +2226,8 @@ echo "${message}"
 ```
 
 Percobaan 5:
-- [Alfani - Lowercase 5](#Alfani---Lowercase-5)
-- [Ale - Lowercase 5](#Ale---Lowercase-5)
-- [Kanisius - Lowercase 5](#Kanisius---Lowercase-5)
-
-## Alfani - Lowercase 5
-![ss](assets/alfani/lc5a.jpg)
-![ss](assets/alfani/lc5b.jpg)
-
-## Ale - Lowercase 5
 ![ss](assets/ale/lc5a.png)
 ![ss](assets/ale/lc5b.png)
-	
-## Kanisius - Lowercase 5
-
 
 ```
 msg="Hello World."
@@ -3047,20 +2236,8 @@ echo $result # hello world.
 ```
 
 Percobaan 6:
-- [Alfani - Lowercase 6](#Alfani---Lowercase-6)
-- [Ale - Lowercase 6](#Ale---Lowercase-6)
-- [Kanisius - Lowercase 6](#Kanisius---Lowercase-6)
-
-## Alfani - Lowercase 6
-![ss](assets/alfani/lc6a.jpg)
-![ss](assets/alfani/lc6b.jpg)
-
-## Ale - Lowercase 6
 ![ss](assets/ale/lc6a.png)
 ![ss](assets/ale/lc6b.png)
-	
-## Kanisius - Lowercase 6
-
 
 Di sini, ${msg,,} gunakan ,,opsi untuk mengonversi variabel menjadi huruf kecil.
 
@@ -3094,20 +2271,8 @@ THIS IS A LOWERCASE STRING CONVERTED TO UPPERCASE
 ```
 
 Percobaan 1:
-- [Alfani - Uppercase 1](#Alfani---Uppercase-1)
-- [Ale - Uppercase 1](#Ale---Uppercase-1)
-- [Kanisius - Uppercase 1](#Kanisius---Uppercase-1)
-
-## Alfani - Uppercase 1
-![ss](assets/alfani/uc1a.jpg)
-![ss](assets/alfani/uc1b.jpg)
-
-## Ale - Uppercase 1
 ![ss](assets/ale/up1a.png)
 ![ss](assets/ale/up1b.png)
-	
-## Kanisius - Uppercase 1
-
 
 Cara lain untuk mengganti kode di atas
 ```
@@ -3116,20 +2281,8 @@ echo "$message" | tr 'a-z' 'A-Z'
 ```
 
 Percobaan 2:
-- [Alfani - Uppercase 2](#Alfani---Uppercase-2)
-- [Ale - Uppercase 2](#Ale---Uppercase-2)
-- [Kanisius - Uppercase 2](#Kanisius---Uppercase-2)
-
-## Alfani - Uppercase 2
-![ss](assets/alfani/uc2a.jpg)
-![ss](assets/alfani/uc2b.jpg)
-
-## Ale - Uppercase 2
 ![ss](assets/ale/up2a.png)
 ![ss](assets/ale/up2b.png)
-	
-## Kanisius - Uppercase 2
-
 
 Catatan: tr berfungsi dengan ASCII dan tidak mendukung UTF karakter.
 - menggunakan perintah awk
@@ -3140,20 +2293,8 @@ echo "$message" | awk '{print toupper($0)}'
 ```
 
 Percobaan 3:
-- [Alfani - Uppercase 3](#Alfani---Uppercase-3)
-- [Ale - Uppercase 3](#Ale---Uppercase-3)
-- [Kanisius - Uppercase 3](#Kanisius---Uppercase-3)
-
-## Alfani - Uppercase 3
-![ss](assets/alfani/uc3a.jpg)
-![ss](assets/alfani/uc3b.jpg)
-
-## Ale - Uppercase 3
 ![ss](assets/ale/up3a.png)
 ![ss](assets/ale/up3b.png)
-	
-## Kanisius - Uppercase 3
-
 
 Yang terbaik adalah bekerja dengan ASCIIdan UTFkarakter.
 - dalam versi bash 4.0 bash 4.0menyediakan utilitas manipulasi string bawaan. Menambahkan dua tanda sirkumfleks (^) ke sebuah string akan membuat string menjadi string huruf besar.
@@ -3165,20 +2306,8 @@ echo "${message}"
 ```
 
 Percobaan 4:
-- [Alfani - Uppercase 4](#Alfani---Uppercase-4)
-- [Ale - Uppercase 4](#Ale---Uppercase-4)
-- [Kanisius - Uppercase 4](#Kanisius---Uppercase-4)
-
-## Alfani - Uppercase 4
-![ss](assets/alfani/uc4a.jpg)
-![ss](assets/alfani/uc4b.jpg)
-
-## Ale - Uppercase 4
 ![ss](assets/ale/up4a.png)
 ![ss](assets/ale/up4b.png)
-	
-## Kanisius - Uppercase 4
-
 
 - menggunakan Perl dalam skrip bash
 print uc perintah di Perl mengubah string menjadi huruf besar
@@ -3187,17 +2316,8 @@ echo "$message" | perl -ne 'print uc'
 ```
 
 Percobaan 5:
-- [Alfani - Uppercase 5](#Alfani---Uppercase-5)
-- [Ale - Uppercase 5](#Ale---Uppercase-5)
-- [Kanisius - Uppercase 5](#Kanisius---Uppercase-5)
-
-## Alfani - Uppercase 5
-
-## Ale - Uppercase 5
 ![ss](assets/ale/up5a.png)
 ![ss](assets/ale/up5b.png)
-	
-## Kanisius - Uppercase 5
 
 - Gunakan sintaks perluasan parameter Bash 4.0 menyediakan utilitas manipulasi string bawaan. Menambahkan dua tanda sirkumfleks (^) ke sebuah string menjadikannya string huruf besar, juga disebut sintaks perluasan parameter.
 
@@ -3219,18 +2339,8 @@ echo "Uppercase: $result"
 ```
 
 Percobaan 6:
-- [Alfani - Uppercase 6](#Alfani---Uppercase-6)
-- [Ale - Uppercase 6](#Ale---Uppercase-6)
-- [Kanisius - Uppercase 6](#Kanisius---Uppercase-6)
-
-## Alfani - Uppercase 6
-
-## Ale - Uppercase 6
 ![ss](assets/ale/up6a.png)
 ![ss](assets/ale/up6b.png)
-	
-## Kanisius - Uppercase 6
-
 
 Sintaks perluasan parameter mengubah string menjadi huruf besar. ${message^^}berisi ^^ opsi untuk mengubah string pesan variabel menjadi huruf besar.
 Fitur ini tersedia di Bash versi 4.0 ke atas.
@@ -3254,20 +2364,8 @@ fi
 ```
 
 Percobaan 1:
-- [Alfani - Substring 1](#Alfani---Substring-1)
-- [Ale - Substring 1](#Ale---Substring-1)
-- [Kanisius - Substring 1](#Kanisius---Substring-1)
-
-## Alfani - Substring 1
-![ss](assets/alfani/s1a.jpg)
-![ss](assets/alfani/s1b.jpg)
-
-## Ale - Substring 1
 ![ss](assets/ale/s1a.png)
 ![ss](assets/ale/s1b.png)
-	
-## Kanisius - Substring 1
-
 
 <h3>Gunakan Ekspresi Reguler untuk Menemukan Substring</h3>
 
@@ -3281,20 +2379,8 @@ fi
 ```
 
 Percobaan 2:
-- [Alfani - Substring 2](#Alfani---Substring-2)
-- [Ale - Substring 2](#Ale---Substring-2)
-- [Kanisius - Substring 2](#Kanisius---Substring-2)
-
-## Alfani - Substring 2
-![ss](assets/alfani/s2a.jpg)
-![ss](assets/alfani/s2b.jpg)
-
-## Ale - Substring 2
 ![ss](assets/ale/s2a.png)
 ![ss](assets/ale/s2b.png)
-	
-## Kanisius - Substring 2
-
 
 ### Gunakan perintah grep
 Perintah grep digunakan untuk mencari string tertentu, disalurkan ke string utama untuk perbandingan.
@@ -3307,20 +2393,8 @@ fi
 ```
 
 Percobaan 3:
-- [Alfani - Substring 3](#Alfani---Substring-3)
-- [Ale - Substring 3](#Ale---Substring-3)
-- [Kanisius - Substring 3](#Kanisius---Substring-3)
-
-## Alfani - Substring 3
-![ss](assets/alfani/s3a.jpg)
-![ss](assets/alfani/s3b.jpg)
-
-## Ale - Substring 3
 ![ss](assets/ale/s3a.png)
 ![ss](assets/ale/s3b.png)
-	
-## Kanisius - Substring 3
-
 
 Metode ini menawarkan pendekatan berbeda untuk memeriksa apakah suatu string berisi substring tertentu, sehingga memberikan fleksibilitas untuk kasus penggunaan yang berbeda.
 
@@ -3372,20 +2446,8 @@ variable2 is not set
 ```
 
 Percobaan 1:
-- [Alfani - Variable set 1](#Alfani---Variable-set-1)
-- [Ale - Variable set 1](#Ale---Variable-set-1)
-- [Kanisius - Variable set 1](#Kanisius---Variable-set-1)
-
-## Alfani - Variable set 1
-![ss](assets/alfani/vs1a.jpg)
-![ss](assets/alfani/vs1b.jpg)
-
-## Ale - Variable set 1
 ![ss](assets/ale/vs1a.png)
 ![ss](assets/ale/vs1b.png)
-	
-## Kanisius - Variable set 1
-
 
 Cara lain untuk memeriksa suatu variabel adalah dengan menyetel menggunakan -v opsi
 ```
@@ -3405,19 +2467,8 @@ variable1 is unset
 ```
 
 Percobaan 2:
-- [Alfani - Variable set 2](#Alfani---Variable-set-2)
-- [Ale - Variable set 2](#Ale---Variable-set-2)
-- [Kanisius - Variable set 2](#Kanisius---Variable-set-2)
-
-## Alfani - Variable set 2
-![ss](assets/alfani/vs2a.jpg)
-![ss](assets/alfani/vs2b.jpg)
-
-## Ale - Variable set 2
 ![ss](assets/ale/vs2a.png)
 ![ss](assets/ale/vs2b.png)
-	
-## Kanisius - Variable set 2
 
 ### Bagaimana cara memeriksa apakah variabel tidak disetel di skrip bash?
 Misalnya variabelnya tidak disetel artinya
@@ -3452,19 +2503,8 @@ variable2 is not set or unset
 ```
 
 Percobaan 3:
-- [Alfani - Variable set 3](#Alfani---Variable-set-3)
-- [Ale - Variable set 3](#Ale---Variable-set-3)
-- [Kanisius - Variable set 3](#Kanisius---Variable-set-3)
-
-## Alfani - Variable set 3
-![ss](assets/alfani/vs3a.jpg)
-![ss](assets/alfani/vs3b.jpg)
-
-## Ale - Variable set 3
 ![ss](assets/ale/vs3a.png)
 ![ss](assets/ale/vs3b.png)
-	
-## Kanisius - Variable set 3
 
 ### Cara mengecek variabel kosong atau tidak kosong
 Tutorial ini memeriksa pemeriksaan variabel dibandingkan dengan spasi dan membungkus ekspresi ini di dalam [[]].
@@ -3480,20 +2520,8 @@ fi
 ```
 
 Percobaan 4:
-- [Alfani - Variable set 4](#Alfani---Variable-set-4)
-- [Ale - Variable set 4](#Ale---Variable-set-4)
-- [Kanisius - Variable set 4](#Kanisius---Variable-set-4)
-
-## Alfani - Variable set 4
-![ss](assets/alfani/vs4a.jpg)
-![ss](assets/alfani/vs4b.jpg)
-
-## Ale - Variable set 4
 ![ss](assets/ale/vs4a.png)
 ![ss](assets/ale/vs4b.png)
-	
-## Kanisius - Variable set 4
-
 
 Hal yang sama juga dapat ditulis menggunakan variabel dalam tanda kutip ganda yang dibungkus dalam tanda kurung tunggal [].
 ```
@@ -3512,19 +2540,8 @@ variable1 is empty
 ```
 
 Percobaan 5:
-- [Alfani - Variable set 5](#Alfani---Variable-set-5)
-- [Ale - Variable set 5](#Ale---Variable-set-5)
-- [Kanisius - Variable set 5](#Kanisius---Variable-set-5)
-
-## Alfani - Variable set 5
-![ss](assets/alfani/vs5a.jpg)
-![ss](assets/alfani/vs5b.jpg)
-
-## Ale - Variable set 5
 ![ss](assets/ale/vs5a.png)
 ![ss](assets/ale/vs5b.png)
-	
-## Kanisius - Variable set 5
 
 Mari kita periksa juga untuk tidak mengosongkan menggunakan ! operator.
  
@@ -3541,20 +2558,8 @@ fi
 ```
 
 Percobaan 6:
-- [Alfani - Variable set 6](#Alfani---Variable-set-6)
-- [Ale - Variable set 6](#Ale---Variable-set-6)
-- [Kanisius - Variable set 6](#Kanisius---Variable-set-6)
-
-## Alfani - Variable set 6
-![ss](assets/alfani/vs6a.jpg)
-![ss](assets/alfani/vs6b.jpg)
-
-## Ale - Variable set 6
 ![ss](assets/ale/vs6a.png)
 ![ss](assets/ale/vs6b.png)
-	
-## Kanisius - Variable set 6
-
 
 Cara lain,
 ```
@@ -3568,20 +2573,8 @@ fi
 ```
 
 Percobaan 7:
-- [Alfani - Variable set 7](#Alfani---Variable-set-7)
-- [Ale - Variable set 7](#Ale---Variable-set-7)
-- [Kanisius - Variable set 7](#Kanisius---Variable-set-7)
-
-## Alfani - Variable set 7
-![ss](assets/alfani/vs7a.jpg)
-![ss](assets/alfani/vs7b.jpg)
-
-## Ale - Variable set 7
 ![ss](assets/ale/vs7a.png)
 ![ss](assets/ale/vs7b.png)
-	
-## Kanisius - Variable set 7
-
 
 Opsi penggunaan -z lainnya untuk memeriksa variabel disetel dan kosong atau tidak kosong menggunakan kode di bawah ini:
 ```
@@ -3610,19 +2603,8 @@ variable3 is set and non-empty
 ```
 
 Percobaan 8:
-- [Alfani - Variable set 8](#Alfani---Variable-set-8)
-- [Ale - Variable set 8](#Ale---Variable-set-8)
-- [Kanisius - Variable set 8](#Kanisius---Variable-set-8)
-
-## Alfani - Variable set 8
-![ss](assets/alfani/vs8a.jpg)
-![ss](assets/alfani/vs8b.jpg)
-
-## Ale - Variable set 8
 ![ss](assets/ale/vs8a.png)
 ![ss](assets/ale/vs8b.png)
-	
-## Kanisius - Variable set 8
 
 ## Bash - Iterate Nos
 Tutorial ini membahas berbagai cara untuk mengulangi rentang angka yang disimpan dalam variabel dan mencetaknya ke konsol.
@@ -3643,19 +2625,8 @@ Output:
 ```
 
 Percobaan 1:
-- [Alfani - Iterate Nos 1](#Alfani---Iterate-Nos-1)
-- [Ale - Iterate Nos 1](#Ale---Iterate-Nos-1)
-- [Kanisius - Iterate Nos 1](#Kanisius---Iterate-Nos-1)
-
-## Alfani - Iterate Nos 1
-![ss](assets/alfani/in1a.jpg)
-![ss](assets/alfani/in1b.jpg)
-
-## Ale - Iterate Nos 1
 ![ss](assets/ale/in1a.png)
 ![ss](assets/ale/in1b.png)
-	
-## Kanisius - Iterate Nos 1
 
 - menggunakan for loop
 ```
@@ -3675,20 +2646,8 @@ Output:
 ```
 
 Percobaan 2:
-- [Alfani - Iterate Nos 2](#Alfani---Iterate-Nos-2)
-- [Ale - Iterate Nos 2](#Ale---Iterate-Nos-2)
-- [Kanisius - Iterate Nos 2](#Kanisius---Iterate-Nos-2)
-
-## Alfani - Iterate Nos 2
-![ss](assets/alfani/in2a.jpg)
-![ss](assets/alfani/in2b.jpg)
-
-## Ale - Iterate Nos 2
 ![ss](assets/ale/in2a.png)
 ![ss](assets/ale/in2b.png)
-	
-## Kanisius - Iterate Nos 2
-
 
 - while loop
 ```
@@ -3701,20 +2660,8 @@ done
 ```
 
 Percobaan 3:
-- [Alfani - Iterate Nos 3](#Alfani---Iterate-Nos-3)
-- [Ale - Iterate Nos 3](#Ale---Iterate-Nos-3)
-- [Kanisius - Iterate Nos 3](#Kanisius---Iterate-Nos-3)
-
-## Alfani - Iterate Nos 3
-![ss](assets/alfani/in3a.jpg)
-![ss](assets/alfani/in3b.jpg)
-
-## Ale - Iterate Nos 3
 ![ss](assets/ale/in3a.png)
 ![ss](assets/ale/in3b.png)
-	
-## Kanisius - Iterate Nos 3
-
 
 ## Kesimpulan
 Dengan menggunakan bahasa bash, Kita dapat menulis skrip bash untuk menjalankan beberapa perintah secara bersamaan dan mengotomatiskan proses yang tidak dapat dilakukan pada foreground baris perintah.
