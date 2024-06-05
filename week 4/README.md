@@ -56,7 +56,7 @@ Filter adalah utilitas Linux yang dapat memproses standard input (dari keyboard)
 - Perintah ```cut``` Digunakan untuk mengambil kolom tertentu dari baris-baris masukannya, yang ditentukan pada option –c.
 - Perintah ```uniq``` Digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi, biasanya digabungkan dalam pipeline dengan ```sort```.
 
-## Soal
+## Percobaan
 1. Analisa hasil percobaan 1 sampai dengan 4, untuk setiap perintah jelaskan tampilannya.
 Percobaan 1 : File descriptor</br>
 - Output ke layar (standar output), input dari system (kernel)
@@ -80,8 +80,8 @@ $ mkdir mydir
 $ mkdir mydir **(Terdapat pesan error)**
 ```
 
-Jawab:
-
+Jawab:</br>
+![ss](assets/percobaan/p1.png)
 
 Percobaan 2 : Pembelokan (redirection)</br>
 1. Pembelokan standar output
@@ -148,7 +148,11 @@ Percobaan 2 : Pembelokan (redirection)</br>
   $ cat myfile.txt – surat
   ```
 
-  Jawab:
+  Jawab:</br>
+![ss](assets/percobaan/p2a.png)
+![ss](assets/percobaan/p2b.png)
+![ss](assets/percobaan/p2c.png)
+![ss](assets/percobaan/p2d.png)
 
 
 Percobaan 3 : Pipa (pipeline)</br>
@@ -195,8 +199,12 @@ Percobaan 3 : Pipa (pipeline)</br>
    $ cat out
    ```
 
-Jawab:
-
+Jawab:</br>
+![ss](assets/percobaan/p3a.png)
+![ss](assets/percobaan/p3b.png)
+![ss](assets/percobaan/p3c.png)
+![ss](assets/percobaan/p3d.png)
+![ss](assets/percobaan/p3e.png)
 
 Percobaan 4 : Filter
 1. Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
@@ -223,9 +231,11 @@ Percobaan 4 : Filter
     $ cat kelas.txt | sort | uniq
    ```
    
-   Jawab:
-   
+Jawab:
+![ss](assets/percobaan/p4a.png)
+![ss](assets/percobaan/p4b.png)
 
+## Latihan
 1. Kerjakan latihan diatas dan analisa hasilnya
 - Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.</br>
 ![ss](assets/latihan/soal1/1.png)</br>
