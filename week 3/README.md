@@ -21,7 +21,7 @@
 
 ## Dasar teori
 IOPS:</br>
-IOPS merupakan singkatan dari Input/Output per Second. Pengertian IOPS adalah pengukuran kinerja untuk Hard Drive (HDD atau SSD) dan jaringan area penyimpanan untuk menunjukkan seberapa cepat suatu perangkat atau media penyimpanan dapat membaca atau menulis data dalam setiap detik.
+IOPS merupakan singkatan dari Integer Operations Per Second. Pengertian IOPS adalah pengukuran kinerja untuk Hard Drive (HDD atau SSD) dan jaringan area penyimpanan untuk menunjukkan seberapa cepat suatu perangkat atau media penyimpanan dapat membaca atau menulis data dalam setiap detik.
 Sebenarnya ada 3 faktor yang harus diperhatikan untuk kinerja penyimpanan yaitu kecepatan bandwidth, latensi, dan IOPS. Namun, hampir seluruh vendor berfokus pada IOPS dimana memerhatikan seberapa cepat penyimpanan mereka.
 
 FLOPS:</br>
