@@ -7,18 +7,17 @@
   <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png" alt="Logo PENS">
   <h3 style="text-align: center;">Disusun Oleh : </h3>
   <p style="text-align: center;">
-    <strong>Marieta Nona Alfani (312350026) </strong><br>
     <strong>Ale Perdana Putra Darmawan (3123500027) </strong><br>
-    <strong>Kanisius Keru Okok Dinggon(3123500028)</strong>
   </p>
 <h3 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
   <hr><hr>
 </div>
 
 ## Daftar Isi
-1. [Dasar Teori](#Dasar-teori)
-2. [Soal](#soal)
-3. [Referensi](#Referensi)
+- [Daftar Isi](#daftar-isi)
+- [Dasar teori](#dasar-teori)
+- [Soal](#soal)
+- [Referensi](#referensi)
 
 ## Dasar teori
 IOPS:</br>
