@@ -16,9 +16,10 @@
 </div>
 
 ## Daftar Isi
-1. [Dasar Teori](#Dasar-teori)
-2. [Soal](#soal)
-3. [Referensi](#Referensi)
+- [Daftar Isi](#daftar-isi)
+- [Dasar teori](#dasar-teori)
+- [Soal](#soal)
+- [Referensi](#referensi)
 
 ## Dasar teori
 Pengertian Legacy BIOS:</br>
@@ -42,6 +43,9 @@ Spesifikasi | Legacy | UEFI
 Jumlah maksimum partisi | primer	4 | partisi	Tidak terbatas (tergantung pada sistem operasi; pada Windows dapat digunakan hingga 128 partisi).
 Ukuran hard drive maksimum |	2 terabyte (2.000 Gigabyte)	| 18 exabyte (18 miliar Gigabyte)
 Keramahan Pengguna	| Kurang ramah pengguna |	UEFI lebih ramah pengguna daripada Legacy Boot.
+
+Flowchart perbedaan legacy dan UEFI:</br>
+![ss](assets/flowchart.jpeg)
 
 2. Komposisi motherboard
 - Power Connector</br>
