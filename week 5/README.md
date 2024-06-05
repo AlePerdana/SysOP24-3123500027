@@ -21,7 +21,7 @@
 5. [Referensi](#Referensi)
 
 ## Dasar teori
-#### 1. KONSEP PROSES PADA SISTEM OPERASI LINUX
+### 1. KONSEP PROSES PADA SISTEM OPERASI LINUX
 Proses adalah program yang sedang dieksekusi. Setiap kali menggunakan utilitas sistem atau program aplikasi dari shell, satu atau lebih proses "child" akan dibuat oleh shell sesuai perintah yang diberikan. Setiap kali instruksi diberikan pada Linux shell, maka kernel akan menciptakan sebuah proses-id. Proses ini disebut juga dengan terminology Unix sebagai sebuah Job. Proses Id (PID) dimulai dari 0, yaitu proses INIT, kemudian diikuti oleh proses berikutnya (terdaftar pada ```/etc/inittab```).
 Beberapa tipe proses :
 - Foreground
@@ -31,22 +31,22 @@ Proses yang dikumpulkan dan dijalankan secara sekuensial (satu persatu). Prose B
 - Daemon
 Proses yang menunggu permintaan (request) dari proses lainnya dan menjalankan tugas sesuai dengan permintaan tersebut. Bila tidak ada request, maka program ini akan berada dalam kondisi “idle” dan tidak menggunakan waktu hitung CPU. Umumnya nama proses daemon di UNIX berakhiran d, misalnya inetd, named, popd dll
 
-#### 2. SINYAL
+### 2. SINYAL
 Proses dapat mengirim dan menerima sinyal dari dan ke proses lainnya. Proses mengirim sinyal melalui instruksi “kill” dengan format
 kill [-nomor sinyal] PID
 Nomor sinyal: 1 s/d maksimum nomor sinyal yang didefinisikan system
 
-#### 3. MENGIRIM SINYAL
+### 3. MENGIRIM SINYAL
 Mengirim sinyal adalah satu alat komunikasi antar proses, yaitu memberitahukan proses yang sedang berjalan bahwa ada sesuatu yang harus dikendalikan. Berdasarkan sinyal yang dikirim ini maka proses dapat bereaksi dan administrator/programmer dapat menentukan reaksi tersebut. Mengirim sinyal menggunakan instruksi</br>
 ```kill [-nomor sinyal] PID``` </br>
 Sebelum mengirim sinyal PID proses yang akan dikirim harus diketahui terlebih dahulu.
 
-#### 4. MENGONTROL PROSES PADA SHELL
+### 4. MENGONTROL PROSES PADA SHELL
 Shell menyediakan fasilitas job control yang memungkinkan mengontrol beberapa job atau proses yang sedang berjalan pada waktu yang sama. Misalnya bila melakukan pengeditan file teks dan ingin melakukan interrupt pengeditan untuk mengerjakan hal lainnya. Bila selesai, dapat kembali (switch) ke editor dan melakukan pengeditan file teks kembali.</br>
 Job bekerja pada foreground atau background. Pada foreground hanya diperuntukkan untuk satu job pada satu waktu. Job pada foreground akan mengontrol shell - menerima input dari keyboard dan mengirim output ke layar. Job pada background tidak menerima input dari terminal, biasanya berjalan tanpa memerlukan interaksi.</br>
 Job pada foreground kemungkinan dihentikan sementara (suspend), dengan menekan [Ctrl-Z]. Job yang dihentikan sementara dapat dijalankan kembali pada foreground atau background sesuai keperluan dengan menekan "fg" atau "bg". Sebagai catatan, menghentikan job sementara sangat berbeda dengan melakuakan interrupt job (biasanya menggunakan [Ctrl-C]), dimana job yang diinterrup akan dimatikan secara permanen dan tidak dapat dijalankan lagi.
 
-#### 5. MENGONTROL PROSES LAIN
+### 5. MENGONTROL PROSES LAIN
 Perintah ps dapat digunakan untuk menunjukkan semua proses yang sedang berjalan pada mesin (bukan hanya proses pada shell saat ini) dengan format:</br>
 ```ps -fae``` atau ```ps -aux```</br>
 Beberapa versi UNIX mempunyai utilitas sistem yang disebut ```top``` yang menyediakan cara interaktif untuk memonitor aktifitas sistem. Statistik secara detail dengan proses yang berjalan ditampilkan dan secara terus-menerus di-refresh. Proses ditampilkan secara terurut dari utilitas CPU. Kunci yang berguna pada ```top``` adalah</br>
@@ -58,18 +58,22 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 
 ## Tugas Pendahuluan
 1. Apa yang dimaksud dengan proses?</br>
+Jawab:</br>
 Proses adalah program yang sedang dieksekusi.
 
 2. Apa yang dimaksud perintah untuk menampilkan status proses : ```ps```, ```pstree```.</br>
+Jawab:</br>
 - ```ps```: Menampilkan mengenai seleksi dalam proses/program yang aktif.
 - ```pstree```: Menampilkan proses/program yang berjalan dalam bentuk pohon/bercabang.
 
 3. Sebutkan opsi yang dapat diberikan pada perintah ps</br>
+Jawab:</br>
 - Opsi ```ps -a```: Menampilkan proses dari semua pengguna. Proses yang terkait dengan terminal dan proses grup tidak ditampilkan.
 - Opsi ```ps -u```: Menghasilkan format yang berorientasi pada pengguna dan memberikan informasi terperinci tentang proses yang berjalan.
 - Opsi ```ps -x```: Membuat daftar proses tanpa terminal. Opsi ini menampilkan proses yang berjalan saat boot dan berjalan di latar belakang.
 
 4. Apa yang dimaksud dengan sinyal ? Apa perintah untuk mengirim sinyal ?
+Jawab:</br>
 Pengertian sinyal: Sinyal adalah sebuah data atau informasi yang sudah mengalami beberapa proses sedemikian rupa hingga akhirnya menjadi sebuah informasi matang untuk dikirim ke pihak penerima melalui suatu saluran transmisi.</br>
 Perintah untuk mengirim sinyal:</br>
 - ```kill```: Perintah ini digunakan untuk mengirim sinyal ke proses dengan menggunakan nomor sinyal.
@@ -77,22 +81,18 @@ Perintah untuk mengirim sinyal:</br>
 - ```killall```: Perintah ini berguna jika kita ingin menghentikan semua proses yang terkait dengan sebuah program secara bersamaan, tanpa harus mengetahui PID masing-masing proses.
 
 6. Apa yang dimaksud dengan proses foreground dan background pada job control ?
+Jawab:</br>
 - Proses Foreground: Proses foreground adalah proses yang berjalan melalui inisiasi dan dapat dikontrol melalui terminal session, contoh proses foreground ini seperti menerima input dari keyboard dan mengirim output ke layar.
 - Proses Background: Proses background adalah proses yang tidak menerima input dari terminal dan biasanya berjalan tanpa memerlukan interaksi langsung dari pengguna.
 
 7. Apa yang dimaksud perintah-perintah penjadwalan prioritas : ```top```, ```nice```, ```renice```.
+Jawab:</br>
 - top adalah utilitas yang memantau proses yang sedang berjalan di sistem secara real-time serta menampilkan informasi tentang penggunaan CPU, memori, dan prioritas proses.
 - nice adalah perintah yang memungkinkan Anda mengatur nilai nice (prioritas) saat menjalankan suatu program.
 - Renice adalah perintah yang dapat mengubah prioritas penjadwalan satu atau lebih proses yang berjalan.
 
 ## Percobaan
-Shortcut:</br>
-[Percobaan 1](#Percobaan-1-Status-Proses)</br>
-[Percobaan 2](#Percobaan-2-Menampilkan-Hubungan-Proses-Parent-dan-Child)</br>
-[Percobaan 3](#Percobaan-3-Menampilkan-Status-Proses-dengan-Berbagai-Format)</br>
-[Percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
-
-#### Percobaan 1-Status Proses
+### Percobaan 1 - Status Proses
 1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 
 dan login ke terminal sebagai user.
 
@@ -120,20 +120,6 @@ proses milik pemakai, dimana pemakai teresbut melakukan login.</br>
 6. Logout dan tekan Alt+F7 untuk kembali ke mode grafis.
 
 </br>Hasil Percobaan:</br>
-[Percobaan Alfani](#Marieta-Nona-Alfani-1)</br>
-[Percobaan Ale](#Ale-Perdana-Putra-Darmawan-1)</br>
-[Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-1)</br>
-[Kembali ke Percobaan](#Percobaan)</br>
-
-# Marieta Nona Alfani-1</br>
-[Kembali ke percobaan 1](#Percobaan-1-Status-Proses)</br>
-![ss](assets/percobaan/alfani/p1/1.jpg)</br>
-![ss](assets/percobaan/alfani/p1/2.jpg)</br>
-![ss](assets/percobaan/alfani/p1/3.jpg)</br>
-![ss](assets/percobaan/alfani/p1/4.jpg)</br>
-
-# Ale Perdana Putra Darmawan-1</br>
-[Kembali ke percobaan 1](#Percobaan-1-Status-Proses)</br>
 ![ss](assets/percobaan/ale/p1/1.png)</br>
 ![ss](assets/percobaan/ale/p1/2.png)</br>
 ![ss](assets/percobaan/ale/p1/3.png)</br>
@@ -141,11 +127,7 @@ proses milik pemakai, dimana pemakai teresbut melakukan login.</br>
 ![ss](assets/percobaan/ale/p1/5.png)</br>
 ![ss](assets/percobaan/ale/p1/6.png)</br>
 
-# Kanisius Keru Okok Dinggon-1</br>
-[Kembali ke percobaan 1](#Percobaan-1-Status-Proses)</br>
-
-
-#### Percobaan 2-Menampilkan Hubungan Proses Parent dan Child
+### Percobaan 2 - Menampilkan Hubungan Proses Parent dan Child
 1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
 
 2. Ketik ```ps –eH``` dan tekan Enter. Opsi e memilih semua proses dan opsi H 
@@ -169,27 +151,6 @@ proses parent. Proses child ditandai dengan awalan beberapa spasi.</br>
 ```$ pstree –h```
 
 </br>Hasil Percobaan:</br>
-[Percobaan Alfani](#Marieta-Nona-Alfani-2)</br>
-[Percobaan Ale](#Ale-Perdana-Putra-Darmawan-2)</br>
-[Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-2)</br>
-[Kembali ke Percobaan](#Percobaan)</br>
-
-# Marieta Nona Alfani-2</br>
-[Kembali ke percobaan 2](#Percobaan-2-Menampilkan-Hubungan-Proses-Parent-dan-Child)</br>
-![ss](assets/percobaan/alfani/p2/1.jpg)</br>
-![ss](assets/percobaan/alfani/p2/2.jpg)</br>
-![ss](assets/percobaan/alfani/p2/3.jpg)</br>
-![ss](assets/percobaan/alfani/p2/4.jpg)</br>
-![ss](assets/percobaan/alfani/p2/5.jpg)</br>
-![ss](assets/percobaan/alfani/p2/6.jpg)</br>
-![ss](assets/percobaan/alfani/p2/7.jpg)</br>
-![ss](assets/percobaan/alfani/p2/8.jpg)</br>
-![ss](assets/percobaan/alfani/p2/9.jpg)</br>
-![ss](assets/percobaan/alfani/p2/10.jpg)</br>
-![ss](assets/percobaan/alfani/p2/11.jpg)</br>
-
-# Ale Perdana Putra Darmawan-2</br>
-[Kembali ke percobaan 2](#Percobaan-2-Menampilkan-Hubungan-Proses-Parent-dan-Child)</br>
 ![ss](assets/percobaan/ale/p2/1.png)</br>
 ![ss](assets/percobaan/ale/p2/2.png)</br>
 ![ss](assets/percobaan/ale/p2/3.png)</br>
@@ -199,11 +160,7 @@ proses parent. Proses child ditandai dengan awalan beberapa spasi.</br>
 ![ss](assets/percobaan/ale/p2/7.png)</br>
 ![ss](assets/percobaan/ale/p2/8.png)</br>
 
-# Kanisius Keru Okok Dinggon-2</br>
-[Kembali ke percobaan 2](#Percobaan-2-Menampilkan-Hubungan-Proses-Parent-dan-Child)</br>
-
-
-#### Percobaan 3-Menampilkan Status Proses dengan Berbagai Format
+### Percobaan 3 - Menampilkan Status Proses dengan Berbagai Format
 1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
 
 2. Ketik ```ps –e | more``` dan tekan Enter. Opsi -e menampilkan semua proses dalam bentuk 4 kolom : PID, TTY, TIME dan CMD.</br>
@@ -233,21 +190,6 @@ tekan q untuk kembali ke prompt perintah.
 7. Logout dan tekan Alt+F7 untuk kembali ke mode grafis.
 
 </br>Hasil Percobaan:</br>
-[Percobaan Alfani](#Marieta-Nona-Alfani-3)</br>
-[Percobaan Ale](#Ale-Perdana-Putra-Darmawan-3)</br>
-[Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-3)</br>
-[Kembali ke Percobaan](#Percobaan)</br>
-
-# Marieta Nona Alfani-3</br>
-[Kembali ke percobaan 3](#Percobaan-3-Menampilkan-Status-Proses-dengan-Berbagai-Format)</br>
-![ss](assets/percobaan/alfani/p3/1.jpg)</br>
-![ss](assets/percobaan/alfani/p3/2.jpg)</br>
-![ss](assets/percobaan/alfani/p3/3.jpg)</br>
-![ss](assets/percobaan/alfani/p3/4.jpg)</br>
-![ss](assets/percobaan/alfani/p3/5.jpg)</br>
-
-# Ale Perdana Putra Darmawan-3</br>
-[Kembali ke percobaan 3](#Percobaan-3-Menampilkan-Status-Proses-dengan-Berbagai-Format)</br>
 ![ss](assets/percobaan/ale/p3/1.png)</br>
 ![ss](assets/percobaan/ale/p3/2.png)</br>
 ![ss](assets/percobaan/ale/p3/3.png)</br>
@@ -265,11 +207,7 @@ tekan q untuk kembali ke prompt perintah.
 ![ss](assets/percobaan/ale/p3/15.png)</br>
 ![ss](assets/percobaan/ale/p3/16.png)</br>
 
-# Kanisius Keru Okok Dinggon-3</br>
-[Kembali ke percobaan 3](#Percobaan-3-Menampilkan-Status-Proses-dengan-Berbagai-Format)</br>
-
-
-#### Percobaan 4-Mengontrol proses pada shell
+### Percobaan 4 - Mengontrol proses pada shell
 1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
 
 2. Gunakan perintah ```yes``` yang mengirim output y yang tidak pernah berhenti.</br>
@@ -294,18 +232,6 @@ Angka dalam ”[ ]” merupakan job number diikuti PID.
 ```$ jobs```
 
 </br>Hasil Percobaan:</br>
-[Percobaan Alfani](#Marieta-Nona-Alfani-4)</br>
-[Percobaan Ale](#Ale-Perdana-Putra-Darmawan-4)</br>
-[Percobaan Kanisius](#Kanisius-Keru-Okok-Dinggon-4)</br>
-[Kembali ke Percobaan](#Percobaan)</br>
-
-# Marieta Nona Alfani-4</br>
-[Kembali ke percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
-![ss](assets/percobaan/alfani/p4/1.jpg)</br>
-![ss](assets/percobaan/alfani/p4/2.jpg)</br>
-
-# Ale Perdana Putra Darmawan-4</br>
-[Kembali ke percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
 ![ss](assets/percobaan/ale/p4/1.png)</br>
 ![ss](assets/percobaan/ale/p4/2.png)</br>
 ![ss](assets/percobaan/ale/p4/3.png)</br>
@@ -314,9 +240,6 @@ Angka dalam ”[ ]” merupakan job number diikuti PID.
 ![ss](assets/percobaan/ale/p4/6.png)</br>
 ![ss](assets/percobaan/ale/p4/7.png)</br>
 ![ss](assets/percobaan/ale/p4/8.png)</br>
-
-# Kanisius Keru Okok Dinggon-4</br>
-[Kembali ke percobaan 4](#Percobaan-4-Mengontrol-proses-pada-shell)</br>
 
 ## Kesimpulan
 Keseluruhan, pemahaman tentang konsep proses, pengiriman sinyal, penggunaan perintah untuk mengontrol proses pada shell, serta pemahaman tentang perbedaan antara proses latar depan dan latar belakang adalah kunci dalam manajemen efektif dari eksekusi program dan penggunaan sumber daya sistem pada sistem operasi Linux.
