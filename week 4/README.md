@@ -20,7 +20,7 @@
 
 ## Tugas Pendahuluan:</br>
 1. Apa yang dimaksud redirection?</br>
-  pembelokan sebuah output ke daerah yang dituju</br>
+   pembelokan sebuah output ke daerah yang dituju</br>
 2. Apa yang dimaksud pipeline?</br>
    mengambil output sebelumnya untuk dijadikan input untuk proses selanjutnya</br>
 3. Apa yang dimaksud perintah di bawah ini : echo, cat, more, sort, grep, wc, cut, uniq</br>
@@ -59,22 +59,174 @@ Filter adalah utilitas Linux yang dapat memproses standard input (dari keyboard)
 ## Soal
 1. Analisa hasil percobaan 1 sampai dengan 4, untuk setiap perintah jelaskan tampilannya.
 Percobaan 1 : File descriptor</br>
-![ss](assets/percobaan/p1/1.png)</br>
-![ss](assets/percobaan/p1/2.png)</br></br>
+- Output ke layar (standar output), input dari system (kernel)
+```bash
+$ ps
+```
+
+- Output ke layar (standar output), input dari keyboard (standard input)
+```bash
+ $ cat
+ hallo, apa khabar
+ hallo, apa khabar
+ exit dengan ^d
+ exit dengan ^d
+ [Ctrl-d]
+ ```
+ 
+- Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
+```bash
+$ mkdir mydir
+$ mkdir mydir **(Terdapat pesan error)**
+```
+
+Jawab:
+
 
 Percobaan 2 : Pembelokan (redirection)</br>
-![ss](assets/percobaan/p2/1.png)</br>
-![ss](assets/percobaan/p2/2.png)</br></br>
+1. Pembelokan standar output
+   ```
+    $ cat 1> myfile.txt
+    Ini adalah teks yang saya simpan ke file myfile.txt
+   ```
+
+2. Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
+   ```
+    $ cat 0< myfile.txt
+    $ cat myfile.txt
+   ```
+
+3. Pembelokan standar error untuk disimpan di file
+   ```
+    $ mkdir mydir (Terdapat pesan error)
+    $ mkdir mydir 2> myerror.txt
+    $ cat myerror.txt
+   ```
+
+4. Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1.
+   ```
+    $ ls filebaru (Terdapat pesan error)
+    $ ls filebaru 2> out.txt
+    $ cat out.txt
+    $ ls filebaru 2> out.txt 2>&
+    $ cat out.txt
+   ```
+
+5. Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
+   ```
+   $ echo “mencoba menulis file” 1> baru
+   $ cat filebaru 2> baru 1>&
+   $ cat baru
+   ```
+
+6. Notasi >> (append)
+   ```
+   $ echo “kata pertama” > surat
+   $ echo “kata kedua” >> surat
+   $ echo “kata ketiga” >> surat
+   $ cat surat
+   $ echo “kata keempat” > surat
+   $ cat surat
+   ```
+
+7. Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup harus diberikan pada awal baris
+   ```
+   $ cat <<++
+   Hallo, apa kabar?
+   Baik-baik saja?
+   Ok!
+   ++
+   $ cat <<%%%
+   Hallo, apa kabar?
+   Baik-baik saja?
+   Ok!
+   %%%
+   ```
+
+8. Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
+  ```
+  $ cat myfile.txt – surat
+  ```
+
+  Jawab:
+
 
 Percobaan 3 : Pipa (pipeline)</br>
-![ss](assets/percobaan/p3/1.png)</br>
-![ss](assets/percobaan/p3/2.png)</br></br>
+1. Operator pipa (|) digunakan untuk membuat eksekusi proses dengan melewati data langsung ke data lainnya.
+   ```
+   $ who
+   $ who | sort
+   $ who | sort –r
+   $ who > tmp
+   $ sort tmp
+   $ rm tmp
+   $ ls –l /etc | more
+   $ ls –l /etc | sort | more
+   ```
+
+2. Untuk membelokkan standart output ke file, digunakan operator ">"
+   ```
+   $ echo hello
+   $ echo hello > output
+   $ cat output
+   ```
+
+3. Untuk menambahkan output ke file digunakan operator ">>"
+   ```
+   $ echo bye >> output
+   $ cat output
+   ```
+
+4. Untuk membelokkan standart input digunakan operator "<"
+   ```
+   $ cat < output
+   ```
+
+5. Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output.
+   ```
+   $ cat < output > out
+   $ cat out
+   $ cat < output >> out
+   $ cat out
+   $ cat < output > output
+   $ cat output
+   $ cat < out >> out (Proses tidak berhenti)
+   [Ctrl-c]
+   $ cat out
+   ```
+
+Jawab:
+
 
 Percobaan 4 : Filter
-![ss](assets/percobaan/p4/1.png)</br>
-![ss](assets/percobaan/p4/2.png)</br></br>
+1. Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
+   ```
+    $ w –h | grep <user>
+    $ grep <user> /etc/passwd
+    $ ls /etc | wc
+    $ ls /etc | wc –l
+    $ cat > kelas1.txt
+    Badu
+    Zulkifli
+    Yulizir
+    Yudi
+    Ade
+    [Ctrl-d]
+    $ cat > kelas2.txt
+    Budi
+    Gama
+    Asep
+    Muchlis
+    [Ctrl-d]
+    $ cat kelas1.txt kelas2.txt | sort
+    $ cat kelas1.txt kelas2.txt > kelas.txt
+    $ cat kelas.txt | sort | uniq
+   ```
+   
+   Jawab:
+   
 
-3. Kerjakan latihan diatas dan analisa hasilnya
+1. Kerjakan latihan diatas dan analisa hasilnya
 - Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.</br>
 ![ss](assets/latihan/soal1/1.png)</br>
 ![ss](assets/latihan/soal1/2.png)</br></br>
@@ -128,10 +280,6 @@ Lampung
 
 3. Berikan kesimpulan dari praktikum ini.</br>
 Kesimpulan dari serangkaian percobaan yang telah dilakukan menunjukkan pemahaman yang kuat dalam penggunaan perintah dasar sistem operasi Linux/Unix. Dari penggunaan perintah seperti ls, nano, cat, sort, hingga mkdir dan cd, telah ditunjukkan kemampuan untuk melakukan berbagai tugas seperti melihat daftar direktori, mengedit dan menampilkan isi file, serta mengelola file dan direktori. Penggunaan redirection dengan simbol seperti >, >>, dan 2> juga ditunjukkan dengan baik, memungkinkan pengalihan output dari satu perintah ke perintah lainnya atau ke dalam file. Selain itu, penggunaan pipeline (|) membantu dalam mengalirkan data antar perintah, memungkinkan eksekusi serangkaian perintah secara berurutan untuk memproses data dengan cara yang lebih kompleks.
-
-Pengolahan file dan direktori seperti pembuatan, penyuntingan, dan analisis isi file juga terlihat dalam latihan tersebut, menunjukkan kemampuan dalam mengelola data dalam konteks sistem operasi. Penggunaan perintah khusus seperti wc untuk menghitung statistik file dan grep untuk pencarian pola dalam teks menunjukkan pemahaman mendalam tentang alat-alat sistem operasi. Selain itu, pemahaman tentang ASCII dan penggunaan sort untuk pengurutan berdasarkan urutan ASCII, serta uniq untuk menghilangkan duplikasi, menunjukkan keterampilan dalam manipulasi dan analisis data teks.
-
-Dari serangkaian percobaan yang dilakukan, kita dapat mengambil kesimpulan bahwa pengelolaan aliran masukan dan keluaran dalam lingkungan terminal sangatlah penting. Teknik-teknik seperti penggunaan file descriptor, pembelokan (redirection), pipa (pipeline), dan filter menjadi kunci dalam memungkinkan pengguna untuk mengatur dan memanipulasi data dengan lebih fleksibel dan kompleks. Melalui redirecting standar output dan input, pengguna dapat mengalihkan keluaran dari perintah ke file tertentu dan mengambil input dari file daripada dari keyboard. Penggunaan pipa memungkinkan pengaliran keluaran dari satu perintah sebagai masukan ke perintah berikutnya, membentuk alur kerja yang terstruktur dan efisien. Filter seperti grep, wc, sort, dan uniq memberikan kemampuan untuk mencari, menghitung, mengurutkan, dan mengelompokkan data sesuai dengan kebutuhan.
 
 ## Referensi
 Sumber 1: https://www.geeksforgeeks.org/introduction-linux-shell-shell-scripting/?ref=shm_ </br>
